@@ -1,4 +1,3 @@
-"""表4：使用已有权重测试 Mask-30% 和 Shift+2，结果写入 table4_run.log。"""
 import importlib.util
 import sys
 import time
@@ -14,7 +13,7 @@ HERE = Path(__file__).resolve().parent
 CODE = HERE.parent
 DATA = Path(r"D:\all_datasets\ETT-small\ETTm2.csv")
 WEIGHTS = CODE / "weights/ETTm2/best_model_T96.pth"
-ORIGINAL_MSE = 0.174985  # 历史日志中的 Original，供计算相对增幅。
+ORIGINAL_MSE = 0.174985  
 SEED = 2026
 
 
