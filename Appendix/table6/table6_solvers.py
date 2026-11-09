@@ -1,4 +1,3 @@
-"""表6：固定已有权重，测试 Euler / Midpoint / RK4，记录到 table6_run.log。"""
 import importlib.util
 import sys
 import time
