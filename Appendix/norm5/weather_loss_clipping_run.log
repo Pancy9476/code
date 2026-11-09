@@ -1,0 +1,574 @@
+Weather loss x clipping | Started: 2026-11-07T16:44:19.642794
+GPU: NVIDIA GeForce GTX 1650
+24 fresh runs, no historical results reused. Seed=2026 L=96 T=96,192,336,720.
+D=128 batch=256 dropout=.05 stable_max_loops=2; original RK4 and all model branches retained.
+No per-loss rescaling/tuning.
+AdamW lr=5e-4 wd=1e-4; ReduceLROnPlateau factor=.5 patience=3 min_lr=1e-6; max_epochs=100 early_stop=12.
+All arms reset the same seed and independent loader generators; same initialization/order per horizon.
+Best validation MSE selects weights for all objectives. Metrics: all-channel, all test windows, train-only standardization.
+No clipping arm only observes gradient norms. norm5 arm clips global L2 parameter gradients after backward and before optimizer.step.
+Gradients are logged BEFORE clipping; gt5 is actual clipping frequency only in norm5 arm. Loss scales differ, so gradient magnitudes are not scale-independent evidence.
+Stop a configuration at its first non-finite training loss/gradient/validation metric; mark FAILED, do not omit that horizon from Avg.
+Avg MSE/MAE: unweighted arithmetic mean across four horizons; gradient summaries pool finite attempted training steps. Single-seed descriptive results.
+START loss=ORHL clipping=none T=96 | 2026-11-07T16:44:20.387635 | stable_max_loops=2 parameters=514637
+loss=ORHL clipping=none T=96 Epoch=001 train_loss=1.843773 val_MSE=0.431187357 val_MAE=0.281936027 preclip_grad_mean=0.734905 preclip_grad_max=2.059968 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=18.68
+loss=ORHL clipping=none T=96 Epoch=002 train_loss=1.573311 val_MSE=0.409759319 val_MAE=0.264233638 preclip_grad_mean=0.935648 preclip_grad_max=1.958912 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.73
+loss=ORHL clipping=none T=96 Epoch=003 train_loss=1.485837 val_MSE=0.404382675 val_MAE=0.260003037 preclip_grad_mean=0.972180 preclip_grad_max=1.703329 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.55
+loss=ORHL clipping=none T=96 Epoch=004 train_loss=1.436302 val_MSE=0.400293988 val_MAE=0.255269776 preclip_grad_mean=0.939948 preclip_grad_max=1.929650 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.57
+loss=ORHL clipping=none T=96 Epoch=005 train_loss=1.401354 val_MSE=0.402915984 val_MAE=0.258308304 preclip_grad_mean=1.013774 preclip_grad_max=1.992818 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.60
+loss=ORHL clipping=none T=96 Epoch=006 train_loss=1.367958 val_MSE=0.394527046 val_MAE=0.252777400 preclip_grad_mean=0.977617 preclip_grad_max=1.863148 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.62
+loss=ORHL clipping=none T=96 Epoch=007 train_loss=1.334114 val_MSE=0.395134943 val_MAE=0.256418405 preclip_grad_mean=0.976883 preclip_grad_max=2.001899 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.59
+loss=ORHL clipping=none T=96 Epoch=008 train_loss=1.305588 val_MSE=0.397663052 val_MAE=0.256924628 preclip_grad_mean=1.022375 preclip_grad_max=1.813662 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=16.68
+loss=ORHL clipping=none T=96 Epoch=009 train_loss=1.277971 val_MSE=0.394427569 val_MAE=0.255508894 preclip_grad_mean=0.991349 preclip_grad_max=1.479758 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.68
+loss=ORHL clipping=none T=96 Epoch=010 train_loss=1.250741 val_MSE=0.391561140 val_MAE=0.252448208 preclip_grad_mean=0.974261 preclip_grad_max=1.725786 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.62
+loss=ORHL clipping=none T=96 Epoch=011 train_loss=1.226617 val_MSE=0.395031558 val_MAE=0.255847300 preclip_grad_mean=0.986182 preclip_grad_max=1.800510 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.60
+loss=ORHL clipping=none T=96 Epoch=012 train_loss=1.202702 val_MSE=0.397792004 val_MAE=0.257581381 preclip_grad_mean=0.947393 preclip_grad_max=1.523870 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=16.79
+loss=ORHL clipping=none T=96 Epoch=013 train_loss=1.182448 val_MSE=0.397549220 val_MAE=0.258328590 preclip_grad_mean=1.009893 preclip_grad_max=1.805275 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=3/12 seconds=16.73
+loss=ORHL clipping=none T=96 Epoch=014 train_loss=1.160934 val_MSE=0.399810316 val_MAE=0.258054440 preclip_grad_mean=0.994898 preclip_grad_max=1.704626 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=4/12 seconds=16.66
+loss=ORHL clipping=none T=96 Epoch=015 train_loss=1.125387 val_MSE=0.404329010 val_MAE=0.261622004 preclip_grad_mean=0.780270 preclip_grad_max=1.141815 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=5/12 seconds=16.63
+loss=ORHL clipping=none T=96 Epoch=016 train_loss=1.112714 val_MSE=0.402781302 val_MAE=0.260825029 preclip_grad_mean=0.813964 preclip_grad_max=1.356178 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=6/12 seconds=16.74
+loss=ORHL clipping=none T=96 Epoch=017 train_loss=1.102741 val_MSE=0.397646536 val_MAE=0.256584063 preclip_grad_mean=0.835248 preclip_grad_max=1.244911 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=7/12 seconds=16.69
+loss=ORHL clipping=none T=96 Epoch=018 train_loss=1.093171 val_MSE=0.400508471 val_MAE=0.258723156 preclip_grad_mean=0.877282 preclip_grad_max=1.441000 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=8/12 seconds=16.76
+loss=ORHL clipping=none T=96 Epoch=019 train_loss=1.075513 val_MSE=0.401050786 val_MAE=0.259283227 preclip_grad_mean=0.759161 preclip_grad_max=1.201296 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=9/12 seconds=16.66
+loss=ORHL clipping=none T=96 Epoch=020 train_loss=1.069476 val_MSE=0.404254241 val_MAE=0.260644582 preclip_grad_mean=0.755595 preclip_grad_max=1.051339 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=10/12 seconds=16.74
+loss=ORHL clipping=none T=96 Epoch=021 train_loss=1.064717 val_MSE=0.398579162 val_MAE=0.257669926 preclip_grad_mean=0.746847 preclip_grad_max=1.143720 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=11/12 seconds=16.62
+loss=ORHL clipping=none T=96 Epoch=022 train_loss=1.059224 val_MSE=0.403519764 val_MAE=0.259896555 preclip_grad_mean=0.758218 preclip_grad_max=1.012592 grad_gt5_fraction=0.000000 steps=144 lr=6.25e-05 ES=12/12 seconds=16.67
+Early stopping.
+RESULT loss=ORHL clipping=none T=96 | MSE=0.153207680 MAE=0.191097536 status=OK best_epoch=10 epochs=22 seconds=370.71
+STABILITY loss=ORHL clipping=none T=96 | steps=3168 preclip_grad_mean=0.900177 preclip_grad_max=2.059968 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 1/24
+START loss=ORHL clipping=none T=192 | 2026-11-07T16:50:31.285795 | stable_max_loops=2 parameters=557933
+loss=ORHL clipping=none T=192 Epoch=001 train_loss=2.098538 val_MSE=0.502316911 val_MAE=0.324955632 preclip_grad_mean=0.532978 preclip_grad_max=1.306249 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.10
+loss=ORHL clipping=none T=192 Epoch=002 train_loss=1.886067 val_MSE=0.486530717 val_MAE=0.313622199 preclip_grad_mean=0.742660 preclip_grad_max=1.496131 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.08
+loss=ORHL clipping=none T=192 Epoch=003 train_loss=1.800422 val_MSE=0.476497216 val_MAE=0.307788285 preclip_grad_mean=0.788529 preclip_grad_max=1.382590 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.07
+loss=ORHL clipping=none T=192 Epoch=004 train_loss=1.741649 val_MSE=0.470007012 val_MAE=0.305718959 preclip_grad_mean=0.828297 preclip_grad_max=1.463765 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.10
+loss=ORHL clipping=none T=192 Epoch=005 train_loss=1.689781 val_MSE=0.467345193 val_MAE=0.305951587 preclip_grad_mean=0.895845 preclip_grad_max=1.317107 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.07
+loss=ORHL clipping=none T=192 Epoch=006 train_loss=1.645016 val_MSE=0.470681144 val_MAE=0.307313915 preclip_grad_mean=0.912358 preclip_grad_max=1.375109 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=18.02
+loss=ORHL clipping=none T=192 Epoch=007 train_loss=1.601749 val_MSE=0.474430340 val_MAE=0.310523278 preclip_grad_mean=0.960180 preclip_grad_max=1.528330 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=18.06
+loss=ORHL clipping=none T=192 Epoch=008 train_loss=1.564341 val_MSE=0.478458683 val_MAE=0.315686253 preclip_grad_mean=0.989509 preclip_grad_max=1.380263 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=18.07
+loss=ORHL clipping=none T=192 Epoch=009 train_loss=1.529168 val_MSE=0.478101411 val_MAE=0.314782595 preclip_grad_mean=1.001117 preclip_grad_max=1.652570 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=18.06
+loss=ORHL clipping=none T=192 Epoch=010 train_loss=1.481861 val_MSE=0.479084673 val_MAE=0.316104755 preclip_grad_mean=0.845786 preclip_grad_max=1.169727 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=18.06
+loss=ORHL clipping=none T=192 Epoch=011 train_loss=1.461977 val_MSE=0.479653084 val_MAE=0.317529350 preclip_grad_mean=0.880574 preclip_grad_max=1.195699 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=18.11
+loss=ORHL clipping=none T=192 Epoch=012 train_loss=1.445606 val_MSE=0.482444660 val_MAE=0.318234379 preclip_grad_mean=0.911115 preclip_grad_max=1.309703 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=18.08
+loss=ORHL clipping=none T=192 Epoch=013 train_loss=1.429264 val_MSE=0.480927015 val_MAE=0.317622908 preclip_grad_mean=0.918653 preclip_grad_max=1.440655 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=18.05
+loss=ORHL clipping=none T=192 Epoch=014 train_loss=1.406888 val_MSE=0.482440802 val_MAE=0.318802232 preclip_grad_mean=0.835337 preclip_grad_max=1.148101 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=18.12
+loss=ORHL clipping=none T=192 Epoch=015 train_loss=1.398678 val_MSE=0.485530451 val_MAE=0.321340326 preclip_grad_mean=0.875701 preclip_grad_max=1.290549 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=18.05
+loss=ORHL clipping=none T=192 Epoch=016 train_loss=1.389801 val_MSE=0.481702944 val_MAE=0.317539282 preclip_grad_mean=0.840718 preclip_grad_max=1.047214 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=18.10
+loss=ORHL clipping=none T=192 Epoch=017 train_loss=1.382837 val_MSE=0.485561503 val_MAE=0.320799740 preclip_grad_mean=0.843820 preclip_grad_max=1.104730 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=18.02
+Early stopping.
+RESULT loss=ORHL clipping=none T=192 | MSE=0.209393164 MAE=0.246792326 status=OK best_epoch=5 epochs=17 seconds=309.76
+STABILITY loss=ORHL clipping=none T=192 | steps=2431 preclip_grad_mean=0.859010 preclip_grad_max=1.652570 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 2/24
+START loss=ORHL clipping=none T=336 | 2026-11-07T16:55:41.289878 | stable_max_loops=2 parameters=622877
+loss=ORHL clipping=none T=336 Epoch=001 train_loss=2.355007 val_MSE=0.586962214 val_MAE=0.381665649 preclip_grad_mean=0.424086 preclip_grad_max=0.864069 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.98
+loss=ORHL clipping=none T=336 Epoch=002 train_loss=2.163172 val_MSE=0.567775184 val_MAE=0.374822831 preclip_grad_mean=0.579739 preclip_grad_max=1.312739 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.96
+loss=ORHL clipping=none T=336 Epoch=003 train_loss=2.081716 val_MSE=0.557302799 val_MAE=0.368257458 preclip_grad_mean=0.669686 preclip_grad_max=1.164957 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.01
+loss=ORHL clipping=none T=336 Epoch=004 train_loss=2.012959 val_MSE=0.557908357 val_MAE=0.370500287 preclip_grad_mean=0.800546 preclip_grad_max=1.578670 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=19.98
+loss=ORHL clipping=none T=336 Epoch=005 train_loss=1.953875 val_MSE=0.558259408 val_MAE=0.370174226 preclip_grad_mean=0.847243 preclip_grad_max=1.327086 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=19.94
+loss=ORHL clipping=none T=336 Epoch=006 train_loss=1.896086 val_MSE=0.564050363 val_MAE=0.372750440 preclip_grad_mean=0.866077 preclip_grad_max=1.510277 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=20.05
+loss=ORHL clipping=none T=336 Epoch=007 train_loss=1.844256 val_MSE=0.566270516 val_MAE=0.373854608 preclip_grad_mean=0.924763 preclip_grad_max=1.601319 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=19.97
+loss=ORHL clipping=none T=336 Epoch=008 train_loss=1.781204 val_MSE=0.570501767 val_MAE=0.376762727 preclip_grad_mean=0.833565 preclip_grad_max=1.205567 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=19.92
+loss=ORHL clipping=none T=336 Epoch=009 train_loss=1.752554 val_MSE=0.573788000 val_MAE=0.377926609 preclip_grad_mean=0.906906 preclip_grad_max=1.403336 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=19.94
+loss=ORHL clipping=none T=336 Epoch=010 train_loss=1.728324 val_MSE=0.573628511 val_MAE=0.379222981 preclip_grad_mean=0.942037 preclip_grad_max=1.474511 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=19.96
+loss=ORHL clipping=none T=336 Epoch=011 train_loss=1.704365 val_MSE=0.578708288 val_MAE=0.381926945 preclip_grad_mean=0.942865 preclip_grad_max=1.433091 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=19.94
+loss=ORHL clipping=none T=336 Epoch=012 train_loss=1.676085 val_MSE=0.577991330 val_MAE=0.381342430 preclip_grad_mean=0.827464 preclip_grad_max=1.407765 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=20.04
+loss=ORHL clipping=none T=336 Epoch=013 train_loss=1.664118 val_MSE=0.581722864 val_MAE=0.383862959 preclip_grad_mean=0.844145 preclip_grad_max=1.133970 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=20.03
+loss=ORHL clipping=none T=336 Epoch=014 train_loss=1.653026 val_MSE=0.582522942 val_MAE=0.384564759 preclip_grad_mean=0.852828 preclip_grad_max=1.504018 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=19.90
+loss=ORHL clipping=none T=336 Epoch=015 train_loss=1.644400 val_MSE=0.582769621 val_MAE=0.385129507 preclip_grad_mean=0.875855 preclip_grad_max=1.557269 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=19.94
+Early stopping.
+RESULT loss=ORHL clipping=none T=336 | MSE=0.267064789 MAE=0.286420811 status=OK best_epoch=3 epochs=15 seconds=302.62
+STABILITY loss=ORHL clipping=none T=336 | steps=2145 preclip_grad_mean=0.809187 preclip_grad_max=1.601319 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 3/24
+START loss=ORHL clipping=none T=720 | 2026-11-07T17:00:44.094740 | stable_max_loops=2 parameters=796061
+loss=ORHL clipping=none T=720 Epoch=001 train_loss=2.632497 val_MSE=0.718423495 val_MAE=0.465427175 preclip_grad_mean=0.336511 preclip_grad_max=0.730328 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.30
+loss=ORHL clipping=none T=720 Epoch=002 train_loss=2.440738 val_MSE=0.688775316 val_MAE=0.456399310 preclip_grad_mean=0.470249 preclip_grad_max=1.103585 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.27
+loss=ORHL clipping=none T=720 Epoch=003 train_loss=2.345196 val_MSE=0.689903602 val_MAE=0.458301841 preclip_grad_mean=0.687812 preclip_grad_max=1.384140 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=25.35
+loss=ORHL clipping=none T=720 Epoch=004 train_loss=2.266980 val_MSE=0.688372591 val_MAE=0.457024587 preclip_grad_mean=0.754780 preclip_grad_max=1.465734 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.32
+loss=ORHL clipping=none T=720 Epoch=005 train_loss=2.206446 val_MSE=0.682746931 val_MAE=0.452988672 preclip_grad_mean=0.829606 preclip_grad_max=1.279424 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.32
+loss=ORHL clipping=none T=720 Epoch=006 train_loss=2.151823 val_MSE=0.697763184 val_MAE=0.461961315 preclip_grad_mean=0.905133 preclip_grad_max=1.331224 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=25.24
+loss=ORHL clipping=none T=720 Epoch=007 train_loss=2.105307 val_MSE=0.700854778 val_MAE=0.464412717 preclip_grad_mean=0.973812 preclip_grad_max=1.430611 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=2/12 seconds=25.42
+loss=ORHL clipping=none T=720 Epoch=008 train_loss=2.058434 val_MSE=0.703396316 val_MAE=0.465421633 preclip_grad_mean=0.935428 preclip_grad_max=1.356154 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=3/12 seconds=25.26
+loss=ORHL clipping=none T=720 Epoch=009 train_loss=2.018388 val_MSE=0.702351713 val_MAE=0.463347999 preclip_grad_mean=0.987553 preclip_grad_max=1.416566 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=4/12 seconds=25.29
+loss=ORHL clipping=none T=720 Epoch=010 train_loss=1.965695 val_MSE=0.705654066 val_MAE=0.465385010 preclip_grad_mean=0.867601 preclip_grad_max=1.190034 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=5/12 seconds=25.25
+loss=ORHL clipping=none T=720 Epoch=011 train_loss=1.943520 val_MSE=0.701412442 val_MAE=0.463305374 preclip_grad_mean=0.907150 preclip_grad_max=1.310725 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=6/12 seconds=25.24
+loss=ORHL clipping=none T=720 Epoch=012 train_loss=1.923221 val_MSE=0.710721134 val_MAE=0.468383124 preclip_grad_mean=0.905269 preclip_grad_max=1.299955 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=7/12 seconds=25.27
+loss=ORHL clipping=none T=720 Epoch=013 train_loss=1.904587 val_MSE=0.708221948 val_MAE=0.465905161 preclip_grad_mean=0.937935 preclip_grad_max=1.341783 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=8/12 seconds=25.26
+loss=ORHL clipping=none T=720 Epoch=014 train_loss=1.879587 val_MSE=0.708968718 val_MAE=0.466411987 preclip_grad_mean=0.817537 preclip_grad_max=1.108801 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=9/12 seconds=25.31
+loss=ORHL clipping=none T=720 Epoch=015 train_loss=1.869702 val_MSE=0.707079466 val_MAE=0.465183391 preclip_grad_mean=0.847084 preclip_grad_max=1.205189 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=10/12 seconds=25.38
+loss=ORHL clipping=none T=720 Epoch=016 train_loss=1.859409 val_MSE=0.712698396 val_MAE=0.468628764 preclip_grad_mean=0.845932 preclip_grad_max=1.096850 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=11/12 seconds=25.30
+loss=ORHL clipping=none T=720 Epoch=017 train_loss=1.850697 val_MSE=0.712570454 val_MAE=0.468273325 preclip_grad_mean=0.882668 preclip_grad_max=1.325020 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=12/12 seconds=25.29
+Early stopping.
+RESULT loss=ORHL clipping=none T=720 | MSE=0.351841618 MAE=0.342806977 status=OK best_epoch=5 epochs=17 seconds=434.51
+STABILITY loss=ORHL clipping=none T=720 | steps=2397 preclip_grad_mean=0.817180 preclip_grad_max=1.465734 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 4/24
+AVG_STABILITY loss=ORHL clipping=none | preclip_grad_mean=0.851445 preclip_grad_max=2.059968 grad_gt5_fraction=0.000000 failed_horizons=0
+AVG loss=ORHL clipping=none | MSE=0.245376813 MAE=0.266779413
+START loss=ORHL clipping=norm5 T=96 | 2026-11-07T17:07:58.788383 | stable_max_loops=2 parameters=514637
+loss=ORHL clipping=norm5 T=96 Epoch=001 train_loss=1.843773 val_MSE=0.431187357 val_MAE=0.281936027 preclip_grad_mean=0.734905 preclip_grad_max=2.059968 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.06
+loss=ORHL clipping=norm5 T=96 Epoch=002 train_loss=1.573311 val_MSE=0.409759319 val_MAE=0.264233638 preclip_grad_mean=0.935648 preclip_grad_max=1.958912 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.96
+loss=ORHL clipping=norm5 T=96 Epoch=003 train_loss=1.485837 val_MSE=0.404382675 val_MAE=0.260003037 preclip_grad_mean=0.972180 preclip_grad_max=1.703329 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.12
+loss=ORHL clipping=norm5 T=96 Epoch=004 train_loss=1.436302 val_MSE=0.400293988 val_MAE=0.255269776 preclip_grad_mean=0.939948 preclip_grad_max=1.929650 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.05
+loss=ORHL clipping=norm5 T=96 Epoch=005 train_loss=1.401354 val_MSE=0.402915984 val_MAE=0.258308304 preclip_grad_mean=1.013774 preclip_grad_max=1.992818 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=17.06
+loss=ORHL clipping=norm5 T=96 Epoch=006 train_loss=1.367958 val_MSE=0.394527046 val_MAE=0.252777400 preclip_grad_mean=0.977617 preclip_grad_max=1.863148 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.04
+loss=ORHL clipping=norm5 T=96 Epoch=007 train_loss=1.334114 val_MSE=0.395134943 val_MAE=0.256418405 preclip_grad_mean=0.976883 preclip_grad_max=2.001899 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=17.06
+loss=ORHL clipping=norm5 T=96 Epoch=008 train_loss=1.305588 val_MSE=0.397663052 val_MAE=0.256924628 preclip_grad_mean=1.022375 preclip_grad_max=1.813662 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=17.06
+loss=ORHL clipping=norm5 T=96 Epoch=009 train_loss=1.277971 val_MSE=0.394427569 val_MAE=0.255508894 preclip_grad_mean=0.991349 preclip_grad_max=1.479758 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.04
+loss=ORHL clipping=norm5 T=96 Epoch=010 train_loss=1.250741 val_MSE=0.391561140 val_MAE=0.252448208 preclip_grad_mean=0.974261 preclip_grad_max=1.725786 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.10
+loss=ORHL clipping=norm5 T=96 Epoch=011 train_loss=1.226617 val_MSE=0.395031558 val_MAE=0.255847300 preclip_grad_mean=0.986182 preclip_grad_max=1.800510 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=17.18
+loss=ORHL clipping=norm5 T=96 Epoch=012 train_loss=1.202702 val_MSE=0.397792004 val_MAE=0.257581381 preclip_grad_mean=0.947393 preclip_grad_max=1.523870 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=17.02
+loss=ORHL clipping=norm5 T=96 Epoch=013 train_loss=1.182448 val_MSE=0.397549220 val_MAE=0.258328590 preclip_grad_mean=1.009893 preclip_grad_max=1.805275 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=3/12 seconds=17.16
+loss=ORHL clipping=norm5 T=96 Epoch=014 train_loss=1.160934 val_MSE=0.399810316 val_MAE=0.258054440 preclip_grad_mean=0.994898 preclip_grad_max=1.704626 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=4/12 seconds=17.13
+loss=ORHL clipping=norm5 T=96 Epoch=015 train_loss=1.125387 val_MSE=0.404329010 val_MAE=0.261622004 preclip_grad_mean=0.780270 preclip_grad_max=1.141815 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=5/12 seconds=17.04
+loss=ORHL clipping=norm5 T=96 Epoch=016 train_loss=1.112714 val_MSE=0.402781302 val_MAE=0.260825029 preclip_grad_mean=0.813964 preclip_grad_max=1.356178 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=6/12 seconds=17.00
+loss=ORHL clipping=norm5 T=96 Epoch=017 train_loss=1.102741 val_MSE=0.397646536 val_MAE=0.256584063 preclip_grad_mean=0.835248 preclip_grad_max=1.244911 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=7/12 seconds=17.21
+loss=ORHL clipping=norm5 T=96 Epoch=018 train_loss=1.093171 val_MSE=0.400508471 val_MAE=0.258723156 preclip_grad_mean=0.877282 preclip_grad_max=1.441000 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=8/12 seconds=17.10
+loss=ORHL clipping=norm5 T=96 Epoch=019 train_loss=1.075513 val_MSE=0.401050786 val_MAE=0.259283227 preclip_grad_mean=0.759161 preclip_grad_max=1.201296 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=9/12 seconds=17.03
+loss=ORHL clipping=norm5 T=96 Epoch=020 train_loss=1.069476 val_MSE=0.404254241 val_MAE=0.260644582 preclip_grad_mean=0.755595 preclip_grad_max=1.051339 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=10/12 seconds=17.13
+loss=ORHL clipping=norm5 T=96 Epoch=021 train_loss=1.064717 val_MSE=0.398579162 val_MAE=0.257669926 preclip_grad_mean=0.746847 preclip_grad_max=1.143720 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=11/12 seconds=17.13
+loss=ORHL clipping=norm5 T=96 Epoch=022 train_loss=1.059224 val_MSE=0.403519764 val_MAE=0.259896555 preclip_grad_mean=0.758218 preclip_grad_max=1.012592 grad_gt5_fraction=0.000000 steps=144 lr=6.25e-05 ES=12/12 seconds=17.06
+Early stopping.
+RESULT loss=ORHL clipping=norm5 T=96 | MSE=0.153207680 MAE=0.191097536 status=OK best_epoch=10 epochs=22 seconds=377.83
+STABILITY loss=ORHL clipping=norm5 T=96 | steps=3168 preclip_grad_mean=0.900177 preclip_grad_max=2.059968 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 5/24
+START loss=ORHL clipping=norm5 T=192 | 2026-11-07T17:14:16.814936 | stable_max_loops=2 parameters=557933
+loss=ORHL clipping=norm5 T=192 Epoch=001 train_loss=2.098538 val_MSE=0.502316911 val_MAE=0.324955632 preclip_grad_mean=0.532978 preclip_grad_max=1.306249 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.38
+loss=ORHL clipping=norm5 T=192 Epoch=002 train_loss=1.886067 val_MSE=0.486530717 val_MAE=0.313622199 preclip_grad_mean=0.742660 preclip_grad_max=1.496131 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.46
+loss=ORHL clipping=norm5 T=192 Epoch=003 train_loss=1.800422 val_MSE=0.476497216 val_MAE=0.307788285 preclip_grad_mean=0.788529 preclip_grad_max=1.382590 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.35
+loss=ORHL clipping=norm5 T=192 Epoch=004 train_loss=1.741649 val_MSE=0.470007012 val_MAE=0.305718959 preclip_grad_mean=0.828297 preclip_grad_max=1.463765 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.40
+loss=ORHL clipping=norm5 T=192 Epoch=005 train_loss=1.689781 val_MSE=0.467345193 val_MAE=0.305951587 preclip_grad_mean=0.895845 preclip_grad_max=1.317107 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.43
+loss=ORHL clipping=norm5 T=192 Epoch=006 train_loss=1.645016 val_MSE=0.470681144 val_MAE=0.307313915 preclip_grad_mean=0.912358 preclip_grad_max=1.375109 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=18.40
+loss=ORHL clipping=norm5 T=192 Epoch=007 train_loss=1.601749 val_MSE=0.474430340 val_MAE=0.310523278 preclip_grad_mean=0.960180 preclip_grad_max=1.528330 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=18.44
+loss=ORHL clipping=norm5 T=192 Epoch=008 train_loss=1.564341 val_MSE=0.478458683 val_MAE=0.315686253 preclip_grad_mean=0.989509 preclip_grad_max=1.380263 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=18.63
+loss=ORHL clipping=norm5 T=192 Epoch=009 train_loss=1.529168 val_MSE=0.478101411 val_MAE=0.314782595 preclip_grad_mean=1.001117 preclip_grad_max=1.652570 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=18.48
+loss=ORHL clipping=norm5 T=192 Epoch=010 train_loss=1.481861 val_MSE=0.479084673 val_MAE=0.316104755 preclip_grad_mean=0.845786 preclip_grad_max=1.169727 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=18.37
+loss=ORHL clipping=norm5 T=192 Epoch=011 train_loss=1.461977 val_MSE=0.479653084 val_MAE=0.317529350 preclip_grad_mean=0.880574 preclip_grad_max=1.195699 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=18.46
+loss=ORHL clipping=norm5 T=192 Epoch=012 train_loss=1.445606 val_MSE=0.482444660 val_MAE=0.318234379 preclip_grad_mean=0.911115 preclip_grad_max=1.309703 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=18.48
+loss=ORHL clipping=norm5 T=192 Epoch=013 train_loss=1.429264 val_MSE=0.480927015 val_MAE=0.317622908 preclip_grad_mean=0.918653 preclip_grad_max=1.440655 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=18.41
+loss=ORHL clipping=norm5 T=192 Epoch=014 train_loss=1.406888 val_MSE=0.482440802 val_MAE=0.318802232 preclip_grad_mean=0.835337 preclip_grad_max=1.148101 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=18.39
+loss=ORHL clipping=norm5 T=192 Epoch=015 train_loss=1.398678 val_MSE=0.485530451 val_MAE=0.321340326 preclip_grad_mean=0.875701 preclip_grad_max=1.290549 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=18.50
+loss=ORHL clipping=norm5 T=192 Epoch=016 train_loss=1.389801 val_MSE=0.481702944 val_MAE=0.317539282 preclip_grad_mean=0.840718 preclip_grad_max=1.047214 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=18.39
+loss=ORHL clipping=norm5 T=192 Epoch=017 train_loss=1.382837 val_MSE=0.485561503 val_MAE=0.320799740 preclip_grad_mean=0.843820 preclip_grad_max=1.104730 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=18.37
+Early stopping.
+RESULT loss=ORHL clipping=norm5 T=192 | MSE=0.209393164 MAE=0.246792326 status=OK best_epoch=5 epochs=17 seconds=315.77
+STABILITY loss=ORHL clipping=norm5 T=192 | steps=2431 preclip_grad_mean=0.859010 preclip_grad_max=1.652570 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 6/24
+START loss=ORHL clipping=norm5 T=336 | 2026-11-07T17:19:32.775981 | stable_max_loops=2 parameters=622877
+loss=ORHL clipping=norm5 T=336 Epoch=001 train_loss=2.355007 val_MSE=0.586962214 val_MAE=0.381665649 preclip_grad_mean=0.424086 preclip_grad_max=0.864069 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.41
+loss=ORHL clipping=norm5 T=336 Epoch=002 train_loss=2.163172 val_MSE=0.567775184 val_MAE=0.374822831 preclip_grad_mean=0.579739 preclip_grad_max=1.312739 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.29
+loss=ORHL clipping=norm5 T=336 Epoch=003 train_loss=2.081716 val_MSE=0.557302799 val_MAE=0.368257458 preclip_grad_mean=0.669686 preclip_grad_max=1.164957 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.27
+loss=ORHL clipping=norm5 T=336 Epoch=004 train_loss=2.012959 val_MSE=0.557908357 val_MAE=0.370500287 preclip_grad_mean=0.800546 preclip_grad_max=1.578670 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=20.38
+loss=ORHL clipping=norm5 T=336 Epoch=005 train_loss=1.953875 val_MSE=0.558259408 val_MAE=0.370174226 preclip_grad_mean=0.847243 preclip_grad_max=1.327086 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=20.35
+loss=ORHL clipping=norm5 T=336 Epoch=006 train_loss=1.896086 val_MSE=0.564050363 val_MAE=0.372750440 preclip_grad_mean=0.866077 preclip_grad_max=1.510277 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=20.31
+loss=ORHL clipping=norm5 T=336 Epoch=007 train_loss=1.844256 val_MSE=0.566270516 val_MAE=0.373854608 preclip_grad_mean=0.924763 preclip_grad_max=1.601319 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=20.37
+loss=ORHL clipping=norm5 T=336 Epoch=008 train_loss=1.781204 val_MSE=0.570501767 val_MAE=0.376762727 preclip_grad_mean=0.833565 preclip_grad_max=1.205567 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=20.30
+loss=ORHL clipping=norm5 T=336 Epoch=009 train_loss=1.752554 val_MSE=0.573788000 val_MAE=0.377926609 preclip_grad_mean=0.906906 preclip_grad_max=1.403336 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=20.29
+loss=ORHL clipping=norm5 T=336 Epoch=010 train_loss=1.728324 val_MSE=0.573628511 val_MAE=0.379222981 preclip_grad_mean=0.942037 preclip_grad_max=1.474511 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=20.41
+loss=ORHL clipping=norm5 T=336 Epoch=011 train_loss=1.704365 val_MSE=0.578708288 val_MAE=0.381926945 preclip_grad_mean=0.942865 preclip_grad_max=1.433091 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=20.28
+loss=ORHL clipping=norm5 T=336 Epoch=012 train_loss=1.676085 val_MSE=0.577991330 val_MAE=0.381342430 preclip_grad_mean=0.827464 preclip_grad_max=1.407765 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=20.38
+loss=ORHL clipping=norm5 T=336 Epoch=013 train_loss=1.664118 val_MSE=0.581722864 val_MAE=0.383862959 preclip_grad_mean=0.844145 preclip_grad_max=1.133970 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=20.40
+loss=ORHL clipping=norm5 T=336 Epoch=014 train_loss=1.653026 val_MSE=0.582522942 val_MAE=0.384564759 preclip_grad_mean=0.852828 preclip_grad_max=1.504018 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=20.33
+loss=ORHL clipping=norm5 T=336 Epoch=015 train_loss=1.644400 val_MSE=0.582769621 val_MAE=0.385129507 preclip_grad_mean=0.875855 preclip_grad_max=1.557269 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=20.39
+Early stopping.
+RESULT loss=ORHL clipping=norm5 T=336 | MSE=0.267064789 MAE=0.286420811 status=OK best_epoch=3 epochs=15 seconds=308.20
+STABILITY loss=ORHL clipping=norm5 T=336 | steps=2145 preclip_grad_mean=0.809187 preclip_grad_max=1.601319 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 7/24
+START loss=ORHL clipping=norm5 T=720 | 2026-11-07T17:24:41.199659 | stable_max_loops=2 parameters=796061
+loss=ORHL clipping=norm5 T=720 Epoch=001 train_loss=2.632497 val_MSE=0.718423495 val_MAE=0.465427175 preclip_grad_mean=0.336511 preclip_grad_max=0.730328 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.79
+loss=ORHL clipping=norm5 T=720 Epoch=002 train_loss=2.440738 val_MSE=0.688775316 val_MAE=0.456399310 preclip_grad_mean=0.470249 preclip_grad_max=1.103585 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.64
+loss=ORHL clipping=norm5 T=720 Epoch=003 train_loss=2.345196 val_MSE=0.689903602 val_MAE=0.458301841 preclip_grad_mean=0.687812 preclip_grad_max=1.384140 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=25.68
+loss=ORHL clipping=norm5 T=720 Epoch=004 train_loss=2.266980 val_MSE=0.688372591 val_MAE=0.457024587 preclip_grad_mean=0.754780 preclip_grad_max=1.465734 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.65
+loss=ORHL clipping=norm5 T=720 Epoch=005 train_loss=2.206446 val_MSE=0.682746931 val_MAE=0.452988672 preclip_grad_mean=0.829606 preclip_grad_max=1.279424 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.68
+loss=ORHL clipping=norm5 T=720 Epoch=006 train_loss=2.151823 val_MSE=0.697763184 val_MAE=0.461961315 preclip_grad_mean=0.905133 preclip_grad_max=1.331224 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=25.70
+loss=ORHL clipping=norm5 T=720 Epoch=007 train_loss=2.105307 val_MSE=0.700854778 val_MAE=0.464412717 preclip_grad_mean=0.973812 preclip_grad_max=1.430611 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=2/12 seconds=25.70
+loss=ORHL clipping=norm5 T=720 Epoch=008 train_loss=2.058434 val_MSE=0.703396316 val_MAE=0.465421633 preclip_grad_mean=0.935428 preclip_grad_max=1.356154 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=3/12 seconds=25.66
+loss=ORHL clipping=norm5 T=720 Epoch=009 train_loss=2.018388 val_MSE=0.702351713 val_MAE=0.463347999 preclip_grad_mean=0.987553 preclip_grad_max=1.416566 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=4/12 seconds=25.62
+loss=ORHL clipping=norm5 T=720 Epoch=010 train_loss=1.965695 val_MSE=0.705654066 val_MAE=0.465385010 preclip_grad_mean=0.867601 preclip_grad_max=1.190034 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=5/12 seconds=25.75
+loss=ORHL clipping=norm5 T=720 Epoch=011 train_loss=1.943520 val_MSE=0.701412442 val_MAE=0.463305374 preclip_grad_mean=0.907150 preclip_grad_max=1.310725 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=6/12 seconds=25.59
+loss=ORHL clipping=norm5 T=720 Epoch=012 train_loss=1.923221 val_MSE=0.710721134 val_MAE=0.468383124 preclip_grad_mean=0.905269 preclip_grad_max=1.299955 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=7/12 seconds=25.73
+loss=ORHL clipping=norm5 T=720 Epoch=013 train_loss=1.904587 val_MSE=0.708221948 val_MAE=0.465905161 preclip_grad_mean=0.937935 preclip_grad_max=1.341783 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=8/12 seconds=25.58
+loss=ORHL clipping=norm5 T=720 Epoch=014 train_loss=1.879587 val_MSE=0.708968718 val_MAE=0.466411987 preclip_grad_mean=0.817537 preclip_grad_max=1.108801 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=9/12 seconds=25.75
+loss=ORHL clipping=norm5 T=720 Epoch=015 train_loss=1.869702 val_MSE=0.707079466 val_MAE=0.465183391 preclip_grad_mean=0.847084 preclip_grad_max=1.205189 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=10/12 seconds=25.74
+loss=ORHL clipping=norm5 T=720 Epoch=016 train_loss=1.859409 val_MSE=0.712698396 val_MAE=0.468628764 preclip_grad_mean=0.845932 preclip_grad_max=1.096850 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=11/12 seconds=25.72
+loss=ORHL clipping=norm5 T=720 Epoch=017 train_loss=1.850697 val_MSE=0.712570454 val_MAE=0.468273325 preclip_grad_mean=0.882668 preclip_grad_max=1.325020 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=12/12 seconds=25.77
+Early stopping.
+RESULT loss=ORHL clipping=norm5 T=720 | MSE=0.351841618 MAE=0.342806977 status=OK best_epoch=5 epochs=17 seconds=441.23
+STABILITY loss=ORHL clipping=norm5 T=720 | steps=2397 preclip_grad_mean=0.817180 preclip_grad_max=1.465734 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 8/24
+AVG_STABILITY loss=ORHL clipping=norm5 | preclip_grad_mean=0.851445 preclip_grad_max=2.059968 grad_gt5_fraction=0.000000 failed_horizons=0
+AVG loss=ORHL clipping=norm5 | MSE=0.245376813 MAE=0.266779413
+START loss=MSE clipping=none T=96 | 2026-11-07T17:32:02.614097 | stable_max_loops=2 parameters=514637
+loss=MSE clipping=none T=96 Epoch=001 train_loss=0.517689 val_MSE=0.438740455 val_MAE=0.296168839 preclip_grad_mean=0.224880 preclip_grad_max=0.733607 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.60
+loss=MSE clipping=none T=96 Epoch=002 train_loss=0.446515 val_MSE=0.415493959 val_MAE=0.283631544 preclip_grad_mean=0.207164 preclip_grad_max=0.470758 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.46
+loss=MSE clipping=none T=96 Epoch=003 train_loss=0.423653 val_MSE=0.406712043 val_MAE=0.274828868 preclip_grad_mean=0.217479 preclip_grad_max=0.698058 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.62
+loss=MSE clipping=none T=96 Epoch=004 train_loss=0.403771 val_MSE=0.400575455 val_MAE=0.268153894 preclip_grad_mean=0.215191 preclip_grad_max=0.514572 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.56
+loss=MSE clipping=none T=96 Epoch=005 train_loss=0.392118 val_MSE=0.402465130 val_MAE=0.271728005 preclip_grad_mean=0.233585 preclip_grad_max=0.503285 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.66
+loss=MSE clipping=none T=96 Epoch=006 train_loss=0.380908 val_MSE=0.398327074 val_MAE=0.265455709 preclip_grad_mean=0.236606 preclip_grad_max=0.466000 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.93
+loss=MSE clipping=none T=96 Epoch=007 train_loss=0.371576 val_MSE=0.401159640 val_MAE=0.268738300 preclip_grad_mean=0.212792 preclip_grad_max=0.380162 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.72
+loss=MSE clipping=none T=96 Epoch=008 train_loss=0.364576 val_MSE=0.404884964 val_MAE=0.270905414 preclip_grad_mean=0.217600 preclip_grad_max=0.450352 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=16.70
+loss=MSE clipping=none T=96 Epoch=009 train_loss=0.358809 val_MSE=0.402490459 val_MAE=0.270334456 preclip_grad_mean=0.230804 preclip_grad_max=0.475816 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=3/12 seconds=17.15
+loss=MSE clipping=none T=96 Epoch=010 train_loss=0.349830 val_MSE=0.406152712 val_MAE=0.271038007 preclip_grad_mean=0.205439 preclip_grad_max=0.521013 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=4/12 seconds=16.91
+loss=MSE clipping=none T=96 Epoch=011 train_loss=0.341862 val_MSE=0.406480478 val_MAE=0.269571589 preclip_grad_mean=0.188319 preclip_grad_max=0.519984 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=5/12 seconds=16.75
+loss=MSE clipping=none T=96 Epoch=012 train_loss=0.338258 val_MSE=0.415019576 val_MAE=0.272162939 preclip_grad_mean=0.183111 preclip_grad_max=0.277712 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=6/12 seconds=16.63
+loss=MSE clipping=none T=96 Epoch=013 train_loss=0.335497 val_MSE=0.410074444 val_MAE=0.272255684 preclip_grad_mean=0.191460 preclip_grad_max=0.303194 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=7/12 seconds=16.72
+loss=MSE clipping=none T=96 Epoch=014 train_loss=0.332096 val_MSE=0.408963182 val_MAE=0.270062479 preclip_grad_mean=0.204534 preclip_grad_max=0.381199 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=8/12 seconds=16.72
+loss=MSE clipping=none T=96 Epoch=015 train_loss=0.326592 val_MSE=0.414830351 val_MAE=0.274626055 preclip_grad_mean=0.166390 preclip_grad_max=0.307484 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=9/12 seconds=16.65
+loss=MSE clipping=none T=96 Epoch=016 train_loss=0.325113 val_MSE=0.412999491 val_MAE=0.273339646 preclip_grad_mean=0.170404 preclip_grad_max=0.298972 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=10/12 seconds=16.55
+loss=MSE clipping=none T=96 Epoch=017 train_loss=0.324083 val_MSE=0.417224092 val_MAE=0.273714656 preclip_grad_mean=0.174491 preclip_grad_max=0.471914 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=11/12 seconds=16.77
+loss=MSE clipping=none T=96 Epoch=018 train_loss=0.323985 val_MSE=0.413864952 val_MAE=0.274229498 preclip_grad_mean=0.178220 preclip_grad_max=0.776022 grad_gt5_fraction=0.000000 steps=144 lr=6.25e-05 ES=12/12 seconds=16.72
+Early stopping.
+RESULT loss=MSE clipping=none T=96 | MSE=0.159770360 MAE=0.207167098 status=OK best_epoch=6 epochs=18 seconds=302.92
+STABILITY loss=MSE clipping=none T=96 | steps=2592 preclip_grad_mean=0.203248 preclip_grad_max=0.776022 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 9/24
+START loss=MSE clipping=none T=192 | 2026-11-07T17:37:05.720880 | stable_max_loops=2 parameters=557933
+loss=MSE clipping=none T=192 Epoch=001 train_loss=0.585731 val_MSE=0.511446446 val_MAE=0.342378747 preclip_grad_mean=0.193600 preclip_grad_max=0.424508 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.89
+loss=MSE clipping=none T=192 Epoch=002 train_loss=0.515216 val_MSE=0.490527755 val_MAE=0.333560558 preclip_grad_mean=0.171615 preclip_grad_max=0.472295 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.92
+loss=MSE clipping=none T=192 Epoch=003 train_loss=0.489379 val_MSE=0.478401982 val_MAE=0.324041914 preclip_grad_mean=0.184182 preclip_grad_max=0.355609 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.87
+loss=MSE clipping=none T=192 Epoch=004 train_loss=0.466938 val_MSE=0.475856393 val_MAE=0.327316063 preclip_grad_mean=0.207271 preclip_grad_max=0.405658 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.82
+loss=MSE clipping=none T=192 Epoch=005 train_loss=0.450197 val_MSE=0.471228551 val_MAE=0.322278847 preclip_grad_mean=0.205643 preclip_grad_max=0.332285 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.78
+loss=MSE clipping=none T=192 Epoch=006 train_loss=0.436244 val_MSE=0.476456392 val_MAE=0.325714725 preclip_grad_mean=0.213454 preclip_grad_max=0.333899 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=17.89
+loss=MSE clipping=none T=192 Epoch=007 train_loss=0.423642 val_MSE=0.474546866 val_MAE=0.323736023 preclip_grad_mean=0.208006 preclip_grad_max=0.332056 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=17.81
+loss=MSE clipping=none T=192 Epoch=008 train_loss=0.413913 val_MSE=0.475474858 val_MAE=0.325695029 preclip_grad_mean=0.223580 preclip_grad_max=0.460550 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=17.84
+loss=MSE clipping=none T=192 Epoch=009 train_loss=0.403456 val_MSE=0.476642685 val_MAE=0.322607826 preclip_grad_mean=0.223431 preclip_grad_max=0.357798 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=17.93
+loss=MSE clipping=none T=192 Epoch=010 train_loss=0.391624 val_MSE=0.478264201 val_MAE=0.325100856 preclip_grad_mean=0.186159 preclip_grad_max=0.285328 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=17.80
+loss=MSE clipping=none T=192 Epoch=011 train_loss=0.386402 val_MSE=0.474477680 val_MAE=0.320832679 preclip_grad_mean=0.193324 preclip_grad_max=0.275486 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=17.86
+loss=MSE clipping=none T=192 Epoch=012 train_loss=0.381975 val_MSE=0.480949701 val_MAE=0.326316201 preclip_grad_mean=0.197988 preclip_grad_max=0.272799 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=17.78
+loss=MSE clipping=none T=192 Epoch=013 train_loss=0.377829 val_MSE=0.483119091 val_MAE=0.327646461 preclip_grad_mean=0.200720 preclip_grad_max=0.292497 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=17.92
+loss=MSE clipping=none T=192 Epoch=014 train_loss=0.372279 val_MSE=0.478889216 val_MAE=0.325979311 preclip_grad_mean=0.179340 preclip_grad_max=0.285704 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=17.81
+loss=MSE clipping=none T=192 Epoch=015 train_loss=0.370265 val_MSE=0.482450763 val_MAE=0.327243170 preclip_grad_mean=0.178163 preclip_grad_max=0.240039 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=17.80
+loss=MSE clipping=none T=192 Epoch=016 train_loss=0.368088 val_MSE=0.485324092 val_MAE=0.328646751 preclip_grad_mean=0.181363 preclip_grad_max=0.257539 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=17.88
+loss=MSE clipping=none T=192 Epoch=017 train_loss=0.366065 val_MSE=0.485460736 val_MAE=0.329635710 preclip_grad_mean=0.177473 preclip_grad_max=0.244748 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=17.88
+Early stopping.
+RESULT loss=MSE clipping=none T=192 | MSE=0.211620279 MAE=0.251538004 status=OK best_epoch=5 epochs=17 seconds=305.92
+STABILITY loss=MSE clipping=none T=192 | steps=2431 preclip_grad_mean=0.195607 preclip_grad_max=0.472295 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 10/24
+START loss=MSE clipping=none T=336 | 2026-11-07T17:42:11.821311 | stable_max_loops=2 parameters=622877
+loss=MSE clipping=none T=336 Epoch=001 train_loss=0.654653 val_MSE=0.596742863 val_MAE=0.394890696 preclip_grad_mean=0.168108 preclip_grad_max=0.442097 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.69
+loss=MSE clipping=none T=336 Epoch=002 train_loss=0.585777 val_MSE=0.580309899 val_MAE=0.393046516 preclip_grad_mean=0.161979 preclip_grad_max=0.348549 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.05
+loss=MSE clipping=none T=336 Epoch=003 train_loss=0.554501 val_MSE=0.566866270 val_MAE=0.385998828 preclip_grad_mean=0.194088 preclip_grad_max=0.300880 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.62
+loss=MSE clipping=none T=336 Epoch=004 train_loss=0.528935 val_MSE=0.567060557 val_MAE=0.384889807 preclip_grad_mean=0.213471 preclip_grad_max=0.561638 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=19.49
+loss=MSE clipping=none T=336 Epoch=005 train_loss=0.509018 val_MSE=0.571780076 val_MAE=0.389379586 preclip_grad_mean=0.224445 preclip_grad_max=0.378980 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=19.62
+loss=MSE clipping=none T=336 Epoch=006 train_loss=0.493259 val_MSE=0.573899575 val_MAE=0.390358740 preclip_grad_mean=0.231807 preclip_grad_max=0.405466 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=19.56
+loss=MSE clipping=none T=336 Epoch=007 train_loss=0.478123 val_MSE=0.573943136 val_MAE=0.389623451 preclip_grad_mean=0.236665 preclip_grad_max=0.348325 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=19.56
+loss=MSE clipping=none T=336 Epoch=008 train_loss=0.462617 val_MSE=0.578249115 val_MAE=0.391256846 preclip_grad_mean=0.217913 preclip_grad_max=0.334515 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=19.59
+loss=MSE clipping=none T=336 Epoch=009 train_loss=0.454565 val_MSE=0.584303268 val_MAE=0.393733923 preclip_grad_mean=0.225319 preclip_grad_max=0.362658 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=19.49
+loss=MSE clipping=none T=336 Epoch=010 train_loss=0.448379 val_MSE=0.593055392 val_MAE=0.399624965 preclip_grad_mean=0.237486 preclip_grad_max=0.328501 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=19.52
+loss=MSE clipping=none T=336 Epoch=011 train_loss=0.442755 val_MSE=0.601855098 val_MAE=0.402916069 preclip_grad_mean=0.260411 preclip_grad_max=0.781191 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=19.65
+loss=MSE clipping=none T=336 Epoch=012 train_loss=0.435746 val_MSE=0.596521682 val_MAE=0.402625377 preclip_grad_mean=0.208371 preclip_grad_max=0.292238 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=19.65
+loss=MSE clipping=none T=336 Epoch=013 train_loss=0.431706 val_MSE=0.599051122 val_MAE=0.403207612 preclip_grad_mean=0.211656 preclip_grad_max=0.318922 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=19.52
+loss=MSE clipping=none T=336 Epoch=014 train_loss=0.429242 val_MSE=0.600147171 val_MAE=0.403282526 preclip_grad_mean=0.219713 preclip_grad_max=0.340899 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=19.66
+loss=MSE clipping=none T=336 Epoch=015 train_loss=0.426010 val_MSE=0.605866786 val_MAE=0.407166031 preclip_grad_mean=0.217522 preclip_grad_max=0.304511 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=19.51
+Early stopping.
+RESULT loss=MSE clipping=none T=336 | MSE=0.267334601 MAE=0.294663637 status=OK best_epoch=3 epochs=15 seconds=297.24
+STABILITY loss=MSE clipping=none T=336 | steps=2145 preclip_grad_mean=0.215264 preclip_grad_max=0.781191 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 11/24
+START loss=MSE clipping=none T=720 | 2026-11-07T17:47:09.271929 | stable_max_loops=2 parameters=796061
+loss=MSE clipping=none T=720 Epoch=001 train_loss=0.742280 val_MSE=0.726048539 val_MAE=0.476127200 preclip_grad_mean=0.154174 preclip_grad_max=0.409008 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.52
+loss=MSE clipping=none T=720 Epoch=002 train_loss=0.667835 val_MSE=0.703034211 val_MAE=0.471110698 preclip_grad_mean=0.155070 preclip_grad_max=0.385021 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.60
+loss=MSE clipping=none T=720 Epoch=003 train_loss=0.631524 val_MSE=0.693201625 val_MAE=0.468244006 preclip_grad_mean=0.196500 preclip_grad_max=0.333263 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.36
+loss=MSE clipping=none T=720 Epoch=004 train_loss=0.607319 val_MSE=0.694198870 val_MAE=0.469203791 preclip_grad_mean=0.229770 preclip_grad_max=0.374712 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=24.43
+loss=MSE clipping=none T=720 Epoch=005 train_loss=0.586610 val_MSE=0.693151115 val_MAE=0.470173505 preclip_grad_mean=0.244811 preclip_grad_max=0.514579 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.38
+loss=MSE clipping=none T=720 Epoch=006 train_loss=0.567693 val_MSE=0.707686147 val_MAE=0.477635863 preclip_grad_mean=0.254094 preclip_grad_max=0.460114 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=24.44
+loss=MSE clipping=none T=720 Epoch=007 train_loss=0.550343 val_MSE=0.707121435 val_MAE=0.478900789 preclip_grad_mean=0.266079 preclip_grad_max=0.415826 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=2/12 seconds=24.43
+loss=MSE clipping=none T=720 Epoch=008 train_loss=0.533335 val_MSE=0.708682790 val_MAE=0.480186598 preclip_grad_mean=0.238160 preclip_grad_max=0.407140 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=3/12 seconds=24.38
+loss=MSE clipping=none T=720 Epoch=009 train_loss=0.524989 val_MSE=0.715843948 val_MAE=0.483537274 preclip_grad_mean=0.260074 preclip_grad_max=0.378017 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=4/12 seconds=24.49
+loss=MSE clipping=none T=720 Epoch=010 train_loss=0.517050 val_MSE=0.716399436 val_MAE=0.484378174 preclip_grad_mean=0.256274 preclip_grad_max=0.401256 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=5/12 seconds=24.46
+loss=MSE clipping=none T=720 Epoch=011 train_loss=0.510411 val_MSE=0.721850735 val_MAE=0.486766442 preclip_grad_mean=0.266010 preclip_grad_max=0.441527 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=6/12 seconds=24.35
+loss=MSE clipping=none T=720 Epoch=012 train_loss=0.502031 val_MSE=0.725140660 val_MAE=0.487296146 preclip_grad_mean=0.229341 preclip_grad_max=0.329234 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=7/12 seconds=24.45
+loss=MSE clipping=none T=720 Epoch=013 train_loss=0.498336 val_MSE=0.731349166 val_MAE=0.491292830 preclip_grad_mean=0.237923 preclip_grad_max=0.378803 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=8/12 seconds=24.36
+loss=MSE clipping=none T=720 Epoch=014 train_loss=0.494631 val_MSE=0.735001781 val_MAE=0.491417138 preclip_grad_mean=0.239774 preclip_grad_max=0.378112 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=9/12 seconds=24.51
+loss=MSE clipping=none T=720 Epoch=015 train_loss=0.491456 val_MSE=0.738736868 val_MAE=0.492734108 preclip_grad_mean=0.236180 preclip_grad_max=0.340109 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=10/12 seconds=24.39
+loss=MSE clipping=none T=720 Epoch=016 train_loss=0.487463 val_MSE=0.738021684 val_MAE=0.493105937 preclip_grad_mean=0.214181 preclip_grad_max=0.323745 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=11/12 seconds=24.44
+loss=MSE clipping=none T=720 Epoch=017 train_loss=0.486048 val_MSE=0.740229532 val_MAE=0.493783562 preclip_grad_mean=0.217915 preclip_grad_max=0.304776 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=12/12 seconds=24.53
+Early stopping.
+RESULT loss=MSE clipping=none T=720 | MSE=0.364767604 MAE=0.358337091 status=OK best_epoch=5 epochs=17 seconds=419.99
+STABILITY loss=MSE clipping=none T=720 | steps=2397 preclip_grad_mean=0.229196 preclip_grad_max=0.514579 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 12/24
+AVG_STABILITY loss=MSE clipping=none | preclip_grad_mean=0.210503 preclip_grad_max=0.781191 grad_gt5_fraction=0.000000 failed_horizons=0
+AVG loss=MSE clipping=none | MSE=0.250873211 MAE=0.277926457
+START loss=MSE clipping=norm5 T=96 | 2026-11-07T17:54:09.486722 | stable_max_loops=2 parameters=514637
+loss=MSE clipping=norm5 T=96 Epoch=001 train_loss=0.517689 val_MSE=0.438740455 val_MAE=0.296168839 preclip_grad_mean=0.224880 preclip_grad_max=0.733607 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.92
+loss=MSE clipping=norm5 T=96 Epoch=002 train_loss=0.446515 val_MSE=0.415493959 val_MAE=0.283631544 preclip_grad_mean=0.207164 preclip_grad_max=0.470758 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.04
+loss=MSE clipping=norm5 T=96 Epoch=003 train_loss=0.423653 val_MSE=0.406712043 val_MAE=0.274828868 preclip_grad_mean=0.217479 preclip_grad_max=0.698058 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.90
+loss=MSE clipping=norm5 T=96 Epoch=004 train_loss=0.403771 val_MSE=0.400575455 val_MAE=0.268153894 preclip_grad_mean=0.215191 preclip_grad_max=0.514572 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.86
+loss=MSE clipping=norm5 T=96 Epoch=005 train_loss=0.392118 val_MSE=0.402465130 val_MAE=0.271728005 preclip_grad_mean=0.233585 preclip_grad_max=0.503285 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=17.00
+loss=MSE clipping=norm5 T=96 Epoch=006 train_loss=0.380908 val_MSE=0.398327074 val_MAE=0.265455709 preclip_grad_mean=0.236606 preclip_grad_max=0.466000 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.01
+loss=MSE clipping=norm5 T=96 Epoch=007 train_loss=0.371576 val_MSE=0.401159640 val_MAE=0.268738300 preclip_grad_mean=0.212792 preclip_grad_max=0.380162 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.94
+loss=MSE clipping=norm5 T=96 Epoch=008 train_loss=0.364576 val_MSE=0.404884964 val_MAE=0.270905414 preclip_grad_mean=0.217600 preclip_grad_max=0.450352 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=16.87
+loss=MSE clipping=norm5 T=96 Epoch=009 train_loss=0.358809 val_MSE=0.402490459 val_MAE=0.270334456 preclip_grad_mean=0.230804 preclip_grad_max=0.475816 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=3/12 seconds=17.02
+loss=MSE clipping=norm5 T=96 Epoch=010 train_loss=0.349830 val_MSE=0.406152712 val_MAE=0.271038007 preclip_grad_mean=0.205439 preclip_grad_max=0.521013 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=4/12 seconds=16.97
+loss=MSE clipping=norm5 T=96 Epoch=011 train_loss=0.341862 val_MSE=0.406480478 val_MAE=0.269571589 preclip_grad_mean=0.188319 preclip_grad_max=0.519984 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=5/12 seconds=17.00
+loss=MSE clipping=norm5 T=96 Epoch=012 train_loss=0.338258 val_MSE=0.415019576 val_MAE=0.272162939 preclip_grad_mean=0.183111 preclip_grad_max=0.277712 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=6/12 seconds=16.83
+loss=MSE clipping=norm5 T=96 Epoch=013 train_loss=0.335497 val_MSE=0.410074444 val_MAE=0.272255684 preclip_grad_mean=0.191460 preclip_grad_max=0.303194 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=7/12 seconds=17.04
+loss=MSE clipping=norm5 T=96 Epoch=014 train_loss=0.332096 val_MSE=0.408963182 val_MAE=0.270062479 preclip_grad_mean=0.204534 preclip_grad_max=0.381199 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=8/12 seconds=16.95
+loss=MSE clipping=norm5 T=96 Epoch=015 train_loss=0.326592 val_MSE=0.414830351 val_MAE=0.274626055 preclip_grad_mean=0.166390 preclip_grad_max=0.307484 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=9/12 seconds=16.89
+loss=MSE clipping=norm5 T=96 Epoch=016 train_loss=0.325113 val_MSE=0.412999491 val_MAE=0.273339646 preclip_grad_mean=0.170404 preclip_grad_max=0.298972 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=10/12 seconds=16.97
+loss=MSE clipping=norm5 T=96 Epoch=017 train_loss=0.324083 val_MSE=0.417224092 val_MAE=0.273714656 preclip_grad_mean=0.174491 preclip_grad_max=0.471914 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=11/12 seconds=17.16
+loss=MSE clipping=norm5 T=96 Epoch=018 train_loss=0.323985 val_MSE=0.413864952 val_MAE=0.274229498 preclip_grad_mean=0.178220 preclip_grad_max=0.776022 grad_gt5_fraction=0.000000 steps=144 lr=6.25e-05 ES=12/12 seconds=16.95
+Early stopping.
+RESULT loss=MSE clipping=norm5 T=96 | MSE=0.159770360 MAE=0.207167098 status=OK best_epoch=6 epochs=18 seconds=307.40
+STABILITY loss=MSE clipping=norm5 T=96 | steps=2592 preclip_grad_mean=0.203248 preclip_grad_max=0.776022 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 13/24
+START loss=MSE clipping=norm5 T=192 | 2026-11-07T17:59:17.075958 | stable_max_loops=2 parameters=557933
+loss=MSE clipping=norm5 T=192 Epoch=001 train_loss=0.585731 val_MSE=0.511446446 val_MAE=0.342378747 preclip_grad_mean=0.193600 preclip_grad_max=0.424508 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.15
+loss=MSE clipping=norm5 T=192 Epoch=002 train_loss=0.515216 val_MSE=0.490527755 val_MAE=0.333560558 preclip_grad_mean=0.171615 preclip_grad_max=0.472295 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.20
+loss=MSE clipping=norm5 T=192 Epoch=003 train_loss=0.489379 val_MSE=0.478401982 val_MAE=0.324041914 preclip_grad_mean=0.184182 preclip_grad_max=0.355609 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.17
+loss=MSE clipping=norm5 T=192 Epoch=004 train_loss=0.466938 val_MSE=0.475856393 val_MAE=0.327316063 preclip_grad_mean=0.207271 preclip_grad_max=0.405658 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.15
+loss=MSE clipping=norm5 T=192 Epoch=005 train_loss=0.450197 val_MSE=0.471228551 val_MAE=0.322278847 preclip_grad_mean=0.205643 preclip_grad_max=0.332285 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.20
+loss=MSE clipping=norm5 T=192 Epoch=006 train_loss=0.436244 val_MSE=0.476456392 val_MAE=0.325714725 preclip_grad_mean=0.213454 preclip_grad_max=0.333899 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=18.17
+loss=MSE clipping=norm5 T=192 Epoch=007 train_loss=0.423642 val_MSE=0.474546866 val_MAE=0.323736023 preclip_grad_mean=0.208006 preclip_grad_max=0.332056 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=18.20
+loss=MSE clipping=norm5 T=192 Epoch=008 train_loss=0.413913 val_MSE=0.475474858 val_MAE=0.325695029 preclip_grad_mean=0.223580 preclip_grad_max=0.460550 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=18.31
+loss=MSE clipping=norm5 T=192 Epoch=009 train_loss=0.403456 val_MSE=0.476642685 val_MAE=0.322607826 preclip_grad_mean=0.223431 preclip_grad_max=0.357798 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=18.27
+loss=MSE clipping=norm5 T=192 Epoch=010 train_loss=0.391624 val_MSE=0.478264201 val_MAE=0.325100856 preclip_grad_mean=0.186159 preclip_grad_max=0.285328 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=18.21
+loss=MSE clipping=norm5 T=192 Epoch=011 train_loss=0.386402 val_MSE=0.474477680 val_MAE=0.320832679 preclip_grad_mean=0.193324 preclip_grad_max=0.275486 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=18.18
+loss=MSE clipping=norm5 T=192 Epoch=012 train_loss=0.381975 val_MSE=0.480949701 val_MAE=0.326316201 preclip_grad_mean=0.197988 preclip_grad_max=0.272799 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=18.37
+loss=MSE clipping=norm5 T=192 Epoch=013 train_loss=0.377829 val_MSE=0.483119091 val_MAE=0.327646461 preclip_grad_mean=0.200720 preclip_grad_max=0.292497 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=18.25
+loss=MSE clipping=norm5 T=192 Epoch=014 train_loss=0.372279 val_MSE=0.478889216 val_MAE=0.325979311 preclip_grad_mean=0.179340 preclip_grad_max=0.285704 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=18.20
+loss=MSE clipping=norm5 T=192 Epoch=015 train_loss=0.370265 val_MSE=0.482450763 val_MAE=0.327243170 preclip_grad_mean=0.178163 preclip_grad_max=0.240039 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=18.25
+loss=MSE clipping=norm5 T=192 Epoch=016 train_loss=0.368088 val_MSE=0.485324092 val_MAE=0.328646751 preclip_grad_mean=0.181363 preclip_grad_max=0.257539 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=18.18
+loss=MSE clipping=norm5 T=192 Epoch=017 train_loss=0.366065 val_MSE=0.485460736 val_MAE=0.329635710 preclip_grad_mean=0.177473 preclip_grad_max=0.244748 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=18.24
+Early stopping.
+RESULT loss=MSE clipping=norm5 T=192 | MSE=0.211620279 MAE=0.251538004 status=OK best_epoch=5 epochs=17 seconds=312.14
+STABILITY loss=MSE clipping=norm5 T=192 | steps=2431 preclip_grad_mean=0.195607 preclip_grad_max=0.472295 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 14/24
+START loss=MSE clipping=norm5 T=336 | 2026-11-07T18:04:29.423118 | stable_max_loops=2 parameters=622877
+loss=MSE clipping=norm5 T=336 Epoch=001 train_loss=0.654653 val_MSE=0.596742863 val_MAE=0.394890696 preclip_grad_mean=0.168108 preclip_grad_max=0.442097 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.02
+loss=MSE clipping=norm5 T=336 Epoch=002 train_loss=0.585777 val_MSE=0.580309899 val_MAE=0.393046516 preclip_grad_mean=0.161979 preclip_grad_max=0.348549 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.99
+loss=MSE clipping=norm5 T=336 Epoch=003 train_loss=0.554501 val_MSE=0.566866270 val_MAE=0.385998828 preclip_grad_mean=0.194088 preclip_grad_max=0.300880 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.91
+loss=MSE clipping=norm5 T=336 Epoch=004 train_loss=0.528935 val_MSE=0.567060557 val_MAE=0.384889807 preclip_grad_mean=0.213471 preclip_grad_max=0.561638 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=19.99
+loss=MSE clipping=norm5 T=336 Epoch=005 train_loss=0.509018 val_MSE=0.571780076 val_MAE=0.389379586 preclip_grad_mean=0.224445 preclip_grad_max=0.378980 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=19.91
+loss=MSE clipping=norm5 T=336 Epoch=006 train_loss=0.493259 val_MSE=0.573899575 val_MAE=0.390358740 preclip_grad_mean=0.231807 preclip_grad_max=0.405466 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=19.97
+loss=MSE clipping=norm5 T=336 Epoch=007 train_loss=0.478123 val_MSE=0.573943136 val_MAE=0.389623451 preclip_grad_mean=0.236665 preclip_grad_max=0.348325 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=20.01
+loss=MSE clipping=norm5 T=336 Epoch=008 train_loss=0.462617 val_MSE=0.578249115 val_MAE=0.391256846 preclip_grad_mean=0.217913 preclip_grad_max=0.334515 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=19.94
+loss=MSE clipping=norm5 T=336 Epoch=009 train_loss=0.454565 val_MSE=0.584303268 val_MAE=0.393733923 preclip_grad_mean=0.225319 preclip_grad_max=0.362658 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=19.91
+loss=MSE clipping=norm5 T=336 Epoch=010 train_loss=0.448379 val_MSE=0.593055392 val_MAE=0.399624965 preclip_grad_mean=0.237486 preclip_grad_max=0.328501 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=20.08
+loss=MSE clipping=norm5 T=336 Epoch=011 train_loss=0.442755 val_MSE=0.601855098 val_MAE=0.402916069 preclip_grad_mean=0.260411 preclip_grad_max=0.781191 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=19.97
+loss=MSE clipping=norm5 T=336 Epoch=012 train_loss=0.435746 val_MSE=0.596521682 val_MAE=0.402625377 preclip_grad_mean=0.208371 preclip_grad_max=0.292238 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=19.93
+loss=MSE clipping=norm5 T=336 Epoch=013 train_loss=0.431706 val_MSE=0.599051122 val_MAE=0.403207612 preclip_grad_mean=0.211656 preclip_grad_max=0.318922 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=20.10
+loss=MSE clipping=norm5 T=336 Epoch=014 train_loss=0.429242 val_MSE=0.600147171 val_MAE=0.403282526 preclip_grad_mean=0.219713 preclip_grad_max=0.340899 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=19.97
+loss=MSE clipping=norm5 T=336 Epoch=015 train_loss=0.426010 val_MSE=0.605866786 val_MAE=0.407166031 preclip_grad_mean=0.217522 preclip_grad_max=0.304511 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=20.06
+Early stopping.
+RESULT loss=MSE clipping=norm5 T=336 | MSE=0.267334601 MAE=0.294663637 status=OK best_epoch=3 epochs=15 seconds=302.76
+STABILITY loss=MSE clipping=norm5 T=336 | steps=2145 preclip_grad_mean=0.215264 preclip_grad_max=0.781191 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 15/24
+START loss=MSE clipping=norm5 T=720 | 2026-11-07T18:09:32.362409 | stable_max_loops=2 parameters=796061
+loss=MSE clipping=norm5 T=720 Epoch=001 train_loss=0.742280 val_MSE=0.726048539 val_MAE=0.476127200 preclip_grad_mean=0.154174 preclip_grad_max=0.409008 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.93
+loss=MSE clipping=norm5 T=720 Epoch=002 train_loss=0.667835 val_MSE=0.703034211 val_MAE=0.471110698 preclip_grad_mean=0.155070 preclip_grad_max=0.385021 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.84
+loss=MSE clipping=norm5 T=720 Epoch=003 train_loss=0.631524 val_MSE=0.693201625 val_MAE=0.468244006 preclip_grad_mean=0.196500 preclip_grad_max=0.333263 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.91
+loss=MSE clipping=norm5 T=720 Epoch=004 train_loss=0.607319 val_MSE=0.694198870 val_MAE=0.469203791 preclip_grad_mean=0.229770 preclip_grad_max=0.374712 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=24.80
+loss=MSE clipping=norm5 T=720 Epoch=005 train_loss=0.586610 val_MSE=0.693151115 val_MAE=0.470173505 preclip_grad_mean=0.244811 preclip_grad_max=0.514579 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.77
+loss=MSE clipping=norm5 T=720 Epoch=006 train_loss=0.567693 val_MSE=0.707686147 val_MAE=0.477635863 preclip_grad_mean=0.254094 preclip_grad_max=0.460114 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=24.95
+loss=MSE clipping=norm5 T=720 Epoch=007 train_loss=0.550343 val_MSE=0.707121435 val_MAE=0.478900789 preclip_grad_mean=0.266079 preclip_grad_max=0.415826 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=2/12 seconds=24.85
+loss=MSE clipping=norm5 T=720 Epoch=008 train_loss=0.533335 val_MSE=0.708682790 val_MAE=0.480186598 preclip_grad_mean=0.238160 preclip_grad_max=0.407140 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=3/12 seconds=24.86
+loss=MSE clipping=norm5 T=720 Epoch=009 train_loss=0.524989 val_MSE=0.715843948 val_MAE=0.483537274 preclip_grad_mean=0.260074 preclip_grad_max=0.378017 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=4/12 seconds=24.77
+loss=MSE clipping=norm5 T=720 Epoch=010 train_loss=0.517050 val_MSE=0.716399436 val_MAE=0.484378174 preclip_grad_mean=0.256274 preclip_grad_max=0.401256 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=5/12 seconds=24.84
+loss=MSE clipping=norm5 T=720 Epoch=011 train_loss=0.510411 val_MSE=0.721850735 val_MAE=0.486766442 preclip_grad_mean=0.266010 preclip_grad_max=0.441527 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=6/12 seconds=24.90
+loss=MSE clipping=norm5 T=720 Epoch=012 train_loss=0.502031 val_MSE=0.725140660 val_MAE=0.487296146 preclip_grad_mean=0.229341 preclip_grad_max=0.329234 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=7/12 seconds=24.83
+loss=MSE clipping=norm5 T=720 Epoch=013 train_loss=0.498336 val_MSE=0.731349166 val_MAE=0.491292830 preclip_grad_mean=0.237923 preclip_grad_max=0.378803 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=8/12 seconds=24.92
+loss=MSE clipping=norm5 T=720 Epoch=014 train_loss=0.494631 val_MSE=0.735001781 val_MAE=0.491417138 preclip_grad_mean=0.239774 preclip_grad_max=0.378112 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=9/12 seconds=24.90
+loss=MSE clipping=norm5 T=720 Epoch=015 train_loss=0.491456 val_MSE=0.738736868 val_MAE=0.492734108 preclip_grad_mean=0.236180 preclip_grad_max=0.340109 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=10/12 seconds=24.95
+loss=MSE clipping=norm5 T=720 Epoch=016 train_loss=0.487463 val_MSE=0.738021684 val_MAE=0.493105937 preclip_grad_mean=0.214181 preclip_grad_max=0.323745 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=11/12 seconds=24.80
+loss=MSE clipping=norm5 T=720 Epoch=017 train_loss=0.486048 val_MSE=0.740229532 val_MAE=0.493783562 preclip_grad_mean=0.217915 preclip_grad_max=0.304776 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=12/12 seconds=24.84
+Early stopping.
+RESULT loss=MSE clipping=norm5 T=720 | MSE=0.364767604 MAE=0.358337091 status=OK best_epoch=5 epochs=17 seconds=427.13
+STABILITY loss=MSE clipping=norm5 T=720 | steps=2397 preclip_grad_mean=0.229196 preclip_grad_max=0.514579 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 16/24
+AVG_STABILITY loss=MSE clipping=norm5 | preclip_grad_mean=0.210503 preclip_grad_max=0.781191 grad_gt5_fraction=0.000000 failed_horizons=0
+AVG loss=MSE clipping=norm5 | MSE=0.250873211 MAE=0.277926457
+START loss=MAE clipping=none T=96 | 2026-11-07T18:16:39.674227 | stable_max_loops=2 parameters=514637
+loss=MAE clipping=none T=96 Epoch=001 train_loss=0.340375 val_MSE=0.431079019 val_MAE=0.280755817 preclip_grad_mean=0.134344 preclip_grad_max=0.365394 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.73
+loss=MAE clipping=none T=96 Epoch=002 train_loss=0.291547 val_MSE=0.410900096 val_MAE=0.264309397 preclip_grad_mean=0.171363 preclip_grad_max=0.374981 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.62
+loss=MAE clipping=none T=96 Epoch=003 train_loss=0.275756 val_MSE=0.405533234 val_MAE=0.260009640 preclip_grad_mean=0.175280 preclip_grad_max=0.298905 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.53
+loss=MAE clipping=none T=96 Epoch=004 train_loss=0.266961 val_MSE=0.401630540 val_MAE=0.255104166 preclip_grad_mean=0.170735 preclip_grad_max=0.362889 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.63
+loss=MAE clipping=none T=96 Epoch=005 train_loss=0.260654 val_MSE=0.403974049 val_MAE=0.257949522 preclip_grad_mean=0.185708 preclip_grad_max=0.364357 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.65
+loss=MAE clipping=none T=96 Epoch=006 train_loss=0.254567 val_MSE=0.395936536 val_MAE=0.252929781 preclip_grad_mean=0.174447 preclip_grad_max=0.312496 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.61
+loss=MAE clipping=none T=96 Epoch=007 train_loss=0.248890 val_MSE=0.395348785 val_MAE=0.256043787 preclip_grad_mean=0.178192 preclip_grad_max=0.347130 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.60
+loss=MAE clipping=none T=96 Epoch=008 train_loss=0.243493 val_MSE=0.396819829 val_MAE=0.255953126 preclip_grad_mean=0.185243 preclip_grad_max=0.319660 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.65
+loss=MAE clipping=none T=96 Epoch=009 train_loss=0.238622 val_MSE=0.394781273 val_MAE=0.255356554 preclip_grad_mean=0.179532 preclip_grad_max=0.266487 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.60
+loss=MAE clipping=none T=96 Epoch=010 train_loss=0.233726 val_MSE=0.391965757 val_MAE=0.252022389 preclip_grad_mean=0.178989 preclip_grad_max=0.347550 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.56
+loss=MAE clipping=none T=96 Epoch=011 train_loss=0.229508 val_MSE=0.394834886 val_MAE=0.255440186 preclip_grad_mean=0.182786 preclip_grad_max=0.285382 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=16.70
+loss=MAE clipping=none T=96 Epoch=012 train_loss=0.224922 val_MSE=0.396437737 val_MAE=0.257492464 preclip_grad_mean=0.172860 preclip_grad_max=0.246733 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=16.65
+loss=MAE clipping=none T=96 Epoch=013 train_loss=0.221325 val_MSE=0.400101833 val_MAE=0.259994833 preclip_grad_mean=0.180743 preclip_grad_max=0.315956 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=3/12 seconds=16.61
+loss=MAE clipping=none T=96 Epoch=014 train_loss=0.217366 val_MSE=0.397889954 val_MAE=0.256801344 preclip_grad_mean=0.183202 preclip_grad_max=0.344560 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=4/12 seconds=16.57
+loss=MAE clipping=none T=96 Epoch=015 train_loss=0.211010 val_MSE=0.401196562 val_MAE=0.258405851 preclip_grad_mean=0.144538 preclip_grad_max=0.258197 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=5/12 seconds=16.71
+loss=MAE clipping=none T=96 Epoch=016 train_loss=0.208761 val_MSE=0.403274338 val_MAE=0.260485395 preclip_grad_mean=0.154258 preclip_grad_max=0.245389 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=6/12 seconds=16.61
+loss=MAE clipping=none T=96 Epoch=017 train_loss=0.207000 val_MSE=0.398033538 val_MAE=0.256715696 preclip_grad_mean=0.155528 preclip_grad_max=0.226030 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=7/12 seconds=16.61
+loss=MAE clipping=none T=96 Epoch=018 train_loss=0.205063 val_MSE=0.400495522 val_MAE=0.257822229 preclip_grad_mean=0.155872 preclip_grad_max=0.245966 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=8/12 seconds=16.67
+loss=MAE clipping=none T=96 Epoch=019 train_loss=0.201984 val_MSE=0.402347357 val_MAE=0.259093705 preclip_grad_mean=0.138233 preclip_grad_max=0.212674 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=9/12 seconds=16.68
+loss=MAE clipping=none T=96 Epoch=020 train_loss=0.200937 val_MSE=0.403952864 val_MAE=0.259744551 preclip_grad_mean=0.141272 preclip_grad_max=0.225995 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=10/12 seconds=16.58
+loss=MAE clipping=none T=96 Epoch=021 train_loss=0.200038 val_MSE=0.398485091 val_MAE=0.257288327 preclip_grad_mean=0.138522 preclip_grad_max=0.212053 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=11/12 seconds=16.56
+loss=MAE clipping=none T=96 Epoch=022 train_loss=0.199045 val_MSE=0.402889354 val_MAE=0.258934900 preclip_grad_mean=0.141419 preclip_grad_max=0.188353 grad_gt5_fraction=0.000000 steps=144 lr=6.25e-05 ES=12/12 seconds=16.67
+Early stopping.
+RESULT loss=MAE clipping=none T=96 | MSE=0.164677421 MAE=0.199767046 status=OK best_epoch=10 epochs=22 seconds=367.89
+STABILITY loss=MAE clipping=none T=96 | steps=3168 preclip_grad_mean=0.164685 preclip_grad_max=0.374981 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 17/24
+START loss=MAE clipping=none T=192 | 2026-11-07T18:22:47.793189 | stable_max_loops=2 parameters=557933
+loss=MAE clipping=none T=192 Epoch=001 train_loss=0.386030 val_MSE=0.503974414 val_MAE=0.324437676 preclip_grad_mean=0.094770 preclip_grad_max=0.282160 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.89
+loss=MAE clipping=none T=192 Epoch=002 train_loss=0.347561 val_MSE=0.486894357 val_MAE=0.312517409 preclip_grad_mean=0.135508 preclip_grad_max=0.272550 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.83
+loss=MAE clipping=none T=192 Epoch=003 train_loss=0.332339 val_MSE=0.477147477 val_MAE=0.307500504 preclip_grad_mean=0.147277 preclip_grad_max=0.272057 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.90
+loss=MAE clipping=none T=192 Epoch=004 train_loss=0.321856 val_MSE=0.472851832 val_MAE=0.305834733 preclip_grad_mean=0.150532 preclip_grad_max=0.280549 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.91
+loss=MAE clipping=none T=192 Epoch=005 train_loss=0.312459 val_MSE=0.467281909 val_MAE=0.304082384 preclip_grad_mean=0.160976 preclip_grad_max=0.286362 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=17.87
+loss=MAE clipping=none T=192 Epoch=006 train_loss=0.304296 val_MSE=0.471029142 val_MAE=0.306569985 preclip_grad_mean=0.169976 preclip_grad_max=0.293456 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=17.84
+loss=MAE clipping=none T=192 Epoch=007 train_loss=0.296833 val_MSE=0.472038599 val_MAE=0.309877146 preclip_grad_mean=0.176805 preclip_grad_max=0.340304 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=17.95
+loss=MAE clipping=none T=192 Epoch=008 train_loss=0.289748 val_MSE=0.477745719 val_MAE=0.314826595 preclip_grad_mean=0.177732 preclip_grad_max=0.274149 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=17.87
+loss=MAE clipping=none T=192 Epoch=009 train_loss=0.283065 val_MSE=0.477119972 val_MAE=0.315219259 preclip_grad_mean=0.179783 preclip_grad_max=0.266368 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=17.88
+loss=MAE clipping=none T=192 Epoch=010 train_loss=0.274971 val_MSE=0.477111664 val_MAE=0.313967020 preclip_grad_mean=0.160319 preclip_grad_max=0.265725 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=17.95
+loss=MAE clipping=none T=192 Epoch=011 train_loss=0.271389 val_MSE=0.478692229 val_MAE=0.315344899 preclip_grad_mean=0.163109 preclip_grad_max=0.218883 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=17.95
+loss=MAE clipping=none T=192 Epoch=012 train_loss=0.268553 val_MSE=0.481670229 val_MAE=0.317512756 preclip_grad_mean=0.174578 preclip_grad_max=0.241603 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=17.86
+loss=MAE clipping=none T=192 Epoch=013 train_loss=0.265379 val_MSE=0.482994111 val_MAE=0.319087233 preclip_grad_mean=0.166923 preclip_grad_max=0.236368 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=17.83
+loss=MAE clipping=none T=192 Epoch=014 train_loss=0.261526 val_MSE=0.483047848 val_MAE=0.318693396 preclip_grad_mean=0.153101 preclip_grad_max=0.222236 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=17.90
+loss=MAE clipping=none T=192 Epoch=015 train_loss=0.259872 val_MSE=0.484306164 val_MAE=0.319991440 preclip_grad_mean=0.162035 preclip_grad_max=0.216276 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=17.84
+loss=MAE clipping=none T=192 Epoch=016 train_loss=0.258384 val_MSE=0.483995256 val_MAE=0.318641019 preclip_grad_mean=0.159662 preclip_grad_max=0.205775 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=17.90
+loss=MAE clipping=none T=192 Epoch=017 train_loss=0.257078 val_MSE=0.487136178 val_MAE=0.320799906 preclip_grad_mean=0.161702 preclip_grad_max=0.208560 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=17.97
+Early stopping.
+RESULT loss=MAE clipping=none T=192 | MSE=0.205692018 MAE=0.244360207 status=OK best_epoch=5 epochs=17 seconds=306.63
+STABILITY loss=MAE clipping=none T=192 | steps=2431 preclip_grad_mean=0.158517 preclip_grad_max=0.340304 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 18/24
+START loss=MAE clipping=none T=336 | 2026-11-07T18:27:54.598877 | stable_max_loops=2 parameters=622877
+loss=MAE clipping=none T=336 Epoch=001 train_loss=0.431721 val_MSE=0.587884756 val_MAE=0.381034752 preclip_grad_mean=0.075633 preclip_grad_max=0.145538 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.64
+loss=MAE clipping=none T=336 Epoch=002 train_loss=0.397712 val_MSE=0.567739961 val_MAE=0.373624529 preclip_grad_mean=0.102671 preclip_grad_max=0.237245 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.60
+loss=MAE clipping=none T=336 Epoch=003 train_loss=0.383666 val_MSE=0.557894653 val_MAE=0.366794456 preclip_grad_mean=0.125857 preclip_grad_max=0.234521 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.71
+loss=MAE clipping=none T=336 Epoch=004 train_loss=0.370867 val_MSE=0.557138846 val_MAE=0.367209419 preclip_grad_mean=0.147263 preclip_grad_max=0.235946 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.59
+loss=MAE clipping=none T=336 Epoch=005 train_loss=0.359802 val_MSE=0.555406357 val_MAE=0.366373516 preclip_grad_mean=0.159808 preclip_grad_max=0.268987 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.62
+loss=MAE clipping=none T=336 Epoch=006 train_loss=0.349095 val_MSE=0.556366088 val_MAE=0.366764783 preclip_grad_mean=0.158966 preclip_grad_max=0.246493 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=19.72
+loss=MAE clipping=none T=336 Epoch=007 train_loss=0.339332 val_MSE=0.557696510 val_MAE=0.368045729 preclip_grad_mean=0.164501 preclip_grad_max=0.229339 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=19.66
+loss=MAE clipping=none T=336 Epoch=008 train_loss=0.331046 val_MSE=0.563365794 val_MAE=0.370629673 preclip_grad_mean=0.180579 preclip_grad_max=0.269963 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=19.69
+loss=MAE clipping=none T=336 Epoch=009 train_loss=0.323652 val_MSE=0.568606929 val_MAE=0.374261790 preclip_grad_mean=0.186940 preclip_grad_max=0.290149 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=19.68
+loss=MAE clipping=none T=336 Epoch=010 train_loss=0.313907 val_MSE=0.569920180 val_MAE=0.376063289 preclip_grad_mean=0.152752 preclip_grad_max=0.233597 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=19.56
+loss=MAE clipping=none T=336 Epoch=011 train_loss=0.309999 val_MSE=0.571456442 val_MAE=0.376683656 preclip_grad_mean=0.162513 preclip_grad_max=0.233392 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=19.60
+loss=MAE clipping=none T=336 Epoch=012 train_loss=0.306579 val_MSE=0.573428094 val_MAE=0.378825400 preclip_grad_mean=0.167011 preclip_grad_max=0.245717 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=19.66
+loss=MAE clipping=none T=336 Epoch=013 train_loss=0.303333 val_MSE=0.579275650 val_MAE=0.383133508 preclip_grad_mean=0.168370 preclip_grad_max=0.256703 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=19.65
+loss=MAE clipping=none T=336 Epoch=014 train_loss=0.299207 val_MSE=0.578005390 val_MAE=0.381751021 preclip_grad_mean=0.152937 preclip_grad_max=0.240265 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=19.61
+loss=MAE clipping=none T=336 Epoch=015 train_loss=0.297251 val_MSE=0.581031452 val_MAE=0.383940035 preclip_grad_mean=0.150596 preclip_grad_max=0.237498 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=19.73
+loss=MAE clipping=none T=336 Epoch=016 train_loss=0.295867 val_MSE=0.579876558 val_MAE=0.383218190 preclip_grad_mean=0.156706 preclip_grad_max=0.220696 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=19.63
+loss=MAE clipping=none T=336 Epoch=017 train_loss=0.294181 val_MSE=0.582374094 val_MAE=0.385465115 preclip_grad_mean=0.159241 preclip_grad_max=0.225658 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=19.61
+Early stopping.
+RESULT loss=MAE clipping=none T=336 | MSE=0.254033749 MAE=0.286731891 status=OK best_epoch=5 epochs=17 seconds=336.95
+STABILITY loss=MAE clipping=none T=336 | steps=2431 preclip_grad_mean=0.151314 preclip_grad_max=0.290149 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 19/24
+START loss=MAE clipping=none T=720 | 2026-11-07T18:33:31.730598 | stable_max_loops=2 parameters=796061
+loss=MAE clipping=none T=720 Epoch=001 train_loss=0.480638 val_MSE=0.719346015 val_MAE=0.465190682 preclip_grad_mean=0.059899 preclip_grad_max=0.126098 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.60
+loss=MAE clipping=none T=720 Epoch=002 train_loss=0.447084 val_MSE=0.688896981 val_MAE=0.455295125 preclip_grad_mean=0.082176 preclip_grad_max=0.184997 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.56
+loss=MAE clipping=none T=720 Epoch=003 train_loss=0.430628 val_MSE=0.689172165 val_MAE=0.457527270 preclip_grad_mean=0.122950 preclip_grad_max=0.248917 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=24.51
+loss=MAE clipping=none T=720 Epoch=004 train_loss=0.416676 val_MSE=0.686731181 val_MAE=0.455797869 preclip_grad_mean=0.131287 preclip_grad_max=0.257515 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.53
+loss=MAE clipping=none T=720 Epoch=005 train_loss=0.405975 val_MSE=0.679089881 val_MAE=0.450139333 preclip_grad_mean=0.144871 preclip_grad_max=0.239684 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.44
+loss=MAE clipping=none T=720 Epoch=006 train_loss=0.396513 val_MSE=0.696398143 val_MAE=0.461207857 preclip_grad_mean=0.165806 preclip_grad_max=0.243843 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=24.50
+loss=MAE clipping=none T=720 Epoch=007 train_loss=0.388141 val_MSE=0.700961284 val_MAE=0.464546653 preclip_grad_mean=0.168538 preclip_grad_max=0.243478 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=2/12 seconds=24.50
+loss=MAE clipping=none T=720 Epoch=008 train_loss=0.379948 val_MSE=0.702240755 val_MAE=0.463831815 preclip_grad_mean=0.167997 preclip_grad_max=0.265176 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=3/12 seconds=24.56
+loss=MAE clipping=none T=720 Epoch=009 train_loss=0.372618 val_MSE=0.698996938 val_MAE=0.461929813 preclip_grad_mean=0.178625 preclip_grad_max=0.267664 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=4/12 seconds=24.53
+loss=MAE clipping=none T=720 Epoch=010 train_loss=0.363406 val_MSE=0.702761711 val_MAE=0.463350998 preclip_grad_mean=0.154027 preclip_grad_max=0.216178 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=5/12 seconds=24.53
+loss=MAE clipping=none T=720 Epoch=011 train_loss=0.359406 val_MSE=0.699896450 val_MAE=0.462693818 preclip_grad_mean=0.158685 preclip_grad_max=0.241573 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=6/12 seconds=24.60
+loss=MAE clipping=none T=720 Epoch=012 train_loss=0.356067 val_MSE=0.702201629 val_MAE=0.463707454 preclip_grad_mean=0.162142 preclip_grad_max=0.224540 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=7/12 seconds=24.56
+loss=MAE clipping=none T=720 Epoch=013 train_loss=0.352998 val_MSE=0.704087390 val_MAE=0.463909114 preclip_grad_mean=0.178351 preclip_grad_max=0.286504 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=8/12 seconds=24.60
+loss=MAE clipping=none T=720 Epoch=014 train_loss=0.348287 val_MSE=0.711586090 val_MAE=0.466877899 preclip_grad_mean=0.148007 preclip_grad_max=0.226537 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=9/12 seconds=24.50
+loss=MAE clipping=none T=720 Epoch=015 train_loss=0.346485 val_MSE=0.703833762 val_MAE=0.463109631 preclip_grad_mean=0.148845 preclip_grad_max=0.231159 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=10/12 seconds=24.65
+loss=MAE clipping=none T=720 Epoch=016 train_loss=0.344858 val_MSE=0.710448112 val_MAE=0.466245365 preclip_grad_mean=0.150492 preclip_grad_max=0.197751 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=11/12 seconds=24.58
+loss=MAE clipping=none T=720 Epoch=017 train_loss=0.343261 val_MSE=0.715633403 val_MAE=0.469006579 preclip_grad_mean=0.154410 preclip_grad_max=0.205326 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=12/12 seconds=24.55
+Early stopping.
+RESULT loss=MAE clipping=none T=720 | MSE=0.369419704 MAE=0.350511871 status=OK best_epoch=5 epochs=17 seconds=421.80
+STABILITY loss=MAE clipping=none T=720 | steps=2397 preclip_grad_mean=0.145712 preclip_grad_max=0.286504 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 20/24
+AVG_STABILITY loss=MAE clipping=none | preclip_grad_mean=0.155768 preclip_grad_max=0.374981 grad_gt5_fraction=0.000000 failed_horizons=0
+AVG loss=MAE clipping=none | MSE=0.248455723 MAE=0.270342754
+START loss=MAE clipping=norm5 T=96 | 2026-11-07T18:40:33.720864 | stable_max_loops=2 parameters=514637
+loss=MAE clipping=norm5 T=96 Epoch=001 train_loss=0.340375 val_MSE=0.431079019 val_MAE=0.280755817 preclip_grad_mean=0.134344 preclip_grad_max=0.365394 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.05
+loss=MAE clipping=norm5 T=96 Epoch=002 train_loss=0.291547 val_MSE=0.410900096 val_MAE=0.264309397 preclip_grad_mean=0.171363 preclip_grad_max=0.374981 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.92
+loss=MAE clipping=norm5 T=96 Epoch=003 train_loss=0.275756 val_MSE=0.405533234 val_MAE=0.260009640 preclip_grad_mean=0.175280 preclip_grad_max=0.298905 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.99
+loss=MAE clipping=norm5 T=96 Epoch=004 train_loss=0.266961 val_MSE=0.401630540 val_MAE=0.255104166 preclip_grad_mean=0.170735 preclip_grad_max=0.362889 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.99
+loss=MAE clipping=norm5 T=96 Epoch=005 train_loss=0.260654 val_MSE=0.403974049 val_MAE=0.257949522 preclip_grad_mean=0.185708 preclip_grad_max=0.364357 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=17.05
+loss=MAE clipping=norm5 T=96 Epoch=006 train_loss=0.254567 val_MSE=0.395936536 val_MAE=0.252929781 preclip_grad_mean=0.174447 preclip_grad_max=0.312496 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.99
+loss=MAE clipping=norm5 T=96 Epoch=007 train_loss=0.248890 val_MSE=0.395348785 val_MAE=0.256043787 preclip_grad_mean=0.178192 preclip_grad_max=0.347130 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.17
+loss=MAE clipping=norm5 T=96 Epoch=008 train_loss=0.243493 val_MSE=0.396819829 val_MAE=0.255953126 preclip_grad_mean=0.185243 preclip_grad_max=0.319660 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=17.47
+loss=MAE clipping=norm5 T=96 Epoch=009 train_loss=0.238622 val_MSE=0.394781273 val_MAE=0.255356554 preclip_grad_mean=0.179532 preclip_grad_max=0.266487 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=17.15
+loss=MAE clipping=norm5 T=96 Epoch=010 train_loss=0.233726 val_MSE=0.391965757 val_MAE=0.252022389 preclip_grad_mean=0.178989 preclip_grad_max=0.347550 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=0/12 seconds=16.98
+loss=MAE clipping=norm5 T=96 Epoch=011 train_loss=0.229508 val_MSE=0.394834886 val_MAE=0.255440186 preclip_grad_mean=0.182786 preclip_grad_max=0.285382 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=1/12 seconds=17.06
+loss=MAE clipping=norm5 T=96 Epoch=012 train_loss=0.224922 val_MSE=0.396437737 val_MAE=0.257492464 preclip_grad_mean=0.172860 preclip_grad_max=0.246733 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=2/12 seconds=17.02
+loss=MAE clipping=norm5 T=96 Epoch=013 train_loss=0.221325 val_MSE=0.400101833 val_MAE=0.259994833 preclip_grad_mean=0.180743 preclip_grad_max=0.315956 grad_gt5_fraction=0.000000 steps=144 lr=5.00e-04 ES=3/12 seconds=17.01
+loss=MAE clipping=norm5 T=96 Epoch=014 train_loss=0.217366 val_MSE=0.397889954 val_MAE=0.256801344 preclip_grad_mean=0.183202 preclip_grad_max=0.344560 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=4/12 seconds=16.94
+loss=MAE clipping=norm5 T=96 Epoch=015 train_loss=0.211010 val_MSE=0.401196562 val_MAE=0.258405851 preclip_grad_mean=0.144538 preclip_grad_max=0.258197 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=5/12 seconds=17.02
+loss=MAE clipping=norm5 T=96 Epoch=016 train_loss=0.208761 val_MSE=0.403274338 val_MAE=0.260485395 preclip_grad_mean=0.154258 preclip_grad_max=0.245389 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=6/12 seconds=16.99
+loss=MAE clipping=norm5 T=96 Epoch=017 train_loss=0.207000 val_MSE=0.398033538 val_MAE=0.256715696 preclip_grad_mean=0.155528 preclip_grad_max=0.226030 grad_gt5_fraction=0.000000 steps=144 lr=2.50e-04 ES=7/12 seconds=17.02
+loss=MAE clipping=norm5 T=96 Epoch=018 train_loss=0.205063 val_MSE=0.400495522 val_MAE=0.257822229 preclip_grad_mean=0.155872 preclip_grad_max=0.245966 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=8/12 seconds=17.03
+loss=MAE clipping=norm5 T=96 Epoch=019 train_loss=0.201984 val_MSE=0.402347357 val_MAE=0.259093705 preclip_grad_mean=0.138233 preclip_grad_max=0.212674 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=9/12 seconds=17.07
+loss=MAE clipping=norm5 T=96 Epoch=020 train_loss=0.200937 val_MSE=0.403952864 val_MAE=0.259744551 preclip_grad_mean=0.141272 preclip_grad_max=0.225995 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=10/12 seconds=16.98
+loss=MAE clipping=norm5 T=96 Epoch=021 train_loss=0.200038 val_MSE=0.398485091 val_MAE=0.257288327 preclip_grad_mean=0.138522 preclip_grad_max=0.212053 grad_gt5_fraction=0.000000 steps=144 lr=1.25e-04 ES=11/12 seconds=16.97
+loss=MAE clipping=norm5 T=96 Epoch=022 train_loss=0.199045 val_MSE=0.402889354 val_MAE=0.258934900 preclip_grad_mean=0.141419 preclip_grad_max=0.188353 grad_gt5_fraction=0.000000 steps=144 lr=6.25e-05 ES=12/12 seconds=17.01
+Early stopping.
+RESULT loss=MAE clipping=norm5 T=96 | MSE=0.164677421 MAE=0.199767046 status=OK best_epoch=10 epochs=22 seconds=376.99
+STABILITY loss=MAE clipping=norm5 T=96 | steps=3168 preclip_grad_mean=0.164685 preclip_grad_max=0.374981 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 21/24
+START loss=MAE clipping=norm5 T=192 | 2026-11-07T18:46:50.910662 | stable_max_loops=2 parameters=557933
+loss=MAE clipping=norm5 T=192 Epoch=001 train_loss=0.386030 val_MSE=0.503974414 val_MAE=0.324437676 preclip_grad_mean=0.094770 preclip_grad_max=0.282160 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.22
+loss=MAE clipping=norm5 T=192 Epoch=002 train_loss=0.347561 val_MSE=0.486894357 val_MAE=0.312517409 preclip_grad_mean=0.135508 preclip_grad_max=0.272550 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.24
+loss=MAE clipping=norm5 T=192 Epoch=003 train_loss=0.332339 val_MSE=0.477147477 val_MAE=0.307500504 preclip_grad_mean=0.147277 preclip_grad_max=0.272057 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.38
+loss=MAE clipping=norm5 T=192 Epoch=004 train_loss=0.321856 val_MSE=0.472851832 val_MAE=0.305834733 preclip_grad_mean=0.150532 preclip_grad_max=0.280549 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.31
+loss=MAE clipping=norm5 T=192 Epoch=005 train_loss=0.312459 val_MSE=0.467281909 val_MAE=0.304082384 preclip_grad_mean=0.160976 preclip_grad_max=0.286362 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=18.20
+loss=MAE clipping=norm5 T=192 Epoch=006 train_loss=0.304296 val_MSE=0.471029142 val_MAE=0.306569985 preclip_grad_mean=0.169976 preclip_grad_max=0.293456 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=18.25
+loss=MAE clipping=norm5 T=192 Epoch=007 train_loss=0.296833 val_MSE=0.472038599 val_MAE=0.309877146 preclip_grad_mean=0.176805 preclip_grad_max=0.340304 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=18.29
+loss=MAE clipping=norm5 T=192 Epoch=008 train_loss=0.289748 val_MSE=0.477745719 val_MAE=0.314826595 preclip_grad_mean=0.177732 preclip_grad_max=0.274149 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=18.20
+loss=MAE clipping=norm5 T=192 Epoch=009 train_loss=0.283065 val_MSE=0.477119972 val_MAE=0.315219259 preclip_grad_mean=0.179783 preclip_grad_max=0.266368 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=18.29
+loss=MAE clipping=norm5 T=192 Epoch=010 train_loss=0.274971 val_MSE=0.477111664 val_MAE=0.313967020 preclip_grad_mean=0.160319 preclip_grad_max=0.265725 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=18.29
+loss=MAE clipping=norm5 T=192 Epoch=011 train_loss=0.271389 val_MSE=0.478692229 val_MAE=0.315344899 preclip_grad_mean=0.163109 preclip_grad_max=0.218883 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=18.17
+loss=MAE clipping=norm5 T=192 Epoch=012 train_loss=0.268553 val_MSE=0.481670229 val_MAE=0.317512756 preclip_grad_mean=0.174578 preclip_grad_max=0.241603 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=18.22
+loss=MAE clipping=norm5 T=192 Epoch=013 train_loss=0.265379 val_MSE=0.482994111 val_MAE=0.319087233 preclip_grad_mean=0.166923 preclip_grad_max=0.236368 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=18.28
+loss=MAE clipping=norm5 T=192 Epoch=014 train_loss=0.261526 val_MSE=0.483047848 val_MAE=0.318693396 preclip_grad_mean=0.153101 preclip_grad_max=0.222236 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=18.20
+loss=MAE clipping=norm5 T=192 Epoch=015 train_loss=0.259872 val_MSE=0.484306164 val_MAE=0.319991440 preclip_grad_mean=0.162035 preclip_grad_max=0.216276 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=18.22
+loss=MAE clipping=norm5 T=192 Epoch=016 train_loss=0.258384 val_MSE=0.483995256 val_MAE=0.318641019 preclip_grad_mean=0.159662 preclip_grad_max=0.205775 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=18.32
+loss=MAE clipping=norm5 T=192 Epoch=017 train_loss=0.257078 val_MSE=0.487136178 val_MAE=0.320799906 preclip_grad_mean=0.161702 preclip_grad_max=0.208560 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=18.23
+Early stopping.
+RESULT loss=MAE clipping=norm5 T=192 | MSE=0.205692018 MAE=0.244360207 status=OK best_epoch=5 epochs=17 seconds=312.75
+STABILITY loss=MAE clipping=norm5 T=192 | steps=2431 preclip_grad_mean=0.158517 preclip_grad_max=0.340304 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 22/24
+START loss=MAE clipping=norm5 T=336 | 2026-11-07T18:52:03.846213 | stable_max_loops=2 parameters=622877
+loss=MAE clipping=norm5 T=336 Epoch=001 train_loss=0.431721 val_MSE=0.587884756 val_MAE=0.381034752 preclip_grad_mean=0.075633 preclip_grad_max=0.145538 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.10
+loss=MAE clipping=norm5 T=336 Epoch=002 train_loss=0.397712 val_MSE=0.567739961 val_MAE=0.373624529 preclip_grad_mean=0.102671 preclip_grad_max=0.237245 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.08
+loss=MAE clipping=norm5 T=336 Epoch=003 train_loss=0.383666 val_MSE=0.557894653 val_MAE=0.366794456 preclip_grad_mean=0.125857 preclip_grad_max=0.234521 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.03
+loss=MAE clipping=norm5 T=336 Epoch=004 train_loss=0.370867 val_MSE=0.557138846 val_MAE=0.367209419 preclip_grad_mean=0.147263 preclip_grad_max=0.235946 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=19.98
+loss=MAE clipping=norm5 T=336 Epoch=005 train_loss=0.359802 val_MSE=0.555406357 val_MAE=0.366373516 preclip_grad_mean=0.159808 preclip_grad_max=0.268987 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=0/12 seconds=20.10
+loss=MAE clipping=norm5 T=336 Epoch=006 train_loss=0.349095 val_MSE=0.556366088 val_MAE=0.366764783 preclip_grad_mean=0.158966 preclip_grad_max=0.246493 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=1/12 seconds=19.98
+loss=MAE clipping=norm5 T=336 Epoch=007 train_loss=0.339332 val_MSE=0.557696510 val_MAE=0.368045729 preclip_grad_mean=0.164501 preclip_grad_max=0.229339 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=2/12 seconds=20.01
+loss=MAE clipping=norm5 T=336 Epoch=008 train_loss=0.331046 val_MSE=0.563365794 val_MAE=0.370629673 preclip_grad_mean=0.180579 preclip_grad_max=0.269963 grad_gt5_fraction=0.000000 steps=143 lr=5.00e-04 ES=3/12 seconds=20.10
+loss=MAE clipping=norm5 T=336 Epoch=009 train_loss=0.323652 val_MSE=0.568606929 val_MAE=0.374261790 preclip_grad_mean=0.186940 preclip_grad_max=0.290149 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=4/12 seconds=19.92
+loss=MAE clipping=norm5 T=336 Epoch=010 train_loss=0.313907 val_MSE=0.569920180 val_MAE=0.376063289 preclip_grad_mean=0.152752 preclip_grad_max=0.233597 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=5/12 seconds=19.90
+loss=MAE clipping=norm5 T=336 Epoch=011 train_loss=0.309999 val_MSE=0.571456442 val_MAE=0.376683656 preclip_grad_mean=0.162513 preclip_grad_max=0.233392 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=6/12 seconds=20.08
+loss=MAE clipping=norm5 T=336 Epoch=012 train_loss=0.306579 val_MSE=0.573428094 val_MAE=0.378825400 preclip_grad_mean=0.167011 preclip_grad_max=0.245717 grad_gt5_fraction=0.000000 steps=143 lr=2.50e-04 ES=7/12 seconds=19.91
+loss=MAE clipping=norm5 T=336 Epoch=013 train_loss=0.303333 val_MSE=0.579275650 val_MAE=0.383133508 preclip_grad_mean=0.168370 preclip_grad_max=0.256703 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=8/12 seconds=20.01
+loss=MAE clipping=norm5 T=336 Epoch=014 train_loss=0.299207 val_MSE=0.578005390 val_MAE=0.381751021 preclip_grad_mean=0.152937 preclip_grad_max=0.240265 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=9/12 seconds=20.03
+loss=MAE clipping=norm5 T=336 Epoch=015 train_loss=0.297251 val_MSE=0.581031452 val_MAE=0.383940035 preclip_grad_mean=0.150596 preclip_grad_max=0.237498 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=10/12 seconds=19.96
+loss=MAE clipping=norm5 T=336 Epoch=016 train_loss=0.295867 val_MSE=0.579876558 val_MAE=0.383218190 preclip_grad_mean=0.156706 preclip_grad_max=0.220696 grad_gt5_fraction=0.000000 steps=143 lr=1.25e-04 ES=11/12 seconds=20.03
+loss=MAE clipping=norm5 T=336 Epoch=017 train_loss=0.294181 val_MSE=0.582374094 val_MAE=0.385465115 preclip_grad_mean=0.159241 preclip_grad_max=0.225658 grad_gt5_fraction=0.000000 steps=143 lr=6.25e-05 ES=12/12 seconds=20.10
+Early stopping.
+RESULT loss=MAE clipping=norm5 T=336 | MSE=0.254033749 MAE=0.286731891 status=OK best_epoch=5 epochs=17 seconds=343.33
+STABILITY loss=MAE clipping=norm5 T=336 | steps=2431 preclip_grad_mean=0.151314 preclip_grad_max=0.290149 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 23/24
+START loss=MAE clipping=norm5 T=720 | 2026-11-07T18:57:47.368851 | stable_max_loops=2 parameters=796061
+loss=MAE clipping=norm5 T=720 Epoch=001 train_loss=0.480638 val_MSE=0.719346015 val_MAE=0.465190682 preclip_grad_mean=0.059899 preclip_grad_max=0.126098 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=25.00
+loss=MAE clipping=norm5 T=720 Epoch=002 train_loss=0.447084 val_MSE=0.688896981 val_MAE=0.455295125 preclip_grad_mean=0.082176 preclip_grad_max=0.184997 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.88
+loss=MAE clipping=norm5 T=720 Epoch=003 train_loss=0.430628 val_MSE=0.689172165 val_MAE=0.457527270 preclip_grad_mean=0.122950 preclip_grad_max=0.248917 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=25.03
+loss=MAE clipping=norm5 T=720 Epoch=004 train_loss=0.416676 val_MSE=0.686731181 val_MAE=0.455797869 preclip_grad_mean=0.131287 preclip_grad_max=0.257515 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.91
+loss=MAE clipping=norm5 T=720 Epoch=005 train_loss=0.405975 val_MSE=0.679089881 val_MAE=0.450139333 preclip_grad_mean=0.144871 preclip_grad_max=0.239684 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=0/12 seconds=24.91
+loss=MAE clipping=norm5 T=720 Epoch=006 train_loss=0.396513 val_MSE=0.696398143 val_MAE=0.461207857 preclip_grad_mean=0.165806 preclip_grad_max=0.243843 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=1/12 seconds=24.86
+loss=MAE clipping=norm5 T=720 Epoch=007 train_loss=0.388141 val_MSE=0.700961284 val_MAE=0.464546653 preclip_grad_mean=0.168538 preclip_grad_max=0.243478 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=2/12 seconds=25.10
+loss=MAE clipping=norm5 T=720 Epoch=008 train_loss=0.379948 val_MSE=0.702240755 val_MAE=0.463831815 preclip_grad_mean=0.167997 preclip_grad_max=0.265176 grad_gt5_fraction=0.000000 steps=141 lr=5.00e-04 ES=3/12 seconds=24.89
+loss=MAE clipping=norm5 T=720 Epoch=009 train_loss=0.372618 val_MSE=0.698996938 val_MAE=0.461929813 preclip_grad_mean=0.178625 preclip_grad_max=0.267664 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=4/12 seconds=24.90
+loss=MAE clipping=norm5 T=720 Epoch=010 train_loss=0.363406 val_MSE=0.702761711 val_MAE=0.463350998 preclip_grad_mean=0.154027 preclip_grad_max=0.216178 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=5/12 seconds=24.90
+loss=MAE clipping=norm5 T=720 Epoch=011 train_loss=0.359406 val_MSE=0.699896450 val_MAE=0.462693818 preclip_grad_mean=0.158685 preclip_grad_max=0.241573 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=6/12 seconds=24.95
+loss=MAE clipping=norm5 T=720 Epoch=012 train_loss=0.356067 val_MSE=0.702201629 val_MAE=0.463707454 preclip_grad_mean=0.162142 preclip_grad_max=0.224540 grad_gt5_fraction=0.000000 steps=141 lr=2.50e-04 ES=7/12 seconds=24.99
+loss=MAE clipping=norm5 T=720 Epoch=013 train_loss=0.352998 val_MSE=0.704087390 val_MAE=0.463909114 preclip_grad_mean=0.178351 preclip_grad_max=0.286504 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=8/12 seconds=24.87
+loss=MAE clipping=norm5 T=720 Epoch=014 train_loss=0.348287 val_MSE=0.711586090 val_MAE=0.466877899 preclip_grad_mean=0.148007 preclip_grad_max=0.226537 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=9/12 seconds=24.86
+loss=MAE clipping=norm5 T=720 Epoch=015 train_loss=0.346485 val_MSE=0.703833762 val_MAE=0.463109631 preclip_grad_mean=0.148845 preclip_grad_max=0.231159 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=10/12 seconds=24.95
+loss=MAE clipping=norm5 T=720 Epoch=016 train_loss=0.344858 val_MSE=0.710448112 val_MAE=0.466245365 preclip_grad_mean=0.150492 preclip_grad_max=0.197751 grad_gt5_fraction=0.000000 steps=141 lr=1.25e-04 ES=11/12 seconds=24.91
+loss=MAE clipping=norm5 T=720 Epoch=017 train_loss=0.343261 val_MSE=0.715633403 val_MAE=0.469006579 preclip_grad_mean=0.154410 preclip_grad_max=0.205326 grad_gt5_fraction=0.000000 steps=141 lr=6.25e-05 ES=12/12 seconds=24.89
+Early stopping.
+RESULT loss=MAE clipping=norm5 T=720 | MSE=0.369419704 MAE=0.350511871 status=OK best_epoch=5 epochs=17 seconds=428.24
+STABILITY loss=MAE clipping=norm5 T=720 | steps=2397 preclip_grad_mean=0.145712 preclip_grad_max=0.286504 grad_gt5_fraction=0.000000 nonfinite_loss=0 nonfinite_grad=0 nonfinite_validation=0
+Completed 24/24
+AVG_STABILITY loss=MAE clipping=norm5 | preclip_grad_mean=0.155768 preclip_grad_max=0.374981 grad_gt5_fraction=0.000000 failed_horizons=0
+AVG loss=MAE clipping=norm5 | MSE=0.248455723 MAE=0.270342754
+FINAL WEATHER AVG RESULTS
+loss=ORHL clipping=none | AVG MSE=0.245376813 MAE=0.266779413
+loss=ORHL clipping=norm5 | AVG MSE=0.245376813 MAE=0.266779413
+loss=MSE clipping=none | AVG MSE=0.250873211 MAE=0.277926457
+loss=MSE clipping=norm5 | AVG MSE=0.250873211 MAE=0.277926457
+loss=MAE clipping=none | AVG MSE=0.248455723 MAE=0.270342754
+loss=MAE clipping=norm5 | AVG MSE=0.248455723 MAE=0.270342754
+Finished: 2026-11-07T19:04:55.621310
