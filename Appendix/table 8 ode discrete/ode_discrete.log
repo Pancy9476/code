@@ -1,0 +1,166 @@
+Weather L96 T96 | RK4 vs RecurrentAttention | Started: 2026-11-08T19:38:58.405444+08:00
+GPU: NVIDIA GeForce GTX 1650
+Paired seeds=2026,2027,2028; 6 fresh training runs; no old test results reused.
+RecurrentAttention: 16 shared gated cross-attention steps; candidate=tanh(Wc[H,C]+bc), gate=sigmoid(Wg[H,C]+bg), H_next=(1-gate)*H+gate*candidate.
+Context K/V and all other model branches retained; original ode_func removed. No time grid, solver or vector-field call in recurrent forward.
+RK4: 16 field evaluations; recurrent: 16 attention/update steps. Counts comparable, not identical operations/FLOPs; runtime measured separately.
+Recurrent gate bias initialized to -2; remaining new weights use standard Linear initialization, seed+40000.
+Common branches explicitly share initial weights per seed; new recurrent block has its own parameters.
+D=128 L=96 T=96 batch=256 dropout=.05 stable_max_loops=2 threads=2 FP32
+AdamW lr=5e-4 wd=1e-4 clip_norm=5 max_epochs=100 patience=12; scheduler factor=.5 patience=3 min_lr=1e-6.
+Best validation MSE selects weights; all-channel standardized test MSE/MAE.
+START mode=RK4 seed=2026 | 2026-11-08T19:39:01.503270+08:00
+parameters=514637 propagation_evaluations_per_forward=16 stable_max_loops=2 test_windows=10445
+mode=RK4 seed=2026 | Epoch 001 | val_MSE=0.431187357 val_MAE=0.281936027 | lr=5.00e-04 | ES=0/12 | seconds=15.85 BEST
+mode=RK4 seed=2026 | Epoch 002 | val_MSE=0.409759319 val_MAE=0.264233638 | lr=5.00e-04 | ES=0/12 | seconds=15.82 BEST
+mode=RK4 seed=2026 | Epoch 003 | val_MSE=0.404382675 val_MAE=0.260003037 | lr=5.00e-04 | ES=0/12 | seconds=15.86 BEST
+mode=RK4 seed=2026 | Epoch 004 | val_MSE=0.400293988 val_MAE=0.255269776 | lr=5.00e-04 | ES=0/12 | seconds=16.00 BEST
+mode=RK4 seed=2026 | Epoch 005 | val_MSE=0.402915984 val_MAE=0.258308304 | lr=5.00e-04 | ES=1/12 | seconds=16.11 
+mode=RK4 seed=2026 | Epoch 006 | val_MSE=0.394527046 val_MAE=0.252777400 | lr=5.00e-04 | ES=0/12 | seconds=16.39 BEST
+mode=RK4 seed=2026 | Epoch 007 | val_MSE=0.395134943 val_MAE=0.256418405 | lr=5.00e-04 | ES=1/12 | seconds=16.29 
+mode=RK4 seed=2026 | Epoch 008 | val_MSE=0.397663052 val_MAE=0.256924628 | lr=5.00e-04 | ES=2/12 | seconds=16.07 
+mode=RK4 seed=2026 | Epoch 009 | val_MSE=0.394427569 val_MAE=0.255508894 | lr=5.00e-04 | ES=0/12 | seconds=15.91 BEST
+mode=RK4 seed=2026 | Epoch 010 | val_MSE=0.391561140 val_MAE=0.252448208 | lr=5.00e-04 | ES=0/12 | seconds=15.90 BEST
+mode=RK4 seed=2026 | Epoch 011 | val_MSE=0.395031558 val_MAE=0.255847300 | lr=5.00e-04 | ES=1/12 | seconds=16.00 
+mode=RK4 seed=2026 | Epoch 012 | val_MSE=0.397792004 val_MAE=0.257581381 | lr=5.00e-04 | ES=2/12 | seconds=15.99 
+mode=RK4 seed=2026 | Epoch 013 | val_MSE=0.397549220 val_MAE=0.258328590 | lr=5.00e-04 | ES=3/12 | seconds=16.02 
+mode=RK4 seed=2026 | Epoch 014 | val_MSE=0.399810316 val_MAE=0.258054440 | lr=2.50e-04 | ES=4/12 | seconds=16.27 
+mode=RK4 seed=2026 | Epoch 015 | val_MSE=0.404329010 val_MAE=0.261622004 | lr=2.50e-04 | ES=5/12 | seconds=16.43 
+mode=RK4 seed=2026 | Epoch 016 | val_MSE=0.402781302 val_MAE=0.260825029 | lr=2.50e-04 | ES=6/12 | seconds=16.11 
+mode=RK4 seed=2026 | Epoch 017 | val_MSE=0.397646536 val_MAE=0.256584063 | lr=2.50e-04 | ES=7/12 | seconds=15.94 
+mode=RK4 seed=2026 | Epoch 018 | val_MSE=0.400508471 val_MAE=0.258723156 | lr=1.25e-04 | ES=8/12 | seconds=16.04 
+mode=RK4 seed=2026 | Epoch 019 | val_MSE=0.401050786 val_MAE=0.259283227 | lr=1.25e-04 | ES=9/12 | seconds=16.00 
+mode=RK4 seed=2026 | Epoch 020 | val_MSE=0.404254241 val_MAE=0.260644582 | lr=1.25e-04 | ES=10/12 | seconds=15.99 
+mode=RK4 seed=2026 | Epoch 021 | val_MSE=0.398579162 val_MAE=0.257669926 | lr=1.25e-04 | ES=11/12 | seconds=15.95 
+mode=RK4 seed=2026 | Epoch 022 | val_MSE=0.403519764 val_MAE=0.259896555 | lr=6.25e-05 | ES=12/12 | seconds=15.98 
+Early stopping.
+RESULT mode=RK4 seed=2026 | MSE=0.153207680 MAE=0.191097536 | best_epoch=10 epochs=22 | train_val_seconds=352.91 train_peak_MB=449.75
+FORWARD mode=RK4 seed=2026 | batch1_ms=13.826670 batch256_ms=36.791167 | peak_MB_batch1=2.22 peak_MB_batch256=67.29
+START mode=RecurrentAttention seed=2026 | 2026-11-08T19:44:58.856398+08:00
+parameters=514508 propagation_evaluations_per_forward=16 stable_max_loops=2 test_windows=10445
+mode=RecurrentAttention seed=2026 | Epoch 001 | val_MSE=0.432258545 val_MAE=0.284373581 | lr=5.00e-04 | ES=0/12 | seconds=14.95 BEST
+mode=RecurrentAttention seed=2026 | Epoch 002 | val_MSE=0.406308450 val_MAE=0.261723639 | lr=5.00e-04 | ES=0/12 | seconds=14.96 BEST
+mode=RecurrentAttention seed=2026 | Epoch 003 | val_MSE=0.404292244 val_MAE=0.259496737 | lr=5.00e-04 | ES=0/12 | seconds=14.98 BEST
+mode=RecurrentAttention seed=2026 | Epoch 004 | val_MSE=0.396055932 val_MAE=0.252364141 | lr=5.00e-04 | ES=0/12 | seconds=15.01 BEST
+mode=RecurrentAttention seed=2026 | Epoch 005 | val_MSE=0.404644891 val_MAE=0.257218638 | lr=5.00e-04 | ES=1/12 | seconds=15.14 
+mode=RecurrentAttention seed=2026 | Epoch 006 | val_MSE=0.397474173 val_MAE=0.254409751 | lr=5.00e-04 | ES=2/12 | seconds=15.11 
+mode=RecurrentAttention seed=2026 | Epoch 007 | val_MSE=0.398213608 val_MAE=0.254601136 | lr=5.00e-04 | ES=3/12 | seconds=14.96 
+mode=RecurrentAttention seed=2026 | Epoch 008 | val_MSE=0.401523415 val_MAE=0.258026672 | lr=2.50e-04 | ES=4/12 | seconds=15.01 
+mode=RecurrentAttention seed=2026 | Epoch 009 | val_MSE=0.408360811 val_MAE=0.262125016 | lr=2.50e-04 | ES=5/12 | seconds=14.89 
+mode=RecurrentAttention seed=2026 | Epoch 010 | val_MSE=0.405464197 val_MAE=0.259403608 | lr=2.50e-04 | ES=6/12 | seconds=15.11 
+mode=RecurrentAttention seed=2026 | Epoch 011 | val_MSE=0.411332211 val_MAE=0.263741952 | lr=2.50e-04 | ES=7/12 | seconds=15.02 
+mode=RecurrentAttention seed=2026 | Epoch 012 | val_MSE=0.408053484 val_MAE=0.262466716 | lr=1.25e-04 | ES=8/12 | seconds=15.04 
+mode=RecurrentAttention seed=2026 | Epoch 013 | val_MSE=0.408910523 val_MAE=0.262035186 | lr=1.25e-04 | ES=9/12 | seconds=15.04 
+mode=RecurrentAttention seed=2026 | Epoch 014 | val_MSE=0.409258932 val_MAE=0.262199445 | lr=1.25e-04 | ES=10/12 | seconds=15.01 
+mode=RecurrentAttention seed=2026 | Epoch 015 | val_MSE=0.409922454 val_MAE=0.263135070 | lr=1.25e-04 | ES=11/12 | seconds=15.07 
+mode=RecurrentAttention seed=2026 | Epoch 016 | val_MSE=0.412796322 val_MAE=0.264937556 | lr=6.25e-05 | ES=12/12 | seconds=15.31 
+Early stopping.
+RESULT mode=RecurrentAttention seed=2026 | MSE=0.155905229 MAE=0.193618551 | best_epoch=4 epochs=16 | train_val_seconds=240.60 train_peak_MB=521.00
+FORWARD mode=RecurrentAttention seed=2026 | batch1_ms=9.419403 batch256_ms=30.875063 | peak_MB_batch1=2.17 peak_MB_batch256=55.79
+PARAMETER_COMPARISON RK4=514637 RecurrentAttention=514508 difference=-129
+PAIRED seed=2026 | recurrent_minus_rk4_MSE=+0.001697548 MAE=+0.000521015
+START mode=RK4 seed=2027 | 2026-11-08T19:49:03.276496+08:00
+parameters=514637 propagation_evaluations_per_forward=16 stable_max_loops=2 test_windows=10445
+mode=RK4 seed=2027 | Epoch 001 | val_MSE=0.426258197 val_MAE=0.277756445 | lr=5.00e-04 | ES=0/12 | seconds=16.13 BEST
+mode=RK4 seed=2027 | Epoch 002 | val_MSE=0.408928153 val_MAE=0.266115479 | lr=5.00e-04 | ES=0/12 | seconds=16.10 BEST
+mode=RK4 seed=2027 | Epoch 003 | val_MSE=0.401040178 val_MAE=0.256451850 | lr=5.00e-04 | ES=0/12 | seconds=16.01 BEST
+mode=RK4 seed=2027 | Epoch 004 | val_MSE=0.397933170 val_MAE=0.258250869 | lr=5.00e-04 | ES=0/12 | seconds=16.06 BEST
+mode=RK4 seed=2027 | Epoch 005 | val_MSE=0.390165152 val_MAE=0.252020813 | lr=5.00e-04 | ES=0/12 | seconds=16.05 BEST
+mode=RK4 seed=2027 | Epoch 006 | val_MSE=0.392181577 val_MAE=0.253482549 | lr=5.00e-04 | ES=1/12 | seconds=16.07 
+mode=RK4 seed=2027 | Epoch 007 | val_MSE=0.391717996 val_MAE=0.254646626 | lr=5.00e-04 | ES=2/12 | seconds=16.12 
+mode=RK4 seed=2027 | Epoch 008 | val_MSE=0.393027331 val_MAE=0.254709412 | lr=5.00e-04 | ES=3/12 | seconds=16.06 
+mode=RK4 seed=2027 | Epoch 009 | val_MSE=0.396728381 val_MAE=0.258134245 | lr=2.50e-04 | ES=4/12 | seconds=16.00 
+mode=RK4 seed=2027 | Epoch 010 | val_MSE=0.396193756 val_MAE=0.255548346 | lr=2.50e-04 | ES=5/12 | seconds=16.21 
+mode=RK4 seed=2027 | Epoch 011 | val_MSE=0.399660558 val_MAE=0.257338747 | lr=2.50e-04 | ES=6/12 | seconds=16.29 
+mode=RK4 seed=2027 | Epoch 012 | val_MSE=0.402678042 val_MAE=0.260215910 | lr=2.50e-04 | ES=7/12 | seconds=16.15 
+mode=RK4 seed=2027 | Epoch 013 | val_MSE=0.399452280 val_MAE=0.258267747 | lr=1.25e-04 | ES=8/12 | seconds=16.27 
+mode=RK4 seed=2027 | Epoch 014 | val_MSE=0.399748685 val_MAE=0.258402187 | lr=1.25e-04 | ES=9/12 | seconds=16.42 
+mode=RK4 seed=2027 | Epoch 015 | val_MSE=0.400921415 val_MAE=0.258160102 | lr=1.25e-04 | ES=10/12 | seconds=16.12 
+mode=RK4 seed=2027 | Epoch 016 | val_MSE=0.401762303 val_MAE=0.259237667 | lr=1.25e-04 | ES=11/12 | seconds=16.28 
+mode=RK4 seed=2027 | Epoch 017 | val_MSE=0.402730768 val_MAE=0.260260898 | lr=6.25e-05 | ES=12/12 | seconds=16.15 
+Early stopping.
+RESULT mode=RK4 seed=2027 | MSE=0.154426107 MAE=0.192342509 | best_epoch=5 epochs=17 | train_val_seconds=274.49 train_peak_MB=451.76
+FORWARD mode=RK4 seed=2027 | batch1_ms=15.089373 batch256_ms=37.024760 | peak_MB_batch1=2.22 peak_MB_batch256=67.29
+START mode=RecurrentAttention seed=2027 | 2026-11-08T19:53:42.449139+08:00
+parameters=514508 propagation_evaluations_per_forward=16 stable_max_loops=2 test_windows=10445
+mode=RecurrentAttention seed=2027 | Epoch 001 | val_MSE=0.422547635 val_MAE=0.277885580 | lr=5.00e-04 | ES=0/12 | seconds=15.22 BEST
+mode=RecurrentAttention seed=2027 | Epoch 002 | val_MSE=0.405370081 val_MAE=0.263714221 | lr=5.00e-04 | ES=0/12 | seconds=14.89 BEST
+mode=RecurrentAttention seed=2027 | Epoch 003 | val_MSE=0.400335067 val_MAE=0.259618217 | lr=5.00e-04 | ES=0/12 | seconds=14.85 BEST
+mode=RecurrentAttention seed=2027 | Epoch 004 | val_MSE=0.392844191 val_MAE=0.256154050 | lr=5.00e-04 | ES=0/12 | seconds=14.92 BEST
+mode=RecurrentAttention seed=2027 | Epoch 005 | val_MSE=0.389805985 val_MAE=0.253808584 | lr=5.00e-04 | ES=0/12 | seconds=15.02 BEST
+mode=RecurrentAttention seed=2027 | Epoch 006 | val_MSE=0.393697299 val_MAE=0.258357159 | lr=5.00e-04 | ES=1/12 | seconds=14.94 
+mode=RecurrentAttention seed=2027 | Epoch 007 | val_MSE=0.391173495 val_MAE=0.254832022 | lr=5.00e-04 | ES=2/12 | seconds=14.95 
+mode=RecurrentAttention seed=2027 | Epoch 008 | val_MSE=0.393670595 val_MAE=0.257760967 | lr=5.00e-04 | ES=3/12 | seconds=14.98 
+mode=RecurrentAttention seed=2027 | Epoch 009 | val_MSE=0.396870109 val_MAE=0.260397125 | lr=2.50e-04 | ES=4/12 | seconds=15.10 
+mode=RecurrentAttention seed=2027 | Epoch 010 | val_MSE=0.392895465 val_MAE=0.256224168 | lr=2.50e-04 | ES=5/12 | seconds=14.91 
+mode=RecurrentAttention seed=2027 | Epoch 011 | val_MSE=0.396367224 val_MAE=0.257976051 | lr=2.50e-04 | ES=6/12 | seconds=15.19 
+mode=RecurrentAttention seed=2027 | Epoch 012 | val_MSE=0.399884908 val_MAE=0.261765887 | lr=2.50e-04 | ES=7/12 | seconds=15.07 
+mode=RecurrentAttention seed=2027 | Epoch 013 | val_MSE=0.399499033 val_MAE=0.260962349 | lr=1.25e-04 | ES=8/12 | seconds=15.06 
+mode=RecurrentAttention seed=2027 | Epoch 014 | val_MSE=0.398652761 val_MAE=0.259818401 | lr=1.25e-04 | ES=9/12 | seconds=15.08 
+mode=RecurrentAttention seed=2027 | Epoch 015 | val_MSE=0.401982070 val_MAE=0.262220522 | lr=1.25e-04 | ES=10/12 | seconds=15.00 
+mode=RecurrentAttention seed=2027 | Epoch 016 | val_MSE=0.404093575 val_MAE=0.263884089 | lr=1.25e-04 | ES=11/12 | seconds=14.97 
+mode=RecurrentAttention seed=2027 | Epoch 017 | val_MSE=0.406658621 val_MAE=0.265008834 | lr=6.25e-05 | ES=12/12 | seconds=15.05 
+Early stopping.
+RESULT mode=RecurrentAttention seed=2027 | MSE=0.156620111 MAE=0.195304844 | best_epoch=5 epochs=17 | train_val_seconds=255.21 train_peak_MB=521.00
+FORWARD mode=RecurrentAttention seed=2027 | batch1_ms=9.431663 batch256_ms=30.690587 | peak_MB_batch1=2.17 peak_MB_batch256=55.79
+PARAMETER_COMPARISON RK4=514637 RecurrentAttention=514508 difference=-129
+PAIRED seed=2027 | recurrent_minus_rk4_MSE=+0.001194004 MAE=+0.000962335
+START mode=RK4 seed=2028 | 2026-11-08T19:58:01.384526+08:00
+parameters=514637 propagation_evaluations_per_forward=16 stable_max_loops=2 test_windows=10445
+mode=RK4 seed=2028 | Epoch 001 | val_MSE=0.426459084 val_MAE=0.278495696 | lr=5.00e-04 | ES=0/12 | seconds=16.26 BEST
+mode=RK4 seed=2028 | Epoch 002 | val_MSE=0.409484909 val_MAE=0.263073773 | lr=5.00e-04 | ES=0/12 | seconds=15.98 BEST
+mode=RK4 seed=2028 | Epoch 003 | val_MSE=0.400842867 val_MAE=0.257827946 | lr=5.00e-04 | ES=0/12 | seconds=16.05 BEST
+mode=RK4 seed=2028 | Epoch 004 | val_MSE=0.395467703 val_MAE=0.253536044 | lr=5.00e-04 | ES=0/12 | seconds=16.18 BEST
+mode=RK4 seed=2028 | Epoch 005 | val_MSE=0.396074695 val_MAE=0.252023498 | lr=5.00e-04 | ES=1/12 | seconds=16.26 
+mode=RK4 seed=2028 | Epoch 006 | val_MSE=0.389008625 val_MAE=0.249339805 | lr=5.00e-04 | ES=0/12 | seconds=15.88 BEST
+mode=RK4 seed=2028 | Epoch 007 | val_MSE=0.395913781 val_MAE=0.255430510 | lr=5.00e-04 | ES=1/12 | seconds=16.04 
+mode=RK4 seed=2028 | Epoch 008 | val_MSE=0.390120931 val_MAE=0.250684521 | lr=5.00e-04 | ES=2/12 | seconds=16.12 
+mode=RK4 seed=2028 | Epoch 009 | val_MSE=0.390492699 val_MAE=0.251047998 | lr=5.00e-04 | ES=3/12 | seconds=16.03 
+mode=RK4 seed=2028 | Epoch 010 | val_MSE=0.390450962 val_MAE=0.250280441 | lr=2.50e-04 | ES=4/12 | seconds=15.98 
+mode=RK4 seed=2028 | Epoch 011 | val_MSE=0.389610043 val_MAE=0.249777933 | lr=2.50e-04 | ES=5/12 | seconds=16.15 
+mode=RK4 seed=2028 | Epoch 012 | val_MSE=0.391513036 val_MAE=0.250991504 | lr=2.50e-04 | ES=6/12 | seconds=16.01 
+mode=RK4 seed=2028 | Epoch 013 | val_MSE=0.394470505 val_MAE=0.253958923 | lr=2.50e-04 | ES=7/12 | seconds=16.19 
+mode=RK4 seed=2028 | Epoch 014 | val_MSE=0.394446865 val_MAE=0.252853542 | lr=1.25e-04 | ES=8/12 | seconds=16.06 
+mode=RK4 seed=2028 | Epoch 015 | val_MSE=0.393969757 val_MAE=0.253900398 | lr=1.25e-04 | ES=9/12 | seconds=16.41 
+mode=RK4 seed=2028 | Epoch 016 | val_MSE=0.395491076 val_MAE=0.254707788 | lr=1.25e-04 | ES=10/12 | seconds=16.24 
+mode=RK4 seed=2028 | Epoch 017 | val_MSE=0.394090570 val_MAE=0.253549942 | lr=1.25e-04 | ES=11/12 | seconds=16.11 
+mode=RK4 seed=2028 | Epoch 018 | val_MSE=0.394469297 val_MAE=0.253798167 | lr=6.25e-05 | ES=12/12 | seconds=16.04 
+Early stopping.
+RESULT mode=RK4 seed=2028 | MSE=0.154236996 MAE=0.191320719 | best_epoch=6 epochs=18 | train_val_seconds=289.99 train_peak_MB=451.76
+FORWARD mode=RK4 seed=2028 | batch1_ms=12.248863 batch256_ms=36.789303 | peak_MB_batch1=2.22 peak_MB_batch256=67.29
+START mode=RecurrentAttention seed=2028 | 2026-11-08T20:02:55.762652+08:00
+parameters=514508 propagation_evaluations_per_forward=16 stable_max_loops=2 test_windows=10445
+mode=RecurrentAttention seed=2028 | Epoch 001 | val_MSE=0.425927819 val_MAE=0.280373968 | lr=5.00e-04 | ES=0/12 | seconds=15.05 BEST
+mode=RecurrentAttention seed=2028 | Epoch 002 | val_MSE=0.404910273 val_MAE=0.262186202 | lr=5.00e-04 | ES=0/12 | seconds=14.98 BEST
+mode=RecurrentAttention seed=2028 | Epoch 003 | val_MSE=0.397361891 val_MAE=0.257092333 | lr=5.00e-04 | ES=0/12 | seconds=14.89 BEST
+mode=RecurrentAttention seed=2028 | Epoch 004 | val_MSE=0.395872111 val_MAE=0.256422089 | lr=5.00e-04 | ES=0/12 | seconds=14.95 BEST
+mode=RecurrentAttention seed=2028 | Epoch 005 | val_MSE=0.395510003 val_MAE=0.255819046 | lr=5.00e-04 | ES=0/12 | seconds=15.16 BEST
+mode=RecurrentAttention seed=2028 | Epoch 006 | val_MSE=0.396687137 val_MAE=0.254694225 | lr=5.00e-04 | ES=1/12 | seconds=15.08 
+mode=RecurrentAttention seed=2028 | Epoch 007 | val_MSE=0.401363273 val_MAE=0.258157597 | lr=5.00e-04 | ES=2/12 | seconds=14.99 
+mode=RecurrentAttention seed=2028 | Epoch 008 | val_MSE=0.402527738 val_MAE=0.257791136 | lr=5.00e-04 | ES=3/12 | seconds=15.01 
+mode=RecurrentAttention seed=2028 | Epoch 009 | val_MSE=0.403200176 val_MAE=0.258231445 | lr=2.50e-04 | ES=4/12 | seconds=15.13 
+mode=RecurrentAttention seed=2028 | Epoch 010 | val_MSE=0.405085288 val_MAE=0.260185907 | lr=2.50e-04 | ES=5/12 | seconds=15.01 
+mode=RecurrentAttention seed=2028 | Epoch 011 | val_MSE=0.407490339 val_MAE=0.260040702 | lr=2.50e-04 | ES=6/12 | seconds=15.01 
+mode=RecurrentAttention seed=2028 | Epoch 012 | val_MSE=0.411371083 val_MAE=0.262984547 | lr=2.50e-04 | ES=7/12 | seconds=15.04 
+mode=RecurrentAttention seed=2028 | Epoch 013 | val_MSE=0.410763884 val_MAE=0.262388933 | lr=1.25e-04 | ES=8/12 | seconds=14.98 
+mode=RecurrentAttention seed=2028 | Epoch 014 | val_MSE=0.415235676 val_MAE=0.265931936 | lr=1.25e-04 | ES=9/12 | seconds=15.00 
+mode=RecurrentAttention seed=2028 | Epoch 015 | val_MSE=0.418305545 val_MAE=0.267358122 | lr=1.25e-04 | ES=10/12 | seconds=15.15 
+mode=RecurrentAttention seed=2028 | Epoch 016 | val_MSE=0.414281727 val_MAE=0.264486882 | lr=1.25e-04 | ES=11/12 | seconds=14.99 
+mode=RecurrentAttention seed=2028 | Epoch 017 | val_MSE=0.413837800 val_MAE=0.264554427 | lr=6.25e-05 | ES=12/12 | seconds=15.00 
+Early stopping.
+RESULT mode=RecurrentAttention seed=2028 | MSE=0.157072977 MAE=0.194907080 | best_epoch=5 epochs=17 | train_val_seconds=255.42 train_peak_MB=521.00
+FORWARD mode=RecurrentAttention seed=2028 | batch1_ms=9.107320 batch256_ms=30.768867 | peak_MB_batch1=2.17 peak_MB_batch256=55.79
+PARAMETER_COMPARISON RK4=514637 RecurrentAttention=514508 difference=-129
+PAIRED seed=2028 | recurrent_minus_rk4_MSE=+0.001835981 MAE=+0.001586360
+FINAL RESULTS: mean and sample standard deviation across 3 seeds, T96
+RK4 mse | mean=0.153956928 std=0.000655721
+RK4 mae | mean=0.191586922 std=0.000663805
+RK4 batch1_ms | mean=13.721635556 std=1.423164938
+RK4 batch256_ms | mean=36.868410000 std=0.135406277
+RK4 train_peak_mb | mean=451.086751302 std=1.158083450
+RecurrentAttention mse | mean=0.156532772 std=0.000588753
+RecurrentAttention mae | mean=0.194610158 std=0.000881486
+RecurrentAttention batch1_ms | mean=9.319462222 std=0.183822792
+RecurrentAttention batch256_ms | mean=30.778172222 std=0.092589714
+RecurrentAttention train_peak_mb | mean=521.002441406 std=0.000000000
+Finished: 2026-11-08T20:07:14.631624+08:00

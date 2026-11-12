@@ -1,0 +1,88 @@
+Cross-architecture objective comparison | 2026-11-09T20:18:08.516036
+Weather L96 T96 seed2026; 4 fresh baseline runs. CTIA-ODE NOT run or assigned a result here.
+Implementation: C:\Users\87199\Desktop\时序\work2\third_party\Time-Series-Library
+DLinear: shared channel weights, moving_avg25. iTransformer: d512 ff512 layers3 heads8 dropout.1.
+Original baseline architectures; same source Weather split/scaler/channel order and eight source calendar features. DLinear ignores calendar features by design.
+Both arms per architecture share initialization and independent loader seeds. Only objective changes.
+MSE or Huber(delta1)+5*MAE; fixed settings, no hyperparameter search; no contamination.
+ORHL uses the author-provided piecewise ORHL(nn.Module), delta=1.0, lambda_=5.0.
+AdamW lr5e-4 wd1e-4 batch256 FP32 norm5; max_epochs100 early_stop12; plateau factor.5 patience3 min_lr1e-6.
+Best validation MSE checkpoint; all-channel, all-test-window standardized metrics. Single seed, no cross-seed SD. This is a new fixed-protocol comparison, not reproduction of Table1.
+START architecture=DLinear objective=MSE | 2026-11-09T20:18:09.265279 parameters=18624
+DLinear MSE Epoch=001 val_MSE=0.471283185 val_MAE=0.333965341 ES=0/12 lr=5.00e-04 seconds=4.53
+DLinear MSE Epoch=002 val_MSE=0.465489928 val_MAE=0.327576549 ES=0/12 lr=5.00e-04 seconds=2.18
+DLinear MSE Epoch=003 val_MSE=0.461654138 val_MAE=0.329053142 ES=0/12 lr=5.00e-04 seconds=2.35
+DLinear MSE Epoch=004 val_MSE=0.462527951 val_MAE=0.327801843 ES=1/12 lr=5.00e-04 seconds=2.35
+DLinear MSE Epoch=005 val_MSE=0.467297931 val_MAE=0.323032995 ES=2/12 lr=5.00e-04 seconds=2.56
+DLinear MSE Epoch=006 val_MSE=0.462116054 val_MAE=0.326536399 ES=3/12 lr=5.00e-04 seconds=2.47
+DLinear MSE Epoch=007 val_MSE=0.463812892 val_MAE=0.324061136 ES=4/12 lr=2.50e-04 seconds=2.59
+DLinear MSE Epoch=008 val_MSE=0.462726852 val_MAE=0.325864083 ES=5/12 lr=2.50e-04 seconds=2.38
+DLinear MSE Epoch=009 val_MSE=0.462295132 val_MAE=0.325743178 ES=6/12 lr=2.50e-04 seconds=2.39
+DLinear MSE Epoch=010 val_MSE=0.464515832 val_MAE=0.323996851 ES=7/12 lr=2.50e-04 seconds=2.48
+DLinear MSE Epoch=011 val_MSE=0.463894187 val_MAE=0.324574305 ES=8/12 lr=1.25e-04 seconds=2.50
+DLinear MSE Epoch=012 val_MSE=0.462844862 val_MAE=0.325094741 ES=9/12 lr=1.25e-04 seconds=2.40
+DLinear MSE Epoch=013 val_MSE=0.462400614 val_MAE=0.325355715 ES=10/12 lr=1.25e-04 seconds=2.42
+DLinear MSE Epoch=014 val_MSE=0.462991281 val_MAE=0.324757547 ES=11/12 lr=1.25e-04 seconds=2.45
+DLinear MSE Epoch=015 val_MSE=0.462155845 val_MAE=0.325864879 ES=12/12 lr=6.25e-05 seconds=2.47
+RESULT architecture=DLinear objective=MSE | MSE=0.196877036 MAE=0.255773207 best_epoch=3 epochs=15 seconds=39.31
+GRADIENT preclip_max=0.722164 clipping_fraction=0.000000
+START architecture=DLinear objective=ORHL | 2026-11-09T20:18:48.736020 parameters=18624
+DLinear ORHL Epoch=001 val_MSE=0.491654253 val_MAE=0.318511655 ES=0/12 lr=5.00e-04 seconds=2.60
+DLinear ORHL Epoch=002 val_MSE=0.498072501 val_MAE=0.307976011 ES=1/12 lr=5.00e-04 seconds=2.51
+DLinear ORHL Epoch=003 val_MSE=0.400285409 val_MAE=0.306162994 ES=2/12 lr=5.00e-04 seconds=2.59
+DLinear ORHL Epoch=004 val_MSE=0.401724817 val_MAE=0.305501867 ES=3/12 lr=5.00e-04 seconds=2.64
+DLinear ORHL Epoch=005 val_MSE=0.410814164 val_MAE=0.304361798 ES=4/12 lr=2.50e-04 seconds=2.57
+DLinear ORHL Epoch=006 val_MSE=0.405306434 val_MAE=0.304783876 ES=5/12 lr=2.50e-04 seconds=2.68
+DLinear ORHL Epoch=007 val_MSE=0.408031154 val_MAE=0.304280282 ES=6/12 lr=2.50e-04 seconds=2.60
+DLinear ORHL Epoch=008 val_MSE=0.407880469 val_MAE=0.304203727 ES=7/12 lr=2.50e-04 seconds=2.64
+DLinear ORHL Epoch=009 val_MSE=0.406360342 val_MAE=0.304418889 ES=8/12 lr=1.25e-04 seconds=2.73
+DLinear ORHL Epoch=010 val_MSE=0.409684460 val_MAE=0.304102342 ES=9/12 lr=1.25e-04 seconds=2.78
+DLinear ORHL Epoch=011 val_MSE=0.408467273 val_MAE=0.304144978 ES=10/12 lr=1.25e-04 seconds=2.59
+DLinear ORHL Epoch=012 val_MSE=0.408020526 val_MAE=0.304256227 ES=11/12 lr=1.25e-04 seconds=2.64
+DLinear ORHL Epoch=013 val_MSE=0.406743605 val_MAE=0.304413841 ES=12/12 lr=6.25e-05 seconds=2.72
+RESULT architecture=DLinear objective=ORHL | MSE=0.190833518 MAE=0.242459315 best_epoch=1 epochs=13 seconds=35.05
+GRADIENT preclip_max=0.934964 clipping_fraction=0.000000
+START architecture=iTransformer objective=MSE | 2026-11-09T20:19:23.984725 parameters=4833888
+iTransformer MSE Epoch=001 val_MSE=0.452423972 val_MAE=0.304255454 ES=0/12 lr=5.00e-04 seconds=23.90
+iTransformer MSE Epoch=002 val_MSE=0.422584775 val_MAE=0.284930877 ES=0/12 lr=5.00e-04 seconds=22.78
+iTransformer MSE Epoch=003 val_MSE=0.442384267 val_MAE=0.297861720 ES=1/12 lr=5.00e-04 seconds=22.79
+iTransformer MSE Epoch=004 val_MSE=0.436429620 val_MAE=0.287550806 ES=2/12 lr=5.00e-04 seconds=22.88
+iTransformer MSE Epoch=005 val_MSE=0.426532435 val_MAE=0.284730156 ES=3/12 lr=5.00e-04 seconds=22.95
+iTransformer MSE Epoch=006 val_MSE=0.417634423 val_MAE=0.283751233 ES=0/12 lr=5.00e-04 seconds=22.94
+iTransformer MSE Epoch=007 val_MSE=0.435358820 val_MAE=0.289648151 ES=1/12 lr=5.00e-04 seconds=22.93
+iTransformer MSE Epoch=008 val_MSE=0.434561982 val_MAE=0.290485995 ES=2/12 lr=5.00e-04 seconds=22.95
+iTransformer MSE Epoch=009 val_MSE=0.428917891 val_MAE=0.286133503 ES=3/12 lr=5.00e-04 seconds=22.91
+iTransformer MSE Epoch=010 val_MSE=0.429041211 val_MAE=0.285146238 ES=4/12 lr=2.50e-04 seconds=22.96
+iTransformer MSE Epoch=011 val_MSE=0.434953400 val_MAE=0.286232564 ES=5/12 lr=2.50e-04 seconds=22.89
+iTransformer MSE Epoch=012 val_MSE=0.437113670 val_MAE=0.287627934 ES=6/12 lr=2.50e-04 seconds=22.92
+iTransformer MSE Epoch=013 val_MSE=0.441788415 val_MAE=0.289201337 ES=7/12 lr=2.50e-04 seconds=23.10
+iTransformer MSE Epoch=014 val_MSE=0.440012667 val_MAE=0.286097203 ES=8/12 lr=1.25e-04 seconds=22.94
+iTransformer MSE Epoch=015 val_MSE=0.452100855 val_MAE=0.290676576 ES=9/12 lr=1.25e-04 seconds=22.92
+iTransformer MSE Epoch=016 val_MSE=0.443078316 val_MAE=0.288295725 ES=10/12 lr=1.25e-04 seconds=22.95
+iTransformer MSE Epoch=017 val_MSE=0.451359707 val_MAE=0.291601705 ES=11/12 lr=1.25e-04 seconds=22.92
+iTransformer MSE Epoch=018 val_MSE=0.455961969 val_MAE=0.292622665 ES=12/12 lr=6.25e-05 seconds=23.00
+RESULT architecture=iTransformer objective=MSE | MSE=0.174064875 MAE=0.214001186 best_epoch=6 epochs=18 seconds=416.09
+GRADIENT preclip_max=6.728271 clipping_fraction=0.000772
+START architecture=iTransformer objective=ORHL | 2026-11-09T20:26:20.301802 parameters=4833888
+iTransformer ORHL Epoch=001 val_MSE=0.433743902 val_MAE=0.285440749 ES=0/12 lr=5.00e-04 seconds=23.15
+iTransformer ORHL Epoch=002 val_MSE=0.414683782 val_MAE=0.271025028 ES=0/12 lr=5.00e-04 seconds=23.09
+iTransformer ORHL Epoch=003 val_MSE=0.415359865 val_MAE=0.269485496 ES=1/12 lr=5.00e-04 seconds=23.23
+iTransformer ORHL Epoch=004 val_MSE=0.420530915 val_MAE=0.274313997 ES=2/12 lr=5.00e-04 seconds=23.54
+iTransformer ORHL Epoch=005 val_MSE=0.428766195 val_MAE=0.275997084 ES=3/12 lr=5.00e-04 seconds=23.34
+iTransformer ORHL Epoch=006 val_MSE=0.423938308 val_MAE=0.273623660 ES=4/12 lr=2.50e-04 seconds=23.32
+iTransformer ORHL Epoch=007 val_MSE=0.427898702 val_MAE=0.272882841 ES=5/12 lr=2.50e-04 seconds=23.10
+iTransformer ORHL Epoch=008 val_MSE=0.430700661 val_MAE=0.274717344 ES=6/12 lr=2.50e-04 seconds=23.74
+iTransformer ORHL Epoch=009 val_MSE=0.433532475 val_MAE=0.274619972 ES=7/12 lr=2.50e-04 seconds=23.46
+iTransformer ORHL Epoch=010 val_MSE=0.443700364 val_MAE=0.281099954 ES=8/12 lr=1.25e-04 seconds=23.32
+iTransformer ORHL Epoch=011 val_MSE=0.436811904 val_MAE=0.277065143 ES=9/12 lr=1.25e-04 seconds=23.26
+iTransformer ORHL Epoch=012 val_MSE=0.436673555 val_MAE=0.277437933 ES=10/12 lr=1.25e-04 seconds=23.43
+iTransformer ORHL Epoch=013 val_MSE=0.446188735 val_MAE=0.280624734 ES=11/12 lr=1.25e-04 seconds=23.21
+iTransformer ORHL Epoch=014 val_MSE=0.444693144 val_MAE=0.279718210 ES=12/12 lr=6.25e-05 seconds=23.11
+RESULT architecture=iTransformer objective=ORHL | MSE=0.166559537 MAE=0.201571501 best_epoch=2 epochs=14 seconds=328.80
+GRADIENT preclip_max=1.561859 clipping_fraction=0.000000
+FINAL RESULTS
+DLinear MSE | MSE=0.196877036 MAE=0.255773207
+DLinear ORHL | MSE=0.190833518 MAE=0.242459315
+iTransformer MSE | MSE=0.174064875 MAE=0.214001186
+iTransformer ORHL | MSE=0.166559537 MAE=0.201571501
+Finished: 2026-11-09T20:31:49.126054
