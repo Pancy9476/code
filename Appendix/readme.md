@@ -1,14 +1,8 @@
 # Appendix Experiments and Results
 
-This directory contains the experiment code and run logs corresponding to Tables 4–13. The result tables for Tables 1, 4, and 6–13 are shown below.
+**This directory contains the experiment code and run logs corresponding to Tables 4–13. The result tables for Tables 1, 4, and 6–13 are shown below.**
 
-下面可以直接粘贴到 README。为减少表格宽度，每个模型单元格按 **MSE / MAE** 展示，保留原来的加粗和下划线标记。
-
-也已保存为：[Table1-README.md](</C:/Users/87199/Documents/Codex/2026-11-10/ni-en/outputs/Table1-README.md>)。
-
-### Table 1. Multivariate forecasting results
-
-The look-back length is L = 96. Each model cell reports MSE / MAE. Best results are shown in **bold**, and second-best results are <ins>underlined</ins>.
+### Table 1. Multivariate forecasting results. The look-back length is L = 96. Each model cell reports MSE / MAE. Best results are shown in **bold**, and second-best results are <ins>underlined</ins>.
 
 | Dataset | Horizon | CTIA-ODE (Ours) | WaveTS-B | S-Mamba | TimeXer | iTransformer | PatchTST | DLinear | Crossformer | TimesNet | Autoformer |
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
