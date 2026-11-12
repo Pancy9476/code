@@ -6,7 +6,6 @@ This directory contains the experiment code and run logs corresponding to Tables
 
 也已保存为：[Table1-README.md](</C:/Users/87199/Documents/Codex/2026-11-10/ni-en/outputs/Table1-README.md>)。
 
-```markdown
 ### Table 1. Multivariate forecasting results
 
 The look-back length is L = 96. Each model cell reports MSE / MAE. Best results are shown in **bold**, and second-best results are <ins>underlined</ins>.
@@ -55,4 +54,3 @@ The look-back length is L = 96. Each model cell reports MSE / MAE. Best results 
 | ETTm2 | Avg | **0.279** / **0.319** | 0.287 / 0.327 | 0.288 / 0.332 | 0.282 / 0.330 | 0.288 / 0.332 | <ins>0.281</ins> / <ins>0.326</ins> | 0.350 / 0.401 | 0.757 / 0.610 | 0.291 / 0.333 | 0.327 / 0.371 |
 | **1st Count** | | **44** | 0 | 0 | <ins>15</ins> | 7 | 12 | 3 | 1 | 3 | 0 |
 | **Avg 1st Count** | | **11** | 0 | 0 | <ins>3</ins> | 1 | 1 | 0 | 0 | 0 | 0 |
-```
