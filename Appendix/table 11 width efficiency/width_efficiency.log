@@ -1,0 +1,109 @@
+Width/resource comparison | 2026-11-10T01:56:25.617267
+GPU: NVIDIA GeForce GTX 1650 | torch=1.12.0+cu116
+TimeXer implementation: C:\Users\87199\Desktop\时序\work2\third_party\Time-Series-Library\models\TimeXer.py
+Weather L96 T96 seed2026, all-channel multivariate forecasting, train-only standardization; four fresh runs.
+Widths128/512. CTIA uses source branches and stable_max_loops2; TimeXer uses multivariate features=M, patch16, layers1, heads8, d_ff=4*d_model, dropout.1.
+TimeXer width/FF ratio is fixed in this new sweep; these configs are not claimed to reproduce its paper figure or every repository shell-script setting.
+Both use the same eight source calendar features; each architecture retains its own use of those features.
+Common protocol: batch256 FP32 AdamW lr5e-4 wd1e-4 ORHL=Huber(delta1)+5*MAE norm5 max_epochs100 early_stop12; plateau factor.5 patience3 min_lr1e-6.
+Same seed/reset and sampler scheme; no tuning; best validation MSE checkpoint; test not used for selection.
+Inference: batch1/batch256, fresh best-weight model after releasing optimizer/training tensors; eval/no_grad; inputs resident on GPU; 10 warmups, 30 synchronized repeats.
+Latency is mean ms/batch, excludes transfer/metrics. GPU memory is peak PyTorch allocated MiB, includes model/inputs/cache/activations, excludes reserved memory and external GPU allocations.
+Training peak allocated memory reported separately. No literature runtime/memory values mixed into local comparison. Single seed, two-width samples, not a complete Pareto frontier.
+PROBE TimeXer width=512 batch=256 forward/backward/AdamW/eval OK peak_allocated_MB=2293.88 seconds=3.74
+PROBE CTIA-ODE width=512 batch=256 forward/backward/AdamW/eval OK peak_allocated_MB=1725.01 seconds=1.40
+START TimeXer width=128 parameters=368096 | 2026-11-10T01:56:31.844234
+TimeXer width=128 Epoch=001 val_MSE=0.452190235 val_MAE=0.323976183 ES=0/12 seconds=14.47
+TimeXer width=128 Epoch=002 val_MSE=0.442009376 val_MAE=0.327163960 ES=0/12 seconds=14.53
+TimeXer width=128 Epoch=003 val_MSE=0.438049017 val_MAE=0.314772369 ES=0/12 seconds=14.49
+TimeXer width=128 Epoch=004 val_MSE=0.433587027 val_MAE=0.309611466 ES=0/12 seconds=14.45
+TimeXer width=128 Epoch=005 val_MSE=0.435446490 val_MAE=0.309498818 ES=1/12 seconds=14.42
+TimeXer width=128 Epoch=006 val_MSE=0.432616529 val_MAE=0.305831956 ES=0/12 seconds=14.47
+TimeXer width=128 Epoch=007 val_MSE=0.432409390 val_MAE=0.305482013 ES=0/12 seconds=14.55
+TimeXer width=128 Epoch=008 val_MSE=0.430389952 val_MAE=0.305279945 ES=0/12 seconds=14.49
+TimeXer width=128 Epoch=009 val_MSE=0.430899490 val_MAE=0.303860507 ES=1/12 seconds=14.48
+TimeXer width=128 Epoch=010 val_MSE=0.431576736 val_MAE=0.304700289 ES=2/12 seconds=14.47
+TimeXer width=128 Epoch=011 val_MSE=0.429644236 val_MAE=0.301484447 ES=0/12 seconds=14.48
+TimeXer width=128 Epoch=012 val_MSE=0.421767862 val_MAE=0.305083801 ES=1/12 seconds=14.57
+TimeXer width=128 Epoch=013 val_MSE=0.422534686 val_MAE=0.304819001 ES=2/12 seconds=14.53
+TimeXer width=128 Epoch=014 val_MSE=0.423539072 val_MAE=0.302824362 ES=3/12 seconds=14.51
+TimeXer width=128 Epoch=015 val_MSE=0.429882920 val_MAE=0.303039636 ES=4/12 seconds=14.52
+TimeXer width=128 Epoch=016 val_MSE=0.433039304 val_MAE=0.303541947 ES=5/12 seconds=14.54
+TimeXer width=128 Epoch=017 val_MSE=0.430055380 val_MAE=0.301855034 ES=6/12 seconds=14.56
+TimeXer width=128 Epoch=018 val_MSE=0.431493811 val_MAE=0.302228739 ES=7/12 seconds=14.49
+TimeXer width=128 Epoch=019 val_MSE=0.431892753 val_MAE=0.301808052 ES=8/12 seconds=14.57
+TimeXer width=128 Epoch=020 val_MSE=0.451403295 val_MAE=0.303351939 ES=9/12 seconds=14.57
+TimeXer width=128 Epoch=021 val_MSE=0.451865103 val_MAE=0.302821046 ES=10/12 seconds=14.63
+TimeXer width=128 Epoch=022 val_MSE=0.451619424 val_MAE=0.303261888 ES=11/12 seconds=14.65
+TimeXer width=128 Epoch=023 val_MSE=0.451554772 val_MAE=0.302996796 ES=12/12 seconds=14.62
+TRAINING TimeXer width=128 best_epoch=11 epochs=23 seconds=334.07 peak_allocated_MB=597.13
+RESULT TimeXer width=128 | MSE=0.165391303 MAE=0.214537161 parameters=368096 batch1_ms=2.606587 batch1_peak_MB=5.027 batch256_ms=24.458497 batch256_peak_MB=224.043
+START TimeXer width=512 parameters=4617824 | 2026-11-10T02:02:08.873808
+TimeXer width=512 Epoch=001 val_MSE=0.453378080 val_MAE=0.318225257 ES=0/12 seconds=76.91
+TimeXer width=512 Epoch=002 val_MSE=0.447837049 val_MAE=0.314465482 ES=0/12 seconds=76.89
+TimeXer width=512 Epoch=003 val_MSE=0.445974950 val_MAE=0.308583131 ES=0/12 seconds=76.85
+TimeXer width=512 Epoch=004 val_MSE=0.445327512 val_MAE=0.310532663 ES=0/12 seconds=76.84
+TimeXer width=512 Epoch=005 val_MSE=0.449676511 val_MAE=0.307572283 ES=1/12 seconds=76.81
+TimeXer width=512 Epoch=006 val_MSE=0.443487868 val_MAE=0.304279094 ES=0/12 seconds=76.81
+TimeXer width=512 Epoch=007 val_MSE=0.447518335 val_MAE=0.306091116 ES=1/12 seconds=76.89
+TimeXer width=512 Epoch=008 val_MSE=0.445969645 val_MAE=0.305940668 ES=2/12 seconds=76.85
+TimeXer width=512 Epoch=009 val_MSE=0.445306645 val_MAE=0.302908578 ES=3/12 seconds=76.86
+TimeXer width=512 Epoch=010 val_MSE=0.448821621 val_MAE=0.304741167 ES=4/12 seconds=76.83
+TimeXer width=512 Epoch=011 val_MSE=0.445459667 val_MAE=0.303423098 ES=5/12 seconds=76.85
+TimeXer width=512 Epoch=012 val_MSE=0.447557726 val_MAE=0.309074850 ES=6/12 seconds=76.88
+TimeXer width=512 Epoch=013 val_MSE=0.449225075 val_MAE=0.307977875 ES=7/12 seconds=76.88
+TimeXer width=512 Epoch=014 val_MSE=0.450811588 val_MAE=0.309441771 ES=8/12 seconds=76.88
+TimeXer width=512 Epoch=015 val_MSE=0.449425950 val_MAE=0.307549226 ES=9/12 seconds=76.85
+TimeXer width=512 Epoch=016 val_MSE=0.451759408 val_MAE=0.307403561 ES=10/12 seconds=76.85
+TimeXer width=512 Epoch=017 val_MSE=0.450427192 val_MAE=0.308091895 ES=11/12 seconds=76.87
+TimeXer width=512 Epoch=018 val_MSE=0.453239734 val_MAE=0.309745715 ES=12/12 seconds=76.88
+TRAINING TimeXer width=512 best_epoch=6 epochs=18 seconds=1383.47 peak_allocated_MB=2295.03
+RESULT TimeXer width=512 | MSE=0.165518175 MAE=0.214343577 parameters=4617824 batch1_ms=2.903323 batch1_peak_MB=36.210 batch256_ms=171.063363 batch256_peak_MB=882.000
+START CTIA-ODE width=128 parameters=514637 | 2026-11-10T02:25:27.178824
+CTIA-ODE width=128 Epoch=001 val_MSE=0.431187357 val_MAE=0.281936027 ES=0/12 seconds=16.84
+CTIA-ODE width=128 Epoch=002 val_MSE=0.409759319 val_MAE=0.264233638 ES=0/12 seconds=16.96
+CTIA-ODE width=128 Epoch=003 val_MSE=0.404382675 val_MAE=0.260003037 ES=0/12 seconds=16.98
+CTIA-ODE width=128 Epoch=004 val_MSE=0.400293988 val_MAE=0.255269776 ES=0/12 seconds=16.87
+CTIA-ODE width=128 Epoch=005 val_MSE=0.402915984 val_MAE=0.258308304 ES=1/12 seconds=16.92
+CTIA-ODE width=128 Epoch=006 val_MSE=0.394527046 val_MAE=0.252777400 ES=0/12 seconds=16.96
+CTIA-ODE width=128 Epoch=007 val_MSE=0.395134943 val_MAE=0.256418405 ES=1/12 seconds=17.05
+CTIA-ODE width=128 Epoch=008 val_MSE=0.397663052 val_MAE=0.256924628 ES=2/12 seconds=16.95
+CTIA-ODE width=128 Epoch=009 val_MSE=0.394427569 val_MAE=0.255508894 ES=0/12 seconds=16.97
+CTIA-ODE width=128 Epoch=010 val_MSE=0.391561140 val_MAE=0.252448208 ES=0/12 seconds=17.02
+CTIA-ODE width=128 Epoch=011 val_MSE=0.395031558 val_MAE=0.255847300 ES=1/12 seconds=16.92
+CTIA-ODE width=128 Epoch=012 val_MSE=0.397792004 val_MAE=0.257581381 ES=2/12 seconds=16.95
+CTIA-ODE width=128 Epoch=013 val_MSE=0.397549220 val_MAE=0.258328590 ES=3/12 seconds=16.94
+CTIA-ODE width=128 Epoch=014 val_MSE=0.399810316 val_MAE=0.258054440 ES=4/12 seconds=17.03
+CTIA-ODE width=128 Epoch=015 val_MSE=0.404329010 val_MAE=0.261622004 ES=5/12 seconds=16.92
+CTIA-ODE width=128 Epoch=016 val_MSE=0.402781302 val_MAE=0.260825029 ES=6/12 seconds=16.92
+CTIA-ODE width=128 Epoch=017 val_MSE=0.397646536 val_MAE=0.256584063 ES=7/12 seconds=16.99
+CTIA-ODE width=128 Epoch=018 val_MSE=0.400508471 val_MAE=0.258723156 ES=8/12 seconds=16.97
+CTIA-ODE width=128 Epoch=019 val_MSE=0.401050786 val_MAE=0.259283227 ES=9/12 seconds=16.94
+CTIA-ODE width=128 Epoch=020 val_MSE=0.404254241 val_MAE=0.260644582 ES=10/12 seconds=16.94
+CTIA-ODE width=128 Epoch=021 val_MSE=0.398579162 val_MAE=0.257669926 ES=11/12 seconds=17.04
+CTIA-ODE width=128 Epoch=022 val_MSE=0.403519764 val_MAE=0.259896555 ES=12/12 seconds=16.95
+TRAINING CTIA-ODE width=128 best_epoch=10 epochs=22 seconds=373.05 peak_allocated_MB=448.47
+RESULT CTIA-ODE width=128 | MSE=0.153207680 MAE=0.191097536 parameters=514637 batch1_ms=13.064733 batch1_peak_MB=2.217 batch256_ms=38.235230 batch256_peak_MB=67.164
+START CTIA-ODE width=512 parameters=7310669 | 2026-11-10T02:31:44.723395
+CTIA-ODE width=512 Epoch=001 val_MSE=0.409741522 val_MAE=0.269258836 ES=0/12 seconds=91.51
+CTIA-ODE width=512 Epoch=002 val_MSE=0.398445702 val_MAE=0.257461476 ES=0/12 seconds=91.43
+CTIA-ODE width=512 Epoch=003 val_MSE=0.409067600 val_MAE=0.263412532 ES=1/12 seconds=91.39
+CTIA-ODE width=512 Epoch=004 val_MSE=0.404144418 val_MAE=0.259496066 ES=2/12 seconds=91.43
+CTIA-ODE width=512 Epoch=005 val_MSE=0.407289047 val_MAE=0.262283386 ES=3/12 seconds=91.43
+CTIA-ODE width=512 Epoch=006 val_MSE=0.416968667 val_MAE=0.269783928 ES=4/12 seconds=91.40
+CTIA-ODE width=512 Epoch=007 val_MSE=0.412770405 val_MAE=0.269191403 ES=5/12 seconds=91.55
+CTIA-ODE width=512 Epoch=008 val_MSE=0.417474667 val_MAE=0.268729571 ES=6/12 seconds=91.55
+CTIA-ODE width=512 Epoch=009 val_MSE=0.421380372 val_MAE=0.270727982 ES=7/12 seconds=91.53
+CTIA-ODE width=512 Epoch=010 val_MSE=0.424491823 val_MAE=0.273970701 ES=8/12 seconds=91.46
+CTIA-ODE width=512 Epoch=011 val_MSE=0.426766954 val_MAE=0.274010532 ES=9/12 seconds=91.44
+CTIA-ODE width=512 Epoch=012 val_MSE=0.420723061 val_MAE=0.271914659 ES=10/12 seconds=91.47
+CTIA-ODE width=512 Epoch=013 val_MSE=0.420919264 val_MAE=0.272387381 ES=11/12 seconds=91.44
+CTIA-ODE width=512 Epoch=014 val_MSE=0.429850458 val_MAE=0.275558571 ES=12/12 seconds=91.51
+TRAINING CTIA-ODE width=512 best_epoch=2 epochs=14 seconds=1280.55 peak_allocated_MB=1725.73
+RESULT CTIA-ODE width=512 | MSE=0.158463687 MAE=0.196738319 parameters=7310669 batch1_ms=13.811907 batch1_peak_MB=28.773 batch256_ms=220.971430 batch256_peak_MB=258.190
+FINAL SUMMARY
+TimeXer width=128 | MSE=0.165391303 MAE=0.214537161 parameters=368096 batch1_ms=2.606587 batch1_peak_MB=5.027 batch256_ms=24.458497 batch256_peak_MB=224.043
+TimeXer width=512 | MSE=0.165518175 MAE=0.214343577 parameters=4617824 batch1_ms=2.903323 batch1_peak_MB=36.210 batch256_ms=171.063363 batch256_peak_MB=882.000
+CTIA-ODE width=128 | MSE=0.153207680 MAE=0.191097536 parameters=514637 batch1_ms=13.064733 batch1_peak_MB=2.217 batch256_ms=38.235230 batch256_peak_MB=67.164
+CTIA-ODE width=512 | MSE=0.158463687 MAE=0.196738319 parameters=7310669 batch1_ms=13.811907 batch1_peak_MB=28.773 batch256_ms=220.971430 batch256_peak_MB=258.190
+Finished: 2026-11-10T02:53:24.529911

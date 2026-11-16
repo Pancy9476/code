@@ -1,0 +1,23 @@
+Table 4: CTIA-ODE, ETTm2, existing-checkpoint evaluation
+Started: 2026-11-07T02:24:18.373236+08:00
+Source: ettm2.py | Weights: weights/ETTm2/best_model_T96.pth
+L=96 | T=96 | d_model=16 | batch_size=120 | seed=2026
+Metrics: all 7 channels, train-standardized values, all test windows
+Mask: independent probability 0.30, exogenous input only, standardized zero
+Shift+2: exogenous x(t-2), earlier real history, no wrap or padding
+OT, targets and calendar features are unchanged.
+Historical Original MSE reference: 0.174985 (not rerun)
+Test windows: 11425
+Mask-30% | batch 20/96 | windows 2400
+Mask-30% | batch 40/96 | windows 4800
+Mask-30% | batch 60/96 | windows 7200
+Mask-30% | batch 80/96 | windows 9600
+Mask-30% | batch 96/96 | windows 11425
+Mask-30% | MSE=0.186743442 | MAE=0.266136187 | Delta MSE=+6.7196% | seconds=4.42
+Shift+2 | batch 20/96 | windows 2400
+Shift+2 | batch 40/96 | windows 4800
+Shift+2 | batch 60/96 | windows 7200
+Shift+2 | batch 80/96 | windows 9600
+Shift+2 | batch 96/96 | windows 11425
+Shift+2 | MSE=0.194935997 | MAE=0.267882469 | Delta MSE=+11.4015% | seconds=2.85
+Finished: 2026-11-07T02:24:26.436614+08:00
