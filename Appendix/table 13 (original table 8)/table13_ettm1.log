@@ -1,0 +1,1358 @@
+Table 8: CTIA-ODE ETTm1 look-back length experiment
+Started: 2026-11-07T13:07:27.125424+08:00
+Dataset: ETTm1 | L=96,192,336,720 | T=96,192,336,720
+ETTm1 L=96 T=96 | Epoch 001 | train_loss=2.865310 | val_MSE=0.840296954 val_MAE=0.623999151 | lr=2.00e-05 | ES=0/12 | seconds=11.08 BEST
+ETTm1 L=96 T=96 | Epoch 002 | train_loss=2.705725 | val_MSE=0.731085795 val_MAE=0.582867789 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=96 T=96 | Epoch 003 | train_loss=2.583575 | val_MSE=0.650532280 val_MAE=0.549789352 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=96 T=96 | Epoch 004 | train_loss=2.489168 | val_MSE=0.591266689 val_MAE=0.523405182 | lr=2.00e-05 | ES=0/12 | seconds=9.12 BEST
+ETTm1 L=96 T=96 | Epoch 005 | train_loss=2.414491 | val_MSE=0.547942931 val_MAE=0.502594567 | lr=2.00e-05 | ES=0/12 | seconds=9.16 BEST
+ETTm1 L=96 T=96 | Epoch 006 | train_loss=2.356829 | val_MSE=0.516340921 val_MAE=0.486290947 | lr=2.00e-05 | ES=0/12 | seconds=9.09 BEST
+ETTm1 L=96 T=96 | Epoch 007 | train_loss=2.311093 | val_MSE=0.492859906 val_MAE=0.473348156 | lr=2.00e-05 | ES=0/12 | seconds=9.35 BEST
+ETTm1 L=96 T=96 | Epoch 008 | train_loss=2.274348 | val_MSE=0.475382495 val_MAE=0.463129876 | lr=2.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=96 T=96 | Epoch 009 | train_loss=2.243202 | val_MSE=0.461927793 val_MAE=0.454848102 | lr=2.00e-05 | ES=0/12 | seconds=9.95 BEST
+ETTm1 L=96 T=96 | Epoch 010 | train_loss=2.217633 | val_MSE=0.451142662 val_MAE=0.447836568 | lr=2.00e-05 | ES=0/12 | seconds=9.57 BEST
+ETTm1 L=96 T=96 | Epoch 011 | train_loss=2.195902 | val_MSE=0.442613775 val_MAE=0.442079171 | lr=2.00e-05 | ES=0/12 | seconds=9.72 BEST
+ETTm1 L=96 T=96 | Epoch 012 | train_loss=2.176614 | val_MSE=0.435791935 val_MAE=0.437335569 | lr=2.00e-05 | ES=0/12 | seconds=10.21 BEST
+ETTm1 L=96 T=96 | Epoch 013 | train_loss=2.161573 | val_MSE=0.430020374 val_MAE=0.433123241 | lr=2.00e-05 | ES=0/12 | seconds=10.14 BEST
+ETTm1 L=96 T=96 | Epoch 014 | train_loss=2.145562 | val_MSE=0.425230451 val_MAE=0.429548804 | lr=2.00e-05 | ES=0/12 | seconds=10.11 BEST
+ETTm1 L=96 T=96 | Epoch 015 | train_loss=2.132595 | val_MSE=0.421095281 val_MAE=0.426393483 | lr=2.00e-05 | ES=0/12 | seconds=10.12 BEST
+ETTm1 L=96 T=96 | Epoch 016 | train_loss=2.120872 | val_MSE=0.417631334 val_MAE=0.423709882 | lr=2.00e-05 | ES=0/12 | seconds=10.10 BEST
+ETTm1 L=96 T=96 | Epoch 017 | train_loss=2.109120 | val_MSE=0.414316305 val_MAE=0.420994335 | lr=2.00e-05 | ES=0/12 | seconds=9.50 BEST
+ETTm1 L=96 T=96 | Epoch 018 | train_loss=2.099799 | val_MSE=0.411635310 val_MAE=0.418881966 | lr=2.00e-05 | ES=0/12 | seconds=9.68 BEST
+ETTm1 L=96 T=96 | Epoch 019 | train_loss=2.091750 | val_MSE=0.409117178 val_MAE=0.416830683 | lr=2.00e-05 | ES=0/12 | seconds=9.39 BEST
+ETTm1 L=96 T=96 | Epoch 020 | train_loss=2.082327 | val_MSE=0.407034107 val_MAE=0.415152174 | lr=2.00e-05 | ES=0/12 | seconds=9.74 BEST
+ETTm1 L=96 T=96 | Epoch 021 | train_loss=2.074905 | val_MSE=0.405153475 val_MAE=0.413638829 | lr=2.00e-05 | ES=0/12 | seconds=9.24 BEST
+ETTm1 L=96 T=96 | Epoch 022 | train_loss=2.067317 | val_MSE=0.403313790 val_MAE=0.412138605 | lr=2.00e-05 | ES=0/12 | seconds=9.20 BEST
+ETTm1 L=96 T=96 | Epoch 023 | train_loss=2.060810 | val_MSE=0.401844665 val_MAE=0.410921264 | lr=2.00e-05 | ES=0/12 | seconds=10.09 BEST
+ETTm1 L=96 T=96 | Epoch 024 | train_loss=2.054335 | val_MSE=0.400703961 val_MAE=0.409997134 | lr=2.00e-05 | ES=0/12 | seconds=9.24 BEST
+ETTm1 L=96 T=96 | Epoch 025 | train_loss=2.047768 | val_MSE=0.399415589 val_MAE=0.408888099 | lr=2.00e-05 | ES=0/12 | seconds=9.72 BEST
+ETTm1 L=96 T=96 | Epoch 026 | train_loss=2.043032 | val_MSE=0.398234750 val_MAE=0.408032890 | lr=2.00e-05 | ES=0/12 | seconds=9.38 BEST
+ETTm1 L=96 T=96 | Epoch 027 | train_loss=2.037519 | val_MSE=0.397079517 val_MAE=0.406938086 | lr=2.00e-05 | ES=0/12 | seconds=9.69 BEST
+ETTm1 L=96 T=96 | Epoch 028 | train_loss=2.032620 | val_MSE=0.396250392 val_MAE=0.406258875 | lr=2.00e-05 | ES=0/12 | seconds=9.90 BEST
+ETTm1 L=96 T=96 | Epoch 029 | train_loss=2.026658 | val_MSE=0.395455682 val_MAE=0.405607976 | lr=2.00e-05 | ES=0/12 | seconds=9.96 BEST
+ETTm1 L=96 T=96 | Epoch 030 | train_loss=2.023158 | val_MSE=0.394766123 val_MAE=0.405138762 | lr=2.00e-05 | ES=0/12 | seconds=10.35 BEST
+ETTm1 L=96 T=96 | Epoch 031 | train_loss=2.019694 | val_MSE=0.394028522 val_MAE=0.404535929 | lr=2.00e-05 | ES=0/12 | seconds=9.65 BEST
+ETTm1 L=96 T=96 | Epoch 032 | train_loss=2.015465 | val_MSE=0.393351763 val_MAE=0.403849748 | lr=2.00e-05 | ES=0/12 | seconds=9.77 BEST
+ETTm1 L=96 T=96 | Epoch 033 | train_loss=2.011950 | val_MSE=0.392478279 val_MAE=0.403054916 | lr=2.00e-05 | ES=0/12 | seconds=10.26 BEST
+ETTm1 L=96 T=96 | Epoch 034 | train_loss=2.007173 | val_MSE=0.391993953 val_MAE=0.402631942 | lr=2.00e-05 | ES=0/12 | seconds=9.32 BEST
+ETTm1 L=96 T=96 | Epoch 035 | train_loss=2.004390 | val_MSE=0.391464112 val_MAE=0.402154031 | lr=2.00e-05 | ES=0/12 | seconds=9.31 BEST
+ETTm1 L=96 T=96 | Epoch 036 | train_loss=2.000732 | val_MSE=0.391026767 val_MAE=0.401629470 | lr=2.00e-05 | ES=0/12 | seconds=9.45 BEST
+ETTm1 L=96 T=96 | Epoch 037 | train_loss=1.996234 | val_MSE=0.390539727 val_MAE=0.401182441 | lr=2.00e-05 | ES=0/12 | seconds=9.80 BEST
+ETTm1 L=96 T=96 | Epoch 038 | train_loss=1.993641 | val_MSE=0.390137312 val_MAE=0.400878311 | lr=2.00e-05 | ES=0/12 | seconds=9.56 BEST
+ETTm1 L=96 T=96 | Epoch 039 | train_loss=1.990076 | val_MSE=0.389622368 val_MAE=0.400260887 | lr=2.00e-05 | ES=0/12 | seconds=10.20 BEST
+ETTm1 L=96 T=96 | Epoch 040 | train_loss=1.987011 | val_MSE=0.389405431 val_MAE=0.400264579 | lr=2.00e-05 | ES=0/12 | seconds=9.58 BEST
+ETTm1 L=96 T=96 | Epoch 041 | train_loss=1.984154 | val_MSE=0.389219725 val_MAE=0.399890206 | lr=2.00e-05 | ES=0/12 | seconds=9.78 BEST
+ETTm1 L=96 T=96 | Epoch 042 | train_loss=1.981248 | val_MSE=0.388711631 val_MAE=0.399389990 | lr=2.00e-05 | ES=0/12 | seconds=9.83 BEST
+ETTm1 L=96 T=96 | Epoch 043 | train_loss=1.978686 | val_MSE=0.388363115 val_MAE=0.399050241 | lr=2.00e-05 | ES=0/12 | seconds=10.10 BEST
+ETTm1 L=96 T=96 | Epoch 044 | train_loss=1.974800 | val_MSE=0.388055220 val_MAE=0.398771700 | lr=2.00e-05 | ES=0/12 | seconds=10.34 BEST
+ETTm1 L=96 T=96 | Epoch 045 | train_loss=1.972246 | val_MSE=0.387983952 val_MAE=0.398721584 | lr=2.00e-05 | ES=0/12 | seconds=10.43 BEST
+ETTm1 L=96 T=96 | Epoch 046 | train_loss=1.970255 | val_MSE=0.387692634 val_MAE=0.398357899 | lr=2.00e-05 | ES=0/12 | seconds=10.35 BEST
+ETTm1 L=96 T=96 | Epoch 047 | train_loss=1.966798 | val_MSE=0.387438889 val_MAE=0.398051987 | lr=2.00e-05 | ES=0/12 | seconds=9.67 BEST
+ETTm1 L=96 T=96 | Epoch 048 | train_loss=1.964518 | val_MSE=0.387356892 val_MAE=0.397964750 | lr=2.00e-05 | ES=0/12 | seconds=9.59 BEST
+ETTm1 L=96 T=96 | Epoch 049 | train_loss=1.963010 | val_MSE=0.387136465 val_MAE=0.397818457 | lr=2.00e-05 | ES=0/12 | seconds=9.36 BEST
+ETTm1 L=96 T=96 | Epoch 050 | train_loss=1.960178 | val_MSE=0.386883736 val_MAE=0.397617040 | lr=2.00e-05 | ES=0/12 | seconds=9.75 BEST
+ETTm1 L=96 T=96 | Epoch 051 | train_loss=1.957335 | val_MSE=0.386547111 val_MAE=0.397333001 | lr=2.00e-05 | ES=0/12 | seconds=10.02 BEST
+ETTm1 L=96 T=96 | Epoch 052 | train_loss=1.955313 | val_MSE=0.386598462 val_MAE=0.397427471 | lr=2.00e-05 | ES=1/12 | seconds=9.44 
+ETTm1 L=96 T=96 | Epoch 053 | train_loss=1.952732 | val_MSE=0.386598562 val_MAE=0.397211036 | lr=2.00e-05 | ES=2/12 | seconds=9.52 
+ETTm1 L=96 T=96 | Epoch 054 | train_loss=1.951483 | val_MSE=0.386433777 val_MAE=0.397209388 | lr=2.00e-05 | ES=0/12 | seconds=9.58 BEST
+ETTm1 L=96 T=96 | Epoch 055 | train_loss=1.949334 | val_MSE=0.386542776 val_MAE=0.397062181 | lr=2.00e-05 | ES=1/12 | seconds=9.63 
+ETTm1 L=96 T=96 | Epoch 056 | train_loss=1.946584 | val_MSE=0.386398184 val_MAE=0.397026154 | lr=2.00e-05 | ES=0/12 | seconds=9.51 BEST
+ETTm1 L=96 T=96 | Epoch 057 | train_loss=1.944475 | val_MSE=0.386291018 val_MAE=0.396793882 | lr=2.00e-05 | ES=0/12 | seconds=10.32 BEST
+ETTm1 L=96 T=96 | Epoch 058 | train_loss=1.942037 | val_MSE=0.385985618 val_MAE=0.396659632 | lr=2.00e-05 | ES=0/12 | seconds=10.09 BEST
+ETTm1 L=96 T=96 | Epoch 059 | train_loss=1.941176 | val_MSE=0.386006763 val_MAE=0.396575028 | lr=2.00e-05 | ES=1/12 | seconds=10.34 
+ETTm1 L=96 T=96 | Epoch 060 | train_loss=1.938313 | val_MSE=0.386073622 val_MAE=0.396657762 | lr=2.00e-05 | ES=2/12 | seconds=10.05 
+ETTm1 L=96 T=96 | Epoch 061 | train_loss=1.936459 | val_MSE=0.386115556 val_MAE=0.396662448 | lr=2.00e-05 | ES=3/12 | seconds=11.29 
+ETTm1 L=96 T=96 | Epoch 062 | train_loss=1.934406 | val_MSE=0.386119612 val_MAE=0.396535008 | lr=1.00e-05 | ES=4/12 | seconds=11.53 
+ETTm1 L=96 T=96 | Epoch 063 | train_loss=1.933499 | val_MSE=0.386000354 val_MAE=0.396437597 | lr=1.00e-05 | ES=5/12 | seconds=11.71 
+ETTm1 L=96 T=96 | Epoch 064 | train_loss=1.932207 | val_MSE=0.386074227 val_MAE=0.396514458 | lr=1.00e-05 | ES=6/12 | seconds=11.37 
+ETTm1 L=96 T=96 | Epoch 065 | train_loss=1.931512 | val_MSE=0.386105859 val_MAE=0.396560563 | lr=1.00e-05 | ES=7/12 | seconds=11.84 
+ETTm1 L=96 T=96 | Epoch 066 | train_loss=1.930847 | val_MSE=0.386143410 val_MAE=0.396576494 | lr=5.00e-06 | ES=8/12 | seconds=11.71 
+ETTm1 L=96 T=96 | Epoch 067 | train_loss=1.928822 | val_MSE=0.386198023 val_MAE=0.396605007 | lr=5.00e-06 | ES=9/12 | seconds=11.90 
+ETTm1 L=96 T=96 | Epoch 068 | train_loss=1.929614 | val_MSE=0.386181448 val_MAE=0.396615841 | lr=5.00e-06 | ES=10/12 | seconds=11.77 
+ETTm1 L=96 T=96 | Epoch 069 | train_loss=1.929004 | val_MSE=0.386079836 val_MAE=0.396563190 | lr=5.00e-06 | ES=11/12 | seconds=8.73 
+ETTm1 L=96 T=96 | Epoch 070 | train_loss=1.928245 | val_MSE=0.386062960 val_MAE=0.396545314 | lr=2.50e-06 | ES=12/12 | seconds=9.09 
+Early stopping.
+RESULT ETTm1 L=96 T=96 | MSE=0.326785023 MAE=0.351964525 | best_epoch=58 epochs=70 | seconds=696.58
+Completed 1/16 training runs
+START ETTm1 L=96 T=192 | 2026-11-07T13:19:05.019639+08:00
+ETTm1 L=96 T=192 | Epoch 001 | train_loss=2.973628 | val_MSE=0.958170346 val_MAE=0.674661907 | lr=2.00e-05 | ES=0/12 | seconds=9.16 BEST
+ETTm1 L=96 T=192 | Epoch 002 | train_loss=2.818841 | val_MSE=0.854017467 val_MAE=0.636335114 | lr=2.00e-05 | ES=0/12 | seconds=9.23 BEST
+ETTm1 L=96 T=192 | Epoch 003 | train_loss=2.696544 | val_MSE=0.775892795 val_MAE=0.605153605 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=96 T=192 | Epoch 004 | train_loss=2.600041 | val_MSE=0.718015223 val_MAE=0.580268653 | lr=2.00e-05 | ES=0/12 | seconds=8.87 BEST
+ETTm1 L=96 T=192 | Epoch 005 | train_loss=2.524235 | val_MSE=0.675291341 val_MAE=0.560587933 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=96 T=192 | Epoch 006 | train_loss=2.464397 | val_MSE=0.643680337 val_MAE=0.545051058 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=96 T=192 | Epoch 007 | train_loss=2.416921 | val_MSE=0.620205480 val_MAE=0.532748552 | lr=2.00e-05 | ES=0/12 | seconds=9.03 BEST
+ETTm1 L=96 T=192 | Epoch 008 | train_loss=2.378872 | val_MSE=0.602443295 val_MAE=0.522879341 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=96 T=192 | Epoch 009 | train_loss=2.347559 | val_MSE=0.589027451 val_MAE=0.515012693 | lr=2.00e-05 | ES=0/12 | seconds=8.75 BEST
+ETTm1 L=96 T=192 | Epoch 010 | train_loss=2.321481 | val_MSE=0.578486652 val_MAE=0.508482317 | lr=2.00e-05 | ES=0/12 | seconds=8.34 BEST
+ETTm1 L=96 T=192 | Epoch 011 | train_loss=2.299412 | val_MSE=0.570281169 val_MAE=0.503189743 | lr=2.00e-05 | ES=0/12 | seconds=8.81 BEST
+ETTm1 L=96 T=192 | Epoch 012 | train_loss=2.280500 | val_MSE=0.563681526 val_MAE=0.498716923 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=96 T=192 | Epoch 013 | train_loss=2.264054 | val_MSE=0.558443535 val_MAE=0.495051008 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=96 T=192 | Epoch 014 | train_loss=2.249698 | val_MSE=0.554030878 val_MAE=0.491840622 | lr=2.00e-05 | ES=0/12 | seconds=8.64 BEST
+ETTm1 L=96 T=192 | Epoch 015 | train_loss=2.236968 | val_MSE=0.550488119 val_MAE=0.489292248 | lr=2.00e-05 | ES=0/12 | seconds=8.75 BEST
+ETTm1 L=96 T=192 | Epoch 016 | train_loss=2.225476 | val_MSE=0.547514384 val_MAE=0.487104649 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=96 T=192 | Epoch 017 | train_loss=2.215312 | val_MSE=0.545221721 val_MAE=0.485319257 | lr=2.00e-05 | ES=0/12 | seconds=9.02 BEST
+ETTm1 L=96 T=192 | Epoch 018 | train_loss=2.206154 | val_MSE=0.543045867 val_MAE=0.483596815 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=96 T=192 | Epoch 019 | train_loss=2.198032 | val_MSE=0.541514065 val_MAE=0.482464904 | lr=2.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=96 T=192 | Epoch 020 | train_loss=2.190593 | val_MSE=0.540119188 val_MAE=0.481410064 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=96 T=192 | Epoch 021 | train_loss=2.184169 | val_MSE=0.538856153 val_MAE=0.480371308 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=96 T=192 | Epoch 022 | train_loss=2.178285 | val_MSE=0.537731910 val_MAE=0.479443005 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=96 T=192 | Epoch 023 | train_loss=2.172983 | val_MSE=0.536732305 val_MAE=0.478690674 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=96 T=192 | Epoch 024 | train_loss=2.168123 | val_MSE=0.535571750 val_MAE=0.477708683 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=96 T=192 | Epoch 025 | train_loss=2.163796 | val_MSE=0.534564430 val_MAE=0.476875614 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=96 T=192 | Epoch 026 | train_loss=2.159484 | val_MSE=0.533732026 val_MAE=0.476088735 | lr=2.00e-05 | ES=0/12 | seconds=8.54 BEST
+ETTm1 L=96 T=192 | Epoch 027 | train_loss=2.155410 | val_MSE=0.532685224 val_MAE=0.475219472 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=96 T=192 | Epoch 028 | train_loss=2.151742 | val_MSE=0.531829869 val_MAE=0.474482672 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=96 T=192 | Epoch 029 | train_loss=2.148146 | val_MSE=0.530914123 val_MAE=0.473717171 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=96 T=192 | Epoch 030 | train_loss=2.144575 | val_MSE=0.530180325 val_MAE=0.472999659 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=96 T=192 | Epoch 031 | train_loss=2.141240 | val_MSE=0.529204152 val_MAE=0.472105516 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=96 T=192 | Epoch 032 | train_loss=2.138143 | val_MSE=0.528399180 val_MAE=0.471358759 | lr=2.00e-05 | ES=0/12 | seconds=9.17 BEST
+ETTm1 L=96 T=192 | Epoch 033 | train_loss=2.134914 | val_MSE=0.527951149 val_MAE=0.470998665 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=96 T=192 | Epoch 034 | train_loss=2.131804 | val_MSE=0.527072322 val_MAE=0.470164428 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=96 T=192 | Epoch 035 | train_loss=2.129210 | val_MSE=0.526547370 val_MAE=0.469758549 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=96 T=192 | Epoch 036 | train_loss=2.126256 | val_MSE=0.525793595 val_MAE=0.468942847 | lr=2.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=96 T=192 | Epoch 037 | train_loss=2.123453 | val_MSE=0.525284403 val_MAE=0.468609157 | lr=2.00e-05 | ES=0/12 | seconds=8.88 BEST
+ETTm1 L=96 T=192 | Epoch 038 | train_loss=2.121046 | val_MSE=0.524841618 val_MAE=0.467905152 | lr=2.00e-05 | ES=0/12 | seconds=8.50 BEST
+ETTm1 L=96 T=192 | Epoch 039 | train_loss=2.118385 | val_MSE=0.524507729 val_MAE=0.467618825 | lr=2.00e-05 | ES=0/12 | seconds=8.54 BEST
+ETTm1 L=96 T=192 | Epoch 040 | train_loss=2.116015 | val_MSE=0.523972457 val_MAE=0.467218296 | lr=2.00e-05 | ES=0/12 | seconds=8.38 BEST
+ETTm1 L=96 T=192 | Epoch 041 | train_loss=2.113674 | val_MSE=0.523485556 val_MAE=0.466734065 | lr=2.00e-05 | ES=0/12 | seconds=8.47 BEST
+ETTm1 L=96 T=192 | Epoch 042 | train_loss=2.111071 | val_MSE=0.523168104 val_MAE=0.466452564 | lr=2.00e-05 | ES=0/12 | seconds=8.46 BEST
+ETTm1 L=96 T=192 | Epoch 043 | train_loss=2.108984 | val_MSE=0.522747695 val_MAE=0.466227193 | lr=2.00e-05 | ES=0/12 | seconds=8.39 BEST
+ETTm1 L=96 T=192 | Epoch 044 | train_loss=2.106920 | val_MSE=0.522673315 val_MAE=0.465790665 | lr=2.00e-05 | ES=0/12 | seconds=8.51 BEST
+ETTm1 L=96 T=192 | Epoch 045 | train_loss=2.104661 | val_MSE=0.522266047 val_MAE=0.465507234 | lr=2.00e-05 | ES=0/12 | seconds=8.55 BEST
+ETTm1 L=96 T=192 | Epoch 046 | train_loss=2.102907 | val_MSE=0.522207753 val_MAE=0.465347836 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=96 T=192 | Epoch 047 | train_loss=2.100673 | val_MSE=0.521952290 val_MAE=0.465118382 | lr=2.00e-05 | ES=0/12 | seconds=8.51 BEST
+ETTm1 L=96 T=192 | Epoch 048 | train_loss=2.098890 | val_MSE=0.521630183 val_MAE=0.464882125 | lr=2.00e-05 | ES=0/12 | seconds=8.49 BEST
+ETTm1 L=96 T=192 | Epoch 049 | train_loss=2.097196 | val_MSE=0.521468341 val_MAE=0.464660718 | lr=2.00e-05 | ES=0/12 | seconds=8.43 BEST
+ETTm1 L=96 T=192 | Epoch 050 | train_loss=2.095358 | val_MSE=0.521532481 val_MAE=0.464464349 | lr=2.00e-05 | ES=1/12 | seconds=8.36 
+ETTm1 L=96 T=192 | Epoch 051 | train_loss=2.094006 | val_MSE=0.521416324 val_MAE=0.464333935 | lr=2.00e-05 | ES=0/12 | seconds=8.24 BEST
+ETTm1 L=96 T=192 | Epoch 052 | train_loss=2.092442 | val_MSE=0.521178718 val_MAE=0.464203659 | lr=2.00e-05 | ES=0/12 | seconds=8.47 BEST
+ETTm1 L=96 T=192 | Epoch 053 | train_loss=2.090687 | val_MSE=0.521022188 val_MAE=0.464027040 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=96 T=192 | Epoch 054 | train_loss=2.089565 | val_MSE=0.521073965 val_MAE=0.464010146 | lr=2.00e-05 | ES=1/12 | seconds=8.38 
+ETTm1 L=96 T=192 | Epoch 055 | train_loss=2.087871 | val_MSE=0.521114309 val_MAE=0.463922265 | lr=2.00e-05 | ES=2/12 | seconds=8.39 
+ETTm1 L=96 T=192 | Epoch 056 | train_loss=2.086638 | val_MSE=0.521471694 val_MAE=0.464009145 | lr=2.00e-05 | ES=3/12 | seconds=8.35 
+ETTm1 L=96 T=192 | Epoch 057 | train_loss=2.085747 | val_MSE=0.521061204 val_MAE=0.463756122 | lr=1.00e-05 | ES=4/12 | seconds=8.26 
+ETTm1 L=96 T=192 | Epoch 058 | train_loss=2.084239 | val_MSE=0.521068434 val_MAE=0.463693410 | lr=1.00e-05 | ES=5/12 | seconds=8.50 
+ETTm1 L=96 T=192 | Epoch 059 | train_loss=2.083758 | val_MSE=0.521192314 val_MAE=0.463746060 | lr=1.00e-05 | ES=6/12 | seconds=8.49 
+ETTm1 L=96 T=192 | Epoch 060 | train_loss=2.082955 | val_MSE=0.520930692 val_MAE=0.463618232 | lr=1.00e-05 | ES=0/12 | seconds=8.48 BEST
+ETTm1 L=96 T=192 | Epoch 061 | train_loss=2.082716 | val_MSE=0.521025009 val_MAE=0.463659767 | lr=1.00e-05 | ES=1/12 | seconds=8.45 
+ETTm1 L=96 T=192 | Epoch 062 | train_loss=2.081894 | val_MSE=0.521028948 val_MAE=0.463640543 | lr=1.00e-05 | ES=2/12 | seconds=8.51 
+ETTm1 L=96 T=192 | Epoch 063 | train_loss=2.081107 | val_MSE=0.521103606 val_MAE=0.463657037 | lr=1.00e-05 | ES=3/12 | seconds=8.38 
+ETTm1 L=96 T=192 | Epoch 064 | train_loss=2.080719 | val_MSE=0.520891648 val_MAE=0.463565325 | lr=5.00e-06 | ES=0/12 | seconds=8.45 BEST
+ETTm1 L=96 T=192 | Epoch 065 | train_loss=2.080306 | val_MSE=0.521115573 val_MAE=0.463645364 | lr=5.00e-06 | ES=1/12 | seconds=8.31 
+ETTm1 L=96 T=192 | Epoch 066 | train_loss=2.080049 | val_MSE=0.521070094 val_MAE=0.463604759 | lr=5.00e-06 | ES=2/12 | seconds=8.52 
+ETTm1 L=96 T=192 | Epoch 067 | train_loss=2.079622 | val_MSE=0.521042231 val_MAE=0.463600401 | lr=5.00e-06 | ES=3/12 | seconds=8.86 
+ETTm1 L=96 T=192 | Epoch 068 | train_loss=2.079444 | val_MSE=0.520995468 val_MAE=0.463578315 | lr=2.50e-06 | ES=4/12 | seconds=8.85 
+ETTm1 L=96 T=192 | Epoch 069 | train_loss=2.079225 | val_MSE=0.521082496 val_MAE=0.463604609 | lr=2.50e-06 | ES=5/12 | seconds=8.45 
+ETTm1 L=96 T=192 | Epoch 070 | train_loss=2.079234 | val_MSE=0.521088647 val_MAE=0.463596342 | lr=2.50e-06 | ES=6/12 | seconds=8.59 
+ETTm1 L=96 T=192 | Epoch 071 | train_loss=2.078962 | val_MSE=0.521048791 val_MAE=0.463574527 | lr=2.50e-06 | ES=7/12 | seconds=8.54 
+ETTm1 L=96 T=192 | Epoch 072 | train_loss=2.078847 | val_MSE=0.521070416 val_MAE=0.463568403 | lr=1.25e-06 | ES=8/12 | seconds=8.50 
+ETTm1 L=96 T=192 | Epoch 073 | train_loss=2.078752 | val_MSE=0.521068786 val_MAE=0.463571949 | lr=1.25e-06 | ES=9/12 | seconds=8.67 
+ETTm1 L=96 T=192 | Epoch 074 | train_loss=2.078642 | val_MSE=0.521074578 val_MAE=0.463573464 | lr=1.25e-06 | ES=10/12 | seconds=8.79 
+ETTm1 L=96 T=192 | Epoch 075 | train_loss=2.078626 | val_MSE=0.521091485 val_MAE=0.463578450 | lr=1.25e-06 | ES=11/12 | seconds=8.71 
+ETTm1 L=96 T=192 | Epoch 076 | train_loss=2.078814 | val_MSE=0.521071370 val_MAE=0.463570201 | lr=6.25e-07 | ES=12/12 | seconds=8.63 
+Early stopping.
+RESULT ETTm1 L=96 T=192 | MSE=0.377931960 MAE=0.377847026 | best_epoch=64 epochs=76 | seconds=657.31
+Completed 2/16 training runs
+START ETTm1 L=96 T=336 | 2026-11-07T13:30:02.510659+08:00
+ETTm1 L=96 T=336 | Epoch 001 | train_loss=3.088998 | val_MSE=1.083088908 val_MAE=0.722655350 | lr=2.00e-05 | ES=0/12 | seconds=8.84 BEST
+ETTm1 L=96 T=336 | Epoch 002 | train_loss=2.940811 | val_MSE=0.984146038 val_MAE=0.686911124 | lr=2.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=96 T=336 | Epoch 003 | train_loss=2.826965 | val_MSE=0.910120645 val_MAE=0.658062523 | lr=2.00e-05 | ES=0/12 | seconds=9.12 BEST
+ETTm1 L=96 T=336 | Epoch 004 | train_loss=2.735358 | val_MSE=0.855030407 val_MAE=0.635002286 | lr=2.00e-05 | ES=0/12 | seconds=8.94 BEST
+ETTm1 L=96 T=336 | Epoch 005 | train_loss=2.664222 | val_MSE=0.814383492 val_MAE=0.616749560 | lr=2.00e-05 | ES=0/12 | seconds=8.95 BEST
+ETTm1 L=96 T=336 | Epoch 006 | train_loss=2.608722 | val_MSE=0.784587584 val_MAE=0.602450999 | lr=2.00e-05 | ES=0/12 | seconds=8.76 BEST
+ETTm1 L=96 T=336 | Epoch 007 | train_loss=2.563911 | val_MSE=0.762683271 val_MAE=0.591240206 | lr=2.00e-05 | ES=0/12 | seconds=8.90 BEST
+ETTm1 L=96 T=336 | Epoch 008 | train_loss=2.527879 | val_MSE=0.746415452 val_MAE=0.582388137 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=96 T=336 | Epoch 009 | train_loss=2.499052 | val_MSE=0.734136723 val_MAE=0.575305411 | lr=2.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=96 T=336 | Epoch 010 | train_loss=2.475263 | val_MSE=0.724800496 val_MAE=0.569664563 | lr=2.00e-05 | ES=0/12 | seconds=8.87 BEST
+ETTm1 L=96 T=336 | Epoch 011 | train_loss=2.455346 | val_MSE=0.717566846 val_MAE=0.565103968 | lr=2.00e-05 | ES=0/12 | seconds=9.29 BEST
+ETTm1 L=96 T=336 | Epoch 012 | train_loss=2.438267 | val_MSE=0.711951587 val_MAE=0.561414215 | lr=2.00e-05 | ES=0/12 | seconds=9.12 BEST
+ETTm1 L=96 T=336 | Epoch 013 | train_loss=2.422344 | val_MSE=0.707530049 val_MAE=0.558434014 | lr=2.00e-05 | ES=0/12 | seconds=9.08 BEST
+ETTm1 L=96 T=336 | Epoch 014 | train_loss=2.409292 | val_MSE=0.704091235 val_MAE=0.556047811 | lr=2.00e-05 | ES=0/12 | seconds=8.88 BEST
+ETTm1 L=96 T=336 | Epoch 015 | train_loss=2.397343 | val_MSE=0.701358969 val_MAE=0.554093383 | lr=2.00e-05 | ES=0/12 | seconds=9.16 BEST
+ETTm1 L=96 T=336 | Epoch 016 | train_loss=2.386994 | val_MSE=0.699278480 val_MAE=0.552577195 | lr=2.00e-05 | ES=0/12 | seconds=8.95 BEST
+ETTm1 L=96 T=336 | Epoch 017 | train_loss=2.377822 | val_MSE=0.697611429 val_MAE=0.551362773 | lr=2.00e-05 | ES=0/12 | seconds=9.09 BEST
+ETTm1 L=96 T=336 | Epoch 018 | train_loss=2.371753 | val_MSE=0.696194336 val_MAE=0.550282866 | lr=2.00e-05 | ES=0/12 | seconds=9.51 BEST
+ETTm1 L=96 T=336 | Epoch 019 | train_loss=2.363998 | val_MSE=0.694967081 val_MAE=0.549401807 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=96 T=336 | Epoch 020 | train_loss=2.358622 | val_MSE=0.693971800 val_MAE=0.548704423 | lr=2.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=96 T=336 | Epoch 021 | train_loss=2.354404 | val_MSE=0.692771913 val_MAE=0.547806153 | lr=2.00e-05 | ES=0/12 | seconds=9.12 BEST
+ETTm1 L=96 T=336 | Epoch 022 | train_loss=2.348067 | val_MSE=0.691680911 val_MAE=0.546952816 | lr=2.00e-05 | ES=0/12 | seconds=8.99 BEST
+ETTm1 L=96 T=336 | Epoch 023 | train_loss=2.343953 | val_MSE=0.690718413 val_MAE=0.546262909 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=96 T=336 | Epoch 024 | train_loss=2.340808 | val_MSE=0.689914760 val_MAE=0.545654365 | lr=2.00e-05 | ES=0/12 | seconds=9.34 BEST
+ETTm1 L=96 T=336 | Epoch 025 | train_loss=2.337429 | val_MSE=0.689081865 val_MAE=0.545082339 | lr=2.00e-05 | ES=0/12 | seconds=9.22 BEST
+ETTm1 L=96 T=336 | Epoch 026 | train_loss=2.333524 | val_MSE=0.688128510 val_MAE=0.544292623 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=96 T=336 | Epoch 027 | train_loss=2.330386 | val_MSE=0.687351546 val_MAE=0.543740057 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=96 T=336 | Epoch 028 | train_loss=2.328175 | val_MSE=0.686395247 val_MAE=0.542955659 | lr=2.00e-05 | ES=0/12 | seconds=9.03 BEST
+ETTm1 L=96 T=336 | Epoch 029 | train_loss=2.325072 | val_MSE=0.685771689 val_MAE=0.542545762 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=96 T=336 | Epoch 030 | train_loss=2.323504 | val_MSE=0.685063659 val_MAE=0.542009696 | lr=2.00e-05 | ES=0/12 | seconds=8.94 BEST
+ETTm1 L=96 T=336 | Epoch 031 | train_loss=2.318574 | val_MSE=0.684257511 val_MAE=0.541474924 | lr=2.00e-05 | ES=0/12 | seconds=9.23 BEST
+ETTm1 L=96 T=336 | Epoch 032 | train_loss=2.317664 | val_MSE=0.683537569 val_MAE=0.540868787 | lr=2.00e-05 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=96 T=336 | Epoch 033 | train_loss=2.314692 | val_MSE=0.682723401 val_MAE=0.540287474 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=96 T=336 | Epoch 034 | train_loss=2.312271 | val_MSE=0.682076847 val_MAE=0.539766139 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=96 T=336 | Epoch 035 | train_loss=2.310368 | val_MSE=0.681259214 val_MAE=0.539124750 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=96 T=336 | Epoch 036 | train_loss=2.308177 | val_MSE=0.680470515 val_MAE=0.538499024 | lr=2.00e-05 | ES=0/12 | seconds=8.52 BEST
+ETTm1 L=96 T=336 | Epoch 037 | train_loss=2.305846 | val_MSE=0.679903214 val_MAE=0.538071725 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=96 T=336 | Epoch 038 | train_loss=2.303329 | val_MSE=0.679391092 val_MAE=0.537718274 | lr=2.00e-05 | ES=0/12 | seconds=8.94 BEST
+ETTm1 L=96 T=336 | Epoch 039 | train_loss=2.302107 | val_MSE=0.678697452 val_MAE=0.537246470 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=96 T=336 | Epoch 040 | train_loss=2.300222 | val_MSE=0.678113997 val_MAE=0.536748397 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=96 T=336 | Epoch 041 | train_loss=2.298556 | val_MSE=0.677586091 val_MAE=0.536414757 | lr=2.00e-05 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=96 T=336 | Epoch 042 | train_loss=2.296248 | val_MSE=0.677036524 val_MAE=0.535848288 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=96 T=336 | Epoch 043 | train_loss=2.295120 | val_MSE=0.676509935 val_MAE=0.535629272 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=96 T=336 | Epoch 044 | train_loss=2.292438 | val_MSE=0.675986431 val_MAE=0.535133380 | lr=2.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=96 T=336 | Epoch 045 | train_loss=2.290909 | val_MSE=0.675288042 val_MAE=0.534684288 | lr=2.00e-05 | ES=0/12 | seconds=8.87 BEST
+ETTm1 L=96 T=336 | Epoch 046 | train_loss=2.288861 | val_MSE=0.674850625 val_MAE=0.534348164 | lr=2.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=96 T=336 | Epoch 047 | train_loss=2.288414 | val_MSE=0.674442698 val_MAE=0.533980414 | lr=2.00e-05 | ES=0/12 | seconds=8.64 BEST
+ETTm1 L=96 T=336 | Epoch 048 | train_loss=2.286114 | val_MSE=0.673989469 val_MAE=0.533758884 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=96 T=336 | Epoch 049 | train_loss=2.284934 | val_MSE=0.673612796 val_MAE=0.533308864 | lr=2.00e-05 | ES=0/12 | seconds=8.66 BEST
+ETTm1 L=96 T=336 | Epoch 050 | train_loss=2.283200 | val_MSE=0.673204983 val_MAE=0.532998747 | lr=2.00e-05 | ES=0/12 | seconds=8.68 BEST
+ETTm1 L=96 T=336 | Epoch 051 | train_loss=2.281472 | val_MSE=0.672907120 val_MAE=0.532888363 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=96 T=336 | Epoch 052 | train_loss=2.281149 | val_MSE=0.672733039 val_MAE=0.532744095 | lr=2.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=96 T=336 | Epoch 053 | train_loss=2.278568 | val_MSE=0.672036607 val_MAE=0.532250857 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=96 T=336 | Epoch 054 | train_loss=2.278332 | val_MSE=0.671886150 val_MAE=0.532139916 | lr=2.00e-05 | ES=0/12 | seconds=8.64 BEST
+ETTm1 L=96 T=336 | Epoch 055 | train_loss=2.276572 | val_MSE=0.671443219 val_MAE=0.531841972 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=96 T=336 | Epoch 056 | train_loss=2.275076 | val_MSE=0.671223345 val_MAE=0.531739313 | lr=2.00e-05 | ES=0/12 | seconds=8.75 BEST
+ETTm1 L=96 T=336 | Epoch 057 | train_loss=2.274748 | val_MSE=0.670873014 val_MAE=0.531524869 | lr=2.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=96 T=336 | Epoch 058 | train_loss=2.273043 | val_MSE=0.670799609 val_MAE=0.531420124 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=96 T=336 | Epoch 059 | train_loss=2.272348 | val_MSE=0.670596140 val_MAE=0.531230339 | lr=2.00e-05 | ES=0/12 | seconds=8.92 BEST
+ETTm1 L=96 T=336 | Epoch 060 | train_loss=2.270308 | val_MSE=0.670301214 val_MAE=0.530976872 | lr=2.00e-05 | ES=0/12 | seconds=9.20 BEST
+ETTm1 L=96 T=336 | Epoch 061 | train_loss=2.269934 | val_MSE=0.670044036 val_MAE=0.530787336 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=96 T=336 | Epoch 062 | train_loss=2.268497 | val_MSE=0.669679778 val_MAE=0.530629466 | lr=2.00e-05 | ES=0/12 | seconds=8.97 BEST
+ETTm1 L=96 T=336 | Epoch 063 | train_loss=2.267498 | val_MSE=0.669622625 val_MAE=0.530502353 | lr=2.00e-05 | ES=0/12 | seconds=9.08 BEST
+ETTm1 L=96 T=336 | Epoch 064 | train_loss=2.266621 | val_MSE=0.669339776 val_MAE=0.530456561 | lr=2.00e-05 | ES=0/12 | seconds=8.74 BEST
+ETTm1 L=96 T=336 | Epoch 065 | train_loss=2.265234 | val_MSE=0.669057067 val_MAE=0.530343398 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=96 T=336 | Epoch 066 | train_loss=2.264849 | val_MSE=0.668831986 val_MAE=0.530285879 | lr=2.00e-05 | ES=0/12 | seconds=8.99 BEST
+ETTm1 L=96 T=336 | Epoch 067 | train_loss=2.263489 | val_MSE=0.668769389 val_MAE=0.530116859 | lr=2.00e-05 | ES=0/12 | seconds=8.89 BEST
+ETTm1 L=96 T=336 | Epoch 068 | train_loss=2.262868 | val_MSE=0.668565508 val_MAE=0.530074258 | lr=2.00e-05 | ES=0/12 | seconds=9.06 BEST
+ETTm1 L=96 T=336 | Epoch 069 | train_loss=2.261861 | val_MSE=0.668407239 val_MAE=0.529924388 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=96 T=336 | Epoch 070 | train_loss=2.261194 | val_MSE=0.668399408 val_MAE=0.529886431 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=96 T=336 | Epoch 071 | train_loss=2.260028 | val_MSE=0.668204107 val_MAE=0.529799346 | lr=2.00e-05 | ES=0/12 | seconds=8.81 BEST
+ETTm1 L=96 T=336 | Epoch 072 | train_loss=2.258631 | val_MSE=0.668201114 val_MAE=0.529827788 | lr=2.00e-05 | ES=0/12 | seconds=9.06 BEST
+ETTm1 L=96 T=336 | Epoch 073 | train_loss=2.257942 | val_MSE=0.667960590 val_MAE=0.529808045 | lr=2.00e-05 | ES=0/12 | seconds=9.03 BEST
+ETTm1 L=96 T=336 | Epoch 074 | train_loss=2.256843 | val_MSE=0.667781358 val_MAE=0.529744758 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=96 T=336 | Epoch 075 | train_loss=2.256171 | val_MSE=0.667731127 val_MAE=0.529563383 | lr=2.00e-05 | ES=0/12 | seconds=9.17 BEST
+ETTm1 L=96 T=336 | Epoch 076 | train_loss=2.255912 | val_MSE=0.667616032 val_MAE=0.529608488 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=96 T=336 | Epoch 077 | train_loss=2.254473 | val_MSE=0.667271755 val_MAE=0.529514735 | lr=2.00e-05 | ES=0/12 | seconds=9.04 BEST
+ETTm1 L=96 T=336 | Epoch 078 | train_loss=2.253141 | val_MSE=0.667609795 val_MAE=0.529523746 | lr=2.00e-05 | ES=1/12 | seconds=8.78 
+ETTm1 L=96 T=336 | Epoch 079 | train_loss=2.252916 | val_MSE=0.667244879 val_MAE=0.529436451 | lr=2.00e-05 | ES=0/12 | seconds=9.05 BEST
+ETTm1 L=96 T=336 | Epoch 080 | train_loss=2.252737 | val_MSE=0.667246489 val_MAE=0.529485550 | lr=2.00e-05 | ES=1/12 | seconds=8.69 
+ETTm1 L=96 T=336 | Epoch 081 | train_loss=2.251937 | val_MSE=0.667074764 val_MAE=0.529387181 | lr=2.00e-05 | ES=0/12 | seconds=8.90 BEST
+ETTm1 L=96 T=336 | Epoch 082 | train_loss=2.251372 | val_MSE=0.666971511 val_MAE=0.529325809 | lr=2.00e-05 | ES=0/12 | seconds=9.33 BEST
+ETTm1 L=96 T=336 | Epoch 083 | train_loss=2.249868 | val_MSE=0.666573553 val_MAE=0.529223694 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=96 T=336 | Epoch 084 | train_loss=2.249829 | val_MSE=0.666925788 val_MAE=0.529321970 | lr=2.00e-05 | ES=1/12 | seconds=9.09 
+ETTm1 L=96 T=336 | Epoch 085 | train_loss=2.247321 | val_MSE=0.667238180 val_MAE=0.529405103 | lr=2.00e-05 | ES=2/12 | seconds=9.21 
+ETTm1 L=96 T=336 | Epoch 086 | train_loss=2.248203 | val_MSE=0.667006323 val_MAE=0.529304512 | lr=2.00e-05 | ES=3/12 | seconds=9.89 
+ETTm1 L=96 T=336 | Epoch 087 | train_loss=2.247232 | val_MSE=0.666773601 val_MAE=0.529336881 | lr=1.00e-05 | ES=4/12 | seconds=9.41 
+ETTm1 L=96 T=336 | Epoch 088 | train_loss=2.245264 | val_MSE=0.666883766 val_MAE=0.529378056 | lr=1.00e-05 | ES=5/12 | seconds=9.11 
+ETTm1 L=96 T=336 | Epoch 089 | train_loss=2.245644 | val_MSE=0.666462574 val_MAE=0.529255273 | lr=1.00e-05 | ES=0/12 | seconds=9.01 BEST
+ETTm1 L=96 T=336 | Epoch 090 | train_loss=2.245988 | val_MSE=0.666446328 val_MAE=0.529234305 | lr=1.00e-05 | ES=0/12 | seconds=9.09 BEST
+ETTm1 L=96 T=336 | Epoch 091 | train_loss=2.245681 | val_MSE=0.666804117 val_MAE=0.529391727 | lr=1.00e-05 | ES=1/12 | seconds=8.78 
+ETTm1 L=96 T=336 | Epoch 092 | train_loss=2.245238 | val_MSE=0.666744835 val_MAE=0.529352676 | lr=1.00e-05 | ES=2/12 | seconds=9.28 
+ETTm1 L=96 T=336 | Epoch 093 | train_loss=2.244461 | val_MSE=0.666882688 val_MAE=0.529396246 | lr=5.00e-06 | ES=3/12 | seconds=8.84 
+ETTm1 L=96 T=336 | Epoch 094 | train_loss=2.244367 | val_MSE=0.666761515 val_MAE=0.529359648 | lr=5.00e-06 | ES=4/12 | seconds=8.83 
+ETTm1 L=96 T=336 | Epoch 095 | train_loss=2.243771 | val_MSE=0.666674651 val_MAE=0.529339050 | lr=5.00e-06 | ES=5/12 | seconds=8.88 
+ETTm1 L=96 T=336 | Epoch 096 | train_loss=2.244311 | val_MSE=0.666754689 val_MAE=0.529366817 | lr=5.00e-06 | ES=6/12 | seconds=8.74 
+ETTm1 L=96 T=336 | Epoch 097 | train_loss=2.243570 | val_MSE=0.666930101 val_MAE=0.529426920 | lr=2.50e-06 | ES=7/12 | seconds=8.95 
+ETTm1 L=96 T=336 | Epoch 098 | train_loss=2.244226 | val_MSE=0.666770325 val_MAE=0.529372742 | lr=2.50e-06 | ES=8/12 | seconds=8.83 
+ETTm1 L=96 T=336 | Epoch 099 | train_loss=2.243468 | val_MSE=0.666736141 val_MAE=0.529360100 | lr=2.50e-06 | ES=9/12 | seconds=8.98 
+ETTm1 L=96 T=336 | Epoch 100 | train_loss=2.243479 | val_MSE=0.666677858 val_MAE=0.529346544 | lr=2.50e-06 | ES=10/12 | seconds=8.65 
+ETTm1 L=96 T=336 | Epoch 101 | train_loss=2.243575 | val_MSE=0.666725763 val_MAE=0.529366675 | lr=1.25e-06 | ES=11/12 | seconds=8.59 
+ETTm1 L=96 T=336 | Epoch 102 | train_loss=2.243422 | val_MSE=0.666676100 val_MAE=0.529348813 | lr=1.25e-06 | ES=12/12 | seconds=8.65 
+Early stopping.
+RESULT ETTm1 L=96 T=336 | MSE=0.407708859 MAE=0.398730984 | best_epoch=90 epochs=102 | seconds=909.21
+Completed 3/16 training runs
+START ETTm1 L=96 T=720 | 2026-11-07T13:45:11.922466+08:00
+ETTm1 L=96 T=720 | Epoch 001 | train_loss=3.258033 | val_MSE=1.375221444 val_MAE=0.818240557 | lr=2.00e-05 | ES=0/12 | seconds=9.30 BEST
+ETTm1 L=96 T=720 | Epoch 002 | train_loss=3.122647 | val_MSE=1.282785290 val_MAE=0.785696890 | lr=2.00e-05 | ES=0/12 | seconds=9.27 BEST
+ETTm1 L=96 T=720 | Epoch 003 | train_loss=3.017752 | val_MSE=1.214556811 val_MAE=0.759916417 | lr=2.00e-05 | ES=0/12 | seconds=9.45 BEST
+ETTm1 L=96 T=720 | Epoch 004 | train_loss=2.935606 | val_MSE=1.163504147 val_MAE=0.739308480 | lr=2.00e-05 | ES=0/12 | seconds=9.44 BEST
+ETTm1 L=96 T=720 | Epoch 005 | train_loss=2.870335 | val_MSE=1.125480983 val_MAE=0.722960314 | lr=2.00e-05 | ES=0/12 | seconds=9.29 BEST
+ETTm1 L=96 T=720 | Epoch 006 | train_loss=2.818934 | val_MSE=1.097279876 val_MAE=0.710070240 | lr=2.00e-05 | ES=0/12 | seconds=9.60 BEST
+ETTm1 L=96 T=720 | Epoch 007 | train_loss=2.777574 | val_MSE=1.076338388 val_MAE=0.699908736 | lr=2.00e-05 | ES=0/12 | seconds=9.37 BEST
+ETTm1 L=96 T=720 | Epoch 008 | train_loss=2.744536 | val_MSE=1.060721431 val_MAE=0.691914905 | lr=2.00e-05 | ES=0/12 | seconds=9.38 BEST
+ETTm1 L=96 T=720 | Epoch 009 | train_loss=2.717493 | val_MSE=1.048978207 val_MAE=0.685583251 | lr=2.00e-05 | ES=0/12 | seconds=9.38 BEST
+ETTm1 L=96 T=720 | Epoch 010 | train_loss=2.695396 | val_MSE=1.040108564 val_MAE=0.680605126 | lr=2.00e-05 | ES=0/12 | seconds=9.70 BEST
+ETTm1 L=96 T=720 | Epoch 011 | train_loss=2.676813 | val_MSE=1.033173891 val_MAE=0.676570468 | lr=2.00e-05 | ES=0/12 | seconds=9.42 BEST
+ETTm1 L=96 T=720 | Epoch 012 | train_loss=2.660927 | val_MSE=1.027749964 val_MAE=0.673364389 | lr=2.00e-05 | ES=0/12 | seconds=9.35 BEST
+ETTm1 L=96 T=720 | Epoch 013 | train_loss=2.647082 | val_MSE=1.023442784 val_MAE=0.670795514 | lr=2.00e-05 | ES=0/12 | seconds=9.35 BEST
+ETTm1 L=96 T=720 | Epoch 014 | train_loss=2.635110 | val_MSE=1.019991582 val_MAE=0.668723952 | lr=2.00e-05 | ES=0/12 | seconds=9.41 BEST
+ETTm1 L=96 T=720 | Epoch 015 | train_loss=2.624581 | val_MSE=1.017325344 val_MAE=0.667217141 | lr=2.00e-05 | ES=0/12 | seconds=9.34 BEST
+ETTm1 L=96 T=720 | Epoch 016 | train_loss=2.615243 | val_MSE=1.015220436 val_MAE=0.666038611 | lr=2.00e-05 | ES=0/12 | seconds=9.75 BEST
+ETTm1 L=96 T=720 | Epoch 017 | train_loss=2.607181 | val_MSE=1.013603208 val_MAE=0.665153299 | lr=2.00e-05 | ES=0/12 | seconds=9.62 BEST
+ETTm1 L=96 T=720 | Epoch 018 | train_loss=2.600236 | val_MSE=1.012319268 val_MAE=0.664465090 | lr=2.00e-05 | ES=0/12 | seconds=9.69 BEST
+ETTm1 L=96 T=720 | Epoch 019 | train_loss=2.594218 | val_MSE=1.011610844 val_MAE=0.664112327 | lr=2.00e-05 | ES=0/12 | seconds=9.70 BEST
+ETTm1 L=96 T=720 | Epoch 020 | train_loss=2.589063 | val_MSE=1.010909002 val_MAE=0.663734078 | lr=2.00e-05 | ES=0/12 | seconds=9.50 BEST
+ETTm1 L=96 T=720 | Epoch 021 | train_loss=2.584449 | val_MSE=1.010502518 val_MAE=0.663479698 | lr=2.00e-05 | ES=0/12 | seconds=9.54 BEST
+ETTm1 L=96 T=720 | Epoch 022 | train_loss=2.580648 | val_MSE=1.009872224 val_MAE=0.662958854 | lr=2.00e-05 | ES=0/12 | seconds=9.67 BEST
+ETTm1 L=96 T=720 | Epoch 023 | train_loss=2.577057 | val_MSE=1.009509277 val_MAE=0.662659846 | lr=2.00e-05 | ES=0/12 | seconds=9.76 BEST
+ETTm1 L=96 T=720 | Epoch 024 | train_loss=2.573672 | val_MSE=1.009080450 val_MAE=0.662306281 | lr=2.00e-05 | ES=0/12 | seconds=9.66 BEST
+ETTm1 L=96 T=720 | Epoch 025 | train_loss=2.570785 | val_MSE=1.008403901 val_MAE=0.661715860 | lr=2.00e-05 | ES=0/12 | seconds=9.77 BEST
+ETTm1 L=96 T=720 | Epoch 026 | train_loss=2.568037 | val_MSE=1.008111863 val_MAE=0.661440741 | lr=2.00e-05 | ES=0/12 | seconds=9.56 BEST
+ETTm1 L=96 T=720 | Epoch 027 | train_loss=2.565192 | val_MSE=1.007724204 val_MAE=0.661055808 | lr=2.00e-05 | ES=0/12 | seconds=9.59 BEST
+ETTm1 L=96 T=720 | Epoch 028 | train_loss=2.562674 | val_MSE=1.007632786 val_MAE=0.660902237 | lr=2.00e-05 | ES=0/12 | seconds=9.67 BEST
+ETTm1 L=96 T=720 | Epoch 029 | train_loss=2.560251 | val_MSE=1.007054700 val_MAE=0.660436343 | lr=2.00e-05 | ES=0/12 | seconds=9.81 BEST
+ETTm1 L=96 T=720 | Epoch 030 | train_loss=2.557775 | val_MSE=1.006584601 val_MAE=0.660019894 | lr=2.00e-05 | ES=0/12 | seconds=9.60 BEST
+ETTm1 L=96 T=720 | Epoch 031 | train_loss=2.555618 | val_MSE=1.006165787 val_MAE=0.659697949 | lr=2.00e-05 | ES=0/12 | seconds=9.99 BEST
+ETTm1 L=96 T=720 | Epoch 032 | train_loss=2.553215 | val_MSE=1.005675387 val_MAE=0.659227981 | lr=2.00e-05 | ES=0/12 | seconds=9.39 BEST
+ETTm1 L=96 T=720 | Epoch 033 | train_loss=2.551057 | val_MSE=1.005485061 val_MAE=0.659135166 | lr=2.00e-05 | ES=0/12 | seconds=9.49 BEST
+ETTm1 L=96 T=720 | Epoch 034 | train_loss=2.548980 | val_MSE=1.004818446 val_MAE=0.658551075 | lr=2.00e-05 | ES=0/12 | seconds=9.78 BEST
+ETTm1 L=96 T=720 | Epoch 035 | train_loss=2.546756 | val_MSE=1.004089651 val_MAE=0.657994963 | lr=2.00e-05 | ES=0/12 | seconds=9.82 BEST
+ETTm1 L=96 T=720 | Epoch 036 | train_loss=2.544764 | val_MSE=1.003382022 val_MAE=0.657510909 | lr=2.00e-05 | ES=0/12 | seconds=9.67 BEST
+ETTm1 L=96 T=720 | Epoch 037 | train_loss=2.542692 | val_MSE=1.002908634 val_MAE=0.657046857 | lr=2.00e-05 | ES=0/12 | seconds=9.81 BEST
+ETTm1 L=96 T=720 | Epoch 038 | train_loss=2.540751 | val_MSE=1.002368281 val_MAE=0.656706353 | lr=2.00e-05 | ES=0/12 | seconds=9.61 BEST
+ETTm1 L=96 T=720 | Epoch 039 | train_loss=2.538884 | val_MSE=1.001290882 val_MAE=0.655896620 | lr=2.00e-05 | ES=0/12 | seconds=9.75 BEST
+ETTm1 L=96 T=720 | Epoch 040 | train_loss=2.537045 | val_MSE=1.000541803 val_MAE=0.655400609 | lr=2.00e-05 | ES=0/12 | seconds=9.68 BEST
+ETTm1 L=96 T=720 | Epoch 041 | train_loss=2.535432 | val_MSE=1.000821367 val_MAE=0.655592678 | lr=2.00e-05 | ES=1/12 | seconds=10.12 
+ETTm1 L=96 T=720 | Epoch 042 | train_loss=2.533867 | val_MSE=0.999815118 val_MAE=0.654834982 | lr=2.00e-05 | ES=0/12 | seconds=9.59 BEST
+ETTm1 L=96 T=720 | Epoch 043 | train_loss=2.532128 | val_MSE=0.999632199 val_MAE=0.654782370 | lr=2.00e-05 | ES=0/12 | seconds=9.99 BEST
+ETTm1 L=96 T=720 | Epoch 044 | train_loss=2.530631 | val_MSE=0.999284968 val_MAE=0.654540433 | lr=2.00e-05 | ES=0/12 | seconds=9.92 BEST
+ETTm1 L=96 T=720 | Epoch 045 | train_loss=2.529313 | val_MSE=0.998473940 val_MAE=0.653853726 | lr=2.00e-05 | ES=0/12 | seconds=9.42 BEST
+ETTm1 L=96 T=720 | Epoch 046 | train_loss=2.527635 | val_MSE=0.998064917 val_MAE=0.653662672 | lr=2.00e-05 | ES=0/12 | seconds=9.47 BEST
+ETTm1 L=96 T=720 | Epoch 047 | train_loss=2.526594 | val_MSE=0.997319050 val_MAE=0.653158916 | lr=2.00e-05 | ES=0/12 | seconds=9.87 BEST
+ETTm1 L=96 T=720 | Epoch 048 | train_loss=2.524863 | val_MSE=0.996844284 val_MAE=0.652684591 | lr=2.00e-05 | ES=0/12 | seconds=9.80 BEST
+ETTm1 L=96 T=720 | Epoch 049 | train_loss=2.523713 | val_MSE=0.996359771 val_MAE=0.652322274 | lr=2.00e-05 | ES=0/12 | seconds=9.44 BEST
+ETTm1 L=96 T=720 | Epoch 050 | train_loss=2.522379 | val_MSE=0.996278825 val_MAE=0.652347203 | lr=2.00e-05 | ES=0/12 | seconds=9.94 BEST
+ETTm1 L=96 T=720 | Epoch 051 | train_loss=2.521331 | val_MSE=0.995987259 val_MAE=0.652182476 | lr=2.00e-05 | ES=0/12 | seconds=9.80 BEST
+ETTm1 L=96 T=720 | Epoch 052 | train_loss=2.520159 | val_MSE=0.995418776 val_MAE=0.651681224 | lr=2.00e-05 | ES=0/12 | seconds=9.76 BEST
+ETTm1 L=96 T=720 | Epoch 053 | train_loss=2.518818 | val_MSE=0.994848800 val_MAE=0.651194532 | lr=2.00e-05 | ES=0/12 | seconds=9.69 BEST
+ETTm1 L=96 T=720 | Epoch 054 | train_loss=2.517690 | val_MSE=0.994335401 val_MAE=0.650907946 | lr=2.00e-05 | ES=0/12 | seconds=9.65 BEST
+ETTm1 L=96 T=720 | Epoch 055 | train_loss=2.516639 | val_MSE=0.993993862 val_MAE=0.650626890 | lr=2.00e-05 | ES=0/12 | seconds=9.56 BEST
+ETTm1 L=96 T=720 | Epoch 056 | train_loss=2.515722 | val_MSE=0.994035799 val_MAE=0.650750051 | lr=2.00e-05 | ES=1/12 | seconds=9.78 
+ETTm1 L=96 T=720 | Epoch 057 | train_loss=2.514512 | val_MSE=0.993316215 val_MAE=0.650200273 | lr=2.00e-05 | ES=0/12 | seconds=9.72 BEST
+ETTm1 L=96 T=720 | Epoch 058 | train_loss=2.513588 | val_MSE=0.993424638 val_MAE=0.650360484 | lr=2.00e-05 | ES=1/12 | seconds=9.77 
+ETTm1 L=96 T=720 | Epoch 059 | train_loss=2.512503 | val_MSE=0.992835945 val_MAE=0.649865366 | lr=2.00e-05 | ES=0/12 | seconds=9.98 BEST
+ETTm1 L=96 T=720 | Epoch 060 | train_loss=2.511549 | val_MSE=0.992487642 val_MAE=0.649651603 | lr=2.00e-05 | ES=0/12 | seconds=9.36 BEST
+ETTm1 L=96 T=720 | Epoch 061 | train_loss=2.510346 | val_MSE=0.991798698 val_MAE=0.649058449 | lr=2.00e-05 | ES=0/12 | seconds=9.35 BEST
+ETTm1 L=96 T=720 | Epoch 062 | train_loss=2.509509 | val_MSE=0.991664141 val_MAE=0.649035663 | lr=2.00e-05 | ES=0/12 | seconds=9.47 BEST
+ETTm1 L=96 T=720 | Epoch 063 | train_loss=2.508625 | val_MSE=0.991288766 val_MAE=0.648720846 | lr=2.00e-05 | ES=0/12 | seconds=9.27 BEST
+ETTm1 L=96 T=720 | Epoch 064 | train_loss=2.507922 | val_MSE=0.991261376 val_MAE=0.648739849 | lr=2.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=96 T=720 | Epoch 065 | train_loss=2.507107 | val_MSE=0.990838467 val_MAE=0.648362003 | lr=2.00e-05 | ES=0/12 | seconds=9.54 BEST
+ETTm1 L=96 T=720 | Epoch 066 | train_loss=2.505861 | val_MSE=0.990570734 val_MAE=0.648096596 | lr=2.00e-05 | ES=0/12 | seconds=9.69 BEST
+ETTm1 L=96 T=720 | Epoch 067 | train_loss=2.505375 | val_MSE=0.990326615 val_MAE=0.648060682 | lr=2.00e-05 | ES=0/12 | seconds=9.38 BEST
+ETTm1 L=96 T=720 | Epoch 068 | train_loss=2.504402 | val_MSE=0.990084879 val_MAE=0.647818246 | lr=2.00e-05 | ES=0/12 | seconds=9.42 BEST
+ETTm1 L=96 T=720 | Epoch 069 | train_loss=2.503499 | val_MSE=0.989878627 val_MAE=0.647695166 | lr=2.00e-05 | ES=0/12 | seconds=9.45 BEST
+ETTm1 L=96 T=720 | Epoch 070 | train_loss=2.502483 | val_MSE=0.989593639 val_MAE=0.647481137 | lr=2.00e-05 | ES=0/12 | seconds=9.44 BEST
+ETTm1 L=96 T=720 | Epoch 071 | train_loss=2.501808 | val_MSE=0.989265778 val_MAE=0.647224402 | lr=2.00e-05 | ES=0/12 | seconds=9.45 BEST
+ETTm1 L=96 T=720 | Epoch 072 | train_loss=2.501269 | val_MSE=0.989241755 val_MAE=0.647232107 | lr=2.00e-05 | ES=0/12 | seconds=9.60 BEST
+ETTm1 L=96 T=720 | Epoch 073 | train_loss=2.500470 | val_MSE=0.988959793 val_MAE=0.647050576 | lr=2.00e-05 | ES=0/12 | seconds=9.45 BEST
+ETTm1 L=96 T=720 | Epoch 074 | train_loss=2.499919 | val_MSE=0.988863218 val_MAE=0.646844817 | lr=2.00e-05 | ES=0/12 | seconds=9.32 BEST
+ETTm1 L=96 T=720 | Epoch 075 | train_loss=2.498821 | val_MSE=0.988748887 val_MAE=0.646889626 | lr=2.00e-05 | ES=0/12 | seconds=9.44 BEST
+ETTm1 L=96 T=720 | Epoch 076 | train_loss=2.498247 | val_MSE=0.988537598 val_MAE=0.646721743 | lr=2.00e-05 | ES=0/12 | seconds=9.42 BEST
+ETTm1 L=96 T=720 | Epoch 077 | train_loss=2.497448 | val_MSE=0.988175441 val_MAE=0.646438352 | lr=2.00e-05 | ES=0/12 | seconds=9.40 BEST
+ETTm1 L=96 T=720 | Epoch 078 | train_loss=2.497070 | val_MSE=0.988053506 val_MAE=0.646312951 | lr=2.00e-05 | ES=0/12 | seconds=9.45 BEST
+ETTm1 L=96 T=720 | Epoch 079 | train_loss=2.495888 | val_MSE=0.987984001 val_MAE=0.646236899 | lr=2.00e-05 | ES=0/12 | seconds=9.60 BEST
+ETTm1 L=96 T=720 | Epoch 080 | train_loss=2.495267 | val_MSE=0.987805623 val_MAE=0.646232554 | lr=2.00e-05 | ES=0/12 | seconds=9.31 BEST
+ETTm1 L=96 T=720 | Epoch 081 | train_loss=2.494877 | val_MSE=0.987715811 val_MAE=0.646045056 | lr=2.00e-05 | ES=0/12 | seconds=9.34 BEST
+ETTm1 L=96 T=720 | Epoch 082 | train_loss=2.494057 | val_MSE=0.987636101 val_MAE=0.646146076 | lr=2.00e-05 | ES=0/12 | seconds=9.40 BEST
+ETTm1 L=96 T=720 | Epoch 083 | train_loss=2.493719 | val_MSE=0.987521069 val_MAE=0.645954098 | lr=2.00e-05 | ES=0/12 | seconds=9.94 BEST
+ETTm1 L=96 T=720 | Epoch 084 | train_loss=2.493112 | val_MSE=0.987356137 val_MAE=0.645919434 | lr=2.00e-05 | ES=0/12 | seconds=9.77 BEST
+ETTm1 L=96 T=720 | Epoch 085 | train_loss=2.492404 | val_MSE=0.987311891 val_MAE=0.645870786 | lr=2.00e-05 | ES=0/12 | seconds=10.27 BEST
+ETTm1 L=96 T=720 | Epoch 086 | train_loss=2.491720 | val_MSE=0.987237759 val_MAE=0.645618670 | lr=2.00e-05 | ES=0/12 | seconds=9.57 BEST
+ETTm1 L=96 T=720 | Epoch 087 | train_loss=2.490825 | val_MSE=0.987223880 val_MAE=0.645718125 | lr=2.00e-05 | ES=0/12 | seconds=9.66 BEST
+ETTm1 L=96 T=720 | Epoch 088 | train_loss=2.490399 | val_MSE=0.987038986 val_MAE=0.645625413 | lr=2.00e-05 | ES=0/12 | seconds=9.42 BEST
+ETTm1 L=96 T=720 | Epoch 089 | train_loss=2.489480 | val_MSE=0.986814351 val_MAE=0.645440260 | lr=2.00e-05 | ES=0/12 | seconds=9.53 BEST
+ETTm1 L=96 T=720 | Epoch 090 | train_loss=2.489067 | val_MSE=0.986813462 val_MAE=0.645522079 | lr=2.00e-05 | ES=0/12 | seconds=9.75 BEST
+ETTm1 L=96 T=720 | Epoch 091 | train_loss=2.488336 | val_MSE=0.986935538 val_MAE=0.645462741 | lr=2.00e-05 | ES=1/12 | seconds=9.84 
+ETTm1 L=96 T=720 | Epoch 092 | train_loss=2.487641 | val_MSE=0.986677003 val_MAE=0.645330702 | lr=2.00e-05 | ES=0/12 | seconds=9.65 BEST
+ETTm1 L=96 T=720 | Epoch 093 | train_loss=2.487025 | val_MSE=0.986581447 val_MAE=0.645401789 | lr=2.00e-05 | ES=0/12 | seconds=9.88 BEST
+ETTm1 L=96 T=720 | Epoch 094 | train_loss=2.486800 | val_MSE=0.986700406 val_MAE=0.645383774 | lr=2.00e-05 | ES=1/12 | seconds=9.65 
+ETTm1 L=96 T=720 | Epoch 095 | train_loss=2.486062 | val_MSE=0.986568182 val_MAE=0.645325986 | lr=2.00e-05 | ES=0/12 | seconds=9.60 BEST
+ETTm1 L=96 T=720 | Epoch 096 | train_loss=2.485432 | val_MSE=0.986436384 val_MAE=0.645335079 | lr=2.00e-05 | ES=0/12 | seconds=9.60 BEST
+ETTm1 L=96 T=720 | Epoch 097 | train_loss=2.484985 | val_MSE=0.986608966 val_MAE=0.645425005 | lr=2.00e-05 | ES=1/12 | seconds=9.87 
+ETTm1 L=96 T=720 | Epoch 098 | train_loss=2.484347 | val_MSE=0.986482685 val_MAE=0.645189948 | lr=2.00e-05 | ES=2/12 | seconds=9.53 
+ETTm1 L=96 T=720 | Epoch 099 | train_loss=2.483495 | val_MSE=0.986484642 val_MAE=0.645222299 | lr=2.00e-05 | ES=3/12 | seconds=9.51 
+ETTm1 L=96 T=720 | Epoch 100 | train_loss=2.483686 | val_MSE=0.986442563 val_MAE=0.645187074 | lr=1.00e-05 | ES=4/12 | seconds=9.91 
+ETTm1 L=96 T=720 | Epoch 101 | train_loss=2.482785 | val_MSE=0.986485509 val_MAE=0.645218382 | lr=1.00e-05 | ES=5/12 | seconds=9.59 
+ETTm1 L=96 T=720 | Epoch 102 | train_loss=2.482517 | val_MSE=0.986417039 val_MAE=0.645239553 | lr=1.00e-05 | ES=0/12 | seconds=9.61 BEST
+ETTm1 L=96 T=720 | Epoch 103 | train_loss=2.481838 | val_MSE=0.986360018 val_MAE=0.645206406 | lr=1.00e-05 | ES=0/12 | seconds=9.59 BEST
+ETTm1 L=96 T=720 | Epoch 104 | train_loss=2.481877 | val_MSE=0.986435455 val_MAE=0.645190136 | lr=5.00e-06 | ES=1/12 | seconds=9.51 
+ETTm1 L=96 T=720 | Epoch 105 | train_loss=2.481299 | val_MSE=0.986362662 val_MAE=0.645185553 | lr=5.00e-06 | ES=2/12 | seconds=9.88 
+ETTm1 L=96 T=720 | Epoch 106 | train_loss=2.481257 | val_MSE=0.986426635 val_MAE=0.645190723 | lr=5.00e-06 | ES=3/12 | seconds=9.62 
+ETTm1 L=96 T=720 | Epoch 107 | train_loss=2.481209 | val_MSE=0.986396821 val_MAE=0.645203250 | lr=5.00e-06 | ES=4/12 | seconds=9.66 
+ETTm1 L=96 T=720 | Epoch 108 | train_loss=2.481101 | val_MSE=0.986421353 val_MAE=0.645187372 | lr=2.50e-06 | ES=5/12 | seconds=9.76 
+ETTm1 L=96 T=720 | Epoch 109 | train_loss=2.481097 | val_MSE=0.986430208 val_MAE=0.645192971 | lr=2.50e-06 | ES=6/12 | seconds=9.64 
+ETTm1 L=96 T=720 | Epoch 110 | train_loss=2.481033 | val_MSE=0.986408421 val_MAE=0.645199907 | lr=2.50e-06 | ES=7/12 | seconds=9.80 
+ETTm1 L=96 T=720 | Epoch 111 | train_loss=2.480968 | val_MSE=0.986421620 val_MAE=0.645197592 | lr=2.50e-06 | ES=8/12 | seconds=9.58 
+ETTm1 L=96 T=720 | Epoch 112 | train_loss=2.481043 | val_MSE=0.986402570 val_MAE=0.645190819 | lr=1.25e-06 | ES=9/12 | seconds=9.60 
+ETTm1 L=96 T=720 | Epoch 113 | train_loss=2.481168 | val_MSE=0.986428632 val_MAE=0.645194493 | lr=1.25e-06 | ES=10/12 | seconds=9.52 
+ETTm1 L=96 T=720 | Epoch 114 | train_loss=2.480820 | val_MSE=0.986429204 val_MAE=0.645200039 | lr=1.25e-06 | ES=11/12 | seconds=9.55 
+ETTm1 L=96 T=720 | Epoch 115 | train_loss=2.480904 | val_MSE=0.986406290 val_MAE=0.645194154 | lr=1.25e-06 | ES=12/12 | seconds=10.01 
+Early stopping.
+RESULT ETTm1 L=96 T=720 | MSE=0.471415018 MAE=0.434872784 | best_epoch=103 epochs=115 | seconds=1106.98
+Completed 4/16 training runs
+AVG ETTm1 L=96 | MSE=0.395960215 MAE=0.390853830
+START ETTm1 L=192 T=96 | 2026-11-07T14:03:39.096786+08:00
+ETTm1 L=192 T=96 | Epoch 001 | train_loss=2.844930 | val_MSE=0.817872423 val_MAE=0.627371123 | lr=2.00e-05 | ES=0/12 | seconds=8.40 BEST
+ETTm1 L=192 T=96 | Epoch 002 | train_loss=2.593504 | val_MSE=0.669991457 val_MAE=0.566414229 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=192 T=96 | Epoch 003 | train_loss=2.422981 | val_MSE=0.579453771 val_MAE=0.524097960 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=192 T=96 | Epoch 004 | train_loss=2.305426 | val_MSE=0.523566404 val_MAE=0.494855977 | lr=2.00e-05 | ES=0/12 | seconds=8.36 BEST
+ETTm1 L=192 T=96 | Epoch 005 | train_loss=2.223161 | val_MSE=0.488477950 val_MAE=0.474572071 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=192 T=96 | Epoch 006 | train_loss=2.164038 | val_MSE=0.465659874 val_MAE=0.460360786 | lr=2.00e-05 | ES=0/12 | seconds=8.71 BEST
+ETTm1 L=192 T=96 | Epoch 007 | train_loss=2.119715 | val_MSE=0.449927463 val_MAE=0.449832680 | lr=2.00e-05 | ES=0/12 | seconds=8.76 BEST
+ETTm1 L=192 T=96 | Epoch 008 | train_loss=2.085919 | val_MSE=0.438673533 val_MAE=0.441939469 | lr=2.00e-05 | ES=0/12 | seconds=8.42 BEST
+ETTm1 L=192 T=96 | Epoch 009 | train_loss=2.058614 | val_MSE=0.430129933 val_MAE=0.435828139 | lr=2.00e-05 | ES=0/12 | seconds=8.33 BEST
+ETTm1 L=192 T=96 | Epoch 010 | train_loss=2.036389 | val_MSE=0.423397956 val_MAE=0.430876652 | lr=2.00e-05 | ES=0/12 | seconds=8.27 BEST
+ETTm1 L=192 T=96 | Epoch 011 | train_loss=2.017277 | val_MSE=0.417988413 val_MAE=0.426965870 | lr=2.00e-05 | ES=0/12 | seconds=8.42 BEST
+ETTm1 L=192 T=96 | Epoch 012 | train_loss=2.000512 | val_MSE=0.413008386 val_MAE=0.423204451 | lr=2.00e-05 | ES=0/12 | seconds=8.29 BEST
+ETTm1 L=192 T=96 | Epoch 013 | train_loss=1.985878 | val_MSE=0.408973175 val_MAE=0.420131843 | lr=2.00e-05 | ES=0/12 | seconds=8.30 BEST
+ETTm1 L=192 T=96 | Epoch 014 | train_loss=1.972909 | val_MSE=0.405460851 val_MAE=0.417472229 | lr=2.00e-05 | ES=0/12 | seconds=8.44 BEST
+ETTm1 L=192 T=96 | Epoch 015 | train_loss=1.961128 | val_MSE=0.402595732 val_MAE=0.415335890 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=192 T=96 | Epoch 016 | train_loss=1.950541 | val_MSE=0.399345803 val_MAE=0.413030687 | lr=2.00e-05 | ES=0/12 | seconds=8.41 BEST
+ETTm1 L=192 T=96 | Epoch 017 | train_loss=1.941195 | val_MSE=0.397281464 val_MAE=0.411310063 | lr=2.00e-05 | ES=0/12 | seconds=8.20 BEST
+ETTm1 L=192 T=96 | Epoch 018 | train_loss=1.932817 | val_MSE=0.395055857 val_MAE=0.409616277 | lr=2.00e-05 | ES=0/12 | seconds=8.32 BEST
+ETTm1 L=192 T=96 | Epoch 019 | train_loss=1.924720 | val_MSE=0.393257680 val_MAE=0.408377436 | lr=2.00e-05 | ES=0/12 | seconds=8.48 BEST
+ETTm1 L=192 T=96 | Epoch 020 | train_loss=1.917453 | val_MSE=0.391423933 val_MAE=0.407006503 | lr=2.00e-05 | ES=0/12 | seconds=8.29 BEST
+ETTm1 L=192 T=96 | Epoch 021 | train_loss=1.910798 | val_MSE=0.389892511 val_MAE=0.405788083 | lr=2.00e-05 | ES=0/12 | seconds=8.27 BEST
+ETTm1 L=192 T=96 | Epoch 022 | train_loss=1.904532 | val_MSE=0.388618586 val_MAE=0.404759743 | lr=2.00e-05 | ES=0/12 | seconds=8.41 BEST
+ETTm1 L=192 T=96 | Epoch 023 | train_loss=1.898601 | val_MSE=0.387009984 val_MAE=0.403461285 | lr=2.00e-05 | ES=0/12 | seconds=8.36 BEST
+ETTm1 L=192 T=96 | Epoch 024 | train_loss=1.893158 | val_MSE=0.386025239 val_MAE=0.402821775 | lr=2.00e-05 | ES=0/12 | seconds=8.31 BEST
+ETTm1 L=192 T=96 | Epoch 025 | train_loss=1.888155 | val_MSE=0.384800382 val_MAE=0.401735467 | lr=2.00e-05 | ES=0/12 | seconds=8.31 BEST
+ETTm1 L=192 T=96 | Epoch 026 | train_loss=1.883742 | val_MSE=0.384251642 val_MAE=0.401221712 | lr=2.00e-05 | ES=0/12 | seconds=8.32 BEST
+ETTm1 L=192 T=96 | Epoch 027 | train_loss=1.878968 | val_MSE=0.383142689 val_MAE=0.400502787 | lr=2.00e-05 | ES=0/12 | seconds=8.29 BEST
+ETTm1 L=192 T=96 | Epoch 028 | train_loss=1.874830 | val_MSE=0.382607812 val_MAE=0.399973384 | lr=2.00e-05 | ES=0/12 | seconds=8.36 BEST
+ETTm1 L=192 T=96 | Epoch 029 | train_loss=1.870697 | val_MSE=0.381527200 val_MAE=0.399228087 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=192 T=96 | Epoch 030 | train_loss=1.867037 | val_MSE=0.381331000 val_MAE=0.398917775 | lr=2.00e-05 | ES=0/12 | seconds=8.42 BEST
+ETTm1 L=192 T=96 | Epoch 031 | train_loss=1.863311 | val_MSE=0.380531182 val_MAE=0.398151640 | lr=2.00e-05 | ES=0/12 | seconds=8.26 BEST
+ETTm1 L=192 T=96 | Epoch 032 | train_loss=1.859965 | val_MSE=0.380191299 val_MAE=0.397851184 | lr=2.00e-05 | ES=0/12 | seconds=8.34 BEST
+ETTm1 L=192 T=96 | Epoch 033 | train_loss=1.856408 | val_MSE=0.379447079 val_MAE=0.397555703 | lr=2.00e-05 | ES=0/12 | seconds=8.41 BEST
+ETTm1 L=192 T=96 | Epoch 034 | train_loss=1.853417 | val_MSE=0.378711254 val_MAE=0.396788116 | lr=2.00e-05 | ES=0/12 | seconds=8.39 BEST
+ETTm1 L=192 T=96 | Epoch 035 | train_loss=1.850694 | val_MSE=0.378503833 val_MAE=0.396589733 | lr=2.00e-05 | ES=0/12 | seconds=8.53 BEST
+ETTm1 L=192 T=96 | Epoch 036 | train_loss=1.847344 | val_MSE=0.378194644 val_MAE=0.396215406 | lr=2.00e-05 | ES=0/12 | seconds=8.45 BEST
+ETTm1 L=192 T=96 | Epoch 037 | train_loss=1.844527 | val_MSE=0.377513044 val_MAE=0.395701526 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=192 T=96 | Epoch 038 | train_loss=1.842044 | val_MSE=0.377317621 val_MAE=0.395367954 | lr=2.00e-05 | ES=0/12 | seconds=8.38 BEST
+ETTm1 L=192 T=96 | Epoch 039 | train_loss=1.839325 | val_MSE=0.377187840 val_MAE=0.395026506 | lr=2.00e-05 | ES=0/12 | seconds=8.24 BEST
+ETTm1 L=192 T=96 | Epoch 040 | train_loss=1.837063 | val_MSE=0.376464659 val_MAE=0.394606850 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=192 T=96 | Epoch 041 | train_loss=1.834244 | val_MSE=0.376938464 val_MAE=0.394915585 | lr=2.00e-05 | ES=1/12 | seconds=8.36 
+ETTm1 L=192 T=96 | Epoch 042 | train_loss=1.831827 | val_MSE=0.377188493 val_MAE=0.394906810 | lr=2.00e-05 | ES=2/12 | seconds=8.52 
+ETTm1 L=192 T=96 | Epoch 043 | train_loss=1.829528 | val_MSE=0.376383537 val_MAE=0.394201568 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=192 T=96 | Epoch 044 | train_loss=1.827532 | val_MSE=0.376361561 val_MAE=0.394113524 | lr=2.00e-05 | ES=0/12 | seconds=8.91 BEST
+ETTm1 L=192 T=96 | Epoch 045 | train_loss=1.825003 | val_MSE=0.375897234 val_MAE=0.393771840 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=192 T=96 | Epoch 046 | train_loss=1.822970 | val_MSE=0.376225106 val_MAE=0.393904202 | lr=2.00e-05 | ES=1/12 | seconds=8.44 
+ETTm1 L=192 T=96 | Epoch 047 | train_loss=1.820713 | val_MSE=0.376108774 val_MAE=0.393787969 | lr=2.00e-05 | ES=2/12 | seconds=8.80 
+ETTm1 L=192 T=96 | Epoch 048 | train_loss=1.818980 | val_MSE=0.375592446 val_MAE=0.393409725 | lr=2.00e-05 | ES=0/12 | seconds=8.34 BEST
+ETTm1 L=192 T=96 | Epoch 049 | train_loss=1.817016 | val_MSE=0.376217101 val_MAE=0.393760567 | lr=2.00e-05 | ES=1/12 | seconds=8.59 
+ETTm1 L=192 T=96 | Epoch 050 | train_loss=1.815005 | val_MSE=0.375745380 val_MAE=0.393416251 | lr=2.00e-05 | ES=2/12 | seconds=8.87 
+ETTm1 L=192 T=96 | Epoch 051 | train_loss=1.813269 | val_MSE=0.375411034 val_MAE=0.393087824 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=192 T=96 | Epoch 052 | train_loss=1.811423 | val_MSE=0.375708314 val_MAE=0.393244627 | lr=2.00e-05 | ES=1/12 | seconds=8.57 
+ETTm1 L=192 T=96 | Epoch 053 | train_loss=1.809790 | val_MSE=0.375142256 val_MAE=0.392927033 | lr=2.00e-05 | ES=0/12 | seconds=8.45 BEST
+ETTm1 L=192 T=96 | Epoch 054 | train_loss=1.807534 | val_MSE=0.375232641 val_MAE=0.393083620 | lr=2.00e-05 | ES=1/12 | seconds=8.37 
+ETTm1 L=192 T=96 | Epoch 055 | train_loss=1.805837 | val_MSE=0.375284116 val_MAE=0.392968465 | lr=2.00e-05 | ES=2/12 | seconds=8.37 
+ETTm1 L=192 T=96 | Epoch 056 | train_loss=1.804669 | val_MSE=0.375069666 val_MAE=0.392652295 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=192 T=96 | Epoch 057 | train_loss=1.803001 | val_MSE=0.375293552 val_MAE=0.392886385 | lr=2.00e-05 | ES=1/12 | seconds=8.59 
+ETTm1 L=192 T=96 | Epoch 058 | train_loss=1.801426 | val_MSE=0.375394898 val_MAE=0.392849401 | lr=2.00e-05 | ES=2/12 | seconds=8.52 
+ETTm1 L=192 T=96 | Epoch 059 | train_loss=1.799786 | val_MSE=0.375064368 val_MAE=0.392596227 | lr=2.00e-05 | ES=0/12 | seconds=8.43 BEST
+ETTm1 L=192 T=96 | Epoch 060 | train_loss=1.798969 | val_MSE=0.374767857 val_MAE=0.392394689 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=192 T=96 | Epoch 061 | train_loss=1.797132 | val_MSE=0.374795295 val_MAE=0.392299515 | lr=2.00e-05 | ES=1/12 | seconds=8.57 
+ETTm1 L=192 T=96 | Epoch 062 | train_loss=1.795717 | val_MSE=0.374499274 val_MAE=0.392319098 | lr=2.00e-05 | ES=0/12 | seconds=8.74 BEST
+ETTm1 L=192 T=96 | Epoch 063 | train_loss=1.794157 | val_MSE=0.374823487 val_MAE=0.392374279 | lr=2.00e-05 | ES=1/12 | seconds=8.46 
+ETTm1 L=192 T=96 | Epoch 064 | train_loss=1.792644 | val_MSE=0.374409830 val_MAE=0.392178362 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=192 T=96 | Epoch 065 | train_loss=1.791213 | val_MSE=0.374698159 val_MAE=0.392356975 | lr=2.00e-05 | ES=1/12 | seconds=8.38 
+ETTm1 L=192 T=96 | Epoch 066 | train_loss=1.790262 | val_MSE=0.374389241 val_MAE=0.392124973 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=192 T=96 | Epoch 067 | train_loss=1.788584 | val_MSE=0.374455889 val_MAE=0.392268331 | lr=2.00e-05 | ES=1/12 | seconds=8.43 
+ETTm1 L=192 T=96 | Epoch 068 | train_loss=1.787323 | val_MSE=0.374345349 val_MAE=0.392207101 | lr=2.00e-05 | ES=0/12 | seconds=8.68 BEST
+ETTm1 L=192 T=96 | Epoch 069 | train_loss=1.786540 | val_MSE=0.374619528 val_MAE=0.392241887 | lr=2.00e-05 | ES=1/12 | seconds=8.61 
+ETTm1 L=192 T=96 | Epoch 070 | train_loss=1.785211 | val_MSE=0.374735561 val_MAE=0.392303277 | lr=2.00e-05 | ES=2/12 | seconds=8.86 
+ETTm1 L=192 T=96 | Epoch 071 | train_loss=1.783767 | val_MSE=0.374258843 val_MAE=0.392005965 | lr=2.00e-05 | ES=0/12 | seconds=8.94 BEST
+ETTm1 L=192 T=96 | Epoch 072 | train_loss=1.782770 | val_MSE=0.373927579 val_MAE=0.391864973 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=192 T=96 | Epoch 073 | train_loss=1.781352 | val_MSE=0.373849865 val_MAE=0.391696792 | lr=2.00e-05 | ES=0/12 | seconds=8.37 BEST
+ETTm1 L=192 T=96 | Epoch 074 | train_loss=1.780236 | val_MSE=0.374189019 val_MAE=0.391999868 | lr=2.00e-05 | ES=1/12 | seconds=8.49 
+ETTm1 L=192 T=96 | Epoch 075 | train_loss=1.779344 | val_MSE=0.373578500 val_MAE=0.391562495 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=192 T=96 | Epoch 076 | train_loss=1.777605 | val_MSE=0.373902182 val_MAE=0.391764521 | lr=2.00e-05 | ES=1/12 | seconds=8.59 
+ETTm1 L=192 T=96 | Epoch 077 | train_loss=1.776957 | val_MSE=0.373456743 val_MAE=0.391548447 | lr=2.00e-05 | ES=0/12 | seconds=8.39 BEST
+ETTm1 L=192 T=96 | Epoch 078 | train_loss=1.775763 | val_MSE=0.373408139 val_MAE=0.391277303 | lr=2.00e-05 | ES=0/12 | seconds=8.51 BEST
+ETTm1 L=192 T=96 | Epoch 079 | train_loss=1.774603 | val_MSE=0.373669950 val_MAE=0.391691985 | lr=2.00e-05 | ES=1/12 | seconds=8.44 
+ETTm1 L=192 T=96 | Epoch 080 | train_loss=1.773658 | val_MSE=0.373552317 val_MAE=0.391642072 | lr=2.00e-05 | ES=2/12 | seconds=8.23 
+ETTm1 L=192 T=96 | Epoch 081 | train_loss=1.772766 | val_MSE=0.373381969 val_MAE=0.391489220 | lr=2.00e-05 | ES=0/12 | seconds=8.33 BEST
+ETTm1 L=192 T=96 | Epoch 082 | train_loss=1.771303 | val_MSE=0.373023049 val_MAE=0.391160614 | lr=2.00e-05 | ES=0/12 | seconds=8.22 BEST
+ETTm1 L=192 T=96 | Epoch 083 | train_loss=1.770435 | val_MSE=0.373458053 val_MAE=0.391580832 | lr=2.00e-05 | ES=1/12 | seconds=8.38 
+ETTm1 L=192 T=96 | Epoch 084 | train_loss=1.768988 | val_MSE=0.373001323 val_MAE=0.391201074 | lr=2.00e-05 | ES=0/12 | seconds=8.27 BEST
+ETTm1 L=192 T=96 | Epoch 085 | train_loss=1.768255 | val_MSE=0.373313104 val_MAE=0.391314236 | lr=2.00e-05 | ES=1/12 | seconds=8.52 
+ETTm1 L=192 T=96 | Epoch 086 | train_loss=1.767381 | val_MSE=0.372820086 val_MAE=0.391078126 | lr=2.00e-05 | ES=0/12 | seconds=8.31 BEST
+ETTm1 L=192 T=96 | Epoch 087 | train_loss=1.766017 | val_MSE=0.373131958 val_MAE=0.391221943 | lr=2.00e-05 | ES=1/12 | seconds=8.27 
+ETTm1 L=192 T=96 | Epoch 088 | train_loss=1.765518 | val_MSE=0.372396620 val_MAE=0.390891268 | lr=2.00e-05 | ES=0/12 | seconds=8.31 BEST
+ETTm1 L=192 T=96 | Epoch 089 | train_loss=1.764465 | val_MSE=0.372631349 val_MAE=0.391070087 | lr=2.00e-05 | ES=1/12 | seconds=8.27 
+ETTm1 L=192 T=96 | Epoch 090 | train_loss=1.763289 | val_MSE=0.372188422 val_MAE=0.390688811 | lr=2.00e-05 | ES=0/12 | seconds=8.30 BEST
+ETTm1 L=192 T=96 | Epoch 091 | train_loss=1.762983 | val_MSE=0.372654220 val_MAE=0.390985617 | lr=2.00e-05 | ES=1/12 | seconds=8.29 
+ETTm1 L=192 T=96 | Epoch 092 | train_loss=1.761526 | val_MSE=0.372232780 val_MAE=0.390709971 | lr=2.00e-05 | ES=2/12 | seconds=8.29 
+ETTm1 L=192 T=96 | Epoch 093 | train_loss=1.760994 | val_MSE=0.372037721 val_MAE=0.390781621 | lr=2.00e-05 | ES=0/12 | seconds=8.46 BEST
+ETTm1 L=192 T=96 | Epoch 094 | train_loss=1.760306 | val_MSE=0.372139419 val_MAE=0.390589807 | lr=2.00e-05 | ES=1/12 | seconds=8.44 
+ETTm1 L=192 T=96 | Epoch 095 | train_loss=1.758826 | val_MSE=0.372376598 val_MAE=0.390868352 | lr=2.00e-05 | ES=2/12 | seconds=8.27 
+ETTm1 L=192 T=96 | Epoch 096 | train_loss=1.758490 | val_MSE=0.372286742 val_MAE=0.390727965 | lr=2.00e-05 | ES=3/12 | seconds=8.31 
+ETTm1 L=192 T=96 | Epoch 097 | train_loss=1.757437 | val_MSE=0.372561553 val_MAE=0.390978755 | lr=1.00e-05 | ES=4/12 | seconds=8.25 
+ETTm1 L=192 T=96 | Epoch 098 | train_loss=1.756602 | val_MSE=0.371758928 val_MAE=0.390324377 | lr=1.00e-05 | ES=0/12 | seconds=8.49 BEST
+ETTm1 L=192 T=96 | Epoch 099 | train_loss=1.756918 | val_MSE=0.372082326 val_MAE=0.390646920 | lr=1.00e-05 | ES=1/12 | seconds=8.38 
+ETTm1 L=192 T=96 | Epoch 100 | train_loss=1.756154 | val_MSE=0.371930773 val_MAE=0.390494072 | lr=1.00e-05 | ES=2/12 | seconds=8.56 
+ETTm1 L=192 T=96 | Epoch 101 | train_loss=1.755621 | val_MSE=0.371808055 val_MAE=0.390488915 | lr=1.00e-05 | ES=3/12 | seconds=8.31 
+ETTm1 L=192 T=96 | Epoch 102 | train_loss=1.755491 | val_MSE=0.371949013 val_MAE=0.390491892 | lr=5.00e-06 | ES=4/12 | seconds=8.41 
+ETTm1 L=192 T=96 | Epoch 103 | train_loss=1.755012 | val_MSE=0.371962306 val_MAE=0.390557088 | lr=5.00e-06 | ES=5/12 | seconds=8.77 
+ETTm1 L=192 T=96 | Epoch 104 | train_loss=1.754853 | val_MSE=0.372026163 val_MAE=0.390568067 | lr=5.00e-06 | ES=6/12 | seconds=8.39 
+ETTm1 L=192 T=96 | Epoch 105 | train_loss=1.755229 | val_MSE=0.371817462 val_MAE=0.390434157 | lr=5.00e-06 | ES=7/12 | seconds=8.40 
+ETTm1 L=192 T=96 | Epoch 106 | train_loss=1.754093 | val_MSE=0.371946023 val_MAE=0.390535336 | lr=2.50e-06 | ES=8/12 | seconds=8.66 
+ETTm1 L=192 T=96 | Epoch 107 | train_loss=1.753915 | val_MSE=0.371947299 val_MAE=0.390539468 | lr=2.50e-06 | ES=9/12 | seconds=8.79 
+ETTm1 L=192 T=96 | Epoch 108 | train_loss=1.754167 | val_MSE=0.371993981 val_MAE=0.390589966 | lr=2.50e-06 | ES=10/12 | seconds=8.45 
+ETTm1 L=192 T=96 | Epoch 109 | train_loss=1.753906 | val_MSE=0.371974601 val_MAE=0.390562813 | lr=2.50e-06 | ES=11/12 | seconds=8.44 
+ETTm1 L=192 T=96 | Epoch 110 | train_loss=1.753711 | val_MSE=0.371927801 val_MAE=0.390533125 | lr=1.25e-06 | ES=12/12 | seconds=8.25 
+Early stopping.
+RESULT ETTm1 L=192 T=96 | MSE=0.297967656 MAE=0.336058233 | best_epoch=98 epochs=110 | seconds=932.42
+Completed 5/16 training runs
+START ETTm1 L=192 T=192 | 2026-11-07T14:19:11.694889+08:00
+ETTm1 L=192 T=192 | Epoch 001 | train_loss=2.938333 | val_MSE=0.918589847 val_MAE=0.666163185 | lr=2.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=192 T=192 | Epoch 002 | train_loss=2.702823 | val_MSE=0.778746237 val_MAE=0.610850039 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=192 T=192 | Epoch 003 | train_loss=2.540405 | val_MSE=0.692348792 val_MAE=0.572432949 | lr=2.00e-05 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=192 T=192 | Epoch 004 | train_loss=2.427859 | val_MSE=0.638954067 val_MAE=0.545932825 | lr=2.00e-05 | ES=0/12 | seconds=9.21 BEST
+ETTm1 L=192 T=192 | Epoch 005 | train_loss=2.348457 | val_MSE=0.605549203 val_MAE=0.527630669 | lr=2.00e-05 | ES=0/12 | seconds=9.04 BEST
+ETTm1 L=192 T=192 | Epoch 006 | train_loss=2.292352 | val_MSE=0.584122848 val_MAE=0.514894657 | lr=2.00e-05 | ES=0/12 | seconds=8.68 BEST
+ETTm1 L=192 T=192 | Epoch 007 | train_loss=2.250179 | val_MSE=0.569738339 val_MAE=0.505757136 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=192 T=192 | Epoch 008 | train_loss=2.218899 | val_MSE=0.559715403 val_MAE=0.499073914 | lr=2.00e-05 | ES=0/12 | seconds=8.91 BEST
+ETTm1 L=192 T=192 | Epoch 009 | train_loss=2.194291 | val_MSE=0.552527946 val_MAE=0.494080547 | lr=2.00e-05 | ES=0/12 | seconds=8.88 BEST
+ETTm1 L=192 T=192 | Epoch 010 | train_loss=2.174510 | val_MSE=0.547141881 val_MAE=0.490195390 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=192 T=192 | Epoch 011 | train_loss=2.158359 | val_MSE=0.542831892 val_MAE=0.487038810 | lr=2.00e-05 | ES=0/12 | seconds=8.76 BEST
+ETTm1 L=192 T=192 | Epoch 012 | train_loss=2.145013 | val_MSE=0.539479625 val_MAE=0.484553011 | lr=2.00e-05 | ES=0/12 | seconds=8.97 BEST
+ETTm1 L=192 T=192 | Epoch 013 | train_loss=2.133528 | val_MSE=0.536577979 val_MAE=0.482388177 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=192 T=192 | Epoch 014 | train_loss=2.123544 | val_MSE=0.534146182 val_MAE=0.480557380 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=192 T=192 | Epoch 015 | train_loss=2.114562 | val_MSE=0.531703662 val_MAE=0.478837757 | lr=2.00e-05 | ES=0/12 | seconds=8.64 BEST
+ETTm1 L=192 T=192 | Epoch 016 | train_loss=2.106038 | val_MSE=0.529757402 val_MAE=0.477345569 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=192 T=192 | Epoch 017 | train_loss=2.098673 | val_MSE=0.528043659 val_MAE=0.476068075 | lr=2.00e-05 | ES=0/12 | seconds=8.98 BEST
+ETTm1 L=192 T=192 | Epoch 018 | train_loss=2.092328 | val_MSE=0.526042449 val_MAE=0.474695170 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=192 T=192 | Epoch 019 | train_loss=2.086008 | val_MSE=0.524132147 val_MAE=0.473327822 | lr=2.00e-05 | ES=0/12 | seconds=8.76 BEST
+ETTm1 L=192 T=192 | Epoch 020 | train_loss=2.079893 | val_MSE=0.522956527 val_MAE=0.472486000 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=192 T=192 | Epoch 021 | train_loss=2.074148 | val_MSE=0.521577037 val_MAE=0.471643684 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=192 T=192 | Epoch 022 | train_loss=2.068823 | val_MSE=0.520019829 val_MAE=0.470581382 | lr=2.00e-05 | ES=0/12 | seconds=8.71 BEST
+ETTm1 L=192 T=192 | Epoch 023 | train_loss=2.063959 | val_MSE=0.518831842 val_MAE=0.469867644 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=192 T=192 | Epoch 024 | train_loss=2.059452 | val_MSE=0.517344397 val_MAE=0.468869194 | lr=2.00e-05 | ES=0/12 | seconds=8.84 BEST
+ETTm1 L=192 T=192 | Epoch 025 | train_loss=2.055047 | val_MSE=0.516258936 val_MAE=0.468175847 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=192 T=192 | Epoch 026 | train_loss=2.050945 | val_MSE=0.515262528 val_MAE=0.467531259 | lr=2.00e-05 | ES=0/12 | seconds=9.01 BEST
+ETTm1 L=192 T=192 | Epoch 027 | train_loss=2.046762 | val_MSE=0.514117021 val_MAE=0.466618758 | lr=2.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=192 T=192 | Epoch 028 | train_loss=2.043018 | val_MSE=0.513170863 val_MAE=0.466070736 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=192 T=192 | Epoch 029 | train_loss=2.039788 | val_MSE=0.512535301 val_MAE=0.465482709 | lr=2.00e-05 | ES=0/12 | seconds=8.81 BEST
+ETTm1 L=192 T=192 | Epoch 030 | train_loss=2.036661 | val_MSE=0.511431106 val_MAE=0.464854238 | lr=2.00e-05 | ES=0/12 | seconds=8.52 BEST
+ETTm1 L=192 T=192 | Epoch 031 | train_loss=2.033639 | val_MSE=0.510566957 val_MAE=0.464227955 | lr=2.00e-05 | ES=0/12 | seconds=9.01 BEST
+ETTm1 L=192 T=192 | Epoch 032 | train_loss=2.030620 | val_MSE=0.509722551 val_MAE=0.463771066 | lr=2.00e-05 | ES=0/12 | seconds=8.89 BEST
+ETTm1 L=192 T=192 | Epoch 033 | train_loss=2.027637 | val_MSE=0.509539101 val_MAE=0.463541509 | lr=2.00e-05 | ES=0/12 | seconds=8.90 BEST
+ETTm1 L=192 T=192 | Epoch 034 | train_loss=2.024744 | val_MSE=0.508308153 val_MAE=0.462834858 | lr=2.00e-05 | ES=0/12 | seconds=8.98 BEST
+ETTm1 L=192 T=192 | Epoch 035 | train_loss=2.021994 | val_MSE=0.507757139 val_MAE=0.462432901 | lr=2.00e-05 | ES=0/12 | seconds=8.98 BEST
+ETTm1 L=192 T=192 | Epoch 036 | train_loss=2.019789 | val_MSE=0.507253984 val_MAE=0.461971276 | lr=2.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=192 T=192 | Epoch 037 | train_loss=2.017039 | val_MSE=0.506378021 val_MAE=0.461292962 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=192 T=192 | Epoch 038 | train_loss=2.014664 | val_MSE=0.505516201 val_MAE=0.460621931 | lr=2.00e-05 | ES=0/12 | seconds=8.71 BEST
+ETTm1 L=192 T=192 | Epoch 039 | train_loss=2.012663 | val_MSE=0.505380965 val_MAE=0.460580599 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=192 T=192 | Epoch 040 | train_loss=2.010213 | val_MSE=0.505049945 val_MAE=0.460460156 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=192 T=192 | Epoch 041 | train_loss=2.008427 | val_MSE=0.504321890 val_MAE=0.459970312 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=192 T=192 | Epoch 042 | train_loss=2.006197 | val_MSE=0.503857210 val_MAE=0.459530249 | lr=2.00e-05 | ES=0/12 | seconds=8.64 BEST
+ETTm1 L=192 T=192 | Epoch 043 | train_loss=2.004181 | val_MSE=0.503115885 val_MAE=0.459008211 | lr=2.00e-05 | ES=0/12 | seconds=8.54 BEST
+ETTm1 L=192 T=192 | Epoch 044 | train_loss=2.003025 | val_MSE=0.502859204 val_MAE=0.458810223 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=192 T=192 | Epoch 045 | train_loss=2.000782 | val_MSE=0.502838475 val_MAE=0.458817961 | lr=2.00e-05 | ES=0/12 | seconds=8.88 BEST
+ETTm1 L=192 T=192 | Epoch 046 | train_loss=1.999155 | val_MSE=0.502361709 val_MAE=0.458616363 | lr=2.00e-05 | ES=0/12 | seconds=8.51 BEST
+ETTm1 L=192 T=192 | Epoch 047 | train_loss=1.997661 | val_MSE=0.502155415 val_MAE=0.458419273 | lr=2.00e-05 | ES=0/12 | seconds=8.50 BEST
+ETTm1 L=192 T=192 | Epoch 048 | train_loss=1.995690 | val_MSE=0.501510101 val_MAE=0.457982192 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=192 T=192 | Epoch 049 | train_loss=1.994404 | val_MSE=0.501055946 val_MAE=0.457690708 | lr=2.00e-05 | ES=0/12 | seconds=8.55 BEST
+ETTm1 L=192 T=192 | Epoch 050 | train_loss=1.993216 | val_MSE=0.500605880 val_MAE=0.457281814 | lr=2.00e-05 | ES=0/12 | seconds=8.55 BEST
+ETTm1 L=192 T=192 | Epoch 051 | train_loss=1.991428 | val_MSE=0.500401977 val_MAE=0.457309000 | lr=2.00e-05 | ES=0/12 | seconds=8.55 BEST
+ETTm1 L=192 T=192 | Epoch 052 | train_loss=1.989676 | val_MSE=0.500220649 val_MAE=0.457252117 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=192 T=192 | Epoch 053 | train_loss=1.988971 | val_MSE=0.499803690 val_MAE=0.457050129 | lr=2.00e-05 | ES=0/12 | seconds=8.54 BEST
+ETTm1 L=192 T=192 | Epoch 054 | train_loss=1.987097 | val_MSE=0.500013661 val_MAE=0.456914765 | lr=2.00e-05 | ES=1/12 | seconds=8.60 
+ETTm1 L=192 T=192 | Epoch 055 | train_loss=1.986326 | val_MSE=0.499570979 val_MAE=0.456842571 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=192 T=192 | Epoch 056 | train_loss=1.984809 | val_MSE=0.499184800 val_MAE=0.456346884 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=192 T=192 | Epoch 057 | train_loss=1.983706 | val_MSE=0.498734946 val_MAE=0.456112145 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=192 T=192 | Epoch 058 | train_loss=1.982690 | val_MSE=0.498621761 val_MAE=0.456005284 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=192 T=192 | Epoch 059 | train_loss=1.980850 | val_MSE=0.498134521 val_MAE=0.455577014 | lr=2.00e-05 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=192 T=192 | Epoch 060 | train_loss=1.980458 | val_MSE=0.498142382 val_MAE=0.455897698 | lr=2.00e-05 | ES=1/12 | seconds=8.90 
+ETTm1 L=192 T=192 | Epoch 061 | train_loss=1.979032 | val_MSE=0.497756995 val_MAE=0.455437163 | lr=2.00e-05 | ES=0/12 | seconds=9.01 BEST
+ETTm1 L=192 T=192 | Epoch 062 | train_loss=1.978430 | val_MSE=0.497598794 val_MAE=0.455401637 | lr=2.00e-05 | ES=0/12 | seconds=8.71 BEST
+ETTm1 L=192 T=192 | Epoch 063 | train_loss=1.977019 | val_MSE=0.497462183 val_MAE=0.455302908 | lr=2.00e-05 | ES=0/12 | seconds=8.74 BEST
+ETTm1 L=192 T=192 | Epoch 064 | train_loss=1.975783 | val_MSE=0.497571237 val_MAE=0.455356883 | lr=2.00e-05 | ES=1/12 | seconds=8.70 
+ETTm1 L=192 T=192 | Epoch 065 | train_loss=1.974710 | val_MSE=0.496960508 val_MAE=0.454914972 | lr=2.00e-05 | ES=0/12 | seconds=9.12 BEST
+ETTm1 L=192 T=192 | Epoch 066 | train_loss=1.973940 | val_MSE=0.497305681 val_MAE=0.455302990 | lr=2.00e-05 | ES=1/12 | seconds=8.87 
+ETTm1 L=192 T=192 | Epoch 067 | train_loss=1.973472 | val_MSE=0.497049139 val_MAE=0.454889632 | lr=2.00e-05 | ES=2/12 | seconds=8.96 
+ETTm1 L=192 T=192 | Epoch 068 | train_loss=1.971622 | val_MSE=0.496921078 val_MAE=0.454784587 | lr=2.00e-05 | ES=0/12 | seconds=8.89 BEST
+ETTm1 L=192 T=192 | Epoch 069 | train_loss=1.970871 | val_MSE=0.496356748 val_MAE=0.454626980 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=192 T=192 | Epoch 070 | train_loss=1.969787 | val_MSE=0.496728722 val_MAE=0.454774713 | lr=2.00e-05 | ES=1/12 | seconds=8.82 
+ETTm1 L=192 T=192 | Epoch 071 | train_loss=1.969428 | val_MSE=0.496106572 val_MAE=0.454467892 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=192 T=192 | Epoch 072 | train_loss=1.968371 | val_MSE=0.496649493 val_MAE=0.454890149 | lr=2.00e-05 | ES=1/12 | seconds=9.34 
+ETTm1 L=192 T=192 | Epoch 073 | train_loss=1.967361 | val_MSE=0.495871493 val_MAE=0.454572433 | lr=2.00e-05 | ES=0/12 | seconds=8.97 BEST
+ETTm1 L=192 T=192 | Epoch 074 | train_loss=1.967527 | val_MSE=0.495871111 val_MAE=0.454337481 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=192 T=192 | Epoch 075 | train_loss=1.966423 | val_MSE=0.495668866 val_MAE=0.454150706 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=192 T=192 | Epoch 076 | train_loss=1.965067 | val_MSE=0.496143169 val_MAE=0.454523114 | lr=2.00e-05 | ES=1/12 | seconds=8.65 
+ETTm1 L=192 T=192 | Epoch 077 | train_loss=1.965023 | val_MSE=0.495285709 val_MAE=0.453963667 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=192 T=192 | Epoch 078 | train_loss=1.963557 | val_MSE=0.495708123 val_MAE=0.454372547 | lr=2.00e-05 | ES=1/12 | seconds=8.71 
+ETTm1 L=192 T=192 | Epoch 079 | train_loss=1.962265 | val_MSE=0.495933399 val_MAE=0.454454313 | lr=2.00e-05 | ES=2/12 | seconds=9.20 
+ETTm1 L=192 T=192 | Epoch 080 | train_loss=1.963034 | val_MSE=0.495281034 val_MAE=0.454163575 | lr=2.00e-05 | ES=0/12 | seconds=8.89 BEST
+ETTm1 L=192 T=192 | Epoch 081 | train_loss=1.961889 | val_MSE=0.495719575 val_MAE=0.454320345 | lr=1.00e-05 | ES=1/12 | seconds=8.83 
+ETTm1 L=192 T=192 | Epoch 082 | train_loss=1.961126 | val_MSE=0.495530335 val_MAE=0.454284086 | lr=1.00e-05 | ES=2/12 | seconds=8.79 
+ETTm1 L=192 T=192 | Epoch 083 | train_loss=1.960444 | val_MSE=0.495483156 val_MAE=0.454221548 | lr=1.00e-05 | ES=3/12 | seconds=8.68 
+ETTm1 L=192 T=192 | Epoch 084 | train_loss=1.960346 | val_MSE=0.495211360 val_MAE=0.453987965 | lr=1.00e-05 | ES=0/12 | seconds=8.64 BEST
+ETTm1 L=192 T=192 | Epoch 085 | train_loss=1.959553 | val_MSE=0.495092359 val_MAE=0.453992396 | lr=1.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=192 T=192 | Epoch 086 | train_loss=1.959414 | val_MSE=0.495094441 val_MAE=0.454013968 | lr=1.00e-05 | ES=1/12 | seconds=9.16 
+ETTm1 L=192 T=192 | Epoch 087 | train_loss=1.958880 | val_MSE=0.495291331 val_MAE=0.454196757 | lr=1.00e-05 | ES=2/12 | seconds=8.83 
+ETTm1 L=192 T=192 | Epoch 088 | train_loss=1.958836 | val_MSE=0.495180191 val_MAE=0.454115654 | lr=1.00e-05 | ES=3/12 | seconds=8.87 
+ETTm1 L=192 T=192 | Epoch 089 | train_loss=1.958105 | val_MSE=0.494993236 val_MAE=0.453944188 | lr=1.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=192 T=192 | Epoch 090 | train_loss=1.957806 | val_MSE=0.495274635 val_MAE=0.454129966 | lr=1.00e-05 | ES=1/12 | seconds=8.79 
+ETTm1 L=192 T=192 | Epoch 091 | train_loss=1.957496 | val_MSE=0.495118312 val_MAE=0.454087631 | lr=1.00e-05 | ES=2/12 | seconds=8.73 
+ETTm1 L=192 T=192 | Epoch 092 | train_loss=1.957366 | val_MSE=0.494918981 val_MAE=0.453961513 | lr=1.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=192 T=192 | Epoch 093 | train_loss=1.956636 | val_MSE=0.494877148 val_MAE=0.453877280 | lr=1.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=192 T=192 | Epoch 094 | train_loss=1.956725 | val_MSE=0.494915010 val_MAE=0.453953087 | lr=1.00e-05 | ES=1/12 | seconds=8.83 
+ETTm1 L=192 T=192 | Epoch 095 | train_loss=1.956263 | val_MSE=0.494913876 val_MAE=0.453962506 | lr=1.00e-05 | ES=2/12 | seconds=8.62 
+ETTm1 L=192 T=192 | Epoch 096 | train_loss=1.956264 | val_MSE=0.494747443 val_MAE=0.453940445 | lr=1.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=192 T=192 | Epoch 097 | train_loss=1.955795 | val_MSE=0.494893108 val_MAE=0.453945441 | lr=1.00e-05 | ES=1/12 | seconds=8.88 
+ETTm1 L=192 T=192 | Epoch 098 | train_loss=1.955485 | val_MSE=0.495099786 val_MAE=0.454146689 | lr=1.00e-05 | ES=2/12 | seconds=8.72 
+ETTm1 L=192 T=192 | Epoch 099 | train_loss=1.954746 | val_MSE=0.494642602 val_MAE=0.453756075 | lr=1.00e-05 | ES=0/12 | seconds=9.24 BEST
+ETTm1 L=192 T=192 | Epoch 100 | train_loss=1.954427 | val_MSE=0.494871193 val_MAE=0.453939317 | lr=1.00e-05 | ES=1/12 | seconds=8.64 
+ETTm1 L=192 T=192 | Epoch 101 | train_loss=1.954036 | val_MSE=0.494620110 val_MAE=0.453825905 | lr=1.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=192 T=192 | Epoch 102 | train_loss=1.954581 | val_MSE=0.494667739 val_MAE=0.453811024 | lr=1.00e-05 | ES=1/12 | seconds=8.75 
+ETTm1 L=192 T=192 | Epoch 103 | train_loss=1.953116 | val_MSE=0.494803853 val_MAE=0.453963502 | lr=5.00e-06 | ES=2/12 | seconds=8.85 
+ETTm1 L=192 T=192 | Epoch 104 | train_loss=1.954220 | val_MSE=0.494548407 val_MAE=0.453809648 | lr=5.00e-06 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=192 T=192 | Epoch 105 | train_loss=1.953466 | val_MSE=0.494671904 val_MAE=0.453873277 | lr=5.00e-06 | ES=1/12 | seconds=9.03 
+ETTm1 L=192 T=192 | Epoch 106 | train_loss=1.953052 | val_MSE=0.494546898 val_MAE=0.453758782 | lr=5.00e-06 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=192 T=192 | Epoch 107 | train_loss=1.952940 | val_MSE=0.494599404 val_MAE=0.453823151 | lr=5.00e-06 | ES=1/12 | seconds=8.65 
+ETTm1 L=192 T=192 | Epoch 108 | train_loss=1.952359 | val_MSE=0.494606452 val_MAE=0.453859393 | lr=2.50e-06 | ES=2/12 | seconds=8.53 
+ETTm1 L=192 T=192 | Epoch 109 | train_loss=1.952389 | val_MSE=0.494617438 val_MAE=0.453843429 | lr=2.50e-06 | ES=3/12 | seconds=8.50 
+ETTm1 L=192 T=192 | Epoch 110 | train_loss=1.952345 | val_MSE=0.494619817 val_MAE=0.453846857 | lr=2.50e-06 | ES=4/12 | seconds=8.58 
+ETTm1 L=192 T=192 | Epoch 111 | train_loss=1.952929 | val_MSE=0.494622446 val_MAE=0.453837220 | lr=2.50e-06 | ES=5/12 | seconds=8.49 
+ETTm1 L=192 T=192 | Epoch 112 | train_loss=1.952279 | val_MSE=0.494527707 val_MAE=0.453787911 | lr=1.25e-06 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=192 T=192 | Epoch 113 | train_loss=1.953016 | val_MSE=0.494511974 val_MAE=0.453770633 | lr=1.25e-06 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=192 T=192 | Epoch 114 | train_loss=1.951682 | val_MSE=0.494490065 val_MAE=0.453760436 | lr=1.25e-06 | ES=0/12 | seconds=8.51 BEST
+ETTm1 L=192 T=192 | Epoch 115 | train_loss=1.952484 | val_MSE=0.494492798 val_MAE=0.453759377 | lr=1.25e-06 | ES=1/12 | seconds=8.58 
+ETTm1 L=192 T=192 | Epoch 116 | train_loss=1.951958 | val_MSE=0.494535868 val_MAE=0.453791060 | lr=1.25e-06 | ES=2/12 | seconds=8.61 
+ETTm1 L=192 T=192 | Epoch 117 | train_loss=1.951524 | val_MSE=0.494560169 val_MAE=0.453805321 | lr=1.25e-06 | ES=3/12 | seconds=8.58 
+ETTm1 L=192 T=192 | Epoch 118 | train_loss=1.952417 | val_MSE=0.494568851 val_MAE=0.453806872 | lr=6.25e-07 | ES=4/12 | seconds=8.54 
+ETTm1 L=192 T=192 | Epoch 119 | train_loss=1.951900 | val_MSE=0.494578980 val_MAE=0.453819453 | lr=6.25e-07 | ES=5/12 | seconds=8.50 
+ETTm1 L=192 T=192 | Epoch 120 | train_loss=1.952023 | val_MSE=0.494550423 val_MAE=0.453800409 | lr=6.25e-07 | ES=6/12 | seconds=8.75 
+ETTm1 L=192 T=192 | Epoch 121 | train_loss=1.952684 | val_MSE=0.494556490 val_MAE=0.453811444 | lr=6.25e-07 | ES=7/12 | seconds=8.51 
+ETTm1 L=192 T=192 | Epoch 122 | train_loss=1.952056 | val_MSE=0.494565665 val_MAE=0.453814295 | lr=3.13e-07 | ES=8/12 | seconds=8.55 
+ETTm1 L=192 T=192 | Epoch 123 | train_loss=1.951717 | val_MSE=0.494551212 val_MAE=0.453806672 | lr=3.13e-07 | ES=9/12 | seconds=8.55 
+ETTm1 L=192 T=192 | Epoch 124 | train_loss=1.951808 | val_MSE=0.494544442 val_MAE=0.453805394 | lr=3.13e-07 | ES=10/12 | seconds=8.59 
+ETTm1 L=192 T=192 | Epoch 125 | train_loss=1.951857 | val_MSE=0.494538052 val_MAE=0.453800587 | lr=3.13e-07 | ES=11/12 | seconds=8.56 
+ETTm1 L=192 T=192 | Epoch 126 | train_loss=1.952025 | val_MSE=0.494545072 val_MAE=0.453806786 | lr=1.56e-07 | ES=12/12 | seconds=8.61 
+Early stopping.
+RESULT ETTm1 L=192 T=192 | MSE=0.345332376 MAE=0.363360273 | best_epoch=114 epochs=126 | seconds=1105.54
+Completed 6/16 training runs
+START ETTm1 L=192 T=336 | 2026-11-07T14:37:37.440429+08:00
+ETTm1 L=192 T=336 | Epoch 001 | train_loss=2.998595 | val_MSE=1.014293431 val_MAE=0.702794952 | lr=2.00e-05 | ES=0/12 | seconds=8.98 BEST
+ETTm1 L=192 T=336 | Epoch 002 | train_loss=2.785643 | val_MSE=0.889980263 val_MAE=0.653465739 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=192 T=336 | Epoch 003 | train_loss=2.639020 | val_MSE=0.813640215 val_MAE=0.619541262 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=192 T=336 | Epoch 004 | train_loss=2.537646 | val_MSE=0.766862641 val_MAE=0.596459051 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=192 T=336 | Epoch 005 | train_loss=2.466986 | val_MSE=0.737802044 val_MAE=0.580673071 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=192 T=336 | Epoch 006 | train_loss=2.416541 | val_MSE=0.719158539 val_MAE=0.569677787 | lr=2.00e-05 | ES=0/12 | seconds=9.01 BEST
+ETTm1 L=192 T=336 | Epoch 007 | train_loss=2.379517 | val_MSE=0.706929271 val_MAE=0.561967934 | lr=2.00e-05 | ES=0/12 | seconds=9.05 BEST
+ETTm1 L=192 T=336 | Epoch 008 | train_loss=2.351674 | val_MSE=0.698682217 val_MAE=0.556381517 | lr=2.00e-05 | ES=0/12 | seconds=9.01 BEST
+ETTm1 L=192 T=336 | Epoch 009 | train_loss=2.329938 | val_MSE=0.692638473 val_MAE=0.552199009 | lr=2.00e-05 | ES=0/12 | seconds=9.04 BEST
+ETTm1 L=192 T=336 | Epoch 010 | train_loss=2.312688 | val_MSE=0.688191852 val_MAE=0.549005158 | lr=2.00e-05 | ES=0/12 | seconds=8.97 BEST
+ETTm1 L=192 T=336 | Epoch 011 | train_loss=2.298567 | val_MSE=0.684940502 val_MAE=0.546528343 | lr=2.00e-05 | ES=0/12 | seconds=9.23 BEST
+ETTm1 L=192 T=336 | Epoch 012 | train_loss=2.286767 | val_MSE=0.682323929 val_MAE=0.544570408 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=192 T=336 | Epoch 013 | train_loss=2.276685 | val_MSE=0.680017244 val_MAE=0.542913652 | lr=2.00e-05 | ES=0/12 | seconds=9.26 BEST
+ETTm1 L=192 T=336 | Epoch 014 | train_loss=2.267874 | val_MSE=0.678215619 val_MAE=0.541658904 | lr=2.00e-05 | ES=0/12 | seconds=9.82 BEST
+ETTm1 L=192 T=336 | Epoch 015 | train_loss=2.260157 | val_MSE=0.676877927 val_MAE=0.540654037 | lr=2.00e-05 | ES=0/12 | seconds=9.26 BEST
+ETTm1 L=192 T=336 | Epoch 016 | train_loss=2.253237 | val_MSE=0.675262217 val_MAE=0.539605375 | lr=2.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=192 T=336 | Epoch 017 | train_loss=2.246999 | val_MSE=0.674066239 val_MAE=0.538752565 | lr=2.00e-05 | ES=0/12 | seconds=8.98 BEST
+ETTm1 L=192 T=336 | Epoch 018 | train_loss=2.241483 | val_MSE=0.672959257 val_MAE=0.538067643 | lr=2.00e-05 | ES=0/12 | seconds=8.91 BEST
+ETTm1 L=192 T=336 | Epoch 019 | train_loss=2.236544 | val_MSE=0.671720370 val_MAE=0.537367427 | lr=2.00e-05 | ES=0/12 | seconds=8.97 BEST
+ETTm1 L=192 T=336 | Epoch 020 | train_loss=2.232030 | val_MSE=0.670956520 val_MAE=0.536894445 | lr=2.00e-05 | ES=0/12 | seconds=9.09 BEST
+ETTm1 L=192 T=336 | Epoch 021 | train_loss=2.228024 | val_MSE=0.670195631 val_MAE=0.536437429 | lr=2.00e-05 | ES=0/12 | seconds=9.22 BEST
+ETTm1 L=192 T=336 | Epoch 022 | train_loss=2.224281 | val_MSE=0.669290290 val_MAE=0.535780508 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=192 T=336 | Epoch 023 | train_loss=2.220751 | val_MSE=0.668316452 val_MAE=0.535279090 | lr=2.00e-05 | ES=0/12 | seconds=9.14 BEST
+ETTm1 L=192 T=336 | Epoch 024 | train_loss=2.217605 | val_MSE=0.667573434 val_MAE=0.534775698 | lr=2.00e-05 | ES=0/12 | seconds=9.06 BEST
+ETTm1 L=192 T=336 | Epoch 025 | train_loss=2.214607 | val_MSE=0.666771320 val_MAE=0.534312433 | lr=2.00e-05 | ES=0/12 | seconds=9.03 BEST
+ETTm1 L=192 T=336 | Epoch 026 | train_loss=2.211617 | val_MSE=0.666279212 val_MAE=0.533972172 | lr=2.00e-05 | ES=0/12 | seconds=9.06 BEST
+ETTm1 L=192 T=336 | Epoch 027 | train_loss=2.208963 | val_MSE=0.665483984 val_MAE=0.533512101 | lr=2.00e-05 | ES=0/12 | seconds=9.38 BEST
+ETTm1 L=192 T=336 | Epoch 028 | train_loss=2.206373 | val_MSE=0.664628631 val_MAE=0.532980076 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=192 T=336 | Epoch 029 | train_loss=2.203826 | val_MSE=0.664115512 val_MAE=0.532569716 | lr=2.00e-05 | ES=0/12 | seconds=8.98 BEST
+ETTm1 L=192 T=336 | Epoch 030 | train_loss=2.201434 | val_MSE=0.663252517 val_MAE=0.532169505 | lr=2.00e-05 | ES=0/12 | seconds=9.08 BEST
+ETTm1 L=192 T=336 | Epoch 031 | train_loss=2.198903 | val_MSE=0.662883162 val_MAE=0.531836351 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=192 T=336 | Epoch 032 | train_loss=2.196692 | val_MSE=0.662447035 val_MAE=0.531744299 | lr=2.00e-05 | ES=0/12 | seconds=9.44 BEST
+ETTm1 L=192 T=336 | Epoch 033 | train_loss=2.194584 | val_MSE=0.661676061 val_MAE=0.531269608 | lr=2.00e-05 | ES=0/12 | seconds=9.68 BEST
+ETTm1 L=192 T=336 | Epoch 034 | train_loss=2.192478 | val_MSE=0.660203520 val_MAE=0.530357560 | lr=2.00e-05 | ES=0/12 | seconds=9.64 BEST
+ETTm1 L=192 T=336 | Epoch 035 | train_loss=2.190285 | val_MSE=0.660074072 val_MAE=0.530271778 | lr=2.00e-05 | ES=0/12 | seconds=9.58 BEST
+ETTm1 L=192 T=336 | Epoch 036 | train_loss=2.188106 | val_MSE=0.659400754 val_MAE=0.529883773 | lr=2.00e-05 | ES=0/12 | seconds=9.37 BEST
+ETTm1 L=192 T=336 | Epoch 037 | train_loss=2.186123 | val_MSE=0.658941634 val_MAE=0.529724009 | lr=2.00e-05 | ES=0/12 | seconds=9.11 BEST
+ETTm1 L=192 T=336 | Epoch 038 | train_loss=2.184225 | val_MSE=0.658449068 val_MAE=0.529465245 | lr=2.00e-05 | ES=0/12 | seconds=9.16 BEST
+ETTm1 L=192 T=336 | Epoch 039 | train_loss=2.182273 | val_MSE=0.657523294 val_MAE=0.528889906 | lr=2.00e-05 | ES=0/12 | seconds=9.26 BEST
+ETTm1 L=192 T=336 | Epoch 040 | train_loss=2.180442 | val_MSE=0.657160447 val_MAE=0.528694049 | lr=2.00e-05 | ES=0/12 | seconds=9.56 BEST
+ETTm1 L=192 T=336 | Epoch 041 | train_loss=2.178578 | val_MSE=0.656590631 val_MAE=0.528362192 | lr=2.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=192 T=336 | Epoch 042 | train_loss=2.176871 | val_MSE=0.656429443 val_MAE=0.528441335 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=192 T=336 | Epoch 043 | train_loss=2.175044 | val_MSE=0.655738142 val_MAE=0.527955542 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=192 T=336 | Epoch 044 | train_loss=2.173490 | val_MSE=0.655761997 val_MAE=0.528001523 | lr=2.00e-05 | ES=1/12 | seconds=9.18 
+ETTm1 L=192 T=336 | Epoch 045 | train_loss=2.171545 | val_MSE=0.655199768 val_MAE=0.527638929 | lr=2.00e-05 | ES=0/12 | seconds=9.08 BEST
+ETTm1 L=192 T=336 | Epoch 046 | train_loss=2.170131 | val_MSE=0.654596804 val_MAE=0.527257863 | lr=2.00e-05 | ES=0/12 | seconds=9.22 BEST
+ETTm1 L=192 T=336 | Epoch 047 | train_loss=2.168514 | val_MSE=0.654305296 val_MAE=0.527287065 | lr=2.00e-05 | ES=0/12 | seconds=9.02 BEST
+ETTm1 L=192 T=336 | Epoch 048 | train_loss=2.167137 | val_MSE=0.653675445 val_MAE=0.526881275 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=192 T=336 | Epoch 049 | train_loss=2.165833 | val_MSE=0.653286855 val_MAE=0.526710614 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=192 T=336 | Epoch 050 | train_loss=2.164014 | val_MSE=0.653010653 val_MAE=0.526771844 | lr=2.00e-05 | ES=0/12 | seconds=8.92 BEST
+ETTm1 L=192 T=336 | Epoch 051 | train_loss=2.162882 | val_MSE=0.652547901 val_MAE=0.526269059 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=192 T=336 | Epoch 052 | train_loss=2.161638 | val_MSE=0.652817289 val_MAE=0.526601956 | lr=2.00e-05 | ES=1/12 | seconds=8.75 
+ETTm1 L=192 T=336 | Epoch 053 | train_loss=2.160490 | val_MSE=0.652629839 val_MAE=0.526327710 | lr=2.00e-05 | ES=2/12 | seconds=8.87 
+ETTm1 L=192 T=336 | Epoch 054 | train_loss=2.159238 | val_MSE=0.652178136 val_MAE=0.526122385 | lr=2.00e-05 | ES=0/12 | seconds=8.92 BEST
+ETTm1 L=192 T=336 | Epoch 055 | train_loss=2.157894 | val_MSE=0.651697610 val_MAE=0.525904242 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=192 T=336 | Epoch 056 | train_loss=2.156937 | val_MSE=0.651256090 val_MAE=0.525553828 | lr=2.00e-05 | ES=0/12 | seconds=8.76 BEST
+ETTm1 L=192 T=336 | Epoch 057 | train_loss=2.155696 | val_MSE=0.650971202 val_MAE=0.525519492 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=192 T=336 | Epoch 058 | train_loss=2.154709 | val_MSE=0.650943949 val_MAE=0.525609524 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=192 T=336 | Epoch 059 | train_loss=2.153228 | val_MSE=0.651115477 val_MAE=0.525780182 | lr=2.00e-05 | ES=1/12 | seconds=8.70 
+ETTm1 L=192 T=336 | Epoch 060 | train_loss=2.152598 | val_MSE=0.650748040 val_MAE=0.525460944 | lr=2.00e-05 | ES=0/12 | seconds=8.95 BEST
+ETTm1 L=192 T=336 | Epoch 061 | train_loss=2.151498 | val_MSE=0.650205947 val_MAE=0.525131211 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=192 T=336 | Epoch 062 | train_loss=2.150350 | val_MSE=0.650345612 val_MAE=0.525148672 | lr=2.00e-05 | ES=1/12 | seconds=8.72 
+ETTm1 L=192 T=336 | Epoch 063 | train_loss=2.149348 | val_MSE=0.650239616 val_MAE=0.525243467 | lr=2.00e-05 | ES=2/12 | seconds=8.71 
+ETTm1 L=192 T=336 | Epoch 064 | train_loss=2.148640 | val_MSE=0.649720420 val_MAE=0.524838382 | lr=2.00e-05 | ES=0/12 | seconds=8.74 BEST
+ETTm1 L=192 T=336 | Epoch 065 | train_loss=2.147417 | val_MSE=0.649803176 val_MAE=0.524925398 | lr=2.00e-05 | ES=1/12 | seconds=8.78 
+ETTm1 L=192 T=336 | Epoch 066 | train_loss=2.146939 | val_MSE=0.649656831 val_MAE=0.524865943 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=192 T=336 | Epoch 067 | train_loss=2.145793 | val_MSE=0.649183263 val_MAE=0.524673264 | lr=2.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=192 T=336 | Epoch 068 | train_loss=2.145038 | val_MSE=0.648962791 val_MAE=0.524481923 | lr=2.00e-05 | ES=0/12 | seconds=8.87 BEST
+ETTm1 L=192 T=336 | Epoch 069 | train_loss=2.144173 | val_MSE=0.648812645 val_MAE=0.524732323 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=192 T=336 | Epoch 070 | train_loss=2.142986 | val_MSE=0.648456635 val_MAE=0.524346687 | lr=2.00e-05 | ES=0/12 | seconds=8.97 BEST
+ETTm1 L=192 T=336 | Epoch 071 | train_loss=2.142362 | val_MSE=0.648302549 val_MAE=0.524428491 | lr=2.00e-05 | ES=0/12 | seconds=8.95 BEST
+ETTm1 L=192 T=336 | Epoch 072 | train_loss=2.141399 | val_MSE=0.648335352 val_MAE=0.524513546 | lr=2.00e-05 | ES=1/12 | seconds=9.10 
+ETTm1 L=192 T=336 | Epoch 073 | train_loss=2.141058 | val_MSE=0.647527865 val_MAE=0.523942664 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=192 T=336 | Epoch 074 | train_loss=2.140105 | val_MSE=0.648495761 val_MAE=0.524534637 | lr=2.00e-05 | ES=1/12 | seconds=9.28 
+ETTm1 L=192 T=336 | Epoch 075 | train_loss=2.139342 | val_MSE=0.648060614 val_MAE=0.524190798 | lr=2.00e-05 | ES=2/12 | seconds=8.87 
+ETTm1 L=192 T=336 | Epoch 076 | train_loss=2.138498 | val_MSE=0.647153047 val_MAE=0.523793203 | lr=2.00e-05 | ES=0/12 | seconds=9.16 BEST
+ETTm1 L=192 T=336 | Epoch 077 | train_loss=2.137938 | val_MSE=0.647412698 val_MAE=0.524010328 | lr=2.00e-05 | ES=1/12 | seconds=9.03 
+ETTm1 L=192 T=336 | Epoch 078 | train_loss=2.137600 | val_MSE=0.647094534 val_MAE=0.523716519 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=192 T=336 | Epoch 079 | train_loss=2.136555 | val_MSE=0.646916218 val_MAE=0.523745352 | lr=2.00e-05 | ES=0/12 | seconds=8.96 BEST
+ETTm1 L=192 T=336 | Epoch 080 | train_loss=2.135860 | val_MSE=0.646852455 val_MAE=0.523662431 | lr=2.00e-05 | ES=0/12 | seconds=9.03 BEST
+ETTm1 L=192 T=336 | Epoch 081 | train_loss=2.135112 | val_MSE=0.646615858 val_MAE=0.523729784 | lr=2.00e-05 | ES=0/12 | seconds=9.31 BEST
+ETTm1 L=192 T=336 | Epoch 082 | train_loss=2.134295 | val_MSE=0.646416773 val_MAE=0.523363443 | lr=2.00e-05 | ES=0/12 | seconds=8.92 BEST
+ETTm1 L=192 T=336 | Epoch 083 | train_loss=2.133525 | val_MSE=0.646509016 val_MAE=0.523553025 | lr=2.00e-05 | ES=1/12 | seconds=8.99 
+ETTm1 L=192 T=336 | Epoch 084 | train_loss=2.133166 | val_MSE=0.645754548 val_MAE=0.523082072 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=192 T=336 | Epoch 085 | train_loss=2.132509 | val_MSE=0.645765613 val_MAE=0.523248043 | lr=2.00e-05 | ES=1/12 | seconds=9.18 
+ETTm1 L=192 T=336 | Epoch 086 | train_loss=2.132178 | val_MSE=0.646072892 val_MAE=0.523450456 | lr=2.00e-05 | ES=2/12 | seconds=8.93 
+ETTm1 L=192 T=336 | Epoch 087 | train_loss=2.131767 | val_MSE=0.645696853 val_MAE=0.523132090 | lr=2.00e-05 | ES=0/12 | seconds=9.23 BEST
+ETTm1 L=192 T=336 | Epoch 088 | train_loss=2.131033 | val_MSE=0.645430223 val_MAE=0.523017402 | lr=2.00e-05 | ES=0/12 | seconds=8.91 BEST
+ETTm1 L=192 T=336 | Epoch 089 | train_loss=2.130401 | val_MSE=0.645558287 val_MAE=0.523257610 | lr=2.00e-05 | ES=1/12 | seconds=8.74 
+ETTm1 L=192 T=336 | Epoch 090 | train_loss=2.129743 | val_MSE=0.645592662 val_MAE=0.523282141 | lr=2.00e-05 | ES=2/12 | seconds=8.84 
+ETTm1 L=192 T=336 | Epoch 091 | train_loss=2.129231 | val_MSE=0.645283162 val_MAE=0.523182832 | lr=2.00e-05 | ES=0/12 | seconds=9.02 BEST
+ETTm1 L=192 T=336 | Epoch 092 | train_loss=2.128653 | val_MSE=0.645423748 val_MAE=0.523115518 | lr=2.00e-05 | ES=1/12 | seconds=9.04 
+ETTm1 L=192 T=336 | Epoch 093 | train_loss=2.128387 | val_MSE=0.645152364 val_MAE=0.523041034 | lr=2.00e-05 | ES=0/12 | seconds=8.92 BEST
+ETTm1 L=192 T=336 | Epoch 094 | train_loss=2.127938 | val_MSE=0.645480755 val_MAE=0.523232505 | lr=2.00e-05 | ES=1/12 | seconds=9.26 
+ETTm1 L=192 T=336 | Epoch 095 | train_loss=2.126807 | val_MSE=0.644491782 val_MAE=0.522822094 | lr=2.00e-05 | ES=0/12 | seconds=9.04 BEST
+ETTm1 L=192 T=336 | Epoch 096 | train_loss=2.126372 | val_MSE=0.644546449 val_MAE=0.522848130 | lr=2.00e-05 | ES=1/12 | seconds=9.31 
+ETTm1 L=192 T=336 | Epoch 097 | train_loss=2.126052 | val_MSE=0.644601890 val_MAE=0.522747347 | lr=2.00e-05 | ES=2/12 | seconds=9.25 
+ETTm1 L=192 T=336 | Epoch 098 | train_loss=2.125672 | val_MSE=0.644342196 val_MAE=0.522618117 | lr=2.00e-05 | ES=0/12 | seconds=8.95 BEST
+ETTm1 L=192 T=336 | Epoch 099 | train_loss=2.124703 | val_MSE=0.644138885 val_MAE=0.522638109 | lr=2.00e-05 | ES=0/12 | seconds=9.04 BEST
+ETTm1 L=192 T=336 | Epoch 100 | train_loss=2.124255 | val_MSE=0.643924726 val_MAE=0.522235948 | lr=2.00e-05 | ES=0/12 | seconds=9.08 BEST
+ETTm1 L=192 T=336 | Epoch 101 | train_loss=2.124268 | val_MSE=0.644196458 val_MAE=0.522533895 | lr=2.00e-05 | ES=1/12 | seconds=9.03 
+ETTm1 L=192 T=336 | Epoch 102 | train_loss=2.123519 | val_MSE=0.643405555 val_MAE=0.522337923 | lr=2.00e-05 | ES=0/12 | seconds=9.05 BEST
+ETTm1 L=192 T=336 | Epoch 103 | train_loss=2.123641 | val_MSE=0.644199155 val_MAE=0.522637586 | lr=2.00e-05 | ES=1/12 | seconds=8.92 
+ETTm1 L=192 T=336 | Epoch 104 | train_loss=2.122435 | val_MSE=0.643417875 val_MAE=0.522209262 | lr=2.00e-05 | ES=2/12 | seconds=9.06 
+ETTm1 L=192 T=336 | Epoch 105 | train_loss=2.122313 | val_MSE=0.643618974 val_MAE=0.522425166 | lr=2.00e-05 | ES=3/12 | seconds=8.96 
+ETTm1 L=192 T=336 | Epoch 106 | train_loss=2.121594 | val_MSE=0.642952893 val_MAE=0.521957202 | lr=2.00e-05 | ES=0/12 | seconds=9.05 BEST
+ETTm1 L=192 T=336 | Epoch 107 | train_loss=2.121046 | val_MSE=0.643317804 val_MAE=0.522337479 | lr=2.00e-05 | ES=1/12 | seconds=9.23 
+ETTm1 L=192 T=336 | Epoch 108 | train_loss=2.120986 | val_MSE=0.643542988 val_MAE=0.522385585 | lr=2.00e-05 | ES=2/12 | seconds=9.42 
+ETTm1 L=192 T=336 | Epoch 109 | train_loss=2.120103 | val_MSE=0.642622559 val_MAE=0.521760473 | lr=2.00e-05 | ES=0/12 | seconds=9.13 BEST
+ETTm1 L=192 T=336 | Epoch 110 | train_loss=2.119952 | val_MSE=0.642788200 val_MAE=0.521952178 | lr=2.00e-05 | ES=1/12 | seconds=9.10 
+ETTm1 L=192 T=336 | Epoch 111 | train_loss=2.119669 | val_MSE=0.643194225 val_MAE=0.522075494 | lr=2.00e-05 | ES=2/12 | seconds=9.14 
+ETTm1 L=192 T=336 | Epoch 112 | train_loss=2.119316 | val_MSE=0.642891603 val_MAE=0.522169859 | lr=2.00e-05 | ES=3/12 | seconds=9.25 
+ETTm1 L=192 T=336 | Epoch 113 | train_loss=2.118799 | val_MSE=0.642444520 val_MAE=0.521777401 | lr=2.00e-05 | ES=0/12 | seconds=9.11 BEST
+ETTm1 L=192 T=336 | Epoch 114 | train_loss=2.118353 | val_MSE=0.642347182 val_MAE=0.521707594 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=192 T=336 | Epoch 115 | train_loss=2.117912 | val_MSE=0.642156805 val_MAE=0.521567144 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=192 T=336 | Epoch 116 | train_loss=2.117832 | val_MSE=0.642058568 val_MAE=0.521587332 | lr=2.00e-05 | ES=0/12 | seconds=8.84 BEST
+ETTm1 L=192 T=336 | Epoch 117 | train_loss=2.117160 | val_MSE=0.641999326 val_MAE=0.521436530 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=192 T=336 | Epoch 118 | train_loss=2.116525 | val_MSE=0.642266380 val_MAE=0.521860883 | lr=2.00e-05 | ES=1/12 | seconds=9.12 
+ETTm1 L=192 T=336 | Epoch 119 | train_loss=2.116521 | val_MSE=0.642258865 val_MAE=0.521691197 | lr=2.00e-05 | ES=2/12 | seconds=9.49 
+ETTm1 L=192 T=336 | Epoch 120 | train_loss=2.115946 | val_MSE=0.641842392 val_MAE=0.521350388 | lr=2.00e-05 | ES=0/12 | seconds=9.64 BEST
+ETTm1 L=192 T=336 | Epoch 121 | train_loss=2.115214 | val_MSE=0.641995222 val_MAE=0.521466400 | lr=2.00e-05 | ES=1/12 | seconds=9.51 
+ETTm1 L=192 T=336 | Epoch 122 | train_loss=2.115133 | val_MSE=0.641872413 val_MAE=0.521520760 | lr=2.00e-05 | ES=2/12 | seconds=9.05 
+ETTm1 L=192 T=336 | Epoch 123 | train_loss=2.114755 | val_MSE=0.642273512 val_MAE=0.521674335 | lr=2.00e-05 | ES=3/12 | seconds=8.83 
+ETTm1 L=192 T=336 | Epoch 124 | train_loss=2.114282 | val_MSE=0.641954834 val_MAE=0.521580894 | lr=1.00e-05 | ES=4/12 | seconds=8.83 
+ETTm1 L=192 T=336 | Epoch 125 | train_loss=2.114079 | val_MSE=0.641681315 val_MAE=0.521355283 | lr=1.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=192 T=336 | Epoch 126 | train_loss=2.113597 | val_MSE=0.641650552 val_MAE=0.521475700 | lr=1.00e-05 | ES=0/12 | seconds=8.74 BEST
+ETTm1 L=192 T=336 | Epoch 127 | train_loss=2.113488 | val_MSE=0.641402271 val_MAE=0.521224717 | lr=1.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=192 T=336 | Epoch 128 | train_loss=2.113334 | val_MSE=0.641768808 val_MAE=0.521444398 | lr=1.00e-05 | ES=1/12 | seconds=8.73 
+ETTm1 L=192 T=336 | Epoch 129 | train_loss=2.112987 | val_MSE=0.641778654 val_MAE=0.521434299 | lr=1.00e-05 | ES=2/12 | seconds=8.82 
+ETTm1 L=192 T=336 | Epoch 130 | train_loss=2.112825 | val_MSE=0.641528001 val_MAE=0.521397096 | lr=1.00e-05 | ES=3/12 | seconds=8.77 
+ETTm1 L=192 T=336 | Epoch 131 | train_loss=2.112444 | val_MSE=0.641705886 val_MAE=0.521448144 | lr=5.00e-06 | ES=4/12 | seconds=8.80 
+ETTm1 L=192 T=336 | Epoch 132 | train_loss=2.112524 | val_MSE=0.641577076 val_MAE=0.521332502 | lr=5.00e-06 | ES=5/12 | seconds=8.75 
+ETTm1 L=192 T=336 | Epoch 133 | train_loss=2.112571 | val_MSE=0.641549796 val_MAE=0.521302632 | lr=5.00e-06 | ES=6/12 | seconds=8.80 
+ETTm1 L=192 T=336 | Epoch 134 | train_loss=2.111984 | val_MSE=0.641647200 val_MAE=0.521365756 | lr=5.00e-06 | ES=7/12 | seconds=9.19 
+ETTm1 L=192 T=336 | Epoch 135 | train_loss=2.112260 | val_MSE=0.641625296 val_MAE=0.521340981 | lr=2.50e-06 | ES=8/12 | seconds=9.14 
+ETTm1 L=192 T=336 | Epoch 136 | train_loss=2.112066 | val_MSE=0.641522889 val_MAE=0.521284623 | lr=2.50e-06 | ES=9/12 | seconds=8.93 
+ETTm1 L=192 T=336 | Epoch 137 | train_loss=2.111879 | val_MSE=0.641490122 val_MAE=0.521274344 | lr=2.50e-06 | ES=10/12 | seconds=9.06 
+ETTm1 L=192 T=336 | Epoch 138 | train_loss=2.112042 | val_MSE=0.641500031 val_MAE=0.521293328 | lr=2.50e-06 | ES=11/12 | seconds=9.19 
+ETTm1 L=192 T=336 | Epoch 139 | train_loss=2.111980 | val_MSE=0.641518145 val_MAE=0.521304344 | lr=1.25e-06 | ES=12/12 | seconds=9.26 
+Early stopping.
+RESULT ETTm1 L=192 T=336 | MSE=0.382176999 MAE=0.387627114 | best_epoch=127 epochs=139 | seconds=1257.96
+Completed 7/16 training runs
+START ETTm1 L=192 T=720 | 2026-11-07T14:58:35.592274+08:00
+ETTm1 L=192 T=720 | Epoch 001 | train_loss=3.186884 | val_MSE=1.327782378 val_MAE=0.803896206 | lr=2.00e-05 | ES=0/12 | seconds=10.31 BEST
+ETTm1 L=192 T=720 | Epoch 002 | train_loss=2.978731 | val_MSE=1.200582824 val_MAE=0.755772472 | lr=2.00e-05 | ES=0/12 | seconds=9.73 BEST
+ETTm1 L=192 T=720 | Epoch 003 | train_loss=2.836010 | val_MSE=1.123163060 val_MAE=0.723137753 | lr=2.00e-05 | ES=0/12 | seconds=9.81 BEST
+ETTm1 L=192 T=720 | Epoch 004 | train_loss=2.739650 | val_MSE=1.076461670 val_MAE=0.701381089 | lr=2.00e-05 | ES=0/12 | seconds=9.81 BEST
+ETTm1 L=192 T=720 | Epoch 005 | train_loss=2.671723 | val_MSE=1.047942647 val_MAE=0.686843729 | lr=2.00e-05 | ES=0/12 | seconds=9.99 BEST
+ETTm1 L=192 T=720 | Epoch 006 | train_loss=2.624103 | val_MSE=1.030151435 val_MAE=0.677000638 | lr=2.00e-05 | ES=0/12 | seconds=9.74 BEST
+ETTm1 L=192 T=720 | Epoch 007 | train_loss=2.589728 | val_MSE=1.018636473 val_MAE=0.670152261 | lr=2.00e-05 | ES=0/12 | seconds=9.92 BEST
+ETTm1 L=192 T=720 | Epoch 008 | train_loss=2.564077 | val_MSE=1.010969225 val_MAE=0.665327736 | lr=2.00e-05 | ES=0/12 | seconds=9.69 BEST
+ETTm1 L=192 T=720 | Epoch 009 | train_loss=2.544374 | val_MSE=1.005565731 val_MAE=0.661810714 | lr=2.00e-05 | ES=0/12 | seconds=10.17 BEST
+ETTm1 L=192 T=720 | Epoch 010 | train_loss=2.528263 | val_MSE=1.001688806 val_MAE=0.659242997 | lr=2.00e-05 | ES=0/12 | seconds=9.87 BEST
+ETTm1 L=192 T=720 | Epoch 011 | train_loss=2.516187 | val_MSE=0.998684333 val_MAE=0.657276998 | lr=2.00e-05 | ES=0/12 | seconds=10.21 BEST
+ETTm1 L=192 T=720 | Epoch 012 | train_loss=2.505792 | val_MSE=0.996246084 val_MAE=0.655746521 | lr=2.00e-05 | ES=0/12 | seconds=9.99 BEST
+ETTm1 L=192 T=720 | Epoch 013 | train_loss=2.496948 | val_MSE=0.994290960 val_MAE=0.654556459 | lr=2.00e-05 | ES=0/12 | seconds=9.96 BEST
+ETTm1 L=192 T=720 | Epoch 014 | train_loss=2.489248 | val_MSE=0.992676731 val_MAE=0.653659691 | lr=2.00e-05 | ES=0/12 | seconds=10.06 BEST
+ETTm1 L=192 T=720 | Epoch 015 | train_loss=2.483500 | val_MSE=0.991191984 val_MAE=0.652938501 | lr=2.00e-05 | ES=0/12 | seconds=9.94 BEST
+ETTm1 L=192 T=720 | Epoch 016 | train_loss=2.477986 | val_MSE=0.990011559 val_MAE=0.652312640 | lr=2.00e-05 | ES=0/12 | seconds=9.74 BEST
+ETTm1 L=192 T=720 | Epoch 017 | train_loss=2.473626 | val_MSE=0.988852199 val_MAE=0.651749350 | lr=2.00e-05 | ES=0/12 | seconds=9.65 BEST
+ETTm1 L=192 T=720 | Epoch 018 | train_loss=2.469464 | val_MSE=0.987907999 val_MAE=0.651205360 | lr=2.00e-05 | ES=0/12 | seconds=10.12 BEST
+ETTm1 L=192 T=720 | Epoch 019 | train_loss=2.466282 | val_MSE=0.986986853 val_MAE=0.650759472 | lr=2.00e-05 | ES=0/12 | seconds=10.09 BEST
+ETTm1 L=192 T=720 | Epoch 020 | train_loss=2.463309 | val_MSE=0.986284905 val_MAE=0.650424364 | lr=2.00e-05 | ES=0/12 | seconds=9.72 BEST
+ETTm1 L=192 T=720 | Epoch 021 | train_loss=2.460305 | val_MSE=0.985426333 val_MAE=0.649914275 | lr=2.00e-05 | ES=0/12 | seconds=10.10 BEST
+ETTm1 L=192 T=720 | Epoch 022 | train_loss=2.457571 | val_MSE=0.984809281 val_MAE=0.649605045 | lr=2.00e-05 | ES=0/12 | seconds=9.90 BEST
+ETTm1 L=192 T=720 | Epoch 023 | train_loss=2.455969 | val_MSE=0.984291357 val_MAE=0.649303373 | lr=2.00e-05 | ES=0/12 | seconds=9.70 BEST
+ETTm1 L=192 T=720 | Epoch 024 | train_loss=2.453506 | val_MSE=0.983743621 val_MAE=0.648977236 | lr=2.00e-05 | ES=0/12 | seconds=10.14 BEST
+ETTm1 L=192 T=720 | Epoch 025 | train_loss=2.451036 | val_MSE=0.983366242 val_MAE=0.648744942 | lr=2.00e-05 | ES=0/12 | seconds=10.09 BEST
+ETTm1 L=192 T=720 | Epoch 026 | train_loss=2.448592 | val_MSE=0.982981818 val_MAE=0.648536499 | lr=2.00e-05 | ES=0/12 | seconds=9.86 BEST
+ETTm1 L=192 T=720 | Epoch 027 | train_loss=2.446955 | val_MSE=0.982627526 val_MAE=0.648346354 | lr=2.00e-05 | ES=0/12 | seconds=10.06 BEST
+ETTm1 L=192 T=720 | Epoch 028 | train_loss=2.445615 | val_MSE=0.982452614 val_MAE=0.648261014 | lr=2.00e-05 | ES=0/12 | seconds=9.96 BEST
+ETTm1 L=192 T=720 | Epoch 029 | train_loss=2.443616 | val_MSE=0.982279036 val_MAE=0.648173152 | lr=2.00e-05 | ES=0/12 | seconds=9.72 BEST
+ETTm1 L=192 T=720 | Epoch 030 | train_loss=2.441939 | val_MSE=0.981637754 val_MAE=0.647892652 | lr=2.00e-05 | ES=0/12 | seconds=9.74 BEST
+ETTm1 L=192 T=720 | Epoch 031 | train_loss=2.440476 | val_MSE=0.981533298 val_MAE=0.647826046 | lr=2.00e-05 | ES=0/12 | seconds=9.94 BEST
+ETTm1 L=192 T=720 | Epoch 032 | train_loss=2.438445 | val_MSE=0.981237694 val_MAE=0.647814409 | lr=2.00e-05 | ES=0/12 | seconds=10.00 BEST
+ETTm1 L=192 T=720 | Epoch 033 | train_loss=2.437124 | val_MSE=0.980976967 val_MAE=0.647690143 | lr=2.00e-05 | ES=0/12 | seconds=10.25 BEST
+ETTm1 L=192 T=720 | Epoch 034 | train_loss=2.435471 | val_MSE=0.980712288 val_MAE=0.647576879 | lr=2.00e-05 | ES=0/12 | seconds=10.37 BEST
+ETTm1 L=192 T=720 | Epoch 035 | train_loss=2.433878 | val_MSE=0.980636774 val_MAE=0.647474041 | lr=2.00e-05 | ES=0/12 | seconds=10.13 BEST
+ETTm1 L=192 T=720 | Epoch 036 | train_loss=2.432667 | val_MSE=0.980398446 val_MAE=0.647483311 | lr=2.00e-05 | ES=0/12 | seconds=10.11 BEST
+ETTm1 L=192 T=720 | Epoch 037 | train_loss=2.430950 | val_MSE=0.980177377 val_MAE=0.647424166 | lr=2.00e-05 | ES=0/12 | seconds=10.02 BEST
+ETTm1 L=192 T=720 | Epoch 038 | train_loss=2.430048 | val_MSE=0.979603942 val_MAE=0.647147565 | lr=2.00e-05 | ES=0/12 | seconds=9.62 BEST
+ETTm1 L=192 T=720 | Epoch 039 | train_loss=2.428036 | val_MSE=0.979910525 val_MAE=0.647264361 | lr=2.00e-05 | ES=1/12 | seconds=9.63 
+ETTm1 L=192 T=720 | Epoch 040 | train_loss=2.426809 | val_MSE=0.979701165 val_MAE=0.647262530 | lr=2.00e-05 | ES=2/12 | seconds=9.71 
+ETTm1 L=192 T=720 | Epoch 041 | train_loss=2.425480 | val_MSE=0.979635891 val_MAE=0.647150800 | lr=2.00e-05 | ES=3/12 | seconds=9.75 
+ETTm1 L=192 T=720 | Epoch 042 | train_loss=2.424154 | val_MSE=0.979272273 val_MAE=0.647047760 | lr=2.00e-05 | ES=0/12 | seconds=9.70 BEST
+ETTm1 L=192 T=720 | Epoch 043 | train_loss=2.422501 | val_MSE=0.978867023 val_MAE=0.646885649 | lr=2.00e-05 | ES=0/12 | seconds=9.82 BEST
+ETTm1 L=192 T=720 | Epoch 044 | train_loss=2.421405 | val_MSE=0.979032565 val_MAE=0.647064766 | lr=2.00e-05 | ES=1/12 | seconds=9.58 
+ETTm1 L=192 T=720 | Epoch 045 | train_loss=2.420596 | val_MSE=0.978308566 val_MAE=0.646588517 | lr=2.00e-05 | ES=0/12 | seconds=9.77 BEST
+ETTm1 L=192 T=720 | Epoch 046 | train_loss=2.418930 | val_MSE=0.978452017 val_MAE=0.646640995 | lr=2.00e-05 | ES=1/12 | seconds=9.66 
+ETTm1 L=192 T=720 | Epoch 047 | train_loss=2.417462 | val_MSE=0.978310287 val_MAE=0.646716561 | lr=2.00e-05 | ES=2/12 | seconds=9.66 
+ETTm1 L=192 T=720 | Epoch 048 | train_loss=2.415715 | val_MSE=0.978397844 val_MAE=0.646779260 | lr=2.00e-05 | ES=3/12 | seconds=9.71 
+ETTm1 L=192 T=720 | Epoch 049 | train_loss=2.414810 | val_MSE=0.977925981 val_MAE=0.646554971 | lr=2.00e-05 | ES=0/12 | seconds=9.89 BEST
+ETTm1 L=192 T=720 | Epoch 050 | train_loss=2.414065 | val_MSE=0.977700651 val_MAE=0.646471669 | lr=2.00e-05 | ES=0/12 | seconds=9.81 BEST
+ETTm1 L=192 T=720 | Epoch 051 | train_loss=2.412637 | val_MSE=0.977216731 val_MAE=0.646127245 | lr=2.00e-05 | ES=0/12 | seconds=9.71 BEST
+ETTm1 L=192 T=720 | Epoch 052 | train_loss=2.411077 | val_MSE=0.976835539 val_MAE=0.645923757 | lr=2.00e-05 | ES=0/12 | seconds=9.63 BEST
+ETTm1 L=192 T=720 | Epoch 053 | train_loss=2.409955 | val_MSE=0.976922285 val_MAE=0.646027397 | lr=2.00e-05 | ES=1/12 | seconds=9.71 
+ETTm1 L=192 T=720 | Epoch 054 | train_loss=2.408919 | val_MSE=0.976925220 val_MAE=0.646046415 | lr=2.00e-05 | ES=2/12 | seconds=9.68 
+ETTm1 L=192 T=720 | Epoch 055 | train_loss=2.408460 | val_MSE=0.976558282 val_MAE=0.645787226 | lr=2.00e-05 | ES=0/12 | seconds=9.76 BEST
+ETTm1 L=192 T=720 | Epoch 056 | train_loss=2.406427 | val_MSE=0.975461870 val_MAE=0.645448411 | lr=2.00e-05 | ES=0/12 | seconds=9.91 BEST
+ETTm1 L=192 T=720 | Epoch 057 | train_loss=2.405163 | val_MSE=0.975504738 val_MAE=0.645363027 | lr=2.00e-05 | ES=1/12 | seconds=9.74 
+ETTm1 L=192 T=720 | Epoch 058 | train_loss=2.403834 | val_MSE=0.976144233 val_MAE=0.645741684 | lr=2.00e-05 | ES=2/12 | seconds=9.66 
+ETTm1 L=192 T=720 | Epoch 059 | train_loss=2.403304 | val_MSE=0.976260253 val_MAE=0.645767593 | lr=2.00e-05 | ES=3/12 | seconds=10.06 
+ETTm1 L=192 T=720 | Epoch 060 | train_loss=2.401646 | val_MSE=0.975644843 val_MAE=0.645568052 | lr=1.00e-05 | ES=4/12 | seconds=9.87 
+ETTm1 L=192 T=720 | Epoch 061 | train_loss=2.400442 | val_MSE=0.975626652 val_MAE=0.645586045 | lr=1.00e-05 | ES=5/12 | seconds=9.91 
+ETTm1 L=192 T=720 | Epoch 062 | train_loss=2.400467 | val_MSE=0.975405555 val_MAE=0.645451679 | lr=1.00e-05 | ES=0/12 | seconds=10.11 BEST
+ETTm1 L=192 T=720 | Epoch 063 | train_loss=2.399806 | val_MSE=0.975206318 val_MAE=0.645434783 | lr=1.00e-05 | ES=0/12 | seconds=9.85 BEST
+ETTm1 L=192 T=720 | Epoch 064 | train_loss=2.399276 | val_MSE=0.975061550 val_MAE=0.645283351 | lr=1.00e-05 | ES=0/12 | seconds=9.85 BEST
+ETTm1 L=192 T=720 | Epoch 065 | train_loss=2.398556 | val_MSE=0.974982202 val_MAE=0.645220843 | lr=1.00e-05 | ES=0/12 | seconds=9.87 BEST
+ETTm1 L=192 T=720 | Epoch 066 | train_loss=2.398069 | val_MSE=0.975002289 val_MAE=0.645236801 | lr=1.00e-05 | ES=1/12 | seconds=9.84 
+ETTm1 L=192 T=720 | Epoch 067 | train_loss=2.397913 | val_MSE=0.975020824 val_MAE=0.645266943 | lr=1.00e-05 | ES=2/12 | seconds=9.96 
+ETTm1 L=192 T=720 | Epoch 068 | train_loss=2.397050 | val_MSE=0.974707073 val_MAE=0.645128705 | lr=1.00e-05 | ES=0/12 | seconds=10.28 BEST
+ETTm1 L=192 T=720 | Epoch 069 | train_loss=2.396776 | val_MSE=0.974722723 val_MAE=0.645161030 | lr=1.00e-05 | ES=1/12 | seconds=9.76 
+ETTm1 L=192 T=720 | Epoch 070 | train_loss=2.396245 | val_MSE=0.974329824 val_MAE=0.644967060 | lr=1.00e-05 | ES=0/12 | seconds=10.36 BEST
+ETTm1 L=192 T=720 | Epoch 071 | train_loss=2.395914 | val_MSE=0.974886441 val_MAE=0.645241860 | lr=1.00e-05 | ES=1/12 | seconds=10.26 
+ETTm1 L=192 T=720 | Epoch 072 | train_loss=2.394735 | val_MSE=0.974520097 val_MAE=0.644988425 | lr=1.00e-05 | ES=2/12 | seconds=9.72 
+ETTm1 L=192 T=720 | Epoch 073 | train_loss=2.394589 | val_MSE=0.974296574 val_MAE=0.644957462 | lr=1.00e-05 | ES=0/12 | seconds=9.91 BEST
+ETTm1 L=192 T=720 | Epoch 074 | train_loss=2.394499 | val_MSE=0.974259888 val_MAE=0.644982206 | lr=5.00e-06 | ES=0/12 | seconds=10.10 BEST
+ETTm1 L=192 T=720 | Epoch 075 | train_loss=2.393380 | val_MSE=0.974309023 val_MAE=0.644961824 | lr=5.00e-06 | ES=1/12 | seconds=9.85 
+ETTm1 L=192 T=720 | Epoch 076 | train_loss=2.393827 | val_MSE=0.974240608 val_MAE=0.644952792 | lr=5.00e-06 | ES=0/12 | seconds=9.89 BEST
+ETTm1 L=192 T=720 | Epoch 077 | train_loss=2.393328 | val_MSE=0.974201930 val_MAE=0.644953509 | lr=5.00e-06 | ES=0/12 | seconds=9.83 BEST
+ETTm1 L=192 T=720 | Epoch 078 | train_loss=2.393415 | val_MSE=0.974004733 val_MAE=0.644843295 | lr=5.00e-06 | ES=0/12 | seconds=9.96 BEST
+ETTm1 L=192 T=720 | Epoch 079 | train_loss=2.393182 | val_MSE=0.974176213 val_MAE=0.644953559 | lr=5.00e-06 | ES=1/12 | seconds=9.88 
+ETTm1 L=192 T=720 | Epoch 080 | train_loss=2.392274 | val_MSE=0.974016258 val_MAE=0.644861968 | lr=5.00e-06 | ES=2/12 | seconds=9.86 
+ETTm1 L=192 T=720 | Epoch 081 | train_loss=2.392309 | val_MSE=0.974039334 val_MAE=0.644858976 | lr=5.00e-06 | ES=3/12 | seconds=10.11 
+ETTm1 L=192 T=720 | Epoch 082 | train_loss=2.391940 | val_MSE=0.974102540 val_MAE=0.644889637 | lr=2.50e-06 | ES=4/12 | seconds=10.11 
+ETTm1 L=192 T=720 | Epoch 083 | train_loss=2.391355 | val_MSE=0.974078000 val_MAE=0.644882144 | lr=2.50e-06 | ES=5/12 | seconds=9.89 
+ETTm1 L=192 T=720 | Epoch 084 | train_loss=2.390941 | val_MSE=0.974030383 val_MAE=0.644859534 | lr=2.50e-06 | ES=6/12 | seconds=9.90 
+ETTm1 L=192 T=720 | Epoch 085 | train_loss=2.391856 | val_MSE=0.973897139 val_MAE=0.644789460 | lr=2.50e-06 | ES=0/12 | seconds=9.74 BEST
+ETTm1 L=192 T=720 | Epoch 086 | train_loss=2.391403 | val_MSE=0.973872309 val_MAE=0.644792272 | lr=2.50e-06 | ES=0/12 | seconds=10.18 BEST
+ETTm1 L=192 T=720 | Epoch 087 | train_loss=2.391696 | val_MSE=0.973862002 val_MAE=0.644790483 | lr=2.50e-06 | ES=0/12 | seconds=9.76 BEST
+ETTm1 L=192 T=720 | Epoch 088 | train_loss=2.391263 | val_MSE=0.973964640 val_MAE=0.644833937 | lr=2.50e-06 | ES=1/12 | seconds=9.97 
+ETTm1 L=192 T=720 | Epoch 089 | train_loss=2.390740 | val_MSE=0.973928071 val_MAE=0.644816663 | lr=1.25e-06 | ES=2/12 | seconds=9.86 
+ETTm1 L=192 T=720 | Epoch 090 | train_loss=2.391544 | val_MSE=0.973919478 val_MAE=0.644820850 | lr=1.25e-06 | ES=3/12 | seconds=10.01 
+ETTm1 L=192 T=720 | Epoch 091 | train_loss=2.391432 | val_MSE=0.973876490 val_MAE=0.644803031 | lr=1.25e-06 | ES=4/12 | seconds=10.21 
+ETTm1 L=192 T=720 | Epoch 092 | train_loss=2.390362 | val_MSE=0.973815066 val_MAE=0.644772506 | lr=1.25e-06 | ES=0/12 | seconds=10.18 BEST
+ETTm1 L=192 T=720 | Epoch 093 | train_loss=2.390740 | val_MSE=0.973811782 val_MAE=0.644767987 | lr=6.25e-07 | ES=0/12 | seconds=10.08 BEST
+ETTm1 L=192 T=720 | Epoch 094 | train_loss=2.390934 | val_MSE=0.973793679 val_MAE=0.644757517 | lr=6.25e-07 | ES=0/12 | seconds=10.25 BEST
+ETTm1 L=192 T=720 | Epoch 095 | train_loss=2.390678 | val_MSE=0.973788614 val_MAE=0.644760455 | lr=6.25e-07 | ES=0/12 | seconds=9.89 BEST
+ETTm1 L=192 T=720 | Epoch 096 | train_loss=2.390949 | val_MSE=0.973773203 val_MAE=0.644750090 | lr=6.25e-07 | ES=0/12 | seconds=9.98 BEST
+ETTm1 L=192 T=720 | Epoch 097 | train_loss=2.390739 | val_MSE=0.973766091 val_MAE=0.644750240 | lr=6.25e-07 | ES=0/12 | seconds=9.92 BEST
+ETTm1 L=192 T=720 | Epoch 098 | train_loss=2.390497 | val_MSE=0.973753166 val_MAE=0.644747148 | lr=3.13e-07 | ES=0/12 | seconds=10.16 BEST
+ETTm1 L=192 T=720 | Epoch 099 | train_loss=2.390819 | val_MSE=0.973750664 val_MAE=0.644743858 | lr=3.13e-07 | ES=0/12 | seconds=9.63 BEST
+ETTm1 L=192 T=720 | Epoch 100 | train_loss=2.389702 | val_MSE=0.973760241 val_MAE=0.644751432 | lr=3.13e-07 | ES=1/12 | seconds=9.70 
+ETTm1 L=192 T=720 | Epoch 101 | train_loss=2.390757 | val_MSE=0.973761046 val_MAE=0.644749976 | lr=3.13e-07 | ES=2/12 | seconds=9.75 
+ETTm1 L=192 T=720 | Epoch 102 | train_loss=2.390744 | val_MSE=0.973773117 val_MAE=0.644757552 | lr=1.56e-07 | ES=3/12 | seconds=9.68 
+ETTm1 L=192 T=720 | Epoch 103 | train_loss=2.390438 | val_MSE=0.973775457 val_MAE=0.644757365 | lr=1.56e-07 | ES=4/12 | seconds=9.64 
+ETTm1 L=192 T=720 | Epoch 104 | train_loss=2.390357 | val_MSE=0.973776445 val_MAE=0.644757398 | lr=1.56e-07 | ES=5/12 | seconds=9.90 
+ETTm1 L=192 T=720 | Epoch 105 | train_loss=2.390591 | val_MSE=0.973771557 val_MAE=0.644755509 | lr=1.56e-07 | ES=6/12 | seconds=9.78 
+ETTm1 L=192 T=720 | Epoch 106 | train_loss=2.390402 | val_MSE=0.973765428 val_MAE=0.644753992 | lr=7.81e-08 | ES=7/12 | seconds=10.35 
+ETTm1 L=192 T=720 | Epoch 107 | train_loss=2.390881 | val_MSE=0.973767618 val_MAE=0.644754996 | lr=7.81e-08 | ES=8/12 | seconds=10.08 
+ETTm1 L=192 T=720 | Epoch 108 | train_loss=2.390307 | val_MSE=0.973771859 val_MAE=0.644757727 | lr=7.81e-08 | ES=9/12 | seconds=9.93 
+ETTm1 L=192 T=720 | Epoch 109 | train_loss=2.390037 | val_MSE=0.973769369 val_MAE=0.644756261 | lr=7.81e-08 | ES=10/12 | seconds=9.77 
+ETTm1 L=192 T=720 | Epoch 110 | train_loss=2.390095 | val_MSE=0.973769386 val_MAE=0.644756244 | lr=3.91e-08 | ES=11/12 | seconds=10.04 
+ETTm1 L=192 T=720 | Epoch 111 | train_loss=2.391241 | val_MSE=0.973770163 val_MAE=0.644756484 | lr=3.91e-08 | ES=12/12 | seconds=9.75 
+Early stopping.
+RESULT ETTm1 L=192 T=720 | MSE=0.451887239 MAE=0.428794104 | best_epoch=99 epochs=111 | seconds=1101.93
+Completed 8/16 training runs
+AVG ETTm1 L=192 | MSE=0.369341067 MAE=0.378959931
+START ETTm1 L=336 T=96 | 2026-11-07T15:16:57.701604+08:00
+ETTm1 L=336 T=96 | Epoch 001 | train_loss=2.790430 | val_MSE=0.748443078 val_MAE=0.602276323 | lr=2.00e-05 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=336 T=96 | Epoch 002 | train_loss=2.470573 | val_MSE=0.591580803 val_MAE=0.530812933 | lr=2.00e-05 | ES=0/12 | seconds=9.27 BEST
+ETTm1 L=336 T=96 | Epoch 003 | train_loss=2.289799 | val_MSE=0.515244056 val_MAE=0.490503573 | lr=2.00e-05 | ES=0/12 | seconds=9.04 BEST
+ETTm1 L=336 T=96 | Epoch 004 | train_loss=2.183748 | val_MSE=0.475813486 val_MAE=0.467100997 | lr=2.00e-05 | ES=0/12 | seconds=8.52 BEST
+ETTm1 L=336 T=96 | Epoch 005 | train_loss=2.116494 | val_MSE=0.453350949 val_MAE=0.452724552 | lr=2.00e-05 | ES=0/12 | seconds=8.92 BEST
+ETTm1 L=336 T=96 | Epoch 006 | train_loss=2.071179 | val_MSE=0.439184727 val_MAE=0.443076219 | lr=2.00e-05 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=336 T=96 | Epoch 007 | train_loss=2.036967 | val_MSE=0.428839493 val_MAE=0.435973459 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=336 T=96 | Epoch 008 | train_loss=2.010610 | val_MSE=0.421138573 val_MAE=0.430515591 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=336 T=96 | Epoch 009 | train_loss=1.987916 | val_MSE=0.414972627 val_MAE=0.426172158 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=336 T=96 | Epoch 010 | train_loss=1.969558 | val_MSE=0.409800975 val_MAE=0.422470150 | lr=2.00e-05 | ES=0/12 | seconds=8.99 BEST
+ETTm1 L=336 T=96 | Epoch 011 | train_loss=1.953772 | val_MSE=0.405436689 val_MAE=0.419307611 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=336 T=96 | Epoch 012 | train_loss=1.939795 | val_MSE=0.401991307 val_MAE=0.416839082 | lr=2.00e-05 | ES=0/12 | seconds=9.53 BEST
+ETTm1 L=336 T=96 | Epoch 013 | train_loss=1.927451 | val_MSE=0.398280960 val_MAE=0.414277626 | lr=2.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=336 T=96 | Epoch 014 | train_loss=1.916466 | val_MSE=0.395859831 val_MAE=0.412415121 | lr=2.00e-05 | ES=0/12 | seconds=8.99 BEST
+ETTm1 L=336 T=96 | Epoch 015 | train_loss=1.906956 | val_MSE=0.393427916 val_MAE=0.410643727 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=336 T=96 | Epoch 016 | train_loss=1.898222 | val_MSE=0.391243985 val_MAE=0.408976888 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=336 T=96 | Epoch 017 | train_loss=1.889852 | val_MSE=0.389797412 val_MAE=0.407971279 | lr=2.00e-05 | ES=0/12 | seconds=8.81 BEST
+ETTm1 L=336 T=96 | Epoch 018 | train_loss=1.882913 | val_MSE=0.387794686 val_MAE=0.406389100 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=336 T=96 | Epoch 019 | train_loss=1.875511 | val_MSE=0.387014817 val_MAE=0.405867513 | lr=2.00e-05 | ES=0/12 | seconds=8.92 BEST
+ETTm1 L=336 T=96 | Epoch 020 | train_loss=1.869672 | val_MSE=0.384747714 val_MAE=0.404194967 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=336 T=96 | Epoch 021 | train_loss=1.863922 | val_MSE=0.384390118 val_MAE=0.403979038 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=336 T=96 | Epoch 022 | train_loss=1.857893 | val_MSE=0.382403980 val_MAE=0.402481362 | lr=2.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=336 T=96 | Epoch 023 | train_loss=1.852011 | val_MSE=0.381641477 val_MAE=0.401979202 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=336 T=96 | Epoch 024 | train_loss=1.846897 | val_MSE=0.380316206 val_MAE=0.400791098 | lr=2.00e-05 | ES=0/12 | seconds=9.12 BEST
+ETTm1 L=336 T=96 | Epoch 025 | train_loss=1.841802 | val_MSE=0.379997815 val_MAE=0.400545734 | lr=2.00e-05 | ES=0/12 | seconds=9.34 BEST
+ETTm1 L=336 T=96 | Epoch 026 | train_loss=1.837231 | val_MSE=0.379313039 val_MAE=0.400078852 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=336 T=96 | Epoch 027 | train_loss=1.832531 | val_MSE=0.378327955 val_MAE=0.399353548 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=336 T=96 | Epoch 028 | train_loss=1.828415 | val_MSE=0.377623093 val_MAE=0.398695814 | lr=2.00e-05 | ES=0/12 | seconds=8.99 BEST
+ETTm1 L=336 T=96 | Epoch 029 | train_loss=1.823787 | val_MSE=0.376250885 val_MAE=0.397818783 | lr=2.00e-05 | ES=0/12 | seconds=9.25 BEST
+ETTm1 L=336 T=96 | Epoch 030 | train_loss=1.820336 | val_MSE=0.376741641 val_MAE=0.398208352 | lr=2.00e-05 | ES=1/12 | seconds=8.94 
+ETTm1 L=336 T=96 | Epoch 031 | train_loss=1.814994 | val_MSE=0.375839667 val_MAE=0.397454414 | lr=2.00e-05 | ES=0/12 | seconds=8.84 BEST
+ETTm1 L=336 T=96 | Epoch 032 | train_loss=1.811626 | val_MSE=0.375461962 val_MAE=0.397042413 | lr=2.00e-05 | ES=0/12 | seconds=8.87 BEST
+ETTm1 L=336 T=96 | Epoch 033 | train_loss=1.809033 | val_MSE=0.374792230 val_MAE=0.396532194 | lr=2.00e-05 | ES=0/12 | seconds=8.50 BEST
+ETTm1 L=336 T=96 | Epoch 034 | train_loss=1.804867 | val_MSE=0.374994366 val_MAE=0.396717411 | lr=2.00e-05 | ES=1/12 | seconds=8.89 
+ETTm1 L=336 T=96 | Epoch 035 | train_loss=1.801593 | val_MSE=0.374169733 val_MAE=0.395995045 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=336 T=96 | Epoch 036 | train_loss=1.798835 | val_MSE=0.373842163 val_MAE=0.395729271 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=336 T=96 | Epoch 037 | train_loss=1.795384 | val_MSE=0.373275397 val_MAE=0.395346195 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=336 T=96 | Epoch 038 | train_loss=1.794031 | val_MSE=0.373701212 val_MAE=0.395639779 | lr=2.00e-05 | ES=1/12 | seconds=9.04 
+ETTm1 L=336 T=96 | Epoch 039 | train_loss=1.790834 | val_MSE=0.373212904 val_MAE=0.395373877 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=336 T=96 | Epoch 040 | train_loss=1.788067 | val_MSE=0.373073038 val_MAE=0.395199632 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=336 T=96 | Epoch 041 | train_loss=1.786393 | val_MSE=0.372346583 val_MAE=0.394677955 | lr=2.00e-05 | ES=0/12 | seconds=9.30 BEST
+ETTm1 L=336 T=96 | Epoch 042 | train_loss=1.783560 | val_MSE=0.371953909 val_MAE=0.394288473 | lr=2.00e-05 | ES=0/12 | seconds=9.14 BEST
+ETTm1 L=336 T=96 | Epoch 043 | train_loss=1.781976 | val_MSE=0.372107437 val_MAE=0.394545502 | lr=2.00e-05 | ES=1/12 | seconds=9.32 
+ETTm1 L=336 T=96 | Epoch 044 | train_loss=1.780393 | val_MSE=0.371823084 val_MAE=0.394184071 | lr=2.00e-05 | ES=0/12 | seconds=8.76 BEST
+ETTm1 L=336 T=96 | Epoch 045 | train_loss=1.777756 | val_MSE=0.371747197 val_MAE=0.394251728 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=336 T=96 | Epoch 046 | train_loss=1.774665 | val_MSE=0.372161990 val_MAE=0.394420365 | lr=2.00e-05 | ES=1/12 | seconds=8.94 
+ETTm1 L=336 T=96 | Epoch 047 | train_loss=1.774994 | val_MSE=0.371550310 val_MAE=0.393877441 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=336 T=96 | Epoch 048 | train_loss=1.772924 | val_MSE=0.370962292 val_MAE=0.393547914 | lr=2.00e-05 | ES=0/12 | seconds=9.48 BEST
+ETTm1 L=336 T=96 | Epoch 049 | train_loss=1.771074 | val_MSE=0.371196076 val_MAE=0.393614613 | lr=2.00e-05 | ES=1/12 | seconds=9.54 
+ETTm1 L=336 T=96 | Epoch 050 | train_loss=1.768458 | val_MSE=0.371303652 val_MAE=0.393725238 | lr=2.00e-05 | ES=2/12 | seconds=9.07 
+ETTm1 L=336 T=96 | Epoch 051 | train_loss=1.766974 | val_MSE=0.371188195 val_MAE=0.393744860 | lr=2.00e-05 | ES=3/12 | seconds=9.05 
+ETTm1 L=336 T=96 | Epoch 052 | train_loss=1.765617 | val_MSE=0.370699814 val_MAE=0.393083762 | lr=2.00e-05 | ES=0/12 | seconds=8.74 BEST
+ETTm1 L=336 T=96 | Epoch 053 | train_loss=1.764615 | val_MSE=0.370882123 val_MAE=0.393407387 | lr=2.00e-05 | ES=1/12 | seconds=8.61 
+ETTm1 L=336 T=96 | Epoch 054 | train_loss=1.763015 | val_MSE=0.370519790 val_MAE=0.393179274 | lr=2.00e-05 | ES=0/12 | seconds=8.81 BEST
+ETTm1 L=336 T=96 | Epoch 055 | train_loss=1.761332 | val_MSE=0.369800543 val_MAE=0.392491168 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=336 T=96 | Epoch 056 | train_loss=1.759782 | val_MSE=0.370516165 val_MAE=0.393171709 | lr=2.00e-05 | ES=1/12 | seconds=8.26 
+ETTm1 L=336 T=96 | Epoch 057 | train_loss=1.759072 | val_MSE=0.370413866 val_MAE=0.392891905 | lr=2.00e-05 | ES=2/12 | seconds=8.29 
+ETTm1 L=336 T=96 | Epoch 058 | train_loss=1.756135 | val_MSE=0.370850905 val_MAE=0.393376628 | lr=2.00e-05 | ES=3/12 | seconds=8.25 
+ETTm1 L=336 T=96 | Epoch 059 | train_loss=1.755125 | val_MSE=0.370414665 val_MAE=0.393140016 | lr=1.00e-05 | ES=4/12 | seconds=8.41 
+ETTm1 L=336 T=96 | Epoch 060 | train_loss=1.754169 | val_MSE=0.370357705 val_MAE=0.392901758 | lr=1.00e-05 | ES=5/12 | seconds=8.19 
+ETTm1 L=336 T=96 | Epoch 061 | train_loss=1.754038 | val_MSE=0.370303987 val_MAE=0.392919943 | lr=1.00e-05 | ES=6/12 | seconds=8.21 
+ETTm1 L=336 T=96 | Epoch 062 | train_loss=1.753244 | val_MSE=0.370301494 val_MAE=0.392842626 | lr=1.00e-05 | ES=7/12 | seconds=8.24 
+ETTm1 L=336 T=96 | Epoch 063 | train_loss=1.751699 | val_MSE=0.370116158 val_MAE=0.392754343 | lr=5.00e-06 | ES=8/12 | seconds=8.28 
+ETTm1 L=336 T=96 | Epoch 064 | train_loss=1.752116 | val_MSE=0.370359788 val_MAE=0.392883371 | lr=5.00e-06 | ES=9/12 | seconds=8.33 
+ETTm1 L=336 T=96 | Epoch 065 | train_loss=1.750604 | val_MSE=0.370187796 val_MAE=0.392733087 | lr=5.00e-06 | ES=10/12 | seconds=8.47 
+ETTm1 L=336 T=96 | Epoch 066 | train_loss=1.750955 | val_MSE=0.370461737 val_MAE=0.392872186 | lr=5.00e-06 | ES=11/12 | seconds=8.44 
+ETTm1 L=336 T=96 | Epoch 067 | train_loss=1.749834 | val_MSE=0.370100976 val_MAE=0.392615176 | lr=2.50e-06 | ES=12/12 | seconds=8.26 
+Early stopping.
+RESULT ETTm1 L=336 T=96 | MSE=0.295414842 MAE=0.337291160 | best_epoch=55 epochs=67 | seconds=591.75
+Completed 9/16 training runs
+START ETTm1 L=336 T=192 | 2026-11-07T15:26:49.624655+08:00
+ETTm1 L=336 T=192 | Epoch 001 | train_loss=2.940329 | val_MSE=0.895198950 val_MAE=0.660054212 | lr=2.00e-05 | ES=0/12 | seconds=9.03 BEST
+ETTm1 L=336 T=192 | Epoch 002 | train_loss=2.609290 | val_MSE=0.723019366 val_MAE=0.586858509 | lr=2.00e-05 | ES=0/12 | seconds=8.46 BEST
+ETTm1 L=336 T=192 | Epoch 003 | train_loss=2.420553 | val_MSE=0.639334223 val_MAE=0.545839225 | lr=2.00e-05 | ES=0/12 | seconds=8.54 BEST
+ETTm1 L=336 T=192 | Epoch 004 | train_loss=2.309801 | val_MSE=0.596178686 val_MAE=0.522181127 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=336 T=192 | Epoch 005 | train_loss=2.240447 | val_MSE=0.572018941 val_MAE=0.507792042 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=336 T=192 | Epoch 006 | train_loss=2.193868 | val_MSE=0.557323315 val_MAE=0.498484111 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=336 T=192 | Epoch 007 | train_loss=2.161026 | val_MSE=0.547655366 val_MAE=0.492196241 | lr=2.00e-05 | ES=0/12 | seconds=8.40 BEST
+ETTm1 L=336 T=192 | Epoch 008 | train_loss=2.136448 | val_MSE=0.540704277 val_MAE=0.487534783 | lr=2.00e-05 | ES=0/12 | seconds=8.66 BEST
+ETTm1 L=336 T=192 | Epoch 009 | train_loss=2.117295 | val_MSE=0.535266892 val_MAE=0.483898148 | lr=2.00e-05 | ES=0/12 | seconds=8.82 BEST
+ETTm1 L=336 T=192 | Epoch 010 | train_loss=2.101779 | val_MSE=0.531070503 val_MAE=0.481137795 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=336 T=192 | Epoch 011 | train_loss=2.088782 | val_MSE=0.527848067 val_MAE=0.478776049 | lr=2.00e-05 | ES=0/12 | seconds=8.48 BEST
+ETTm1 L=336 T=192 | Epoch 012 | train_loss=2.077574 | val_MSE=0.524389467 val_MAE=0.476522085 | lr=2.00e-05 | ES=0/12 | seconds=8.75 BEST
+ETTm1 L=336 T=192 | Epoch 013 | train_loss=2.067752 | val_MSE=0.521603736 val_MAE=0.474588511 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=336 T=192 | Epoch 014 | train_loss=2.058758 | val_MSE=0.518797846 val_MAE=0.472809474 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=336 T=192 | Epoch 015 | train_loss=2.050464 | val_MSE=0.516268090 val_MAE=0.471125033 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=336 T=192 | Epoch 016 | train_loss=2.042517 | val_MSE=0.514153759 val_MAE=0.469775652 | lr=2.00e-05 | ES=0/12 | seconds=8.46 BEST
+ETTm1 L=336 T=192 | Epoch 017 | train_loss=2.035123 | val_MSE=0.511903851 val_MAE=0.468339025 | lr=2.00e-05 | ES=0/12 | seconds=8.40 BEST
+ETTm1 L=336 T=192 | Epoch 018 | train_loss=2.028105 | val_MSE=0.510146379 val_MAE=0.467104441 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=336 T=192 | Epoch 019 | train_loss=2.021596 | val_MSE=0.508174575 val_MAE=0.466013854 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=336 T=192 | Epoch 020 | train_loss=2.015268 | val_MSE=0.506969759 val_MAE=0.465190718 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=336 T=192 | Epoch 021 | train_loss=2.009644 | val_MSE=0.505162043 val_MAE=0.464155818 | lr=2.00e-05 | ES=0/12 | seconds=8.94 BEST
+ETTm1 L=336 T=192 | Epoch 022 | train_loss=2.004338 | val_MSE=0.503855982 val_MAE=0.463185147 | lr=2.00e-05 | ES=0/12 | seconds=8.49 BEST
+ETTm1 L=336 T=192 | Epoch 023 | train_loss=1.999472 | val_MSE=0.503004300 val_MAE=0.462714417 | lr=2.00e-05 | ES=0/12 | seconds=9.00 BEST
+ETTm1 L=336 T=192 | Epoch 024 | train_loss=1.994770 | val_MSE=0.501749418 val_MAE=0.461918492 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=336 T=192 | Epoch 025 | train_loss=1.990287 | val_MSE=0.501434405 val_MAE=0.461816346 | lr=2.00e-05 | ES=0/12 | seconds=8.51 BEST
+ETTm1 L=336 T=192 | Epoch 026 | train_loss=1.985744 | val_MSE=0.500106897 val_MAE=0.461027992 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=336 T=192 | Epoch 027 | train_loss=1.982061 | val_MSE=0.499170469 val_MAE=0.460398094 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=336 T=192 | Epoch 028 | train_loss=1.977914 | val_MSE=0.499199161 val_MAE=0.460495388 | lr=2.00e-05 | ES=1/12 | seconds=8.62 
+ETTm1 L=336 T=192 | Epoch 029 | train_loss=1.974664 | val_MSE=0.498851954 val_MAE=0.460230704 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=336 T=192 | Epoch 030 | train_loss=1.970845 | val_MSE=0.497618545 val_MAE=0.459551605 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=336 T=192 | Epoch 031 | train_loss=1.967138 | val_MSE=0.497456047 val_MAE=0.459300308 | lr=2.00e-05 | ES=0/12 | seconds=8.55 BEST
+ETTm1 L=336 T=192 | Epoch 032 | train_loss=1.963805 | val_MSE=0.496982303 val_MAE=0.459075663 | lr=2.00e-05 | ES=0/12 | seconds=8.47 BEST
+ETTm1 L=336 T=192 | Epoch 033 | train_loss=1.961063 | val_MSE=0.496572705 val_MAE=0.458859076 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=336 T=192 | Epoch 034 | train_loss=1.957906 | val_MSE=0.495813174 val_MAE=0.458423568 | lr=2.00e-05 | ES=0/12 | seconds=8.89 BEST
+ETTm1 L=336 T=192 | Epoch 035 | train_loss=1.954965 | val_MSE=0.495519075 val_MAE=0.458180664 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=336 T=192 | Epoch 036 | train_loss=1.952129 | val_MSE=0.495101301 val_MAE=0.457866688 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=336 T=192 | Epoch 037 | train_loss=1.949311 | val_MSE=0.495131782 val_MAE=0.457949622 | lr=2.00e-05 | ES=1/12 | seconds=8.97 
+ETTm1 L=336 T=192 | Epoch 038 | train_loss=1.946948 | val_MSE=0.494061675 val_MAE=0.457259247 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=336 T=192 | Epoch 039 | train_loss=1.944814 | val_MSE=0.494087496 val_MAE=0.457146462 | lr=2.00e-05 | ES=1/12 | seconds=8.51 
+ETTm1 L=336 T=192 | Epoch 040 | train_loss=1.942264 | val_MSE=0.493841368 val_MAE=0.457047759 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=336 T=192 | Epoch 041 | train_loss=1.939821 | val_MSE=0.493334916 val_MAE=0.456744287 | lr=2.00e-05 | ES=0/12 | seconds=8.71 BEST
+ETTm1 L=336 T=192 | Epoch 042 | train_loss=1.937827 | val_MSE=0.493155397 val_MAE=0.456549939 | lr=2.00e-05 | ES=0/12 | seconds=8.52 BEST
+ETTm1 L=336 T=192 | Epoch 043 | train_loss=1.935482 | val_MSE=0.492825945 val_MAE=0.456511148 | lr=2.00e-05 | ES=0/12 | seconds=8.49 BEST
+ETTm1 L=336 T=192 | Epoch 044 | train_loss=1.933762 | val_MSE=0.492673650 val_MAE=0.456284923 | lr=2.00e-05 | ES=0/12 | seconds=8.50 BEST
+ETTm1 L=336 T=192 | Epoch 045 | train_loss=1.931616 | val_MSE=0.491935031 val_MAE=0.455690341 | lr=2.00e-05 | ES=0/12 | seconds=8.64 BEST
+ETTm1 L=336 T=192 | Epoch 046 | train_loss=1.930417 | val_MSE=0.491997674 val_MAE=0.455804543 | lr=2.00e-05 | ES=1/12 | seconds=9.01 
+ETTm1 L=336 T=192 | Epoch 047 | train_loss=1.928133 | val_MSE=0.491922765 val_MAE=0.455670016 | lr=2.00e-05 | ES=0/12 | seconds=8.89 BEST
+ETTm1 L=336 T=192 | Epoch 048 | train_loss=1.926992 | val_MSE=0.491547351 val_MAE=0.455552980 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=336 T=192 | Epoch 049 | train_loss=1.924912 | val_MSE=0.491363216 val_MAE=0.455440383 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=336 T=192 | Epoch 050 | train_loss=1.923267 | val_MSE=0.490855527 val_MAE=0.455170371 | lr=2.00e-05 | ES=0/12 | seconds=8.41 BEST
+ETTm1 L=336 T=192 | Epoch 051 | train_loss=1.922210 | val_MSE=0.491092530 val_MAE=0.455101377 | lr=2.00e-05 | ES=1/12 | seconds=8.62 
+ETTm1 L=336 T=192 | Epoch 052 | train_loss=1.920386 | val_MSE=0.490740125 val_MAE=0.454860710 | lr=2.00e-05 | ES=0/12 | seconds=8.52 BEST
+ETTm1 L=336 T=192 | Epoch 053 | train_loss=1.919452 | val_MSE=0.490597742 val_MAE=0.454810186 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=336 T=192 | Epoch 054 | train_loss=1.918171 | val_MSE=0.489666875 val_MAE=0.454137467 | lr=2.00e-05 | ES=0/12 | seconds=8.58 BEST
+ETTm1 L=336 T=192 | Epoch 055 | train_loss=1.916587 | val_MSE=0.490015235 val_MAE=0.454295183 | lr=2.00e-05 | ES=1/12 | seconds=8.61 
+ETTm1 L=336 T=192 | Epoch 056 | train_loss=1.915502 | val_MSE=0.489815576 val_MAE=0.454111841 | lr=2.00e-05 | ES=2/12 | seconds=8.36 
+ETTm1 L=336 T=192 | Epoch 057 | train_loss=1.914287 | val_MSE=0.490080411 val_MAE=0.454324260 | lr=2.00e-05 | ES=3/12 | seconds=8.77 
+ETTm1 L=336 T=192 | Epoch 058 | train_loss=1.913618 | val_MSE=0.489677022 val_MAE=0.454049377 | lr=1.00e-05 | ES=4/12 | seconds=8.52 
+ETTm1 L=336 T=192 | Epoch 059 | train_loss=1.912315 | val_MSE=0.489600236 val_MAE=0.454025029 | lr=1.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=336 T=192 | Epoch 060 | train_loss=1.911572 | val_MSE=0.489595341 val_MAE=0.453951743 | lr=1.00e-05 | ES=0/12 | seconds=8.38 BEST
+ETTm1 L=336 T=192 | Epoch 061 | train_loss=1.910273 | val_MSE=0.489342599 val_MAE=0.453785845 | lr=1.00e-05 | ES=0/12 | seconds=8.36 BEST
+ETTm1 L=336 T=192 | Epoch 062 | train_loss=1.910424 | val_MSE=0.489579945 val_MAE=0.453886355 | lr=1.00e-05 | ES=1/12 | seconds=8.66 
+ETTm1 L=336 T=192 | Epoch 063 | train_loss=1.909745 | val_MSE=0.489246763 val_MAE=0.453706791 | lr=1.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=336 T=192 | Epoch 064 | train_loss=1.909145 | val_MSE=0.489321826 val_MAE=0.453752137 | lr=1.00e-05 | ES=1/12 | seconds=8.45 
+ETTm1 L=336 T=192 | Epoch 065 | train_loss=1.908674 | val_MSE=0.488990075 val_MAE=0.453522850 | lr=1.00e-05 | ES=0/12 | seconds=8.36 BEST
+ETTm1 L=336 T=192 | Epoch 066 | train_loss=1.907716 | val_MSE=0.489009042 val_MAE=0.453495159 | lr=1.00e-05 | ES=1/12 | seconds=8.28 
+ETTm1 L=336 T=192 | Epoch 067 | train_loss=1.907869 | val_MSE=0.489103601 val_MAE=0.453648539 | lr=1.00e-05 | ES=2/12 | seconds=8.35 
+ETTm1 L=336 T=192 | Epoch 068 | train_loss=1.907128 | val_MSE=0.488878146 val_MAE=0.453447530 | lr=1.00e-05 | ES=0/12 | seconds=8.28 BEST
+ETTm1 L=336 T=192 | Epoch 069 | train_loss=1.906620 | val_MSE=0.488871079 val_MAE=0.453420476 | lr=1.00e-05 | ES=0/12 | seconds=9.11 BEST
+ETTm1 L=336 T=192 | Epoch 070 | train_loss=1.905741 | val_MSE=0.488935082 val_MAE=0.453377860 | lr=1.00e-05 | ES=1/12 | seconds=8.35 
+ETTm1 L=336 T=192 | Epoch 071 | train_loss=1.905455 | val_MSE=0.488833954 val_MAE=0.453411411 | lr=1.00e-05 | ES=0/12 | seconds=8.29 BEST
+ETTm1 L=336 T=192 | Epoch 072 | train_loss=1.905489 | val_MSE=0.488763790 val_MAE=0.453365090 | lr=1.00e-05 | ES=0/12 | seconds=8.44 BEST
+ETTm1 L=336 T=192 | Epoch 073 | train_loss=1.904690 | val_MSE=0.488871217 val_MAE=0.453379980 | lr=1.00e-05 | ES=1/12 | seconds=8.79 
+ETTm1 L=336 T=192 | Epoch 074 | train_loss=1.904426 | val_MSE=0.488684885 val_MAE=0.453288326 | lr=1.00e-05 | ES=0/12 | seconds=8.41 BEST
+ETTm1 L=336 T=192 | Epoch 075 | train_loss=1.903790 | val_MSE=0.488500016 val_MAE=0.453159495 | lr=1.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=336 T=192 | Epoch 076 | train_loss=1.903532 | val_MSE=0.488506739 val_MAE=0.453182536 | lr=1.00e-05 | ES=1/12 | seconds=8.56 
+ETTm1 L=336 T=192 | Epoch 077 | train_loss=1.902802 | val_MSE=0.488620149 val_MAE=0.453226411 | lr=1.00e-05 | ES=2/12 | seconds=8.45 
+ETTm1 L=336 T=192 | Epoch 078 | train_loss=1.902201 | val_MSE=0.488509126 val_MAE=0.453145528 | lr=1.00e-05 | ES=3/12 | seconds=8.42 
+ETTm1 L=336 T=192 | Epoch 079 | train_loss=1.902168 | val_MSE=0.488454467 val_MAE=0.453067625 | lr=5.00e-06 | ES=0/12 | seconds=8.42 BEST
+ETTm1 L=336 T=192 | Epoch 080 | train_loss=1.901573 | val_MSE=0.488563554 val_MAE=0.453147015 | lr=5.00e-06 | ES=1/12 | seconds=8.50 
+ETTm1 L=336 T=192 | Epoch 081 | train_loss=1.901221 | val_MSE=0.488494562 val_MAE=0.453085174 | lr=5.00e-06 | ES=2/12 | seconds=8.35 
+ETTm1 L=336 T=192 | Epoch 082 | train_loss=1.900958 | val_MSE=0.488489756 val_MAE=0.453054386 | lr=5.00e-06 | ES=3/12 | seconds=8.40 
+ETTm1 L=336 T=192 | Epoch 083 | train_loss=1.901000 | val_MSE=0.488518536 val_MAE=0.453132911 | lr=2.50e-06 | ES=4/12 | seconds=8.50 
+ETTm1 L=336 T=192 | Epoch 084 | train_loss=1.900410 | val_MSE=0.488515136 val_MAE=0.453130074 | lr=2.50e-06 | ES=5/12 | seconds=8.41 
+ETTm1 L=336 T=192 | Epoch 085 | train_loss=1.900634 | val_MSE=0.488508798 val_MAE=0.453119434 | lr=2.50e-06 | ES=6/12 | seconds=8.43 
+ETTm1 L=336 T=192 | Epoch 086 | train_loss=1.900436 | val_MSE=0.488536384 val_MAE=0.453138964 | lr=2.50e-06 | ES=7/12 | seconds=8.35 
+ETTm1 L=336 T=192 | Epoch 087 | train_loss=1.900576 | val_MSE=0.488501984 val_MAE=0.453125558 | lr=1.25e-06 | ES=8/12 | seconds=8.24 
+ETTm1 L=336 T=192 | Epoch 088 | train_loss=1.899821 | val_MSE=0.488523420 val_MAE=0.453134249 | lr=1.25e-06 | ES=9/12 | seconds=8.32 
+ETTm1 L=336 T=192 | Epoch 089 | train_loss=1.900242 | val_MSE=0.488520530 val_MAE=0.453126867 | lr=1.25e-06 | ES=10/12 | seconds=8.46 
+ETTm1 L=336 T=192 | Epoch 090 | train_loss=1.899841 | val_MSE=0.488510916 val_MAE=0.453119160 | lr=1.25e-06 | ES=11/12 | seconds=8.42 
+ETTm1 L=336 T=192 | Epoch 091 | train_loss=1.899903 | val_MSE=0.488456322 val_MAE=0.453081494 | lr=6.25e-07 | ES=12/12 | seconds=8.37 
+Early stopping.
+RESULT ETTm1 L=336 T=192 | MSE=0.336066675 MAE=0.361736683 | best_epoch=79 epochs=91 | seconds=782.62
+Completed 10/16 training runs
+START ETTm1 L=336 T=336 | 2026-11-07T15:39:52.450113+08:00
+ETTm1 L=336 T=336 | Epoch 001 | train_loss=3.012320 | val_MSE=1.006800506 val_MAE=0.699012584 | lr=2.00e-05 | ES=0/12 | seconds=8.69 BEST
+ETTm1 L=336 T=336 | Epoch 002 | train_loss=2.703138 | val_MSE=0.848997335 val_MAE=0.633031384 | lr=2.00e-05 | ES=0/12 | seconds=8.71 BEST
+ETTm1 L=336 T=336 | Epoch 003 | train_loss=2.529204 | val_MSE=0.772861214 val_MAE=0.596851675 | lr=2.00e-05 | ES=0/12 | seconds=8.75 BEST
+ETTm1 L=336 T=336 | Epoch 004 | train_loss=2.427678 | val_MSE=0.733679838 val_MAE=0.576297080 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=336 T=336 | Epoch 005 | train_loss=2.364744 | val_MSE=0.711972105 val_MAE=0.563966468 | lr=2.00e-05 | ES=0/12 | seconds=8.60 BEST
+ETTm1 L=336 T=336 | Epoch 006 | train_loss=2.322360 | val_MSE=0.698928950 val_MAE=0.556113079 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=336 T=336 | Epoch 007 | train_loss=2.293199 | val_MSE=0.690511127 val_MAE=0.550769798 | lr=2.00e-05 | ES=0/12 | seconds=9.03 BEST
+ETTm1 L=336 T=336 | Epoch 008 | train_loss=2.271339 | val_MSE=0.684200099 val_MAE=0.546772456 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=336 T=336 | Epoch 009 | train_loss=2.255206 | val_MSE=0.679632822 val_MAE=0.543809724 | lr=2.00e-05 | ES=0/12 | seconds=8.55 BEST
+ETTm1 L=336 T=336 | Epoch 010 | train_loss=2.241749 | val_MSE=0.676429079 val_MAE=0.541595972 | lr=2.00e-05 | ES=0/12 | seconds=8.71 BEST
+ETTm1 L=336 T=336 | Epoch 011 | train_loss=2.231065 | val_MSE=0.673469684 val_MAE=0.539662735 | lr=2.00e-05 | ES=0/12 | seconds=8.66 BEST
+ETTm1 L=336 T=336 | Epoch 012 | train_loss=2.221602 | val_MSE=0.670860486 val_MAE=0.537987486 | lr=2.00e-05 | ES=0/12 | seconds=8.73 BEST
+ETTm1 L=336 T=336 | Epoch 013 | train_loss=2.214056 | val_MSE=0.668811897 val_MAE=0.536588649 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=336 T=336 | Epoch 014 | train_loss=2.207177 | val_MSE=0.667015712 val_MAE=0.535430375 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=336 T=336 | Epoch 015 | train_loss=2.201281 | val_MSE=0.664988869 val_MAE=0.534247139 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=336 T=336 | Epoch 016 | train_loss=2.195574 | val_MSE=0.663519823 val_MAE=0.533293613 | lr=2.00e-05 | ES=0/12 | seconds=8.59 BEST
+ETTm1 L=336 T=336 | Epoch 017 | train_loss=2.190300 | val_MSE=0.661785479 val_MAE=0.532380711 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=336 T=336 | Epoch 018 | train_loss=2.186067 | val_MSE=0.660633080 val_MAE=0.531590817 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=336 T=336 | Epoch 019 | train_loss=2.182128 | val_MSE=0.659306667 val_MAE=0.530857012 | lr=2.00e-05 | ES=0/12 | seconds=9.26 BEST
+ETTm1 L=336 T=336 | Epoch 020 | train_loss=2.176315 | val_MSE=0.658781552 val_MAE=0.530493642 | lr=2.00e-05 | ES=0/12 | seconds=9.19 BEST
+ETTm1 L=336 T=336 | Epoch 021 | train_loss=2.172956 | val_MSE=0.657176040 val_MAE=0.529749468 | lr=2.00e-05 | ES=0/12 | seconds=9.36 BEST
+ETTm1 L=336 T=336 | Epoch 022 | train_loss=2.168061 | val_MSE=0.655848440 val_MAE=0.529035132 | lr=2.00e-05 | ES=0/12 | seconds=9.33 BEST
+ETTm1 L=336 T=336 | Epoch 023 | train_loss=2.163017 | val_MSE=0.654971502 val_MAE=0.528684506 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=336 T=336 | Epoch 024 | train_loss=2.159452 | val_MSE=0.653908143 val_MAE=0.528171859 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=336 T=336 | Epoch 025 | train_loss=2.154846 | val_MSE=0.653553648 val_MAE=0.528036673 | lr=2.00e-05 | ES=0/12 | seconds=11.56 BEST
+ETTm1 L=336 T=336 | Epoch 026 | train_loss=2.150492 | val_MSE=0.652918525 val_MAE=0.527701090 | lr=2.00e-05 | ES=0/12 | seconds=12.95 BEST
+ETTm1 L=336 T=336 | Epoch 027 | train_loss=2.145997 | val_MSE=0.651871538 val_MAE=0.527257317 | lr=2.00e-05 | ES=0/12 | seconds=13.44 BEST
+ETTm1 L=336 T=336 | Epoch 028 | train_loss=2.141978 | val_MSE=0.651837627 val_MAE=0.527301540 | lr=2.00e-05 | ES=0/12 | seconds=13.02 BEST
+ETTm1 L=336 T=336 | Epoch 029 | train_loss=2.137537 | val_MSE=0.651437324 val_MAE=0.527118350 | lr=2.00e-05 | ES=0/12 | seconds=12.81 BEST
+ETTm1 L=336 T=336 | Epoch 030 | train_loss=2.134572 | val_MSE=0.650846741 val_MAE=0.526855348 | lr=2.00e-05 | ES=0/12 | seconds=13.51 BEST
+ETTm1 L=336 T=336 | Epoch 031 | train_loss=2.131343 | val_MSE=0.650317498 val_MAE=0.526640604 | lr=2.00e-05 | ES=0/12 | seconds=13.18 BEST
+ETTm1 L=336 T=336 | Epoch 032 | train_loss=2.127829 | val_MSE=0.650664356 val_MAE=0.526829067 | lr=2.00e-05 | ES=1/12 | seconds=13.59 
+ETTm1 L=336 T=336 | Epoch 033 | train_loss=2.125429 | val_MSE=0.650735864 val_MAE=0.527064555 | lr=2.00e-05 | ES=2/12 | seconds=12.95 
+ETTm1 L=336 T=336 | Epoch 034 | train_loss=2.122223 | val_MSE=0.650596182 val_MAE=0.526920124 | lr=2.00e-05 | ES=3/12 | seconds=12.87 
+ETTm1 L=336 T=336 | Epoch 035 | train_loss=2.119342 | val_MSE=0.650214195 val_MAE=0.526789695 | lr=2.00e-05 | ES=0/12 | seconds=13.23 BEST
+ETTm1 L=336 T=336 | Epoch 036 | train_loss=2.116440 | val_MSE=0.650485679 val_MAE=0.526928716 | lr=2.00e-05 | ES=1/12 | seconds=13.65 
+ETTm1 L=336 T=336 | Epoch 037 | train_loss=2.114621 | val_MSE=0.650394142 val_MAE=0.526877599 | lr=2.00e-05 | ES=2/12 | seconds=13.50 
+ETTm1 L=336 T=336 | Epoch 038 | train_loss=2.111790 | val_MSE=0.651156420 val_MAE=0.527293197 | lr=2.00e-05 | ES=3/12 | seconds=13.85 
+ETTm1 L=336 T=336 | Epoch 039 | train_loss=2.109673 | val_MSE=0.650704181 val_MAE=0.527128814 | lr=1.00e-05 | ES=4/12 | seconds=12.94 
+ETTm1 L=336 T=336 | Epoch 040 | train_loss=2.107341 | val_MSE=0.649912969 val_MAE=0.526755474 | lr=1.00e-05 | ES=0/12 | seconds=13.67 BEST
+ETTm1 L=336 T=336 | Epoch 041 | train_loss=2.105998 | val_MSE=0.650493743 val_MAE=0.527043412 | lr=1.00e-05 | ES=1/12 | seconds=13.32 
+ETTm1 L=336 T=336 | Epoch 042 | train_loss=2.104908 | val_MSE=0.649878388 val_MAE=0.526728033 | lr=1.00e-05 | ES=0/12 | seconds=13.86 BEST
+ETTm1 L=336 T=336 | Epoch 043 | train_loss=2.103924 | val_MSE=0.650329195 val_MAE=0.527003039 | lr=1.00e-05 | ES=1/12 | seconds=13.34 
+ETTm1 L=336 T=336 | Epoch 044 | train_loss=2.102901 | val_MSE=0.649661978 val_MAE=0.526608655 | lr=1.00e-05 | ES=0/12 | seconds=13.70 BEST
+ETTm1 L=336 T=336 | Epoch 045 | train_loss=2.101544 | val_MSE=0.649722602 val_MAE=0.526703218 | lr=1.00e-05 | ES=1/12 | seconds=13.25 
+ETTm1 L=336 T=336 | Epoch 046 | train_loss=2.101295 | val_MSE=0.649714084 val_MAE=0.526715509 | lr=1.00e-05 | ES=2/12 | seconds=12.98 
+ETTm1 L=336 T=336 | Epoch 047 | train_loss=2.100380 | val_MSE=0.649937419 val_MAE=0.526806348 | lr=1.00e-05 | ES=3/12 | seconds=13.33 
+ETTm1 L=336 T=336 | Epoch 048 | train_loss=2.099102 | val_MSE=0.649685744 val_MAE=0.526671060 | lr=5.00e-06 | ES=4/12 | seconds=13.40 
+ETTm1 L=336 T=336 | Epoch 049 | train_loss=2.098930 | val_MSE=0.649683391 val_MAE=0.526677196 | lr=5.00e-06 | ES=5/12 | seconds=13.48 
+ETTm1 L=336 T=336 | Epoch 050 | train_loss=2.097565 | val_MSE=0.649892354 val_MAE=0.526787275 | lr=5.00e-06 | ES=6/12 | seconds=12.90 
+ETTm1 L=336 T=336 | Epoch 051 | train_loss=2.097661 | val_MSE=0.649598457 val_MAE=0.526634101 | lr=5.00e-06 | ES=0/12 | seconds=13.80 BEST
+ETTm1 L=336 T=336 | Epoch 052 | train_loss=2.097964 | val_MSE=0.649953561 val_MAE=0.526828796 | lr=2.50e-06 | ES=1/12 | seconds=13.68 
+ETTm1 L=336 T=336 | Epoch 053 | train_loss=2.096415 | val_MSE=0.649727020 val_MAE=0.526721690 | lr=2.50e-06 | ES=2/12 | seconds=13.53 
+ETTm1 L=336 T=336 | Epoch 054 | train_loss=2.096589 | val_MSE=0.649459364 val_MAE=0.526579973 | lr=2.50e-06 | ES=0/12 | seconds=13.30 BEST
+ETTm1 L=336 T=336 | Epoch 055 | train_loss=2.096595 | val_MSE=0.649477492 val_MAE=0.526592223 | lr=2.50e-06 | ES=1/12 | seconds=13.13 
+ETTm1 L=336 T=336 | Epoch 056 | train_loss=2.096209 | val_MSE=0.649537227 val_MAE=0.526609953 | lr=2.50e-06 | ES=2/12 | seconds=12.82 
+ETTm1 L=336 T=336 | Epoch 057 | train_loss=2.096304 | val_MSE=0.649371972 val_MAE=0.526541420 | lr=2.50e-06 | ES=0/12 | seconds=13.50 BEST
+ETTm1 L=336 T=336 | Epoch 058 | train_loss=2.096301 | val_MSE=0.649582900 val_MAE=0.526651198 | lr=2.50e-06 | ES=1/12 | seconds=13.00 
+ETTm1 L=336 T=336 | Epoch 059 | train_loss=2.095286 | val_MSE=0.649691344 val_MAE=0.526702282 | lr=2.50e-06 | ES=2/12 | seconds=13.42 
+ETTm1 L=336 T=336 | Epoch 060 | train_loss=2.094885 | val_MSE=0.649555970 val_MAE=0.526619123 | lr=2.50e-06 | ES=3/12 | seconds=13.45 
+ETTm1 L=336 T=336 | Epoch 061 | train_loss=2.094656 | val_MSE=0.649566022 val_MAE=0.526620414 | lr=1.25e-06 | ES=4/12 | seconds=13.66 
+ETTm1 L=336 T=336 | Epoch 062 | train_loss=2.095115 | val_MSE=0.649581903 val_MAE=0.526644968 | lr=1.25e-06 | ES=5/12 | seconds=13.61 
+ETTm1 L=336 T=336 | Epoch 063 | train_loss=2.094403 | val_MSE=0.649516063 val_MAE=0.526614264 | lr=1.25e-06 | ES=6/12 | seconds=14.14 
+ETTm1 L=336 T=336 | Epoch 064 | train_loss=2.094705 | val_MSE=0.649579441 val_MAE=0.526644426 | lr=1.25e-06 | ES=7/12 | seconds=13.95 
+ETTm1 L=336 T=336 | Epoch 065 | train_loss=2.094582 | val_MSE=0.649481832 val_MAE=0.526589742 | lr=6.25e-07 | ES=8/12 | seconds=14.56 
+ETTm1 L=336 T=336 | Epoch 066 | train_loss=2.094427 | val_MSE=0.649510360 val_MAE=0.526610449 | lr=6.25e-07 | ES=9/12 | seconds=14.00 
+ETTm1 L=336 T=336 | Epoch 067 | train_loss=2.094180 | val_MSE=0.649558698 val_MAE=0.526639556 | lr=6.25e-07 | ES=10/12 | seconds=13.50 
+ETTm1 L=336 T=336 | Epoch 068 | train_loss=2.093943 | val_MSE=0.649543387 val_MAE=0.526633096 | lr=6.25e-07 | ES=11/12 | seconds=13.78 
+ETTm1 L=336 T=336 | Epoch 069 | train_loss=2.094175 | val_MSE=0.649504933 val_MAE=0.526612670 | lr=3.13e-07 | ES=12/12 | seconds=13.81 
+Early stopping.
+RESULT ETTm1 L=336 T=336 | MSE=0.376515600 MAE=0.385950239 | best_epoch=57 epochs=69 | seconds=817.53
+Completed 11/16 training runs
+START ETTm1 L=336 T=720 | 2026-11-07T15:53:30.229366+08:00
+ETTm1 L=336 T=720 | Epoch 001 | train_loss=3.140235 | val_MSE=1.281814885 val_MAE=0.786666984 | lr=2.00e-05 | ES=0/12 | seconds=14.82 BEST
+ETTm1 L=336 T=720 | Epoch 002 | train_loss=2.860049 | val_MSE=1.137634335 val_MAE=0.728058438 | lr=2.00e-05 | ES=0/12 | seconds=15.42 BEST
+ETTm1 L=336 T=720 | Epoch 003 | train_loss=2.703679 | val_MSE=1.069970662 val_MAE=0.696863892 | lr=2.00e-05 | ES=0/12 | seconds=16.41 BEST
+ETTm1 L=336 T=720 | Epoch 004 | train_loss=2.613520 | val_MSE=1.035598925 val_MAE=0.679415513 | lr=2.00e-05 | ES=0/12 | seconds=12.78 BEST
+ETTm1 L=336 T=720 | Epoch 005 | train_loss=2.557731 | val_MSE=1.016781045 val_MAE=0.669087025 | lr=2.00e-05 | ES=0/12 | seconds=11.48 BEST
+ETTm1 L=336 T=720 | Epoch 006 | train_loss=2.521195 | val_MSE=1.005414466 val_MAE=0.662471277 | lr=2.00e-05 | ES=0/12 | seconds=10.42 BEST
+ETTm1 L=336 T=720 | Epoch 007 | train_loss=2.495595 | val_MSE=0.998413329 val_MAE=0.658138521 | lr=2.00e-05 | ES=0/12 | seconds=10.86 BEST
+ETTm1 L=336 T=720 | Epoch 008 | train_loss=2.476961 | val_MSE=0.992892878 val_MAE=0.654876300 | lr=2.00e-05 | ES=0/12 | seconds=10.36 BEST
+ETTm1 L=336 T=720 | Epoch 009 | train_loss=2.462647 | val_MSE=0.988870223 val_MAE=0.652442099 | lr=2.00e-05 | ES=0/12 | seconds=9.66 BEST
+ETTm1 L=336 T=720 | Epoch 010 | train_loss=2.451363 | val_MSE=0.985844300 val_MAE=0.650566159 | lr=2.00e-05 | ES=0/12 | seconds=9.64 BEST
+ETTm1 L=336 T=720 | Epoch 011 | train_loss=2.442095 | val_MSE=0.983426911 val_MAE=0.649086150 | lr=2.00e-05 | ES=0/12 | seconds=9.78 BEST
+ETTm1 L=336 T=720 | Epoch 012 | train_loss=2.434515 | val_MSE=0.980714064 val_MAE=0.647716686 | lr=2.00e-05 | ES=0/12 | seconds=9.56 BEST
+ETTm1 L=336 T=720 | Epoch 013 | train_loss=2.428026 | val_MSE=0.978518517 val_MAE=0.646532035 | lr=2.00e-05 | ES=0/12 | seconds=9.49 BEST
+ETTm1 L=336 T=720 | Epoch 014 | train_loss=2.422427 | val_MSE=0.976789287 val_MAE=0.645617632 | lr=2.00e-05 | ES=0/12 | seconds=9.47 BEST
+ETTm1 L=336 T=720 | Epoch 015 | train_loss=2.417487 | val_MSE=0.975282764 val_MAE=0.644875084 | lr=2.00e-05 | ES=0/12 | seconds=9.64 BEST
+ETTm1 L=336 T=720 | Epoch 016 | train_loss=2.413129 | val_MSE=0.973945300 val_MAE=0.644166804 | lr=2.00e-05 | ES=0/12 | seconds=9.56 BEST
+ETTm1 L=336 T=720 | Epoch 017 | train_loss=2.409223 | val_MSE=0.972738559 val_MAE=0.643565927 | lr=2.00e-05 | ES=0/12 | seconds=9.50 BEST
+ETTm1 L=336 T=720 | Epoch 018 | train_loss=2.405488 | val_MSE=0.971923208 val_MAE=0.643204318 | lr=2.00e-05 | ES=0/12 | seconds=9.74 BEST
+ETTm1 L=336 T=720 | Epoch 019 | train_loss=2.401828 | val_MSE=0.971701088 val_MAE=0.643000493 | lr=2.00e-05 | ES=0/12 | seconds=9.55 BEST
+ETTm1 L=336 T=720 | Epoch 020 | train_loss=2.398298 | val_MSE=0.970655345 val_MAE=0.642583595 | lr=2.00e-05 | ES=0/12 | seconds=9.49 BEST
+ETTm1 L=336 T=720 | Epoch 021 | train_loss=2.394493 | val_MSE=0.970417457 val_MAE=0.642366537 | lr=2.00e-05 | ES=0/12 | seconds=9.44 BEST
+ETTm1 L=336 T=720 | Epoch 022 | train_loss=2.390746 | val_MSE=0.970002710 val_MAE=0.642278342 | lr=2.00e-05 | ES=0/12 | seconds=9.49 BEST
+ETTm1 L=336 T=720 | Epoch 023 | train_loss=2.387043 | val_MSE=0.970416679 val_MAE=0.642567109 | lr=2.00e-05 | ES=1/12 | seconds=9.51 
+ETTm1 L=336 T=720 | Epoch 024 | train_loss=2.383224 | val_MSE=0.970623383 val_MAE=0.642596168 | lr=2.00e-05 | ES=2/12 | seconds=9.82 
+ETTm1 L=336 T=720 | Epoch 025 | train_loss=2.379317 | val_MSE=0.970668523 val_MAE=0.642935632 | lr=2.00e-05 | ES=3/12 | seconds=9.47 
+ETTm1 L=336 T=720 | Epoch 026 | train_loss=2.375811 | val_MSE=0.971705443 val_MAE=0.643356496 | lr=1.00e-05 | ES=4/12 | seconds=9.70 
+ETTm1 L=336 T=720 | Epoch 027 | train_loss=2.372793 | val_MSE=0.972451738 val_MAE=0.643708061 | lr=1.00e-05 | ES=5/12 | seconds=9.57 
+ETTm1 L=336 T=720 | Epoch 028 | train_loss=2.371212 | val_MSE=0.972782334 val_MAE=0.643926440 | lr=1.00e-05 | ES=6/12 | seconds=9.51 
+ETTm1 L=336 T=720 | Epoch 029 | train_loss=2.369346 | val_MSE=0.973678426 val_MAE=0.644484241 | lr=1.00e-05 | ES=7/12 | seconds=9.47 
+ETTm1 L=336 T=720 | Epoch 030 | train_loss=2.367779 | val_MSE=0.973270835 val_MAE=0.644283941 | lr=5.00e-06 | ES=8/12 | seconds=9.67 
+ETTm1 L=336 T=720 | Epoch 031 | train_loss=2.366369 | val_MSE=0.973663029 val_MAE=0.644490552 | lr=5.00e-06 | ES=9/12 | seconds=9.62 
+ETTm1 L=336 T=720 | Epoch 032 | train_loss=2.365474 | val_MSE=0.973752090 val_MAE=0.644594688 | lr=5.00e-06 | ES=10/12 | seconds=9.70 
+ETTm1 L=336 T=720 | Epoch 033 | train_loss=2.364707 | val_MSE=0.973859608 val_MAE=0.644657788 | lr=5.00e-06 | ES=11/12 | seconds=10.57 
+ETTm1 L=336 T=720 | Epoch 034 | train_loss=2.363797 | val_MSE=0.974116470 val_MAE=0.644825910 | lr=2.50e-06 | ES=12/12 | seconds=9.61 
+Early stopping.
+RESULT ETTm1 L=336 T=720 | MSE=0.436363469 MAE=0.421131610 | best_epoch=22 epochs=34 | seconds=355.16
+Completed 12/16 training runs
+AVG ETTm1 L=336 | MSE=0.361090147 MAE=0.376527423
+START ETTm1 L=720 T=96 | 2026-11-07T15:59:25.602791+08:00
+ETTm1 L=720 T=96 | Epoch 001 | train_loss=2.801925 | val_MSE=0.732424921 val_MAE=0.597729755 | lr=2.00e-05 | ES=0/12 | seconds=8.94 BEST
+ETTm1 L=720 T=96 | Epoch 002 | train_loss=2.368722 | val_MSE=0.565474403 val_MAE=0.519833336 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=720 T=96 | Epoch 003 | train_loss=2.197897 | val_MSE=0.505987584 val_MAE=0.487474917 | lr=2.00e-05 | ES=0/12 | seconds=8.51 BEST
+ETTm1 L=720 T=96 | Epoch 004 | train_loss=2.110970 | val_MSE=0.476310769 val_MAE=0.470006362 | lr=2.00e-05 | ES=0/12 | seconds=8.77 BEST
+ETTm1 L=720 T=96 | Epoch 005 | train_loss=2.057869 | val_MSE=0.458123776 val_MAE=0.458883961 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=720 T=96 | Epoch 006 | train_loss=2.021464 | val_MSE=0.444778910 val_MAE=0.450486275 | lr=2.00e-05 | ES=0/12 | seconds=8.46 BEST
+ETTm1 L=720 T=96 | Epoch 007 | train_loss=1.994647 | val_MSE=0.434928122 val_MAE=0.444276753 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=720 T=96 | Epoch 008 | train_loss=1.973497 | val_MSE=0.426933731 val_MAE=0.439009189 | lr=2.00e-05 | ES=0/12 | seconds=8.67 BEST
+ETTm1 L=720 T=96 | Epoch 009 | train_loss=1.956337 | val_MSE=0.420819687 val_MAE=0.434886763 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=720 T=96 | Epoch 010 | train_loss=1.941734 | val_MSE=0.416360357 val_MAE=0.431724331 | lr=2.00e-05 | ES=0/12 | seconds=8.65 BEST
+ETTm1 L=720 T=96 | Epoch 011 | train_loss=1.928394 | val_MSE=0.410942391 val_MAE=0.428304267 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=720 T=96 | Epoch 012 | train_loss=1.916182 | val_MSE=0.406588585 val_MAE=0.425309721 | lr=2.00e-05 | ES=0/12 | seconds=8.61 BEST
+ETTm1 L=720 T=96 | Epoch 013 | train_loss=1.904092 | val_MSE=0.402106983 val_MAE=0.422195500 | lr=2.00e-05 | ES=0/12 | seconds=8.45 BEST
+ETTm1 L=720 T=96 | Epoch 014 | train_loss=1.892333 | val_MSE=0.399038373 val_MAE=0.419980476 | lr=2.00e-05 | ES=0/12 | seconds=8.55 BEST
+ETTm1 L=720 T=96 | Epoch 015 | train_loss=1.880484 | val_MSE=0.394864838 val_MAE=0.417094578 | lr=2.00e-05 | ES=0/12 | seconds=8.75 BEST
+ETTm1 L=720 T=96 | Epoch 016 | train_loss=1.869258 | val_MSE=0.391907022 val_MAE=0.414852905 | lr=2.00e-05 | ES=0/12 | seconds=8.70 BEST
+ETTm1 L=720 T=96 | Epoch 017 | train_loss=1.858037 | val_MSE=0.388620988 val_MAE=0.412718440 | lr=2.00e-05 | ES=0/12 | seconds=8.46 BEST
+ETTm1 L=720 T=96 | Epoch 018 | train_loss=1.848110 | val_MSE=0.386899089 val_MAE=0.411359311 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=720 T=96 | Epoch 019 | train_loss=1.838593 | val_MSE=0.384531454 val_MAE=0.409712863 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=720 T=96 | Epoch 020 | train_loss=1.829351 | val_MSE=0.382186470 val_MAE=0.407784402 | lr=2.00e-05 | ES=0/12 | seconds=8.56 BEST
+ETTm1 L=720 T=96 | Epoch 021 | train_loss=1.820872 | val_MSE=0.381814481 val_MAE=0.407754842 | lr=2.00e-05 | ES=0/12 | seconds=8.62 BEST
+ETTm1 L=720 T=96 | Epoch 022 | train_loss=1.813136 | val_MSE=0.380189414 val_MAE=0.406224662 | lr=2.00e-05 | ES=0/12 | seconds=8.66 BEST
+ETTm1 L=720 T=96 | Epoch 023 | train_loss=1.806138 | val_MSE=0.379439077 val_MAE=0.405632813 | lr=2.00e-05 | ES=0/12 | seconds=8.90 BEST
+ETTm1 L=720 T=96 | Epoch 024 | train_loss=1.799657 | val_MSE=0.378689059 val_MAE=0.405109297 | lr=2.00e-05 | ES=0/12 | seconds=8.57 BEST
+ETTm1 L=720 T=96 | Epoch 025 | train_loss=1.792519 | val_MSE=0.378432935 val_MAE=0.404499401 | lr=2.00e-05 | ES=0/12 | seconds=8.53 BEST
+ETTm1 L=720 T=96 | Epoch 026 | train_loss=1.787036 | val_MSE=0.377677996 val_MAE=0.404149272 | lr=2.00e-05 | ES=0/12 | seconds=8.63 BEST
+ETTm1 L=720 T=96 | Epoch 027 | train_loss=1.781481 | val_MSE=0.378000466 val_MAE=0.404348215 | lr=2.00e-05 | ES=1/12 | seconds=8.73 
+ETTm1 L=720 T=96 | Epoch 028 | train_loss=1.776138 | val_MSE=0.377512714 val_MAE=0.404061968 | lr=2.00e-05 | ES=0/12 | seconds=8.72 BEST
+ETTm1 L=720 T=96 | Epoch 029 | train_loss=1.771235 | val_MSE=0.378132441 val_MAE=0.404402745 | lr=2.00e-05 | ES=1/12 | seconds=8.68 
+ETTm1 L=720 T=96 | Epoch 030 | train_loss=1.766597 | val_MSE=0.378777024 val_MAE=0.404805605 | lr=2.00e-05 | ES=2/12 | seconds=8.85 
+ETTm1 L=720 T=96 | Epoch 031 | train_loss=1.762580 | val_MSE=0.378092185 val_MAE=0.403882353 | lr=2.00e-05 | ES=3/12 | seconds=8.69 
+ETTm1 L=720 T=96 | Epoch 032 | train_loss=1.758402 | val_MSE=0.378578281 val_MAE=0.404382663 | lr=1.00e-05 | ES=4/12 | seconds=8.68 
+ETTm1 L=720 T=96 | Epoch 033 | train_loss=1.755367 | val_MSE=0.379044211 val_MAE=0.404755595 | lr=1.00e-05 | ES=5/12 | seconds=8.57 
+ETTm1 L=720 T=96 | Epoch 034 | train_loss=1.753228 | val_MSE=0.379095466 val_MAE=0.404523615 | lr=1.00e-05 | ES=6/12 | seconds=8.77 
+ETTm1 L=720 T=96 | Epoch 035 | train_loss=1.750906 | val_MSE=0.379761135 val_MAE=0.405168822 | lr=1.00e-05 | ES=7/12 | seconds=8.55 
+ETTm1 L=720 T=96 | Epoch 036 | train_loss=1.748700 | val_MSE=0.380079232 val_MAE=0.405294532 | lr=5.00e-06 | ES=8/12 | seconds=8.65 
+ETTm1 L=720 T=96 | Epoch 037 | train_loss=1.747810 | val_MSE=0.379779741 val_MAE=0.404960945 | lr=5.00e-06 | ES=9/12 | seconds=8.72 
+ETTm1 L=720 T=96 | Epoch 038 | train_loss=1.746586 | val_MSE=0.379899178 val_MAE=0.405081762 | lr=5.00e-06 | ES=10/12 | seconds=8.67 
+ETTm1 L=720 T=96 | Epoch 039 | train_loss=1.746295 | val_MSE=0.380115159 val_MAE=0.405179607 | lr=5.00e-06 | ES=11/12 | seconds=8.63 
+ETTm1 L=720 T=96 | Epoch 040 | train_loss=1.745099 | val_MSE=0.380187789 val_MAE=0.405226047 | lr=2.50e-06 | ES=12/12 | seconds=8.72 
+Early stopping.
+RESULT ETTm1 L=720 T=96 | MSE=0.301648805 MAE=0.346473982 | best_epoch=28 epochs=40 | seconds=348.39
+Completed 13/16 training runs
+START ETTm1 L=720 T=192 | 2026-11-07T16:05:14.201431+08:00
+ETTm1 L=720 T=192 | Epoch 001 | train_loss=2.877855 | val_MSE=0.826243155 val_MAE=0.633718658 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=720 T=192 | Epoch 002 | train_loss=2.450242 | val_MSE=0.664031968 val_MAE=0.560023922 | lr=2.00e-05 | ES=0/12 | seconds=8.97 BEST
+ETTm1 L=720 T=192 | Epoch 003 | train_loss=2.287110 | val_MSE=0.608913499 val_MAE=0.531149907 | lr=2.00e-05 | ES=0/12 | seconds=9.17 BEST
+ETTm1 L=720 T=192 | Epoch 004 | train_loss=2.207236 | val_MSE=0.581537915 val_MAE=0.515927619 | lr=2.00e-05 | ES=0/12 | seconds=8.84 BEST
+ETTm1 L=720 T=192 | Epoch 005 | train_loss=2.159024 | val_MSE=0.566092536 val_MAE=0.506822687 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=720 T=192 | Epoch 006 | train_loss=2.127190 | val_MSE=0.555708605 val_MAE=0.500440766 | lr=2.00e-05 | ES=0/12 | seconds=8.95 BEST
+ETTm1 L=720 T=192 | Epoch 007 | train_loss=2.103479 | val_MSE=0.546338361 val_MAE=0.494807445 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=720 T=192 | Epoch 008 | train_loss=2.086183 | val_MSE=0.539740022 val_MAE=0.490713125 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=720 T=192 | Epoch 009 | train_loss=2.071417 | val_MSE=0.535169805 val_MAE=0.487632827 | lr=2.00e-05 | ES=0/12 | seconds=8.90 BEST
+ETTm1 L=720 T=192 | Epoch 010 | train_loss=2.058177 | val_MSE=0.530477623 val_MAE=0.484795095 | lr=2.00e-05 | ES=0/12 | seconds=9.08 BEST
+ETTm1 L=720 T=192 | Epoch 011 | train_loss=2.048567 | val_MSE=0.525402533 val_MAE=0.481673279 | lr=2.00e-05 | ES=0/12 | seconds=8.98 BEST
+ETTm1 L=720 T=192 | Epoch 012 | train_loss=2.038949 | val_MSE=0.522311614 val_MAE=0.479621831 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=720 T=192 | Epoch 013 | train_loss=2.030342 | val_MSE=0.519415526 val_MAE=0.477598444 | lr=2.00e-05 | ES=0/12 | seconds=8.93 BEST
+ETTm1 L=720 T=192 | Epoch 014 | train_loss=2.022163 | val_MSE=0.516221194 val_MAE=0.475508266 | lr=2.00e-05 | ES=0/12 | seconds=8.83 BEST
+ETTm1 L=720 T=192 | Epoch 015 | train_loss=2.014445 | val_MSE=0.513118981 val_MAE=0.473506260 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=720 T=192 | Epoch 016 | train_loss=2.007238 | val_MSE=0.510788597 val_MAE=0.471768276 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=720 T=192 | Epoch 017 | train_loss=1.999597 | val_MSE=0.509018977 val_MAE=0.470660883 | lr=2.00e-05 | ES=0/12 | seconds=8.86 BEST
+ETTm1 L=720 T=192 | Epoch 018 | train_loss=1.991991 | val_MSE=0.508153366 val_MAE=0.469924312 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=720 T=192 | Epoch 019 | train_loss=1.985480 | val_MSE=0.506278358 val_MAE=0.468723538 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=720 T=192 | Epoch 020 | train_loss=1.979039 | val_MSE=0.504096620 val_MAE=0.467322971 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=720 T=192 | Epoch 021 | train_loss=1.972370 | val_MSE=0.501994468 val_MAE=0.466025323 | lr=2.00e-05 | ES=0/12 | seconds=8.89 BEST
+ETTm1 L=720 T=192 | Epoch 022 | train_loss=1.966012 | val_MSE=0.500692810 val_MAE=0.465137559 | lr=2.00e-05 | ES=0/12 | seconds=8.81 BEST
+ETTm1 L=720 T=192 | Epoch 023 | train_loss=1.961602 | val_MSE=0.499952935 val_MAE=0.464556239 | lr=2.00e-05 | ES=0/12 | seconds=8.85 BEST
+ETTm1 L=720 T=192 | Epoch 024 | train_loss=1.954853 | val_MSE=0.498550668 val_MAE=0.463542509 | lr=2.00e-05 | ES=0/12 | seconds=9.01 BEST
+ETTm1 L=720 T=192 | Epoch 025 | train_loss=1.949617 | val_MSE=0.497251556 val_MAE=0.462683833 | lr=2.00e-05 | ES=0/12 | seconds=9.18 BEST
+ETTm1 L=720 T=192 | Epoch 026 | train_loss=1.945014 | val_MSE=0.498598784 val_MAE=0.463500334 | lr=2.00e-05 | ES=1/12 | seconds=8.97 
+ETTm1 L=720 T=192 | Epoch 027 | train_loss=1.940447 | val_MSE=0.496751945 val_MAE=0.462309145 | lr=2.00e-05 | ES=0/12 | seconds=9.34 BEST
+ETTm1 L=720 T=192 | Epoch 028 | train_loss=1.936616 | val_MSE=0.496591113 val_MAE=0.462319924 | lr=2.00e-05 | ES=0/12 | seconds=8.87 BEST
+ETTm1 L=720 T=192 | Epoch 029 | train_loss=1.931722 | val_MSE=0.495977492 val_MAE=0.461794975 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=720 T=192 | Epoch 030 | train_loss=1.927595 | val_MSE=0.495036573 val_MAE=0.461373165 | lr=2.00e-05 | ES=0/12 | seconds=8.80 BEST
+ETTm1 L=720 T=192 | Epoch 031 | train_loss=1.923834 | val_MSE=0.495826685 val_MAE=0.461795422 | lr=2.00e-05 | ES=1/12 | seconds=8.81 
+ETTm1 L=720 T=192 | Epoch 032 | train_loss=1.919809 | val_MSE=0.495069542 val_MAE=0.461396580 | lr=2.00e-05 | ES=2/12 | seconds=8.79 
+ETTm1 L=720 T=192 | Epoch 033 | train_loss=1.917726 | val_MSE=0.494930867 val_MAE=0.461440622 | lr=2.00e-05 | ES=0/12 | seconds=8.78 BEST
+ETTm1 L=720 T=192 | Epoch 034 | train_loss=1.914291 | val_MSE=0.494161998 val_MAE=0.460951802 | lr=2.00e-05 | ES=0/12 | seconds=8.79 BEST
+ETTm1 L=720 T=192 | Epoch 035 | train_loss=1.911447 | val_MSE=0.494303799 val_MAE=0.460903406 | lr=2.00e-05 | ES=1/12 | seconds=8.79 
+ETTm1 L=720 T=192 | Epoch 036 | train_loss=1.908509 | val_MSE=0.494959968 val_MAE=0.461526889 | lr=2.00e-05 | ES=2/12 | seconds=8.86 
+ETTm1 L=720 T=192 | Epoch 037 | train_loss=1.905348 | val_MSE=0.495076551 val_MAE=0.460983361 | lr=2.00e-05 | ES=3/12 | seconds=8.95 
+ETTm1 L=720 T=192 | Epoch 038 | train_loss=1.903196 | val_MSE=0.494948305 val_MAE=0.461191570 | lr=1.00e-05 | ES=4/12 | seconds=8.80 
+ETTm1 L=720 T=192 | Epoch 039 | train_loss=1.900431 | val_MSE=0.494480127 val_MAE=0.460931086 | lr=1.00e-05 | ES=5/12 | seconds=8.97 
+ETTm1 L=720 T=192 | Epoch 040 | train_loss=1.899405 | val_MSE=0.494788493 val_MAE=0.461199401 | lr=1.00e-05 | ES=6/12 | seconds=9.17 
+ETTm1 L=720 T=192 | Epoch 041 | train_loss=1.898165 | val_MSE=0.494233213 val_MAE=0.460837532 | lr=1.00e-05 | ES=7/12 | seconds=9.13 
+ETTm1 L=720 T=192 | Epoch 042 | train_loss=1.897196 | val_MSE=0.495087120 val_MAE=0.461190342 | lr=5.00e-06 | ES=8/12 | seconds=9.48 
+ETTm1 L=720 T=192 | Epoch 043 | train_loss=1.895742 | val_MSE=0.494814787 val_MAE=0.461192411 | lr=5.00e-06 | ES=9/12 | seconds=8.85 
+ETTm1 L=720 T=192 | Epoch 044 | train_loss=1.895244 | val_MSE=0.495255355 val_MAE=0.461438691 | lr=5.00e-06 | ES=10/12 | seconds=8.97 
+ETTm1 L=720 T=192 | Epoch 045 | train_loss=1.894695 | val_MSE=0.495143977 val_MAE=0.461380302 | lr=5.00e-06 | ES=11/12 | seconds=8.83 
+ETTm1 L=720 T=192 | Epoch 046 | train_loss=1.893832 | val_MSE=0.495330470 val_MAE=0.461457705 | lr=2.50e-06 | ES=12/12 | seconds=8.82 
+Early stopping.
+RESULT ETTm1 L=720 T=192 | MSE=0.336378618 MAE=0.365252874 | best_epoch=34 epochs=46 | seconds=412.04
+Completed 14/16 training runs
+START ETTm1 L=720 T=336 | 2026-11-07T16:12:06.426410+08:00
+ETTm1 L=720 T=336 | Epoch 001 | train_loss=2.928617 | val_MSE=0.943810308 val_MAE=0.671963345 | lr=2.00e-05 | ES=0/12 | seconds=9.09 BEST
+ETTm1 L=720 T=336 | Epoch 002 | train_loss=2.538403 | val_MSE=0.792753494 val_MAE=0.606760244 | lr=2.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=720 T=336 | Epoch 003 | train_loss=2.390276 | val_MSE=0.743082338 val_MAE=0.581894514 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=720 T=336 | Epoch 004 | train_loss=2.317982 | val_MSE=0.718695454 val_MAE=0.568853426 | lr=2.00e-05 | ES=0/12 | seconds=9.16 BEST
+ETTm1 L=720 T=336 | Epoch 005 | train_loss=2.275580 | val_MSE=0.704549462 val_MAE=0.560932995 | lr=2.00e-05 | ES=0/12 | seconds=8.99 BEST
+ETTm1 L=720 T=336 | Epoch 006 | train_loss=2.247696 | val_MSE=0.695558654 val_MAE=0.555651988 | lr=2.00e-05 | ES=0/12 | seconds=9.15 BEST
+ETTm1 L=720 T=336 | Epoch 007 | train_loss=2.227678 | val_MSE=0.689222579 val_MAE=0.551988364 | lr=2.00e-05 | ES=0/12 | seconds=9.13 BEST
+ETTm1 L=720 T=336 | Epoch 008 | train_loss=2.212620 | val_MSE=0.683698943 val_MAE=0.548515168 | lr=2.00e-05 | ES=0/12 | seconds=9.07 BEST
+ETTm1 L=720 T=336 | Epoch 009 | train_loss=2.200589 | val_MSE=0.680231908 val_MAE=0.546367566 | lr=2.00e-05 | ES=0/12 | seconds=9.36 BEST
+ETTm1 L=720 T=336 | Epoch 010 | train_loss=2.190805 | val_MSE=0.674843735 val_MAE=0.543452690 | lr=2.00e-05 | ES=0/12 | seconds=9.14 BEST
+ETTm1 L=720 T=336 | Epoch 011 | train_loss=2.182572 | val_MSE=0.672189693 val_MAE=0.541826267 | lr=2.00e-05 | ES=0/12 | seconds=9.17 BEST
+ETTm1 L=720 T=336 | Epoch 012 | train_loss=2.175546 | val_MSE=0.669451470 val_MAE=0.540297650 | lr=2.00e-05 | ES=0/12 | seconds=9.05 BEST
+ETTm1 L=720 T=336 | Epoch 013 | train_loss=2.169337 | val_MSE=0.667691662 val_MAE=0.538997092 | lr=2.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=720 T=336 | Epoch 014 | train_loss=2.163538 | val_MSE=0.666432242 val_MAE=0.538120420 | lr=2.00e-05 | ES=0/12 | seconds=9.36 BEST
+ETTm1 L=720 T=336 | Epoch 015 | train_loss=2.158126 | val_MSE=0.664676638 val_MAE=0.536912623 | lr=2.00e-05 | ES=0/12 | seconds=9.66 BEST
+ETTm1 L=720 T=336 | Epoch 016 | train_loss=2.153068 | val_MSE=0.663292801 val_MAE=0.536223604 | lr=2.00e-05 | ES=0/12 | seconds=9.31 BEST
+ETTm1 L=720 T=336 | Epoch 017 | train_loss=2.148150 | val_MSE=0.660829186 val_MAE=0.534767964 | lr=2.00e-05 | ES=0/12 | seconds=9.65 BEST
+ETTm1 L=720 T=336 | Epoch 018 | train_loss=2.143251 | val_MSE=0.660136311 val_MAE=0.534241666 | lr=2.00e-05 | ES=0/12 | seconds=9.18 BEST
+ETTm1 L=720 T=336 | Epoch 019 | train_loss=2.138218 | val_MSE=0.658363729 val_MAE=0.533256917 | lr=2.00e-05 | ES=0/12 | seconds=9.37 BEST
+ETTm1 L=720 T=336 | Epoch 020 | train_loss=2.133054 | val_MSE=0.656067425 val_MAE=0.532024273 | lr=2.00e-05 | ES=0/12 | seconds=9.21 BEST
+ETTm1 L=720 T=336 | Epoch 021 | train_loss=2.127581 | val_MSE=0.654340654 val_MAE=0.531259587 | lr=2.00e-05 | ES=0/12 | seconds=9.21 BEST
+ETTm1 L=720 T=336 | Epoch 022 | train_loss=2.121960 | val_MSE=0.654178749 val_MAE=0.531307000 | lr=2.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=720 T=336 | Epoch 023 | train_loss=2.115917 | val_MSE=0.654390280 val_MAE=0.530987008 | lr=2.00e-05 | ES=1/12 | seconds=9.22 
+ETTm1 L=720 T=336 | Epoch 024 | train_loss=2.109586 | val_MSE=0.654072339 val_MAE=0.530794747 | lr=2.00e-05 | ES=0/12 | seconds=9.46 BEST
+ETTm1 L=720 T=336 | Epoch 025 | train_loss=2.103341 | val_MSE=0.654069556 val_MAE=0.531002587 | lr=2.00e-05 | ES=0/12 | seconds=9.30 BEST
+ETTm1 L=720 T=336 | Epoch 026 | train_loss=2.097305 | val_MSE=0.653537624 val_MAE=0.530736729 | lr=2.00e-05 | ES=0/12 | seconds=9.16 BEST
+ETTm1 L=720 T=336 | Epoch 027 | train_loss=2.091444 | val_MSE=0.653782057 val_MAE=0.531140852 | lr=2.00e-05 | ES=1/12 | seconds=9.19 
+ETTm1 L=720 T=336 | Epoch 028 | train_loss=2.086266 | val_MSE=0.654103822 val_MAE=0.531625270 | lr=2.00e-05 | ES=2/12 | seconds=9.16 
+ETTm1 L=720 T=336 | Epoch 029 | train_loss=2.081079 | val_MSE=0.654379605 val_MAE=0.532019330 | lr=2.00e-05 | ES=3/12 | seconds=9.37 
+ETTm1 L=720 T=336 | Epoch 030 | train_loss=2.076745 | val_MSE=0.654386752 val_MAE=0.532253230 | lr=1.00e-05 | ES=4/12 | seconds=9.60 
+ETTm1 L=720 T=336 | Epoch 031 | train_loss=2.073063 | val_MSE=0.653568326 val_MAE=0.531933079 | lr=1.00e-05 | ES=5/12 | seconds=9.49 
+ETTm1 L=720 T=336 | Epoch 032 | train_loss=2.071202 | val_MSE=0.653409429 val_MAE=0.531821421 | lr=1.00e-05 | ES=0/12 | seconds=9.33 BEST
+ETTm1 L=720 T=336 | Epoch 033 | train_loss=2.069073 | val_MSE=0.653430235 val_MAE=0.531948233 | lr=1.00e-05 | ES=1/12 | seconds=9.74 
+ETTm1 L=720 T=336 | Epoch 034 | train_loss=2.067606 | val_MSE=0.653585850 val_MAE=0.532039213 | lr=1.00e-05 | ES=2/12 | seconds=9.24 
+ETTm1 L=720 T=336 | Epoch 035 | train_loss=2.065307 | val_MSE=0.652772327 val_MAE=0.531887606 | lr=1.00e-05 | ES=0/12 | seconds=9.26 BEST
+ETTm1 L=720 T=336 | Epoch 036 | train_loss=2.063949 | val_MSE=0.653512654 val_MAE=0.532297358 | lr=1.00e-05 | ES=1/12 | seconds=9.33 
+ETTm1 L=720 T=336 | Epoch 037 | train_loss=2.062864 | val_MSE=0.652682922 val_MAE=0.532015289 | lr=1.00e-05 | ES=0/12 | seconds=9.28 BEST
+ETTm1 L=720 T=336 | Epoch 038 | train_loss=2.061289 | val_MSE=0.652561974 val_MAE=0.531858618 | lr=1.00e-05 | ES=0/12 | seconds=9.39 BEST
+ETTm1 L=720 T=336 | Epoch 039 | train_loss=2.059385 | val_MSE=0.652394616 val_MAE=0.531849083 | lr=1.00e-05 | ES=0/12 | seconds=9.67 BEST
+ETTm1 L=720 T=336 | Epoch 040 | train_loss=2.058558 | val_MSE=0.652924713 val_MAE=0.532161473 | lr=1.00e-05 | ES=1/12 | seconds=9.80 
+ETTm1 L=720 T=336 | Epoch 041 | train_loss=2.057148 | val_MSE=0.651951441 val_MAE=0.531734070 | lr=1.00e-05 | ES=0/12 | seconds=9.09 BEST
+ETTm1 L=720 T=336 | Epoch 042 | train_loss=2.055423 | val_MSE=0.652235660 val_MAE=0.532092012 | lr=1.00e-05 | ES=1/12 | seconds=9.04 
+ETTm1 L=720 T=336 | Epoch 043 | train_loss=2.054601 | val_MSE=0.652414938 val_MAE=0.532057076 | lr=1.00e-05 | ES=2/12 | seconds=9.32 
+ETTm1 L=720 T=336 | Epoch 044 | train_loss=2.052767 | val_MSE=0.652197048 val_MAE=0.532142726 | lr=1.00e-05 | ES=3/12 | seconds=9.10 
+ETTm1 L=720 T=336 | Epoch 045 | train_loss=2.051609 | val_MSE=0.652072707 val_MAE=0.532163205 | lr=5.00e-06 | ES=4/12 | seconds=9.31 
+ETTm1 L=720 T=336 | Epoch 046 | train_loss=2.050654 | val_MSE=0.652189053 val_MAE=0.532201024 | lr=5.00e-06 | ES=5/12 | seconds=9.11 
+ETTm1 L=720 T=336 | Epoch 047 | train_loss=2.050303 | val_MSE=0.652215233 val_MAE=0.532204157 | lr=5.00e-06 | ES=6/12 | seconds=9.14 
+ETTm1 L=720 T=336 | Epoch 048 | train_loss=2.049113 | val_MSE=0.652720586 val_MAE=0.532487620 | lr=5.00e-06 | ES=7/12 | seconds=9.30 
+ETTm1 L=720 T=336 | Epoch 049 | train_loss=2.049017 | val_MSE=0.652623773 val_MAE=0.532440260 | lr=2.50e-06 | ES=8/12 | seconds=9.29 
+ETTm1 L=720 T=336 | Epoch 050 | train_loss=2.048575 | val_MSE=0.652555495 val_MAE=0.532461945 | lr=2.50e-06 | ES=9/12 | seconds=9.36 
+ETTm1 L=720 T=336 | Epoch 051 | train_loss=2.048462 | val_MSE=0.652729728 val_MAE=0.532564056 | lr=2.50e-06 | ES=10/12 | seconds=9.91 
+ETTm1 L=720 T=336 | Epoch 052 | train_loss=2.048425 | val_MSE=0.652341011 val_MAE=0.532354135 | lr=2.50e-06 | ES=11/12 | seconds=9.31 
+ETTm1 L=720 T=336 | Epoch 053 | train_loss=2.047341 | val_MSE=0.652546710 val_MAE=0.532490995 | lr=1.25e-06 | ES=12/12 | seconds=9.17 
+Early stopping.
+RESULT ETTm1 L=720 T=336 | MSE=0.378864902 MAE=0.392357615 | best_epoch=41 epochs=53 | seconds=494.36
+Completed 15/16 training runs
+START ETTm1 L=720 T=720 | 2026-11-07T16:20:20.993262+08:00
+ETTm1 L=720 T=720 | Epoch 001 | train_loss=3.053092 | val_MSE=1.189898872 val_MAE=0.753671811 | lr=2.00e-05 | ES=0/12 | seconds=10.33 BEST
+ETTm1 L=720 T=720 | Epoch 002 | train_loss=2.690703 | val_MSE=1.055268744 val_MAE=0.696911365 | lr=2.00e-05 | ES=0/12 | seconds=10.77 BEST
+ETTm1 L=720 T=720 | Epoch 003 | train_loss=2.558896 | val_MSE=1.012222703 val_MAE=0.676031241 | lr=2.00e-05 | ES=0/12 | seconds=10.83 BEST
+ETTm1 L=720 T=720 | Epoch 004 | train_loss=2.495420 | val_MSE=0.992033701 val_MAE=0.665453268 | lr=2.00e-05 | ES=0/12 | seconds=10.45 BEST
+ETTm1 L=720 T=720 | Epoch 005 | train_loss=2.459365 | val_MSE=0.980391218 val_MAE=0.659371326 | lr=2.00e-05 | ES=0/12 | seconds=10.30 BEST
+ETTm1 L=720 T=720 | Epoch 006 | train_loss=2.435809 | val_MSE=0.973354372 val_MAE=0.655277950 | lr=2.00e-05 | ES=0/12 | seconds=10.29 BEST
+ETTm1 L=720 T=720 | Epoch 007 | train_loss=2.418229 | val_MSE=0.967341417 val_MAE=0.652122699 | lr=2.00e-05 | ES=0/12 | seconds=10.44 BEST
+ETTm1 L=720 T=720 | Epoch 008 | train_loss=2.405718 | val_MSE=0.963018157 val_MAE=0.649798194 | lr=2.00e-05 | ES=0/12 | seconds=10.52 BEST
+ETTm1 L=720 T=720 | Epoch 009 | train_loss=2.395249 | val_MSE=0.959478922 val_MAE=0.647854318 | lr=2.00e-05 | ES=0/12 | seconds=10.51 BEST
+ETTm1 L=720 T=720 | Epoch 010 | train_loss=2.386578 | val_MSE=0.955885710 val_MAE=0.645904814 | lr=2.00e-05 | ES=0/12 | seconds=10.24 BEST
+ETTm1 L=720 T=720 | Epoch 011 | train_loss=2.379679 | val_MSE=0.953348371 val_MAE=0.644877372 | lr=2.00e-05 | ES=0/12 | seconds=10.22 BEST
+ETTm1 L=720 T=720 | Epoch 012 | train_loss=2.372884 | val_MSE=0.950307581 val_MAE=0.643353458 | lr=2.00e-05 | ES=0/12 | seconds=10.27 BEST
+ETTm1 L=720 T=720 | Epoch 013 | train_loss=2.366552 | val_MSE=0.948097346 val_MAE=0.642401144 | lr=2.00e-05 | ES=0/12 | seconds=10.39 BEST
+ETTm1 L=720 T=720 | Epoch 014 | train_loss=2.362095 | val_MSE=0.945804431 val_MAE=0.641423621 | lr=2.00e-05 | ES=0/12 | seconds=10.52 BEST
+ETTm1 L=720 T=720 | Epoch 015 | train_loss=2.355866 | val_MSE=0.945557604 val_MAE=0.641255093 | lr=2.00e-05 | ES=0/12 | seconds=10.26 BEST
+ETTm1 L=720 T=720 | Epoch 016 | train_loss=2.350893 | val_MSE=0.944032665 val_MAE=0.640721973 | lr=2.00e-05 | ES=0/12 | seconds=10.12 BEST
+ETTm1 L=720 T=720 | Epoch 017 | train_loss=2.345433 | val_MSE=0.942918933 val_MAE=0.640248495 | lr=2.00e-05 | ES=0/12 | seconds=10.16 BEST
+ETTm1 L=720 T=720 | Epoch 018 | train_loss=2.339843 | val_MSE=0.942488362 val_MAE=0.640315025 | lr=2.00e-05 | ES=0/12 | seconds=10.18 BEST
+ETTm1 L=720 T=720 | Epoch 019 | train_loss=2.334541 | val_MSE=0.941014072 val_MAE=0.639934227 | lr=2.00e-05 | ES=0/12 | seconds=10.22 BEST
+ETTm1 L=720 T=720 | Epoch 020 | train_loss=2.328831 | val_MSE=0.939227636 val_MAE=0.639534654 | lr=2.00e-05 | ES=0/12 | seconds=10.45 BEST
+ETTm1 L=720 T=720 | Epoch 021 | train_loss=2.322396 | val_MSE=0.940585095 val_MAE=0.640195950 | lr=2.00e-05 | ES=1/12 | seconds=10.16 
+ETTm1 L=720 T=720 | Epoch 022 | train_loss=2.317225 | val_MSE=0.941447943 val_MAE=0.640679568 | lr=2.00e-05 | ES=2/12 | seconds=10.19 
+ETTm1 L=720 T=720 | Epoch 023 | train_loss=2.310678 | val_MSE=0.943223599 val_MAE=0.641856950 | lr=2.00e-05 | ES=3/12 | seconds=10.44 
+ETTm1 L=720 T=720 | Epoch 024 | train_loss=2.305524 | val_MSE=0.944277268 val_MAE=0.641975051 | lr=1.00e-05 | ES=4/12 | seconds=10.67 
+ETTm1 L=720 T=720 | Epoch 025 | train_loss=2.302111 | val_MSE=0.945243085 val_MAE=0.642687657 | lr=1.00e-05 | ES=5/12 | seconds=10.83 
+ETTm1 L=720 T=720 | Epoch 026 | train_loss=2.299930 | val_MSE=0.945686191 val_MAE=0.642937103 | lr=1.00e-05 | ES=6/12 | seconds=10.50 
+ETTm1 L=720 T=720 | Epoch 027 | train_loss=2.297117 | val_MSE=0.946586833 val_MAE=0.643077605 | lr=1.00e-05 | ES=7/12 | seconds=10.36 
+ETTm1 L=720 T=720 | Epoch 028 | train_loss=2.295905 | val_MSE=0.948500140 val_MAE=0.644097313 | lr=5.00e-06 | ES=8/12 | seconds=10.50 
+ETTm1 L=720 T=720 | Epoch 029 | train_loss=2.293222 | val_MSE=0.948639314 val_MAE=0.644108717 | lr=5.00e-06 | ES=9/12 | seconds=10.57 
+ETTm1 L=720 T=720 | Epoch 030 | train_loss=2.291893 | val_MSE=0.948483237 val_MAE=0.644008330 | lr=5.00e-06 | ES=10/12 | seconds=10.35 
+ETTm1 L=720 T=720 | Epoch 031 | train_loss=2.291643 | val_MSE=0.948901771 val_MAE=0.644163250 | lr=5.00e-06 | ES=11/12 | seconds=10.86 
+ETTm1 L=720 T=720 | Epoch 032 | train_loss=2.291102 | val_MSE=0.949192824 val_MAE=0.644319801 | lr=2.50e-06 | ES=12/12 | seconds=10.60 
+Early stopping.
+RESULT ETTm1 L=720 T=720 | MSE=0.423384856 MAE=0.418242434 | best_epoch=20 epochs=32 | seconds=335.80
+Completed 16/16 training runs
+AVG ETTm1 L=720 | MSE=0.360069295 MAE=0.380581726
+
+FINAL TABLE 8 ETTm1 CTIA-ODE AVG RESULTS
+ETTm1 L=96 | AVG MSE=0.395960215 MAE=0.390853830
+ETTm1 L=192 | AVG MSE=0.369341067 MAE=0.378959931
+ETTm1 L=336 | AVG MSE=0.361090147 MAE=0.376527423
+ETTm1 L=720 | AVG MSE=0.360069295 MAE=0.380581726
+Finished: 2026-11-07T16:25:56.793886+08:00 | total_seconds=11909.67
