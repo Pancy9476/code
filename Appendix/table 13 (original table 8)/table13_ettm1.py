@@ -140,7 +140,7 @@ def main(completed_weather):
 
 
 if __name__ == "__main__":
-    with (HERE / "table8_run.log").open("x", encoding="utf-8", buffering=1) as output:
+    with (HERE / "table13_ettm1.log").open("x", encoding="utf-8", buffering=1) as output:
         with redirect_stdout(output), redirect_stderr(output):
             try:
                 main({})
